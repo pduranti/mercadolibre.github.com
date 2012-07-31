@@ -17,7 +17,7 @@ tags:
 
 ## Description:
 
-The search operation returns items belongs to a MercadoLibre item category. For more details about categories visit [Categories API](/guide-appendix/#categories-api). 
+The search operation returns items belongs to a MercadoLibre item category. Searching by categories is similar to user experience browsing these in MercadoLibre site. For more details about categories visit [Categories API](/guide-appendix/#categories-api). 
 
 
 ## Request {#search-request}
