@@ -8,7 +8,7 @@ tags:
 
 # Search by text query
 
-### Table of Contents
+## Table of Contents
 - [Description](#search-description)
 - [Request](#search-request)
 - [Pagging](#search-pagging)
