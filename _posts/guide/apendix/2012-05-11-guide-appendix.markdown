@@ -101,8 +101,8 @@ For second level categories, or information related to specific categories, you 
 As you can see, you get the “path_from_root” and "children_categories" attributes, use these attributes to browse the categories tree to find the specific category for your item.
 
 ##Categories Dump {#categories-dump}
-The category tree does not change very often. If you prefer you can request a dump of the whole category tree for a given site and later process it offline.
-This API returns a the category tree in JSON format in the body, GZIP encoded.
+The category tree does not change very often. If you prefer you can request a dump of the whole category tree for a given country site for offline processing.
+This API returns the category tree in JSON format within a gzip-encoded response.
 
 To get the categories for Brasil, use this URL:
 
@@ -116,7 +116,7 @@ To get the categories for Argentina, use this URL:
 This URL contains 2 headers that can be used to check when was the dump last generated.
 
 - **X-Content-Created**: contains the date of the last generation.
-- **X-Content-MD5**: contains the MD5 of last generation.
+- **X-Content-MD5**: contains the MD5 checksum of last generation.
 
 <pre class='terminal'>
 ~$ curl -I  https://api.mercadolibre.com/sites/MLB/categories/all

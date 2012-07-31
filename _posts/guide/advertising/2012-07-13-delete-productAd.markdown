@@ -9,9 +9,11 @@ tags: Advertising
 To delete a product ad you only need to change the **status** to E.
 
 <pre class="terminal">
-curl -i -H "Accept:application/json" -H "Content-Type: application/json" -X PUT -d 'E'
+curl -i -H 'Accept:application/json' -H 'Content-Type: application/json' -X PUT -d 'E'
 https://api.mercadolibre.com/mclics/ad/11130279/status?access_token=$ACCESS_TOKEN  
 </pre>
+
+**Where '11130279' is the id of the product ad.**
 
 You will receive the following JSON response:
 

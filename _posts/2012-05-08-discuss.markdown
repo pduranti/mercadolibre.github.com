@@ -5,7 +5,7 @@ tags: home
 ---
 
 ## Get in contact with us and with other developers!
-You can submit questions or comments in our discussion group [meli-developers](https://groups.google.com/group/meli-developers).
+You can submit questions or comments in our discussions group. Please visit our [forums](/forums).
 
 You can also send an e-mail to [developers@mercadolibre.com](mailto:developers@mercadolibre.com).
 
@@ -25,7 +25,7 @@ You can also fork this site and help us keeping it updated and with helpful info
 
 ### Community
 
-Find us in our IRC channel **#meli @ irc.freenode.net** or in the [discussion group](https://groups.google.com/group/meli-developers).
+Find us in our IRC channel **#meli @ irc.freenode.net**.
 
 Thanks, 
 

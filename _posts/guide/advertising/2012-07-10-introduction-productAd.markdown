@@ -6,29 +6,28 @@ tags: Advertising
 ---
 
 # Product Ads Introduction
-As you know, MercadoClics is a platform in which users can create Ads. This tutorials are going to show you, developer, how mange your product Ads using the ProductAds API.
+As you know, MercadoClics is a platform in which users can create Ads. This documentation will show you how to manage your **product Ads** using the Product Ads API.
 ## What is a Product Ad?{#what-is-a-product-ad}
-Product Ads are a new kind of banner with the characteristic of which is shown with an explicit price and image.
+Product Ad is a new kind of ad with the **image** and **price** of a specific product. It has the following attributes:
 
-### Attributes
-* **adID**: Id of the productAd
+* **adID**: Id of the product Ad
 * **custID**: Id of the customer
-* **name**: Name of the customer
-* **maxCPC**: max value for the PPC (Pey per click)
-* **adDailyBudget**: Daily budget of the productAd
-* **status**: Ad status
-* **title**: Ad’s title
-* **URLVisible**: visible URL by the final user
+* **maxCPC**: Maximum price that the user is willing to pay per click (PPC)
+* **adDailyBudget**: Daily budget of the product Ad
+* **status**: product Ad status
+* **title**: product Ad title (35 characters Max.)
+* **URLVisible**: Visible URL by the final user
 * **URLDestiny**: Real destiny URL
 * **campaignID**: Id of the campaign
-* **siteID**: Id of the site
-* **categID**: Id of the category for the productAd
-* **refID**
+* **siteID**: Id of the site (Example: "MLB")
+* **categID**: Id from MercadoLibre's categories 
+* **Price**: Cost of the product announced in the Product Ad
+* **refID**: Product SKU (Stock-keeping unit)
 * **refFrom**
 
 ## Reference
-You will notice that there are two different refence attributes: **refID**, **refFrom**. With this attributes you will be able to find all the product Ads you have associate to your product. To know more about this feature you can read [Search a Product Ad](../searching-productAd).
+You will notice that there are two different reference attributes: **refID**, **refFrom**. This two attributes identifies your product so that you can get the active Product Ad created for the product. To know more about this feature you can read [Search a Product Ad](../searching-productAd).
 
 ## Other considerations{#other-considerations}
-The ProductAds API tutorials require a basic understanding of the curl Linux command, you can get information of how to use it in our Basic Curl Tutorial.
-In order to use this API, you will need an access_token, we recommends that you read the [Authorization Tutorial](../authentication-and-authorization).
+The Product Ads API tutorials require a basic understanding of the curl Linux command. You can get information of how to use it in our Basic Curl Tutorial.
+In order to use this API, you will need an **access_token**, so we recommend you to read the [Authorization Tutorial](../authentication-and-authorization).

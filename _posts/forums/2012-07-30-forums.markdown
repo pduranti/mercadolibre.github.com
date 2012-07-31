@@ -1,0 +1,19 @@
+---
+layout: 1columns
+title: Forums 
+categories: tutorials popular
+---
+
+# Forums
+
+Please check if your question was answered in our forums. In case you
+didn't find an answer, create a new topic and ask your question. In a
+very short time you'll get an answer.
+The community is very active, and our developers always hang around and
+try to help.
+
+[Forums in Spanish](/forums-es)
+
+[Forums in Portuguese](/forums-pt)
+
+[Forums in English](/forums-en)

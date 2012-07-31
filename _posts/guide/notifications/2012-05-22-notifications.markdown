@@ -27,7 +27,7 @@ Notifications are a very convenient way to stay up-to-date with everything that 
 ---
 ##How do I subscribe to the Notifications? {#how-to-subscribe}
 In the Applications Page where you created your App, you can edit the details and specify which 'topics' you will listen to.
-(see [Applications Page](http://applications.mercadolibre.com.ar/home)).
+(see [Applications Page](http://applications.mercadolibre.com)).
 _If you haven't created your App yet go to [Creating your app section] (http://developers.mercadolibre.com/creating-your-own-application/)_
 
   - **Notifications callback URL** Configure the public URL of your domain where you want to receive notifications for the different topics. e.g.: “http://myshoes-app.com/callbacks”.

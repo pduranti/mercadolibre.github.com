@@ -46,10 +46,10 @@
       <nav class="ch-g2-3">
         <ul>
           <li><a href="/getting-started">Getting Started</a></li>
-          <li style="border:none"><a href="/guides">Guides & SDKs</a></li>        
+          <li><a href="/guides">Guides & SDKs</a></li>        
+          <li style="border:none"><a href="/forums">Forums</a></li>        
         </ul>
       </nav>
-      
     </header>
 
 	<section class="main ch-g1">
@@ -91,6 +91,7 @@
 	</section>
 
 	<footer class="ch-g1">
+    <div id="cse" style="width: 100%;">Loading</div>
 		<div class="ch-g2-3 extras">
 		<ul>
 			<li>©2012 MercadoLibre</li>
@@ -101,6 +102,16 @@
 	</footer>
 	
 	<script src="javascripts/scale.fix.js"></script>
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+  <script type="text/javascript"> 
+      google.load('search', '1', {style : google.loader.themes.V2_DEFAULT});
+        google.setOnLoadCallback(function() {
+                var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+                        '017586013854347464845:atz5lcehloe', customSearchOptions);
+                    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+                        customSearchControl.draw('cse');
+                          }, true);
+                        </script>
 	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
 </body>
 </html>

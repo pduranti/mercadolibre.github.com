@@ -6,15 +6,15 @@ tags: Contact
 ---
 
 ###Overview
-Managing the question's blacklist allows you to block users from asking quesions on your items. Later on you can remove from the blacklist to allow questions.
+Managing the question's blacklist allows you to block users from asking questions on your items. Later on you can remove them from the blacklist to allow questions.
 
-This blacklist is user-based and a seller has full control over the list of users in it.
+This blacklist is user-based and the seller has full control over the list of users in it.
 
 ## To block someone from asking questions:
 
    <ul>
-     <li>  Method: POST</li>
-     <li>URL: https://api.mercadolibre.com/users/$SELLER_ID/questions_blacklist/?accesss_token=SELLER ACCESS TOKEN</li>
+     <li> Method: POST</li>
+     <li> URL: https://api.mercadolibre.com/users/$SELLER_ID/questions_blacklist/?access_token=SELLER ACCESS TOKEN</li>
      <li>
    	{% highlight javascript %}
 
@@ -24,7 +24,7 @@ This blacklist is user-based and a seller has full control over the list of user
    	{% endhighlight %}
      </li>
    </ul>
-## To see the list of users who are blocked
+## To see the list of blocked users
 
    <ul>
      <li> Method: GET</li>
@@ -33,18 +33,8 @@ This blacklist is user-based and a seller has full control over the list of user
 ## Removing a user from the blacklist
 
    <ul>
-     <li>Method: DELETE</li>
-     <li>URL: https://api.mercadolibre.com/users/$SELLER_ID/questions_blacklist/?access_token=SELLER ACCESS TOKEN</li>
-     <li>
-	   Body:
-
-	{% highlight javascript %}
-
-	   {
-             "user_id": blocked user id
-	   }
-	{% endhighlight %}
-     </li>
+     <li> Method: DELETE</li>
+     <li> URL: https://api.mercadolibre.com/users/$SELLER_ID/questions_blacklist/$USER_ID?access_token=SELLER ACCESS TOKEN</li>
    </ul>
 
 

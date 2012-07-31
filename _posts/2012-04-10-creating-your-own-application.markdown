@@ -13,7 +13,7 @@ When you create an application you can start requesting users to grant you acces
 
 So before continuing, make sure you are registered as a user. In case you want to create a user, do it now by browsing to [http://www.mercadolibre.com](http://www.mercadolibre.com).
 
-Now that you have a registered user, go to the [application manager](http://applications.mercadolibre.com.ar/home) and create an application as described below:
+Now that you have a registered user, go to the [application manager](http://applications.mercadolibre.com) and create an application as described below:
 
 ![App create](/images/applications.png)
 

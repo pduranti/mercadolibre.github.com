@@ -14,7 +14,7 @@ Before creating your MELI APP you will need to [have a MELI signed up user](/res
 
 To accomplish this go to the following URL:
 
-<a href="http://applications.mercadolibre.com.ar" target="_blank">http://applications.mercadolibre.com.ar</a>
+<a href="http://applications.mercadolibre.com" target="_blank">http://applications.mercadolibre.com</a>
 (if you are accesing with a user belonging to another country other than Argentina, please change the ".com.ar" to your corresponding country extension).
 
 Log in with your username and password and click on the "Create new application", as shown on figure 1.
