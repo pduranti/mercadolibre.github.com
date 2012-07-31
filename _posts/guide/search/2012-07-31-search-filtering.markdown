@@ -38,18 +38,18 @@ You will obtain a list of special filters which can apply to reduce results.
       "id": "price",
       "name": "Rango de precios",
       "type": "range",
-      "values": - [
-        - {
+      "values": [
+        {
           "id": "*-750.0",
           "name": "Hasta $750",
           "results": 385,
         },
-        - {
+        {
           "id": "750.0-1000.0",
           "name": "$750 a $1.000",
           "results": 265,
         },
-        - {
+        {
           "id": "1000.0-*",
           "name": "Más de $1.000",
           "results": 512,
@@ -60,6 +60,13 @@ You will obtain a list of special filters which can apply to reduce results.
     {...},
   ]
 {% endhighlight %}
+
+In order to refine the search you can add those filters that you need following the pattern: <code>&amp;FilterID=FilterValue</code>. An example of this could be this filtering:
+
+<pre class="terminal">
+https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;price=700.0-1000.0
+</pre>
+
 
 
 
