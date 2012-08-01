@@ -53,7 +53,7 @@ All Sites.
 
 ## Response {#search-response}
 
-% highlight javascript %}
+{% highlight javascript %}
 {
   "site_id": "MLA",
   "paging": {...},
