@@ -1,6 +1,6 @@
 ---
 layout: 2columns
-title: Search using filters
+title: Searching using filters
 categories: guides
 tags: 
 - Searching
@@ -17,7 +17,7 @@ tags:
 
 ## Description:
 
-The search operation can retrieve a list of item filtered by a special filters. Tipically, you use filters when you are interested in refine a search result. There are different filters and each article has diferents. 
+The search operation can retrieve a list of item filtered by special filters. Tipically, you use these filters when you are interested in refine a previous search result. There are different filters and each article has different ones. 
 
 
 ## Request {#search-request}
@@ -66,8 +66,6 @@ In order to refine the search you can add those filters that you need following 
 <pre class="terminal">
 https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;price=700.0-1000.0
 </pre>
-
-
 
 
 ## Pagging {#search-pagging}

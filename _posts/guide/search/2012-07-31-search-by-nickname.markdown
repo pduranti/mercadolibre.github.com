@@ -1,6 +1,6 @@
 ---
 layout: 2columns
-title: Searching by category
+title: Searching by nickname
 categories: guides
 tags: 
 - Searching
@@ -17,21 +17,18 @@ tags:
 
 ## Description:
 
-The search operation returns items belongs to a MercadoLibre item category. Searching by categories is similar to user experience browsing these in MercadoLibre site. For more details about categories visit [Categories API](/guide-appendix/#categories-api). 
-
+You can use search operation to retrieve the list of items from a specify seller nickname.
 
 ## Request {#search-request}
 
-Using a MercadoLibre item category, you can retrieve a list of items belong to it. 
-
 <pre class="terminal">
-curl https://api.mercadolibre.com/sites/MLA/search?category=MLA5726
+curl https://api.mercadolibre.com/sites/MLA/search?nickname=.....
 </pre>
 
 
 ## Pagging {#search-pagging}
 
-Search returns 50 search results per page. You can navigate towards limit going through the pages of 50 to 50.
+Search returns 50 results per page.
 
 {% highlight javascript %}
 
@@ -59,7 +56,7 @@ Search response has a lot of parameters. Use <code>OPTIONS</code> http method to
           height="900">
 </iframe>
 <script type="text/javascript">
-            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?category=MLA5726';
+            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?nickname=TEST';
 </script>
 
 

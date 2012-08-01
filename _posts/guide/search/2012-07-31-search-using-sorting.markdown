@@ -1,6 +1,6 @@
 ---
 layout: 2columns
-title: Search by text query
+title: Searching using sorting
 categories: guides
 tags: 
 - Searching
@@ -8,41 +8,56 @@ tags:
 
 # Search by text query
 
-## Table of Contents
+### Table of Contents
 - [Description](#search-description)
 - [Request](#search-request)
 - [Pagging](#search-pagging)
 - [Available sites](#search-sites)
 - [Response](#search-response)
 
-### Description:
+## Description:
 
-The search operation returns items that satisfy the search criteria. Using text query is basis for item search. You use space between words if you have multiple words. It searchs items where one of the specified word matches in the item title. Queries aren't case-sensitives.
+Each search retrieved can be sorted using available sorts. You must check available sorts and use them to refine your search. 
 
-
-
-## Request {#search-request}
-
-Searching using the MELI API is very intuitive and straightforward. If you want search for specific items as if you were doing it through our website, you can
-use the search API as follows:
+For example, if you search an item using a simple [search by query](/search-by-text-query)
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
 </pre>
 
+you can check which the available sorts are:
+
+{% highlight javascript %}
+  "available_sorts": [
+    {
+      "id": "price_asc",
+      "name": "Menor precio",
+    },
+    {
+      "id": "price_desc",
+      "name": "Mayor precio",
+    }
+  ]
+{% endhighlight %}
+
+
+## Request {#search-request}
+
+In order to retrieve a sorted list of items you can specify a sort attribute 
+
 <pre class="terminal">
-curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano
+curl https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;sort=price_asc
 </pre>
 
 
 ## Pagging {#search-pagging}
 
-Search returns 50 search results per page. You can navigate towards limit going through the pages of 50 to 50.
+Search retrieves 50 results per page. 
 
 {% highlight javascript %}
 
   "paging": {
-    "total": 1153,
+    "total": 44301,
     "offset": 0,
     "limit": 50,
   }
@@ -65,7 +80,7 @@ Search response has a lot of parameters. Use <code>OPTIONS</code> http method to
           height="900">
 </iframe>
 <script type="text/javascript">
-            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?q=ipod';
+            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?seller_id=123456';
 </script>
 
 

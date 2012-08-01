@@ -8,10 +8,12 @@ tags:
 
 # Visual introduction
 
-Commonly, to search items is the first step that you do in MercadoLibre. You can see in this page the most common use cases. The Search API provides programmatic access to the platform.  
+Search items is the first step that you do in MercadoLibre. You can see in this page the most common use cases. The Search API provides programmatic access to the platform.
+
+First step is to write things to search using the search textfield (1). When you search something, you will see a list of item results (2), the path in categories hierarchy (4), a list of special filters to use in refined searches (5) and  possible sortings (6).
 
 
-![meli home](/images/meli-home.jpg)
+![meli home](/images/search-visual-introduction.png)
 
 
 ##Use cases
