@@ -7,13 +7,10 @@ tags: Selling
 
 # Listings Introduction
 
-
-
 As you know, MELI is an e-commerce platform in which users can buy and sell items. This tutorials are going to show you, the developer, how to list your item using the Items API.
 
 
-
-## What is an item?{#what-is-an-item}
+## What is an item? {#what-is-an-item}
 
 Each object that can be sold or bought is an item, for example: A book, a computer, a telephone, a car, a table, a house, even a dog. The item is owned by a user.
 
@@ -23,10 +20,15 @@ If you want to sell a book, you need to list it first. Each item that is listed 
 
 Appear in the MELI listings. For example, when a user search “Harry Potter book” he will get the list of Harry Potter books in which your item will be shown.
 
-
-
 Have a VIP (View Item Page). A descriptive web-page in which you are going to see information about the Harry Potter book.
 You should provide attributes related to your item at the time of listing.
+
+## Visual explanation {#visual-explanation}
+
+After a search, if the user click an item, 
+
+![meli home](/images/vip.png)
+
 
 ## What is an Item Attribute?{#item-attribute}
 
@@ -47,7 +49,6 @@ To list an item with the Items API, you will need an access_token, we recommends
 Don’t worry if you don’t understand how to get an access_token, at the end of each tutorial you will see a Javascript example using the MELI Javascript SDK, that do not require access_token.
 
 
-![meli home](/images/search-visual-introduction.png)
 
 
 ##Use cases
