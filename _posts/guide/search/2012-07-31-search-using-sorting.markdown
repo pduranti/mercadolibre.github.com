@@ -1,6 +1,6 @@
 ---
 layout: 2columns
-title: Searching using sorting
+title: Searching using sorts
 categories: guides
 tags: 
 - Searching
