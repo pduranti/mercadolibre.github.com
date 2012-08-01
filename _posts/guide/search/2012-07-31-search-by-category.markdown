@@ -6,7 +6,7 @@ tags:
 - Searching
 ---
 
-# Search by text query
+# Search by category
 
 ### Table of Contents
 - [Description](#search-description)

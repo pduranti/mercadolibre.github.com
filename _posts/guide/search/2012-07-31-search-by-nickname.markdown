@@ -6,7 +6,7 @@ tags:
 - Searching
 ---
 
-# Search by text query
+# Search by seller nickname
 
 ### Table of Contents
 - [Description](#search-description)
