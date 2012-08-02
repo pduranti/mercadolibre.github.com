@@ -109,7 +109,7 @@ For each sale confirmed in MercadoLibre, seller and buyer have 21 days to send t
 }
 {% endhighlight %}
 
-To retrieve seller reputation, you need to complete other operation using seller_id over Users API:
+To retrieve seller reputation, you need to complete other operation using seller_id over [Users API](/info-user):
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/users/21346017
@@ -140,19 +140,99 @@ curl https://api.mercadolibre.com/users/21346017
 
 ## Seller category {#seller-category}
 
+In MercadoLibre sellers have a status. 
 
+{% highlight javascript %} 
+{
+  .... 	
+ "seller_reputation": {
+ 	....
+    "power_seller_status": "platinum",
+    
+    "transactions": {
+      	... 	
+      
+      "ratings": {
+      	....
+      },
+    },
+  },
+  ...
+}
+{% endhighlight %}
 
 ## Seller address {#seller-address}
 
+In item attributes information you also see seller address as one of the relevant attributes.  
+
+{% highlight javascript %} 
+ "seller_address": {
+    "id": 60959901,
+    "comment": "",
+    "address_line": "",
+    "zip_code": "",
+    "city": {
+      "id": "",
+      "name": "são paulo",
+    },
+    "state": {
+      "id": "BR-SP",
+      "name": "São Paulo",
+    },
+    "country": {
+      "id": "BR",
+      "name": "Brasil",
+    },
+    "latitude": "",
+    "longitude": "",
+  },
+{% endhighlight %}
+
 ## Sold quantity {#sold-quantity}
 
-## Category path {#category-path}
+To complete seller details, you also see item sold quantity. 
+
+{% highlight javascript %} 
+{
+  .... 	
+  "sold_quantity": 1042,
+  ...
+}
+{% endhighlight %}
 
 ## Item pictures {#item-pictures}
 
+Each of them has an id, the hiperlink to the picture, the secure hiperlink to the picture, picture dimension and the max possible dimension of the picture. 
+
+{% highlight javascript %} 
+{
+  .... 	
+  "pictures": [
+    {
+      "id": "MLB221253103_5910",
+      "url": "http://img2.mlstatic.com/s_MLB_v_O_f_221253103_5910.jpg",
+      "secure_url": "https://www.mercadolibre.com/jm/img?s=MLB&v=O&f=221253103_5910.jpg",
+      "size": "500x374",
+      "max_size": "500x374",
+    },
+    {
+	   ...    
+	}
+  ...
+}
+{% endhighlight %}
+
 ## Detailed description {#detailed-description}
-
-
+{% highlight javascript %} 
+  "descriptions": - [
+    - {
+      "id": "MLB233759102-230695964",
+    },
+    - {
+      "id": "MLB233759102-260344107",
+    },
+  ],
+ {% endhighlight %}
 
 
 ## Other considerations{#other-considerations}
@@ -160,3 +240,14 @@ curl https://api.mercadolibre.com/users/21346017
 The Items API tutorials require a basic understanding of the curl Linux command, you can get information of how to use it in our Basic Curl Tutorial.
 To list an item with the Items API, you will need an access_token, we recommends that you read the [Authorization Tutorial](../authentication-and-authorization).
 Don’t worry if you don’t understand how to get an access_token, at the end of each tutorial you will see a Javascript example using the MELI Javascript SDK, that do not require access_token.
+
+<iframe id="search_api_embed"
+  src="javascript:void(0)"
+    scrolling="no"
+      frameborder="0"
+        width="100%"
+          height="900">
+</iframe>
+<script type="text/javascript">
+            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/items/MLB233759102';
+</script>
