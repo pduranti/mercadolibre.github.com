@@ -16,18 +16,26 @@ Each object that can be sold or bought is an item, for example: A book, a comput
 
 ## What happens when I list an Item?{#item-list}
 
-If you want to sell a auto part, you need to list it first. Each item that is listed on MELI will:
+If you want to sell an auto part, you need to list it first. Each item that is listed on MELI will:
 
 Appear in the MELI listings. For example, when a user search “volante gol” he will get the list of this auto part in which your item will be shown.
 
 Have a VIP (View Item Page). A descriptive web-page in which you are going to see information about the auto part.
 You should provide attributes related to your item at the time of listing.
 
-## Visual explanation {#visual-explanation}
 
-After a search, if the user click an item, will see more specific information related to items. Below you can see an example of the VIP and the elements returned by a request such a [text query](/search-by-text-query). In this information you can see [a title of the item] (/#) (1), a [price](/#) (2), a [seller reputation] (/#) (3) and a [seller category](/#) (4), a [seller address](/#) (5), a [sold quantity](/#) (6), a [category path](/#) (7), the [list of pictures](/#) (8) and a tab with a [detailed description](/#) (9). 
+## MELI listings result {#visual-explanation-listing}
 
-![meli home](/images/vip.png)
+MELI listing shows these relevant item attributes: an [item title] (#item-title) (1) and an [item subtitle] (#item-title) (2). An [item price](#item-price) (3). A [seller category](#seller-category) (4). a A [sold quantity](#sold-quantity) (5) and a [seller address](#seller-address) (6)
+
+
+![meli listing](/images/meli-listing.png)
+
+## VIP - View Item Page {#visual-explanation-vip}
+
+After a search, if the user click an item, will see more specific information related to items. Below you can see an example of the VIP and the elements returned by a request such a [text query](/search-by-text-query). In this information you can see an [item title] (#item-title) (1), an [item price](#item-price) (2), a [seller reputation] (#seller-reputation) (3) and a [seller category](#seller-category) (4), a [seller address](#seller-address) (5), a [sold quantity](#sold-quantity) (6), a [category path](#category-path) (7), the list of [item pictures](#item-pictures) (8) and a tab with a [detailed description](#detailed-decription) (9). 
+
+![vip](/images/vip.png)
 
 ## What is an Item Attribute?{#item-attribute}
 
@@ -59,6 +67,53 @@ curl https://api.mercadolibre.com/items/MLB233759102
 
 Take a look at response retrieved. It has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other APIs. It is a standard format to get [API documentation](/design-considerations/#options).
 In this guide we will cover just those before mentioned.
+
+
+## Item Title {#item-title}
+
+Each item has a title and subtitle. Item title will be used, for example in search by [text query](/search-by-text-query)
+
+{% highlight javascript %} 
+{
+  .... 	
+  "title": "Volante Rallye Super Surf Gol Parati Saveiro G1 G2 G3 G4 G5",
+  "subtitle": "Pode Ser Instalado Em Gm E Fiat /cubo Gratis + Brinde",
+  ...
+}
+{% endhighlight %}
+
+
+
+## Item Price {#item-price}
+
+Each item has a price number and a currency that complete real currency value. Currency changes by Site. For more details about currencies see [Currency API](/guide-appendix/#currencies-api)
+
+{% highlight javascript %} 
+{
+  .... 	
+  "price": 178.9,
+  "base_price": 178.9,
+  "currency_id": "BRL",
+  ...
+}
+{% endhighlight %}
+
+## Seller reputation {#seller-reputation}
+
+## Seller category {#seller-category}
+
+## Seller address {#seller-address}
+
+## Sold quantity {#sold-quantity}
+
+## Category path {#category-path}
+
+## Item pictures {#item-pictures}
+
+## Detailed description {#detailed-description}
+
+
+
 
 ## Other considerations{#other-considerations}
 
