@@ -1,0 +1,83 @@
+---
+layout: 2columns
+title: Buying 
+categories: guides
+tags: Buying
+---
+
+# Buying
+
+Before buying make sure you have the `item_id` of the item you're trying to purchase. If this is not the case, you can perform a [search](/search) to retrieve the corresponding ID needed to perform the operation.
+
+You should be ready to buy your item. You can use the code below as a reference:
+
+
+<pre class="terminal">
+
+curl -X POST -H "Content-Type: application/json" -d
+'{ "order_items":[
+	{ "item_id":$ITEM_ID,
+	 "quantity": 1
+	}
+	] 
+}'
+https://api.mercadolibre.com/orders?access_token=$ACCESS_TOKEN  
+</pre>
+
+You will receive the following JSON response:
+
+
+
+{% highlight javascript %}
+
+{ id: 715802689,
+  status: 'confirmed',
+  status_detail: null,
+  date_created: '2012-05-17T17:16:06.194-04:00',
+  date_closed: '2012-05-17T17:16:06.129-04:00',
+  order_items: 
+   [ { item: 
+        { id: '$ITEM_ID',
+          title: 'Test Item',
+          variation_id: null,
+          variation_attributes: [] },
+       quantity: 1,
+       unit_price: 50,
+       currency_id: 'ARS' } ],
+  total_amount: 50,
+  currency_id: 'ARS',
+  buyer: 
+   { id: 109665797,
+     nickname: 'MARCOS1TEST',
+     email: '',
+     phone: 
+      { area_code: ' ',
+        number: '22212312',
+        extension: null },
+     first_name: 'Test user',
+     last_name: 'Test',
+     billing_info: null },
+  seller: 
+   { id: 8035443,
+     nickname: 'MARCOS2-TEST',
+     email: 'marcostest@mercadolibre.com"',
+     phone: 
+      { area_code: '011',
+        number: '222313212',
+        extension: null },
+     first_name: 'Marcos',
+     last_name: 'Test' },
+  payments: [],
+  feedback: { purchase: null, sale: null },
+  shipping: { status: 'to_be_agreed' } }
+
+{% endhighlight %}
+
+**Congratulations!** you have performed your first buying operation using the MELI APIs.    
+
+You can check the status of your order anytime by calling the orders API as follows:
+
+<pre class="terminal">
+
+curl https://api.mercadolibre.com/orders/$ORDER_ID?access_token=$ACCESS_TOKEN  
+</pre>

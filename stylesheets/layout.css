@@ -1,0 +1,12 @@
+.posts{
+  padding-left:0;
+  margin-left:0;
+}
+
+.posts li{
+  list-style: none;
+}
+
+.developers-logo img{
+  width:250px;
+}

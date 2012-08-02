@@ -1,0 +1,33 @@
+---
+layout: 2columns
+title: PHP SDK
+categories: guides
+tags: SDKs
+---
+
+
+#PHP SDK
+
+The PHP SDK enables you to access the API from a web application developed in [PHP](http://www.php.net).
+It  hides all the complexity of OAuth 2.0 and lets you focus on writing application code.
+
+You'll find the source code in the following location: [https://github.com/mercadolibre/php-sdk](https://github.com/mercadolibre/php-sdk)
+
+Initialize the SDK with your __client_id__ as follows:
+
+{% highlight php %}
+// Try to put this code at the top
+require '../src/meli.php';
+
+// Create our Application instance (replace this with your appId and secret).
+$meli = new Meli(array(
+    'appId'         => 12345,
+    'secret'        => dsadsaDWFfs24DF34dgg43T3,
+));
+{% endhighlight %}
+	
+
+You can use __getWithAccessToken__ to make requests to the API adding an __access_token__. Or just use __get__ method to make anonymous calls.
+    
+If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/php-sdk) and pull requests as needed or get in touch
+through our [contact](/discuss) page

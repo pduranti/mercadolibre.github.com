@@ -1,0 +1,18 @@
+---
+layout: 2columns
+title: .NET SDK
+categories: guides
+tags: SDKs
+---
+
+
+#.NET SDK
+
+The .NET SDK enables you to access the API from a web application developed in [Microsoft .NET](http://www.microsoft.com/net) and [Mono](http://www.mono-project.com).
+It hides all the complexity of OAuth 2.0 and lets you focus on writing application code.
+
+You'll find the source code in the following location: [https://github.com/mercadolibre/net-sdk](https://github.com/mercadolibre/net-sdk)
+
+With the source code you'll find documentation on how to use the SDK.
+    
+If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/net-sdk) and pull requests as needed or get in touch through our [contact](/discuss) page

@@ -1,0 +1,18 @@
+---
+layout: 2columns
+title: JAVA SDK
+categories: guides
+tags: SDKs
+---
+
+
+#JAVA SDK
+
+The JAVA SDK enables you to access the API from a web application developed in [JAVA](http://www.java.com).
+It hides all the complexity of OAuth 2.0 and lets you focus on writing application code.
+
+You'll find the source code in the following location: [https://github.com/mercadolibre/java-sdk](https://github.com/mercadolibre/java-sdk)
+
+With the source code you'll find documentation on how to use the SDK.
+    
+If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/java-sdk) and pull requests as needed or get in touch through our [contact](/discuss) page

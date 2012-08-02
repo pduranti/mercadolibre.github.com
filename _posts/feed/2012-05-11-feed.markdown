@@ -1,0 +1,23 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title type="text" xml:lang="en">MELI devs feed</title>
+    <link type="application/atom+xml" href="http://developers.mercadolibre.com/feed/" rel="self"/>
+    <link type="text" href="http://developers.mercadolibre.com" rel="alternate"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>http://developers.mercadolibre.com</id>
+    <author>
+        <name>MELI devs feed</name>
+    </author>
+    <rights>Copyright (c) 2012 MercadoLibre</rights>
+    {% for post in site.posts limit:20 %} 
+    <entry>
+        <title>{{ post.title }}</title>
+        <link href="http://developers.mercadolibre.com{{ post.url }}/"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>http://developers.mercadolibre.com{{ post.url }}/</id>
+        <summary type="html">{{ post.content | strip_html | truncatewords: 25 }}</summary>
+    </entry>
+    {% endfor %}
+</feed>

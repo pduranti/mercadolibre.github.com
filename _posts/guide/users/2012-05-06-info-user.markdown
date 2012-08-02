@@ -1,0 +1,51 @@
+---
+layout: 2columns
+title: Public user information
+categories: guides
+tag: Users
+---
+
+#Public User Information
+You can get any User information providing the User’s ID as a URL parameter to the Users API.
+
+<pre class="terminal">
+curl https://api.mercadolibre.com/users/100763
+</pre>
+
+You will get the following JSON:
+
+{% highlight javascript %}
+{
+  "id": "100763",
+  "nickname": "NICO3",
+  "registration_date": "1999-08-16T00:00:00.000-04:00",
+  "country_id": "AR",
+  "user_type": "normal",
+  "logo": null,
+  "points": "36840",
+  "site_id": "MLA",
+  "permalink": "http://perfil.mercadolibre.com.ar/NICO3",
+  "seller_reputation": {
+    "level_id": "5_green",
+    "power_seller_status": "platinum",
+    "transactions": {
+      "period": "3 months",
+      "total": "993",
+      "completed": "992",
+      "canceled": "1",
+      "ratings": {
+        "positive": "0.99",
+        "negative": "0.01",
+        "neutral": "0",
+      },
+    },
+  },
+  "status": {
+    "site_status": "active",
+  },
+}
+{% endhighlight %}
+
+As you can see, each fields is very descriptive. The user Nickname is “NICO3″. He is from Argentina and he is a MercadoLider “Platinum” seller with 99% positive ratings.
+
+You can build your own NICO3′s profile page!
