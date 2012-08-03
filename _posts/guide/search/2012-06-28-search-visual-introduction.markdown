@@ -10,7 +10,7 @@ tags:
 
 Search items is the first step that you do in MercadoLibre. You can see in this page the most common use cases. The Search API provides programmatic access to the platform.
 
-First step is to write things to search using the search textfield (1). When you search something, you will see a list of item results (2), the path in categories hierarchy (4), a list of special filters to use in refined searches (5) and  possible sortings (6).
+There are a number of tools to complete and refine your search. You can add words in search textfield to refine your [query by text] (/search-by-text-query)(1).Also you can [search by categories](/search-by-category) (2) following the category path. To refine result amount you can [search using filters](/search-filtering) (3). To retrieve data you should [search by paging](/search-paging) (4). To have sorted results you can [search using order](/search-using-sorting) (5)
 
 
 ![meli home](/images/search-visual-introduction.png)
