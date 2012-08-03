@@ -7,13 +7,12 @@ tags: Selling
 
 # List your Item
 
+The first step in selling is list an item on MercadoLibre. Sellers can list an item by MercadoLibre site or by an application using Listing API. Both working exactly in selling.
+There are a number of considerations over an item as title, category, price, currency or description. You already know what items and attributes are. If you don’t know we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
 
-You already know what items and attributes are. If you don’t know we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
-
+Some properties of items affects the appeareance in various pages where items are viewed (the view item page, the search pages, the category browser page )  
 
 So, let’s see how to list items in MELI. Don’t worry about the different attribute codes, we are going to explain each one later.
-
-
 
 ### Table of Contents
 - [Listing example](#list-example)
