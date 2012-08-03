@@ -11,7 +11,6 @@ tags:
 ## Table of Contents
 - [Description](#search-description)
 - [Request](#search-request)
-- [Pagging](#search-pagging)
 - [Available sites](#search-sites)
 - [Response](#search-response)
 
@@ -31,21 +30,6 @@ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano
 </pre>
-
-
-## Pagging {#search-pagging}
-
-Search returns 50 results per page.
-
-{% highlight javascript %}
-
-  "paging": {
-    "total": 1153,
-    "offset": 0,
-    "limit": 50,
-  }
-{% endhighlight %}
-
 
 ## Available sites {#search-sites}
 
@@ -76,13 +60,21 @@ Search response has a lot of parameters. Use <code>OPTIONS</code> http method to
         width="100%"
           height="900">
 </iframe>
+
 <script type="text/javascript">
-            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?q=ipod';
+
+  $.get(
+        "https://api.mercadolibre.com/sites/MLA/search?seller_id=123456",
+        {Accept : '*/*'},
+        function(data) {
+
+           console.log('Page content: ', data);
+        }
+    );
+
 </script>
 
 
 For more information about search options you can check the website [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)
-
-
 
 

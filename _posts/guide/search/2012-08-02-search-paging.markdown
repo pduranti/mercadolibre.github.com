@@ -1,0 +1,158 @@
+---
+layout: 2columns
+title: Search paging
+categories: guides
+tags: 
+- Searching
+---
+
+# Search paging
+
+## Description:
+
+Users have the possibility to define the size of data to be retrieved. They can use 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). With those parameter they will define a size block of results.   
+
+Default values are offset=0 and limit=50. 
+
+<pre class="terminal">
+curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano
+</pre>
+
+Taking paging section, from JSON response, users could see the total amount of items that had matched in the search and the offset with the limit applied.  
+
+{% highlight javascript %}
+  .....
+  "paging": {
+    "total": 285,
+    "offset": 0,
+    "limit": 50,
+  }
+  .....
+{% endhighlight %}
+
+## Limit {#paging-limit}
+
+To decrease paging size users can move upper limit in the block of results. For example if you are insterested in retrieve just the first 3 items:
+
+<pre class="terminal">
+curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano&amp;limit=3
+</pre>
+
+It retrieves a JSON data with an array of 3 items as shown:
+
+{% highlight javascript %}
+{
+  "site_id": "MLA",
+  "query": "ipod nano",
+  "paging": {
+    "total": 284,
+    "offset": 0,
+    "limit": 3,
+  },
+  "results": [
+    {...},
+    {...},
+    {...},
+  ],
+  "sort": {...},
+  "available_sorts": [...],
+  "filters": [...],
+  "available_filters": [...],
+}
+{% endhighlight %}
+
+## Offset {#paging-offset}
+
+Using offset attribute you can move the lower limit of the result block. For example if you are insterested in retrieve the next 50 items that follows the default response:
+
+<pre class="terminal">
+curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano&amp;offset=50
+</pre>
+
+It retrieves a JSON data with an array of 5 items as shown:
+
+{% highlight javascript %}
+{
+  "site_id": "MLA",
+  "query": "ipod nano",
+  "paging": {
+    "total": 285,
+    "offset": 50,
+    "limit": 50,
+  },
+  "results": [...],
+  "sort": {...},
+  "available_sorts": [...],
+  "filters": [...],
+  "available_filters": [...],
+}
+{% endhighlight %}
+
+This response retrieves 50 items starting from fifty-first initial items.
+
+
+
+## Define a range of results {#paging-range}
+
+It is possible combining both parameters. You can retrieves items from third item to sixth items in the original search result:
+
+
+<pre class="terminal">
+curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano&amp;offset=3&amp;limit=3
+</pre>
+
+It retrieves a JSON data with an array of 5 items as shown:
+
+{% highlight javascript %}
+{
+  "site_id": "MLA",
+  "query": "ipod nano",
+  "paging": {
+    "total": 285,
+    "offset": 3,
+    "limit": 3,
+  },
+  "results": [
+    {...},
+    {...},
+    {...},
+  ],
+  "sort": {...},
+  "available_sorts": [...],
+  "filters": [...],
+  "available_filters": [...],
+}
+{% endhighlight %}
+
+
+## Response {#search-response}
+
+Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other APIs. It is a standard format to get [API documentation](/design-considerations/#options) 
+
+<iframe id="search_api_embed"
+  src="javascript:void(0)"
+    scrolling="no"
+      frameborder="0"
+        width="100%"
+          height="900">
+</iframe>
+
+<script type="text/javascript">
+
+  $.get(
+        "https://api.mercadolibre.com/sites/MLA/search?seller_id=123456",
+        {Accept : '*/*'},
+        function(data) {
+
+           console.log('Page content: ', data);
+        }
+    );
+
+</script>
+
+
+For more information about search options you can check the website [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)
+
+
+
+
