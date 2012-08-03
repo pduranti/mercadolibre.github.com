@@ -13,11 +13,11 @@ It  hides all the complexity of OAuth 2.0 and lets you focus on writing applicat
 
 Just include the following source script in your application
 	
-	<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
+	<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.2.js"></script>
 
 For https use: 
 
-    <script src="https://a248.e.akamai.net/secure.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
+    <script src="https://a248.e.akamai.net/secure.mlstatic.com/org-img/sdk/mercadolibre-1.0.2.js"></script>
 	
 Initialize the API with your client_id as follows:
 
@@ -43,21 +43,21 @@ Under the hood, the JSSDK checks that:
 
 ###HTTPS connection
 
-To use the SDK in HTTPS you need to configure the xd_url parameter to point to https://secure.mlstatic.com/org-img/sdk/xd-1.0.1.html
+To use the SDK in HTTPS you need to configure the xd_url parameter to point to https://secure.mlstatic.com/org-img/sdk/xd-1.0.2.html
  
 You do this by passing these parameters: 
 
 - xauth_protocol: "https://" 
 - xauth_domain: "secure.mlstatic.com" 
 - xauth_port: nothing, default 80
-- xd_url: /org-img/sdk/xd-1.0.1.html 
+- xd_url: /org-img/sdk/xd-1.0.2.html 
 
 
 {% highlight javascript %}
 MELI.init({client_id: 6586,
     xauth_protocol: "https://",
 	xauth_domain: "secure.mlstatic.com",
-	xd_url: "/org-img/sdk/xd-1.0.1.html"
+	xd_url: "/org-img/sdk/xd-1.0.2.html"
 });
 
 {% endhighlight %}
