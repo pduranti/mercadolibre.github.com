@@ -8,7 +8,14 @@ tags:
 
 # Search paging
 
-## Description:
+## Table of Contents
+- [Description](#paging-description)
+- [Limit](#paging-limit)
+- [Offset](#paging-offset)
+- [Define a range of results](#paging-range)
+
+
+## Description {#pagging-description}
 
 Users have the possibility to define the size of data to be retrieved. They can use 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). With those parameter they will define a size block of results.   
 
@@ -18,7 +25,7 @@ Default values are offset=0 and limit=50.
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano
 </pre>
 
-Taking paging section, from JSON response, users could see the total amount of items that had matched in the search and the offset with the limit applied.  
+Taking paging section, from JSON response, users could see the total amount of items that matched in the search and the offset with the default limit applied.  
 
 {% highlight javascript %}
   .....
@@ -69,8 +76,6 @@ Using offset attribute you can move the lower limit of the result block. For exa
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano&amp;offset=50
 </pre>
 
-It retrieves a JSON data with an array of 5 items as shown:
-
 {% highlight javascript %}
 {
   "site_id": "MLA",
@@ -89,8 +94,6 @@ It retrieves a JSON data with an array of 5 items as shown:
 {% endhighlight %}
 
 This response retrieves 50 items starting from fifty-first initial items.
-
-
 
 ## Define a range of results {#paging-range}
 
@@ -136,23 +139,9 @@ Search response has a lot of parameters. Use <code>OPTIONS</code> http method to
         width="100%"
           height="900">
 </iframe>
-
 <script type="text/javascript">
-
-  $.get(
-        "https://api.mercadolibre.com/sites/MLA/search?seller_id=123456",
-        {Accept : '*/*'},
-        function(data) {
-
-           console.log('Page content: ', data);
-        }
-    );
-
+            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?q=ipod nano';
 </script>
 
 
 For more information about search options you can check the website [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)
-
-
-
-
