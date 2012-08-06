@@ -11,8 +11,6 @@ tags:
 ### Table of Contents
 - [Description](#search-description)
 - [Request](#search-request)
-- [Pagging](#search-pagging)
-- [Available sites](#search-sites)
 - [Response](#search-response)
 
 ## Description:
@@ -22,7 +20,7 @@ The search operation can retrieve a list of item filtered by special filters. Ti
 
 ## Request {#search-request}
 
-When you call a search operation, it returns metadata information that can be used to perform subsequents search that refines search result.  
+When you call a search operation, it returns metadata information that can be used to perform subsequent searches and refine search results.  
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
@@ -67,25 +65,6 @@ In order to refine the search you can add those filters that you need following 
 https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;price=700.0-1000.0
 </pre>
 
-
-## Pagging {#search-pagging}
-
-Search returns 50 search results per page. You can navigate towards limit going through the pages of 50 to 50.
-
-{% highlight javascript %}
-
-  "paging": {
-    "total": 44301,
-    "offset": 0,
-    "limit": 50,
-  }
-{% endhighlight %}
-
-
-## Available sites {#search-sites}
-
-All Sites. 
-
 ## Response {#search-response}
 
 Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other APIs. It is a standard format to get [API documentation](/design-considerations/#options) 
@@ -98,7 +77,7 @@ Search response has a lot of parameters. Use <code>OPTIONS</code> http method to
           height="900">
 </iframe>
 <script type="text/javascript">
-            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?category=MLA5726';
+            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?q=ipod';
 </script>
 
 

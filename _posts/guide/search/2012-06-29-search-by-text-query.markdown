@@ -11,7 +11,6 @@ tags:
 ## Table of Contents
 - [Description](#search-description)
 - [Request](#search-request)
-- [Available sites](#search-sites)
 - [Response](#search-response)
 
 ### Description:
@@ -30,10 +29,6 @@ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano
 </pre>
-
-## Available sites {#search-sites}
-
-All Sites. 
 
 ## Response {#search-response}
 

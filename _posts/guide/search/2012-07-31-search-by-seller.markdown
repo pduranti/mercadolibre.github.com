@@ -1,51 +1,36 @@
 ---
 layout: 2columns
-title: Searching sort
+title: Searching by seller
 categories: guides
 tags: 
 - Searching
 ---
 
-# Searching sort
+# Search by seller nickname
 
 ### Table of Contents
-- [Description](#search-description)
-- [Request](#search-request)
+- [Searching by nickname](#search-by-nickname)
+- [Searching by seller ID](#search-by-seller-id)
 - [Response](#search-response)
 
-## Description:
+## Searching by nickname: {#search-by-nickname}
 
-Each search retrieved can be sorted using available sorts. You must check available sorts and use them to refine your search. 
+You can use search operation to retrieve the list of items from a specified seller nickname.
 
-For example, if you search an item using a simple [search by query](/search-by-text-query)
 
 <pre class="terminal">
-curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
+curl https://api.mercadolibre.com/sites/MLA/search?nickname=.....
 </pre>
 
-you can check which the available sorts are:
+## Searching by seller ID: {#search-by-seller-id}
 
-{% highlight javascript %}
-  "available_sorts": [
-    {
-      "id": "price_asc",
-      "name": "Menor precio",
-    },
-    {
-      "id": "price_desc",
-      "name": "Mayor precio",
-    }
-  ]
-{% endhighlight %}
-
-
-## Request {#search-request}
-
-In order to retrieve a sorted list of items you can specify a sort attribute 
+You can use search operation to retrieve the list of items from a specified seller id.
 
 <pre class="terminal">
-curl https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;sort=price_asc
+curl https://api.mercadolibre.com/sites/MLA/search?seler_id=.....
 </pre>
+
+
 
 ## Response {#search-response}
 
@@ -61,7 +46,7 @@ If you are interested in define response block size read [search paging](/search
           height="900">
 </iframe>
 <script type="text/javascript">
-            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?seller_id=123456';
+            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?nickname=TEST';
 </script>
 
 

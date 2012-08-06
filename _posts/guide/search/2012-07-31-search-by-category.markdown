@@ -11,8 +11,6 @@ tags:
 ### Table of Contents
 - [Description](#search-description)
 - [Request](#search-request)
-- [Pagging](#search-pagging)
-- [Available sites](#search-sites)
 - [Response](#search-response)
 
 ## Description:
@@ -22,30 +20,11 @@ The search operation returns items belongs to a MercadoLibre item category. Sear
 
 ## Request {#search-request}
 
-Using a MercadoLibre item category, you can retrieve a list of items belong to it. 
+Using a MercadoLibre item category, you can retrieve a list of items belong to it. If you are interested in define response block size read [search paging](/search-paging) section.   
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?category=MLA5726
 </pre>
-
-
-## Pagging {#search-pagging}
-
-Search returns 50 search results per page. You can navigate towards limit going through the pages of 50 to 50.
-
-{% highlight javascript %}
-
-  "paging": {
-    "total": 44301,
-    "offset": 0,
-    "limit": 50,
-  }
-{% endhighlight %}
-
-
-## Available sites {#search-sites}
-
-All Sites. 
 
 ## Response {#search-response}
 
