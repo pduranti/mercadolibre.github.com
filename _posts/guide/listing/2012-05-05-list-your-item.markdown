@@ -9,7 +9,7 @@ tags: Selling
 
 The first step in selling is list an item on MercadoLibre. Sellers can list an item by MercadoLibre site or by an application using Listing API. Both working exactly in selling.
 
-There are a number of considerations over an item as title, category, price, currency or description. You already know what items and attributes are. If you don’t know we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
+There are a number of considerations over an item as title, category, price, currency or description. You already know what items and attributes exists. If you don’t know we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
 
 Some properties of items affects the appeareance in various pages where items are viewed (the view item page, the search pages, the category browser page )  
 
@@ -28,7 +28,7 @@ To create your first item you need a number of attributes that can be set, some 
 
 ### Title {#listing-title-attribute}
 
-Title is the main descriptor of an item. This label will be used in searching and it's an important component of your item's detail. This is a required attribute. For more details about this attribute in MercadoLibre you can see the [visual introduction](/listing-introduction/#item-title) and the item section.   
+Title is the main descriptor of an item. This label will be used in searching and it's an important component of your item's detail. This is a required attribute. For more details about this attribute in MercadoLibre you can see the [visual introduction](/listing-introduction) and the [item title section](/listing-introduction/#item-title).   
 
 You can add a subtitle attribute, that is optional, and it is used in view item page or in search result list. Together these parameters are very important to describe your item. If you have doubts about how to describe your item, visit [MercadoLibre site help](http://www.mercadolibre.com/jm/ml.faqs.framework.main.FaqsController?pageId=FAQ&faqId=9564&categId=MEJVT&type=FAQ).   
 
@@ -37,13 +37,15 @@ You can add a subtitle attribute, that is optional, and it is used in view item 
 
 In VIP (View Item Page) you can see title and description. Description is displayed in an iframe. There are some considerations to work with descriptions, if you are interested in increase your knowledge see [add description item](/add-description-item) section. 
 
+For more details about this attribute in MercadoLibre you can see the [visual introduction](/listing-introduction)
+
 ### Condition {#listing-condition-attribute}
 
 When publish an item in MercadoLibre site you need to declare if the item is new or used. This attribute is mandatory to complete a listing.
 
 ### Available quantity {#listing-available-quantity-attribute}
 
-
+It defines amount of items availables to be sold. 
 
 
 ### Pictures {#listing-picture-attribute}

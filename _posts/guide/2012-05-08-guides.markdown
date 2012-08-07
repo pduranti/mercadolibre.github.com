@@ -12,6 +12,7 @@ guides:
 - Notifications
 - My Orders
 - Users
+- Category
 - Appendix
 ---
 
