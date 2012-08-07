@@ -16,17 +16,5 @@ There are a number of tools to complete and refine your search. You can add word
 ![meli home](/images/search-visual-introduction.png)
 
 
-##Use cases
-
-This user guide provides information for the following uses cases:
-
-<table class="datagrid">
-<tbody>
-  <tr><th>Use case</th><th>Description</th></tr>
-  <tr><td>Search items by text query</td><td>Search items using <code>q</code> parameter </td></tr>
-  <tr><td>Search items for a specific category</td><td>Search items using MercadoLibre's category </td></tr>
-  <tr><td>Search items only in a specific category</td><td>Search items using only one MercadoLibre's category </td></tr>
-</tbody>
-</table>
-
 For more information about search options you can check the website [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)
+
