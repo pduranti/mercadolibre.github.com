@@ -33,7 +33,7 @@ It will return a JSON describing the picture details, remember to save the pictu
 
 ##Link the Picture to the Item
 
-Using this picture “id” you can link the previous uploaded picture to you item.
+Using this picture “id” retrieved you can link the previous uploaded picture to your item.
 
 (You have to provide the item “Id” and the Picture “Id”)
 
