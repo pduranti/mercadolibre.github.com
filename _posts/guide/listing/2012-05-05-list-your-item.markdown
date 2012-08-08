@@ -41,12 +41,11 @@ For more details about this attribute in MercadoLibre you can see the [visual in
 
 ### Condition {#listing-condition-attribute}
 
-When publish an item in MercadoLibre site you need to declare if the item is new or used. This attribute is mandatory to complete a listing.
+When publish an item in MercadoLibre site you need to declare if the item is new or used. This attribute is mandatory to complete a list operation.
 
 ### Available quantity {#listing-available-quantity-attribute}
 
 It defines amount of items availables to be sold. 
-
 
 ### Pictures {#listing-picture-attribute}
 
@@ -68,7 +67,16 @@ Also you can upload your picture en MELI. For more details about how to update a
 
 ### Category {#listing-category-attribute}
 
-Sellers must define a category in MercadoLibre site. This attribute is mandatory and only accepts pre-defined id's. For more information about category details see [categories documentation](/categories-introduction). If you need to define which is the best category for your item see [defining best category for an item](/categories-best-for-listing) section.
+Sellers must define a category in MercadoLibre site. This attribute is mandatory and only accepts pre-defined id's. For more information about category details see [categories documentation](/categories-introduction). If you need to define which is the best category for your item see [defining best category for an item](/choose-category-for-an-item) section.
+
+{% highlight javascript %} 
+{
+ .... 	
+	"category_id":"MLA12683",
+ ...
+}
+{% endhighlight %}
+
 
 ### Price {#listing-price-attribute}
 

@@ -10,20 +10,92 @@ tags: Category
 
 ### Table of Contents
 - [Overview](#overview)
-- [Categories API](#categories-api)
-- [Categories Dump](#categories-dump)
+- [Attributes](#category-attributes)
+- [Categories API](#category-api)
+- [Categories Dump](#category-dump)
 
 ## Overview {#overview}
 
 On MercadoLibre site, categories are a hierarchical set of groups in which items of a similar nature are listed. Categories help buyers find the kinds of items they want, as the buyer only needs to look in one category or a few categories to find items they are interested in. Sellers benefit from the use of categories by the increased likelihood of a sale due to better and faster access to items by prospective buyers.
 
-Each eBay site has its own set of categories. That is, the US eBay site has different categories than, say, the Germany eBay site. Many of the categories serve the same purpose on all sites (though they are named in the language of the site), but a site also contains categories that are only of regional interest or of interest to a particular culture.
+In each MercadoLibre site has its own set of category. It means, Argentina's MercadoLibre site has different categories than Brazil's MercadoLibre site. For more details about sites see [Site API](https://api.mercadolibre.com/sites). To discover category for a specific site you can see [Categories API](#categories-api) section. 
 
-To list an item on eBay or to search for items in a particular category, the user of your application needs to specify the numeric ID of the target category, and the category must exist on eBay. To help the user select a valid category ID, your application can download information about the category hierarchy (which includes category IDs and human-friendly names) and then present the data to the user.
-
-Some listing features are only available in certain categories. For example, a seller can only specify a reserve price, offer Immediate Payment, or list with Item Specifics if the category supports such options. The category information you download from eBay includes meta-data about features that each category supports.
+To list an item in MercadoLibre users need to know the ID of the target category. To help users to validate a category ID, they can download the [complete category hierarchy](#categories-dump) with ID and human-friendly names. 
 
 Some of the tutorials described in this site need several “id’s” from different MELI’s API’s.
+
+## Attributes {#category-attributes}
+
+Working with a special category, "imported Givenchy women perfume", we will discribe some important attributes. 
+
+<pre class="terminal">
+curl https://api.mercadolibre.com/categories/MLA9558
+</pre>
+
+
+{% highlight javascript %}
+{
+  "id": "MLA9558",
+  "name": "Givenchy", 			<- human-friendly name
+  "permalink": null,
+  "total_items_in_this_category": 397,
+  "path_from_root": [ 			<-- Path from categories root
+    {...},
+    {...},
+    {...},
+    {...},
+    {...},
+  ],
+  "children_categories": [], 	<-- There is not children categories
+  "settings": {...},
+}
+{% endhighlight %}
+
+
+### Name
+
+This attribute shows a human-friendly label. You cannot use this label to search items. If you are interested in searching using categories see [search items by category](/search-by-category).
+
+### Path from root 
+
+When you are in a category you can know the path from root to category selected. 
+{% highlight javascript %}
+	
+  "path_from_root": [
+    {
+      "id": "MLA1246",
+      "name": "Salud y Belleza",
+    },
+    {
+      "id": "MLA1271",
+      "name": "Perfumes y Fragancias",
+    },
+    {
+      "id": "MLA1273",
+      "name": "Mujer",
+    },
+    {
+      "id": "MLA23090",
+      "name": "Importados",
+    },
+    {
+      "id": "MLA9558",
+      "name": "Givenchy",
+    },
+  ],
+{% endhighlight %}
+
+Take a look how MercadoLibre use this path:
+
+
+
+![path to category root](/images/path-category-root.png)
+
+### Children category
+
+As you can see this category don't have children, so it could be used to list an item. If you need to define which is the best category for your item see [related](/choose-category-for-an-item) section.  
+
+## Mandatory attributes
 
 For example, when you list an item, you have to specify the following attributes:
 
@@ -43,7 +115,9 @@ For example, when you list an item, you have to specify the following attributes
 
 As you can see in the JSON above, you need to specify the **category_id**, the **currency_id** and the **listing_type_id**. This particular three fields are mandatory and only accepts pre-defined id’s. You can see the different id’s that these fields accept by looking at the Category, Currencies and Listing Type APIs.
 
-## Categories API {#categories-api)}
+
+
+## Categories API {#categories-api}
 
 The Sites API shows the entirely MELI category structure for a particular country, in this case Argentina.
 
@@ -104,7 +178,7 @@ For second level categories, or information related to specific categories, you 
 
 As you can see, you get the “path_from_root” and "children_categories" attributes, use these attributes to browse the categories tree to find the specific category for your item.
 
-## Categories Dump {#categories-dump}
+## Category Dump {#category-dump}
 
 The category tree does not change very often. If you prefer you can request a dump of the whole category tree for a given country site for offline processing.
 This API returns the category tree in JSON format within a gzip-encoded response.
@@ -117,7 +191,7 @@ To get the categories for Argentina, use this URL:
 
 	https://api.mercadolibre.com/sites/MLA/categories/all
 
-###Modification Headers
+### Modification Headers
 This URL contains 2 headers that can be used to check when was the dump last generated.
 
 - **X-Content-Created**: contains the date of the last generation.
