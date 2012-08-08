@@ -13,7 +13,7 @@ tags:
 - [Request](#search-request)
 - [Response](#search-response)
 
-## Overview:
+## Overview: {#search-overview}
 
 The search operation returns items which belong to a MercadoLibre item category. Searching by categories is similar to user experience when they browse these in MercadoLibre site. For more details about categories visit [Categories API](/category-introduction). 
 

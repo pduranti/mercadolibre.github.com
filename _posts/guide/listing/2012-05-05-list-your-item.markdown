@@ -50,7 +50,21 @@ It defines amount of items availables to be sold.
 
 ### Pictures {#listing-picture-attribute}
 
-Pictures are not mandatory but we strongly recommend to use them to list an item. For more details about how to update a picture visit [add pictures item](/add-pictures-item) section.
+Pictures are not mandatory but we strongly recommend to use them in listing an item. Pictures can make an item more appealing, and give buyers a better idea of the item's appearance. Basically you should add an array of, at the most, six URL pictures. 
+
+{% highlight javascript %} 
+{
+ .... 	
+ "pictures":[
+	{"source":"http://yourServer/path/to/your/picture.jpg"},
+	{"source":"http://yourServer/path/to/your/otherPicture.gif"},
+	{"source":"http://yourServer/path/to/your/anotherPicture.png"}
+ ]
+ ...
+}
+{% endhighlight %}
+
+Also you can upload your picture en MELI. For more details about how to update a picture visit [add pictures item](/add-pictures-item) section.
 
 ### Category {#listing-category-attribute}
 
@@ -117,6 +131,9 @@ If you have questions regarding how to get your access token to list items, plea
     
 **Note:** If you get any errors trying to post your item, please refer to the [selling conditions](http://www.mercadolibre.com/jm/ml.faqs.framework.main.FaqsController?pageId=FAQ&faqId=2407&categId=COST&type=FAQ) page. 
 
+## Best Practices
+
+Please, don't use list operation to test item's definition. Instead, use [validate operation](/validate-item) item before use list operation.
 
 ## Special considerations for real estate, vehicles & services {#further-consideration}
 
