@@ -85,15 +85,14 @@ When you are in a category you can know the path from root to category selected.
   ],
 {% endhighlight %}
 
-Take a look how MercadoLibre use this path:
-
-
+Take a look how MercadoLibre uses this path to show item's category:
 
 ![path to category root](/images/path-category-root.png)
 
 ### Children category
 
-As you can see this category don't have children, so it could be used to list an item. If you need to define which is the best category for your item see [related](/choose-category-for-an-item) section.  
+As you can see this category don't have children, so it could be used to list an item. If you need to define which is the best category for your item see this [related section](/choose-category-for-an-item).  
+
 
 ## Mandatory attributes
 
