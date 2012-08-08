@@ -15,12 +15,12 @@ tags:
 
 ## Description:
 
-The search operation returns items belongs to a MercadoLibre item category. Searching by categories is similar to user experience browsing these in MercadoLibre site. For more details about categories visit [Categories API](/category-introduction). 
+The search operation returns items which belong to a MercadoLibre item category. Searching by categories is similar to user experience when they browse these in MercadoLibre site. For more details about categories visit [Categories API](/category-introduction). 
 
 
 ## Request {#search-request}
 
-Using a MercadoLibre item category, you can retrieve a list of items belong to it. If you are interested in define response block size read [search paging](/search-paging) section.   
+By using a MercadoLibre item category, you can retrieve a list of items which belong to it. If you are interested in defining a block size response read [search paging](/search-paging) section.   
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?category=MLA5726

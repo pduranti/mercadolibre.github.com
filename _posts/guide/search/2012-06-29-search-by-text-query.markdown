@@ -15,11 +15,11 @@ tags:
 
 ### Description:
 
-Search operation retrieves items that satisfy the search criteria. Use text query is the basic option to search items. You use space between words if you have multiple words. It searches items when one of the specified word matches with the item title. Queries aren't case-sensitive.
+Search operation retrieves items that satisfy the search criteria. Text query is the basic option to search items. You should use space between words if you have multiple words. It searches items when one of the specified words matches with the item title. Queries aren't case-sensitive.
 
 ## Request {#search-request}
 
-Searching using the MELI API is very intuitive and straightforward. If you want search for specific items as if you were doing it through our website, you can
+The MELI API is very intuitive and straightforward. If you want search to specific items as if you were doing it through our website, you can
 use the search API as follows:
 
 <pre class="terminal">

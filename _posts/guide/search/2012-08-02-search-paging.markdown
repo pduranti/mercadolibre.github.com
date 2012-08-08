@@ -17,7 +17,7 @@ tags:
 
 ## Description {#pagging-description}
 
-Users have the possibility to define the size of data to be retrieved. They can use 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). With those parameter they will define a size block of results.   
+Users have the possibility off defining the size of data to be retrieved. They can use 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). With those parameters they will define a size block of results.   
 
 Default values are offset=0 and limit=50. 
 
@@ -25,7 +25,7 @@ Default values are offset=0 and limit=50.
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano
 </pre>
 
-Taking paging section, from JSON response, users could see the total amount of items that matched in the search and the offset with the default limit applied.  
+By taking the paging section from JSON response, users could see the total amount of items that matched in the search and the offset with the default limit applied.  
 
 {% highlight javascript %}
   .....

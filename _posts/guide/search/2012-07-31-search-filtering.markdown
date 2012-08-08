@@ -1,6 +1,6 @@
 ---
 layout: 2columns
-title: Searching using filters
+title: Search by using filters
 categories: guides
 tags: 
 - Searching
@@ -15,7 +15,11 @@ tags:
 
 ## Description:
 
-The search operation can retrieve a list of item filtered by special filters. Tipically, you use these filters when you are interested in refine a previous search result. There are different filters and each article has different ones. 
+The search operation can retrieve a list of item filtered by special filters. Typically, you use these filters when you are interested in refining a previous search result. There are different filters and each article has different ones. 
+
+
+http://msdn.microsoft.com/en-us/library/cc966864.aspx
+
 
 
 ## Request {#search-request}
@@ -59,10 +63,10 @@ You will obtain a list of special filters which can apply to reduce results.
   ]
 {% endhighlight %}
 
-In order to refine the search you can add those filters that you need following the pattern: <code>&amp;FilterID=FilterValue</code>. An example of this could be this filtering:
+In order to refine the search you can add those filters that you need following this pattern: <code>&amp;FilterID=FilterValue</code>. An example of this could be this filtering:
 
 <pre class="terminal">
-https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;price=700.0-1000.0
+curl https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;price=700.0-1000.0
 </pre>
 
 ## Response {#search-response}
