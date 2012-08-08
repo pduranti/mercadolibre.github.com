@@ -9,18 +9,15 @@ tags:
 # Searching using filters
 
 ### Table of Contents
-- [Description](#search-description)
+- [Overview](#search-overview)
 - [Request](#search-request)
 - [Response](#search-response)
 
-## Description:
+## Overview: {#search-overview}
 
-The search operation can retrieve a list of item filtered by special filters. Typically, you use these filters when you are interested in refining a previous search result. There are different filters and each article has different ones. 
+The search operation can retrieve a list of items. Then you can refine your searches using search filters. Search filters allow to limit your results to those that matches a criteria. Typically, you use these filters when you are interested in refining a previous search result. 
 
-
-http://msdn.microsoft.com/en-us/library/cc966864.aspx
-
-
+There are different kind of filters and each article has different ones.  
 
 ## Request {#search-request}
 

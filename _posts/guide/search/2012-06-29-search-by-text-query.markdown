@@ -9,11 +9,11 @@ tags:
 # Search by text query
 
 ## Table of Contents
-- [Description](#search-description)
+- [Overview](#search-overview)
 - [Request](#search-request)
 - [Response](#search-response)
 
-### Description:
+### Overview: {#search-overview}
 
 Search operation retrieves items that satisfy the search criteria. Text query is the basic option to search items. You should use space between words if you have multiple words. It searches items when one of the specified words matches with the item title. Queries aren't case-sensitive.
 

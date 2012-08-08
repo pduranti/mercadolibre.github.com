@@ -9,11 +9,11 @@ tags:
 # Searching sort
 
 ### Table of Contents
-- [Description](#search-description)
+- [Overview](#search-overview)
 - [Request](#search-request)
 - [Response](#search-response)
 
-## Description:
+## Overview: {#search-overview}
 
 Each search retrieved can be sorted using available sorts. You must check available sorts and use them to refine your search. 
 

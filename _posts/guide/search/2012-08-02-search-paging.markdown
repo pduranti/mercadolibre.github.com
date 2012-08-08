@@ -9,13 +9,13 @@ tags:
 # Search paging
 
 ## Table of Contents
-- [Description](#paging-description)
+- [Overview](#paging-overview)
 - [Limit](#paging-limit)
 - [Offset](#paging-offset)
 - [Define a range of results](#paging-range)
 
 
-## Description {#pagging-description}
+##  Overview {#pagging-description}
 
 Users have the possibility off defining the size of data to be retrieved. They can use 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). With those parameters they will define a size block of results.   
 

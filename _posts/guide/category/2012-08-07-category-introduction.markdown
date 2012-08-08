@@ -15,6 +15,14 @@ tags: Category
 
 ## Overview {#overview}
 
+On MercadoLibre site, categories are a hierarchical set of groups in which items of a similar nature are listed. Categories help buyers find the kinds of items they want, as the buyer only needs to look in one category or a few categories to find items they are interested in. Sellers benefit from the use of categories by the increased likelihood of a sale due to better and faster access to items by prospective buyers.
+
+Each eBay site has its own set of categories. That is, the US eBay site has different categories than, say, the Germany eBay site. Many of the categories serve the same purpose on all sites (though they are named in the language of the site), but a site also contains categories that are only of regional interest or of interest to a particular culture.
+
+To list an item on eBay or to search for items in a particular category, the user of your application needs to specify the numeric ID of the target category, and the category must exist on eBay. To help the user select a valid category ID, your application can download information about the category hierarchy (which includes category IDs and human-friendly names) and then present the data to the user.
+
+Some listing features are only available in certain categories. For example, a seller can only specify a reserve price, offer Immediate Payment, or list with Item Specifics if the category supports such options. The category information you download from eBay includes meta-data about features that each category supports.
+
 Some of the tutorials described in this site need several “id’s” from different MELI’s API’s.
 
 For example, when you list an item, you have to specify the following attributes:
