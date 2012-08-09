@@ -99,7 +99,7 @@ Each item has a price number and a currency that complete real currency value. C
 
 ## Seller reputation {#seller-reputation}
 
-For each sale confirmed in MercadoLibre, seller and buyer have 21 days to send their feedback about. Those feedback could be positive, negative or neutral. The sum of the feedbacks are the reputation of seller and buyer. 
+For each sale confirmed in MercadoLibre, seller and buyer have 21 days to send their feedback about. Those feedback could be positive, negative or neutral. The sum of the feedbacks are the reputation of sellers and buyers. 
 
 {% highlight javascript %} 
 {
@@ -202,7 +202,7 @@ To complete seller details, you also see item sold quantity.
 
 ## Item pictures {#item-pictures}
 
-Each of them has an id, the hiperlink to the picture, the secure hiperlink to the picture, picture dimension and the max possible dimension of the picture. 
+Each of them has an id, the hiperlink to the picture, the secure hiperlink to the picture, picture dimension and the maximum possible dimension of the picture. 
 
 {% highlight javascript %} 
 {
