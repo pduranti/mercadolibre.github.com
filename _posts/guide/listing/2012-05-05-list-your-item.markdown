@@ -35,17 +35,17 @@ You can add a subtitle attribute, that is optional, and it is used in view item 
 
 ### Description {#listing-description-attribute}
 
-In VIP (View Item Page) you can see title and description. Description is displayed in an iframe. There are some considerations to work with descriptions, if you are interested in increase your knowledge see [add description item](/add-description-item) section. 
-
-For more details about this attribute in MercadoLibre you can see the [visual introduction](/listing-introduction)
+In VIP (View Item Page) you can see title and description. Description is displayed in an iframe. There are some considerations to work with descriptions, if you are interested in increase your knowledge about this see [add description item](/add-description-item) section. 
+Also you have details about this attribute in MercadoLibre as you can see the [visual introduction](/listing-introduction).
 
 ### Condition {#listing-condition-attribute}
 
-When publish an item in MercadoLibre site you need to declare if the item is new or used. This attribute is mandatory to complete a list operation.
+When publish an item in MercadoLibre site you need to declare if the item is <strong>new</strong> or <strong>used</strong>. This attribute is mandatory to complete a list operation.
 
 ### Available quantity {#listing-available-quantity-attribute}
 
-It defines amount of items availables to be sold. 
+It defines the amount of items availables to be sold. The highest value is defined on listing type chose. See more details in [listing type](#listing-type-attribute) section.
+
 
 ### Pictures {#listing-picture-attribute}
 
@@ -156,7 +156,7 @@ curl -X POST -H "Content-Type: application/json" -d
 	"buying_mode":"buy_it_now",
 	"listing_type_id":"bronze",
 	"condition":"new",
-	"description":"{{"<strong> Ray-Ban WAYFARER Gloss Black RB2140 901 </strong>" | xml_escape }} <BR>   Model: RB2140. Size: 50mm. Name: WAYFARER. Color: Gloss Black. Includes Ray-Ban Carrying Case and Cleaning Cloth. New in Box",
+	"description": "Item:, {{"<strong> Ray-Ban WAYFARER Gloss Black RB2140 901 </strong>" | xml_escape }} Model: RB2140. Size: 50mm. Name: WAYFARER. Color: Gloss Black. Includes Ray-Ban Carrying Case and Cleaning Cloth. New in Box",
 	"pictures":[
 		{"source":"http://upload.wikimedia.org/wikipedia/commons/f/fd/Ray_Ban_Original_Wayfarer.jpg"},
 		{"source":"http://en.wikipedia.org/wiki/File:Teashades.gif"}
@@ -165,18 +165,16 @@ curl -X POST -H "Content-Type: application/json" -d
 
 https://api.mercadolibre.com/items?access_token=$ACCESS_TOKEN  
 </pre>
-As you may guess, each type of item has its own attributes and restrictions when listing them. Please refer to the [API Appendix](/guide-appendix) for more information 
-about how to obtain and use these attributes.
 
 The Items API will automatically download the provided images to MELI Storage and creates a listing for your item. You will receive the following Json response:
 
-
 {% highlight javascript %}
 {
-  "id":"MLA421174922",
+  "id":"MLA430387888",
   "site_id":"MLA",
-  "title":"Harry Potter And The Sorcerer Stone - Unique Cover",
-  "permalink":"http://articulo.mercadolibre.com.ar/MLA-421174922-harry-potter-and-the-sorcerer-stone-unique-cover-_JM",
+  "title":"Anteojos Ray Ban Wayfare",
+  "sold_quantity":0,
+  "permalink":"http://articulo.mercadolibre.com.ar/MLA-430387888-anteojos-ray-ban-wayfare-_JM",
   ...
 }
 {% endhighlight %}
