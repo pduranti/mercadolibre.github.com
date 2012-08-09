@@ -93,7 +93,6 @@ Take a look how MercadoLibre uses this path to show item's category:
 
 As you can see this category don't have children, so it could be used to list an item. If you need to define which is the best category for your item see this [related section](/choose-category-for-an-item).  
 
-
 ## Mandatory attributes
 
 For example, when you list an item, you have to specify the following attributes:
@@ -113,8 +112,6 @@ For example, when you list an item, you have to specify the following attributes
 {% endhighlight %}
 
 As you can see in the JSON above, you need to specify the **category_id**, the **currency_id** and the **listing_type_id**. This particular three fields are mandatory and only accepts pre-defined id’s. You can see the different id’s that these fields accept by looking at the Category, Currencies and Listing Type APIs.
-
-
 
 ## Categories API {#categories-api}
 

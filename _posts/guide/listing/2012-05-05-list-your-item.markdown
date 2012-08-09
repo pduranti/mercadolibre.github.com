@@ -88,10 +88,58 @@ This attribute is mandatory too. But you need to define it using an pre-defined 
 
 ### Listing type {#listing-type-attribute}
 
-This is another case of a mandatory attribute that only accepts pre-defined attributes. You cand listing a by free, bronze, silver, gold and gold premium. For more details about [listing type API](#).
-Depending of which is the listing type selected your sell will have cost and will rank better in searches. For more details about listing types costs you can visit [MercadoLibre help site](http://www.mercadolibre.com/jm/ml.faqs.framework.main.FaqsController?pageId=FAQ&faqId=2407&categId=COST&type=FAQ).
+This is another case of a mandatory attribute that only accepts pre-defined values. There are different listing types availables for each site (For more details about sites see [Site API](https://api.mercadolibre.com/sites)). 
 
+<pre class="terminal">
+curl https://api.mercadolibre.com/sites/MLA/listing_types
+</pre>
 
+{% highlight javascript %}
+[
+  ...
+  {
+    "site_id": "MLA",
+    "id": "silver",
+    "name": "Plata",
+  },
+  {
+    "site_id": "MLA",
+    "id": "bronze",
+    "name": "Bronce",
+  },
+  ...
+]
+{% endhighlight %}
+
+You can listing a by free, bronze, silver, gold and gold premium. Depending of which is the listing type selected your sell will have cost and will rank better in searches. In order to have an overview over this API we will mention a number of attributes for "silver" ID listing type. 
+
+<pre class="terminal">
+curl https://api.mercadolibre.com/sites/MLA/listing_types/silver
+</pre>
+
+{% highlight javascript %}
+{
+  "id": "silver",                          <-- Mandatory ID in listing operation
+  "not_available_in_categories": [],
+  "configuration": {
+    "name": "Plata",                       <-- Human-friendly name using site language
+    "listing_exposure": "mid",
+    "requires_picture": false,
+    "max_stock_per_item": 999,             <-- Highest value that you can define
+    "duration_days": {                     <-- Indicates duration for each buying mode
+      "buy_it_now": 60,
+      "auction": 15,
+      "classified": null,
+    },
+    "mercado_pago": "mandatory",
+    "listing_fee_criteria": {...},         <-- Rules for publishing cost
+    "sale_fee_criteria": {...},            <-- Rules for selling cost
+  },
+  "exceptions_by_category": [...],
+}
+{% endhighlight %}
+
+For more details about listing type costs you can visit [MercadoLibre help site](http://www.mercadolibre.com/jm/ml.faqs.framework.main.FaqsController?pageId=FAQ&faqId=2407&categId=COST&type=FAQ).
 
 ## Listing example{#list-example}
 
@@ -100,18 +148,18 @@ We're ready to list our first item. You can use the code below to create your fi
 <pre class="terminal">
 curl -X POST -H "Content-Type: application/json" -d
 '{
-	"title":"Harry Potter and the Sorcerer stone - Unique Cover",
-	"category_id":"MLA1227",
+	"title":"Anteojos Ray Ban Wayfare",
+	"category_id":"MLA5529",
 	"price":10,
 	"currency_id":"ARS",
 	"available_quantity":1,
 	"buying_mode":"buy_it_now",
 	"listing_type_id":"bronze",
 	"condition":"new",
-	"description":"This is the first Harry Potter book that was printed outside the UK, {{"<strong> I bought it in San Francisco at the Harry Potters week in 2009 </strong>" | xml_escape }} Do not miss the opportunity, it is in perfect conditions and with a unique design cover",
+	"description":"{{"<strong> Ray-Ban WAYFARER Gloss Black RB2140 901 </strong>" | xml_escape }} <BR>   Model: RB2140. Size: 50mm. Name: WAYFARER. Color: Gloss Black. Includes Ray-Ban Carrying Case and Cleaning Cloth. New in Box",
 	"pictures":[
-		{"source":"http://upload.wikimedia.org/wikipedia/en/a/a7/Original_Paperback_Cover.jpg"},
-		{"source":"http://upload.wikimedia.org/wikipedia/en/2/2c/Harry_Potter_and_the_Philosopher%27s_Stone.jpg"}
+		{"source":"http://upload.wikimedia.org/wikipedia/commons/f/fd/Ray_Ban_Original_Wayfarer.jpg"},
+		{"source":"http://en.wikipedia.org/wiki/File:Teashades.gif"}
 	]
 }'
 
