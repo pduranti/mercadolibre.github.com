@@ -1,12 +1,12 @@
 ---
 layout: 2columns
-title: Searching sort
+title: Search and sort the results
 categories: guides
 tags: 
 - Searching
 ---
 
-# Searching sort
+# Search and sort the results
 
 ### Table of Contents
 - [Overview](#search-overview)
@@ -15,7 +15,7 @@ tags:
 
 ## Overview: {#search-overview}
 
-Each search retrieved can be sorted using available sorts. You must check available sorts and use them to refine your search. 
+Each search result can be sorted using available sorts. You must check available sorts and use them to refine your search. 
 
 For example, if you search an item using a simple [search by query](/search-by-text-query)
 
@@ -41,7 +41,7 @@ you can check which the available sorts are:
 
 ## Request {#search-request}
 
-In order to retrieve a sorted list of items you can specify a sort attribute 
+To search and sort the results, you can specify a sort attribute 
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;sort=price_asc

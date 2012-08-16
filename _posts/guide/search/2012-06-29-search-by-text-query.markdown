@@ -1,6 +1,6 @@
 ---
 layout: 2columns
-title: Searching by text query
+title: Search by text query
 categories: guides
 tags: 
 - Searching

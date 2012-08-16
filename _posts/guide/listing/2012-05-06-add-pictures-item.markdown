@@ -25,7 +25,7 @@ It will return a JSON describing the picture details, remember to save the pictu
 
 {% highlight javascript %}
 {
-   "id":"MLA2518488513_032012",
+   "id":"MLA430387888_032012",
    "quality":"",
    "variations":[...]
 }
@@ -39,7 +39,7 @@ Using this picture “id” retrieved you can link the previous uploaded picture
 
 <pre class="terminal">
 curl -X POST -H "Content-Type: application/json" -H "Accept: application/json" -d
-'{"id":"MLA2518488513_032012"}'
+'{"id":"MLA430387888_032012"}'
 
 https://api.mercadolibre.com/items/MLA421101451/pictures?access_token=$ACCESS_TOKEN
 </pre>

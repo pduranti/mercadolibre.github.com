@@ -162,7 +162,6 @@ curl -X POST -H "Content-Type: application/json" -d
 		{"source":"http://en.wikipedia.org/wiki/File:Teashades.gif"}
 	]
 }'
-
 https://api.mercadolibre.com/items?access_token=$ACCESS_TOKEN  
 </pre>
 

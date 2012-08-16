@@ -1,12 +1,12 @@
 ---
 layout: 2columns
-title: Search paging
+title: Search and page the results
 categories: guides
 tags: 
 - Searching
 ---
 
-# Search paging
+# Search and page the results
 
 ## Table of Contents
 - [Overview](#paging-overview)
@@ -17,7 +17,8 @@ tags:
 
 ##  Overview {#pagging-description}
 
-Users have the possibility off defining the size of data to be retrieved. They can use 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). With those parameters they will define a size block of results.   
+You can define the page size of the result list. 
+There are 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). Those parameters define the size block of the results.   
 
 Default values are offset=0 and limit=50. 
 
@@ -25,7 +26,7 @@ Default values are offset=0 and limit=50.
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano
 </pre>
 
-By taking the paging section from JSON response, users could see the total amount of items that matched in the search and the offset with the default limit applied.  
+In the paging section of the JSON response you can see the total amount of items that matched in the search and the offset with the default limit applied.  
 
 {% highlight javascript %}
   .....
@@ -39,7 +40,7 @@ By taking the paging section from JSON response, users could see the total amoun
 
 ## Limit {#paging-limit}
 
-To decrease paging size users can move upper limit in the block of results. For example if you are insterested in retrieve just the first 3 items:
+To reduce the page size you can change the limit parameter. For example if you are insterested in retrieve just the first 3 items:
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano&amp;limit=3

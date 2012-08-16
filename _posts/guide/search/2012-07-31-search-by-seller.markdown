@@ -1,6 +1,6 @@
 ---
 layout: 2columns
-title: Searching by seller
+title: Search by seller
 categories: guides
 tags: 
 - Searching
@@ -15,7 +15,7 @@ tags:
 
 ## Searching by nickname: {#search-by-nickname}
 
-You can use search operation to retrieve the list of items from a specified seller nickname.
+You can search for items that belong to a seller by nickname.
 
 
 <pre class="terminal">
@@ -24,10 +24,10 @@ curl https://api.mercadolibre.com/sites/MLA/search?nickname=.....
 
 ## Searching by seller ID: {#search-by-seller-id}
 
-You can use search operation to retrieve the list of items from a specified seller id.
+You can search for items that belong to a seller by id.
 
 <pre class="terminal">
-curl https://api.mercadolibre.com/sites/MLA/search?seler_id=.....
+curl https://api.mercadolibre.com/sites/MLA/search?seller_id=.....
 </pre>
 
 

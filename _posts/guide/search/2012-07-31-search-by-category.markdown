@@ -1,6 +1,6 @@
 ---
 layout: 2columns
-title: Searching by category
+title: Search by category
 categories: guides
 tags: 
 - Searching
@@ -15,7 +15,9 @@ tags:
 
 ## Overview: {#search-overview}
 
-The search operation returns items which belong to a MercadoLibre item category. Searching by categories is similar to user experience when they browse these in MercadoLibre site. For more details about categories visit [Categories API](/category-introduction). 
+The search operation returns items which belong to a MercadoLibre item category. 
+
+For more details about categories and the category hierarchy see [Categories API](/category-introduction). 
 
 
 ## Request {#search-request}
