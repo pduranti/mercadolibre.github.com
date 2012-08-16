@@ -2,7 +2,7 @@
 layout: 2columns
 title: Real estate listing
 categories: guides-res
-tags: create-app
+tags: Lost
 ---
 
 #List Real Estate properties

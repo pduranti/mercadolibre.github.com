@@ -2,7 +2,7 @@
 layout: 2columns
 title: Introduction to Product Ads
 categories: guides
-tags: Advertising
+tags: Lost
 ---
 
 # Product Ads Introduction

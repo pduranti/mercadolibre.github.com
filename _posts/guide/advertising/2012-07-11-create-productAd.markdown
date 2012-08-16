@@ -2,7 +2,7 @@
 layout: 2columns
 title: Create a Product Ad 
 categories: guides
-tags: Advertising
+tags: Lost
 ---
 
 # Create a Product Ad

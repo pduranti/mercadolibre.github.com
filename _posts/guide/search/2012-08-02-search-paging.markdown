@@ -18,7 +18,11 @@ tags:
 ##  Overview {#pagging-description}
 
 You can define the page size of the result list. 
-There are 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). Those parameters define the size block of the results.   
+There are 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). Those parameters define the size block of the results. 
+                          
+<center>
+![range slider](/images/range-slider.png)
+</center>
 
 Default values are offset=0 and limit=50. 
 

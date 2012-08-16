@@ -2,7 +2,7 @@
 layout: 2columns
 title: Modify a Product Ad 
 categories: guides
-tags: Advertising
+tags: Lost
 ---
 
 # Modify a Product Ad
