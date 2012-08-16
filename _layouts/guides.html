@@ -24,6 +24,19 @@
   </head>
   <body>
 
+    <header class="ch-g1 main">
+      <hgroup class="ch-g1-3">
+        <h1><a href="/">MELI</a></h1>
+        <h2>MELI Developer Products</h2>
+      </hgroup>
+      <nav class="ch-g2-3">
+        <ul>
+          <li><a href="/getting-started">Getting Started</a></li>
+          <li><a href="/guides">Guides & SDKs</a></li>        
+          <li style="border:none"><a href="/forums">Forums</a></li>        
+        </ul>
+      </nav>
+    </header>
 
    <nav class="ch-g1-5 sidebar">
       <h2>Guides</h2>
@@ -33,9 +46,22 @@
       </ul>
     </nav>
 
-
   <section class="main ch-g4-5">
-
+    <nav class="ch-g1">
+      <h2>Related posts</h2>
+      <ul>
+     {% for tag in page.tags %}
+          {% for post in site.tags.[tag] reversed %}
+            {% assign current = nil %}
+            {% if post.id == page.id %}
+              {% assign current = 'current' %}
+            {% endif %}
+          <li><a class="{{ current }}" href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </nav>
+    <BR />
 
    {{ content }}
       
