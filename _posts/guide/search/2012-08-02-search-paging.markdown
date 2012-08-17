@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Search and page the results
 categories: guides
 tags: 
@@ -20,9 +20,8 @@ tags:
 You can define the page size of the result list. 
 There are 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). Those parameters define the size block of the results. 
                           
-<center>
+
 ![range slider](/images/range-slider.png)
-</center>
 
 Default values are offset=0 and limit=50. 
 

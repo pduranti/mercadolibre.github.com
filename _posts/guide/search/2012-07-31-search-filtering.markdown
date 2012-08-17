@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Search by using filters
 categories: guides
 tags: 

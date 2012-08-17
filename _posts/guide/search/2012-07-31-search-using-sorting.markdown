@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Search and sort the results
 categories: guides
 tags: 

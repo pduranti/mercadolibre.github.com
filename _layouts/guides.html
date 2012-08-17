@@ -38,17 +38,12 @@
       </nav>
     </header>
 
-   <nav class="ch-g1-5 sidebar">
-      <h2>Guides</h2>
-      <ul>
-          <li><a class="{{ current }}" href="/searching-guide">Searching</a></li>
-          <li><a class="" href="/selling-guide">Selling</a></li>
-      </ul>
-    </nav>
+    <center>
+    <a href="/selling-guide">Selling guides</a> | <a href="/search-visual-introduction">Searching guide</a> | <a href="/listing-introduction">Listing guides</a> 
+    </center>
 
-  <section class="main ch-g4-5">
-    <nav class="ch-g1">
-      <h2>Related posts</h2>
+    <nav class="ch-g1-5 sidebar">
+      <h2>Guides</h2>
       <ul>
      {% for tag in page.tags %}
           {% for post in site.tags.[tag] reversed %}
@@ -61,13 +56,13 @@
         {% endfor %}
       </ul>
     </nav>
-    <BR />
 
-   {{ content }}
-      
+  <section class="main ch-g4-5">
+    <div class="ch-leftcolumn">
+      {{ content }}
     </section>
 
-   
+ 
     <footer class="ch-g1">
       <div class="ch-g2-3 extras">
         <ul>
