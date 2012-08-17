@@ -46,9 +46,13 @@
       </ul>
     </nav>
 
+
+   {{ content }}
+
+
   <section class="main ch-g4-5">
     <nav class="ch-g1">
-      <h2>Related posts</h2>
+      <h2>Guides</h2>
       <ul>
      {% for tag in page.tags %}
           {% for post in site.tags.[tag] reversed %}
@@ -63,7 +67,6 @@
     </nav>
     <BR />
 
-   {{ content }}
       
     </section>
 
