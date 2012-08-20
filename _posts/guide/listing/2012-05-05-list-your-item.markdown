@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: List items
 categories: guides
 tags: Selling

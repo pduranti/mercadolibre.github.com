@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Add pictures to items
 categories: guides
 tags: Selling

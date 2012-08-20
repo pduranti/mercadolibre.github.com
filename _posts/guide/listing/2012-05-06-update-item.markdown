@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Update an item
 categories: guides
 tags: Selling

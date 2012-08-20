@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Listing introduction
 categories: guides
 tags: Selling
