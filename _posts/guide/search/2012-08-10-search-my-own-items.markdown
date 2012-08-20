@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Search my own items
 categories: guides
 tags:

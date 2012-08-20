@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Design Considerations
 categories: tutorials popular
 tags: home

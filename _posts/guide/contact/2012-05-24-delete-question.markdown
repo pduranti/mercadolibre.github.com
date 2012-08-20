@@ -1,8 +1,9 @@
 ---
-layout: 2columns
+layout: guides
 title: Delete a question
 categories: guides
-tags: Contact
+tags: 
+- For Buyers
 ---
 
 #Delete a question

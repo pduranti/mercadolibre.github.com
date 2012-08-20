@@ -8,10 +8,14 @@ tags:
 
 # Search by text query
 
-## Table of Contents
-- [Overview](#search-overview)
-- [Request](#search-request)
-- [Response](#search-response)
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="#search-overview">Overview</a></dt>
+    <dt><a href="#search-request">Request</a></dt>
+    <dt><a href="#search-response">Response</a></dt>
+  </dl>
+</div>
 
 ### Overview: {#search-overview}
 

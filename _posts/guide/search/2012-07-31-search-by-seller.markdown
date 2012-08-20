@@ -8,10 +8,14 @@ tags:
 
 # Search by seller nickname
 
-### Table of Contents
-- [Searching by nickname](#search-by-nickname)
-- [Searching by seller ID](#search-by-seller-id)
-- [Response](#search-response)
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="#search-by-nickname">Searching by nickname</a></dt>
+    <dt><a href="#search-by-seller-id">Searching by seller ID</a></dt>
+    <dt><a href="#search-response">Response</a></dt>
+  </dl>
+</div>
 
 ## Searching by nickname: {#search-by-nickname}
 

@@ -8,11 +8,15 @@ tags:
 
 # Search and page the results
 
-## Table of Contents
-- [Overview](#paging-overview)
-- [Limit](#paging-limit)
-- [Offset](#paging-offset)
-- [Define a range of results](#paging-range)
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="#paging-overview">Overview</a></dt>
+    <dt><a href="#paging-limit">Limit</a></dt>
+    <dt><a href="#paging-offset">Offset</a></dt>
+    <dt><a href="#paging-range">Define a range of results</a></dt>
+  </dl>
+</div>
 
 
 ##  Overview {#pagging-description}
