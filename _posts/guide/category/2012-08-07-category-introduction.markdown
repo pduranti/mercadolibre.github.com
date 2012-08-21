@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Category API
 categories: guides
 tags: Category

@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Update user information
 categories: guides
 tag: Users

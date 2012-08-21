@@ -13,6 +13,7 @@ tags:
 <dl>
 	<dt><a href="javascript:void(0)" onClick="goToByScroll('find-bookmarks')">All your bookmarks</a></dt>
 	<dt><a href="javascript:void(0)" onClick="goToByScroll('bookmark-item')">Bookmark an item</a></dt>
+	<dt><a href="javascript:void(0)" onClick="goToByScroll('bookmark-delete')">Remove a bookmark</a></dt>
 	<dt><a href="javascript:void(0)" onClick="goToByScroll('bookmark-response')">Response</a></dt>
 </dl>
 </div>
@@ -54,6 +55,16 @@ curl -X POST -H "Content-Type: application/json" -d
 
 https://api.mercadolibre.com/users/me/bookmarks?access_token=$ACCESS_TOKEN  
 </pre>
+
+## Remove a bookmark {#bookmark-delete}
+
+<pre class="terminal">
+
+curl -X DELETE -H "Content-Type: application/json" -d
+
+https://api.mercadolibre.com/users/me/bookmarks/MLA5529?access_token=$ACCESS_TOKEN  
+</pre>
+
 
 ## Response {#bookmark-response}
 

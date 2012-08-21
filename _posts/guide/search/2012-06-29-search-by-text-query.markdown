@@ -11,9 +11,9 @@ tags:
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
-    <dt><a href="#search-overview">Overview</a></dt>
-    <dt><a href="#search-request">Request</a></dt>
-    <dt><a href="#search-response">Response</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-overview')">Overview</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-request')">Request</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-response')">Response</a></dt>
   </dl>
 </div>
 

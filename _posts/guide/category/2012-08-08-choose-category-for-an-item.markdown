@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Choose category
 categories: guides
 tags: Category

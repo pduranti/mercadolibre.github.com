@@ -17,10 +17,22 @@ There are mandatory attributes to list an item.
 
 So, let’s see how to list items in MELI. Don’t worry about the different attribute codes, we are going to explain each one later.
 
-### Table of Contents
-- [Defining attributes](#list-defining-attributes)
-- [Special considerations for real estate, vehicles & services](#further-consideration)
-
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('list-defining-attributes')">Defining attributes</a>
+      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-title-attribute')"> - Title</a></dd>
+      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-description-attribute')"> - Description</a></dd>
+      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-condition-attribute')"> - Condition</a></dd>
+      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-available-quantity-attribute')"> - Available quantity</a></dd>
+      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-picture-attribute')"> - Pictures</a></dd>
+      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-category-attribute')"> - Category</a></dd>
+      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-price-attribute')"> - Price</a></dd>
+      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-type-attribute')"> - Listing type</a></dd>
+    </dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('further-consideration')">Special considerations for real estate, vehicles &amp; services</a></dt>
+  </dl>
+</div>
 
 ## Defining attributes {#list-required-attributes}
 

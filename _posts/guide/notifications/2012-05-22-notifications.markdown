@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Listening to Notifications
 categories: guides
 tag: Notifications
