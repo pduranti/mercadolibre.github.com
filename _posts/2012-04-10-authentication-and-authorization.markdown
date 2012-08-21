@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Authentication & Authorization
+title: Authentication &amp; Authorization
 categories: tutorials popular
 tags: home
 ---
