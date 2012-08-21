@@ -8,11 +8,18 @@ tags: Category
 
 # Category API
 
-### Table of Contents
-- [Overview](#overview)
-- [Attributes](#category-attributes)
-- [Categories API](#category-api)
-- [Categories Dump](#category-dump)
+<div class="contents">
+<h5>Table of Contents</h5>
+
+<dl>
+	<dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
+	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-attributes')">Attributes</a></dt>
+	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-api')">Categories API</a></dt>
+	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-dump')">Categories Dump</a></dt>
+</dl>
+</div>
+
+
 
 ## Overview {#overview}
 
