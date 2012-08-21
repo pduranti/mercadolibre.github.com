@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Add description to items
 categories: guides
 tags: Selling
@@ -22,9 +22,11 @@ You can add a description to your item with the following POST, specifying the i
 <pre class="terminal">
 curl -X POST -H "Content-Type: application/json" -H "Accept: application/json" -d
 '{
-"text":"This is the first book of Harry Potter that was printed outside the UK, {{"<strong> I bought it in San Francisco at the Harry Potters week in 2009 </strong>" | xml_escape }} Do not miss the opportunity, it is in perfect conditions and with a unique design cover"
+  "text":"Need more information, Please ask. We will be happy to answer."
 }'
 
-https://api.mercadolibre.com/items/MLA421101451/descriptions?access_token=$ACCESS_TOKEN
+https://api.mercadolibre.com/items/MLA430387888/descriptions?access_token=$ACCESS_TOKEN
+
 </pre>
+
 That’s all!. Go to your item’s VIP (using the permalink field) and check the description.

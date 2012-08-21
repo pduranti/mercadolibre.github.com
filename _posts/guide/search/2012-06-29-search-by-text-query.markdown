@@ -1,6 +1,6 @@
 ---
-layout: 2columns
-title: Searching by text query
+layout: guides
+title: Search by text query
 categories: guides
 tags: 
 - Searching
@@ -8,20 +8,22 @@ tags:
 
 # Search by text query
 
-## Table of Contents
-- [Description](#search-description)
-- [Request](#search-request)
-- [Pagging](#search-pagging)
-- [Available sites](#search-sites)
-- [Response](#search-response)
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="#search-overview">Overview</a></dt>
+    <dt><a href="#search-request">Request</a></dt>
+    <dt><a href="#search-response">Response</a></dt>
+  </dl>
+</div>
 
-### Description:
+### Overview: {#search-overview}
 
-Search operation retrieves items that satisfy the search criteria. Use text query is the basic option to search items. You use space between words if you have multiple words. It searches items when one of the specified word matches with the item title. Queries aren't case-sensitive.
+Search operation retrieves items that satisfy the search criteria. Text query is the basic option to search items. You should use space between words if you have multiple words. It searches items when one of the specified words matches with the item title. Queries aren't case-sensitive.
 
 ## Request {#search-request}
 
-Searching using the MELI API is very intuitive and straightforward. If you want search for specific items as if you were doing it through our website, you can
+The MELI API is very intuitive and straightforward. If you want search to specific items as if you were doing it through our website, you can
 use the search API as follows:
 
 <pre class="terminal">
@@ -31,25 +33,6 @@ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano
 </pre>
-
-
-## Pagging {#search-pagging}
-
-Search returns 50 results per page.
-
-{% highlight javascript %}
-
-  "paging": {
-    "total": 1153,
-    "offset": 0,
-    "limit": 50,
-  }
-{% endhighlight %}
-
-
-## Available sites {#search-sites}
-
-All Sites. 
 
 ## Response {#search-response}
 

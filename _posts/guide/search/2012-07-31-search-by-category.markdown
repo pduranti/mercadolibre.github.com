@@ -1,6 +1,6 @@
 ---
-layout: 2columns
-title: Searching by category
+layout: guides
+title: Search by category
 categories: guides
 tags: 
 - Searching
@@ -8,44 +8,29 @@ tags:
 
 # Search by category
 
-### Table of Contents
-- [Description](#search-description)
-- [Request](#search-request)
-- [Pagging](#search-pagging)
-- [Available sites](#search-sites)
-- [Response](#search-response)
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="#search-overview">Overview</a></dt>
+    <dt><a href="#search-request">Request</a></dt>
+    <dt><a href="#search-response">Response</a></dt>
+  </dl>
+</div>
 
-## Description:
+## Overview: {#search-overview}
 
-The search operation returns items belongs to a MercadoLibre item category. Searching by categories is similar to user experience browsing these in MercadoLibre site. For more details about categories visit [Categories API](/guide-appendix/#categories-api). 
+The search operation returns items which belong to a MercadoLibre item category. 
+
+For more details about categories and the category hierarchy see [Categories API](/category-introduction). 
 
 
 ## Request {#search-request}
 
-Using a MercadoLibre item category, you can retrieve a list of items belong to it. 
+By using a MercadoLibre item category, you can retrieve a list of items which belong to it. If you are interested in defining a block size response read [search paging](/search-paging) section.   
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?category=MLA5726
 </pre>
-
-
-## Pagging {#search-pagging}
-
-Search returns 50 search results per page. You can navigate towards limit going through the pages of 50 to 50.
-
-{% highlight javascript %}
-
-  "paging": {
-    "total": 44301,
-    "offset": 0,
-    "limit": 50,
-  }
-{% endhighlight %}
-
-
-## Available sites {#search-sites}
-
-All Sites. 
 
 ## Response {#search-response}
 

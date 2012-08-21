@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Update an item
 categories: guides
 tags: Selling
@@ -19,7 +19,7 @@ curl -X PUT -H "Content-Type: application/json" -d
 "title":"Test Item - Do not offer - Harry Potter Book"
 }'
 
-https://api.mercadolibre.com/items/MLA421104745?access_token=$ACCESS_TOKEN
+https://api.mercadolibre.com/items/MLA430387888?access_token=$ACCESS_TOKEN
 
 </pre>
 Access the item’s VIP to see the modified title!

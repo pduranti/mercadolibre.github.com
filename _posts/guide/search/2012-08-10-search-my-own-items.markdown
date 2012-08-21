@@ -1,14 +1,15 @@
 ---
-layout: 2columns
-title: Searching my own items
+layout: guides
+title: Search my own items
 categories: guides
 tags:
 - My Publications
+- Searching
 ---
 
 A very common use case is to search and show your own items. You can do it very easily, just read the following tutorial.
 
-# Searching my own items
+# Search my own items
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/users/$USER_ID/items/search?access_token=$ACCESS_TOKEN

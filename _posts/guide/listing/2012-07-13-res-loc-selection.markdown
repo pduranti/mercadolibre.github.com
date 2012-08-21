@@ -2,7 +2,7 @@
 layout: 2columns
 title: Real estate listing
 categories: guides-res
-tags: loc-selection
+tags: Lost
 ---
 
 #List Real Estate properties

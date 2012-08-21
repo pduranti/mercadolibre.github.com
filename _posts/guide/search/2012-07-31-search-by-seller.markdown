@@ -1,55 +1,40 @@
 ---
 layout: guides
-title: Search and sort the results
+title: Search by seller
 categories: guides
 tags: 
 - Searching
 ---
 
-# Search and sort the results
+# Search by seller nickname
 
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
-    <dt><a href="#search-overview">Overview</a></dt>
-    <dt><a href="#search-request">Request</a></dt>
+    <dt><a href="#search-by-nickname">Searching by nickname</a></dt>
+    <dt><a href="#search-by-seller-id">Searching by seller ID</a></dt>
     <dt><a href="#search-response">Response</a></dt>
   </dl>
 </div>
 
-## Overview: {#search-overview}
+## Searching by nickname: {#search-by-nickname}
 
-Each search result can be sorted using available sorts. You must check available sorts and use them to refine your search. 
+You can search for items that belong to a seller by nickname.
 
-For example, if you search an item using a simple [search by query](/search-by-text-query)
 
 <pre class="terminal">
-curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
+curl https://api.mercadolibre.com/sites/MLA/search?nickname=.....
 </pre>
 
-you can check which the available sorts are:
+## Searching by seller ID: {#search-by-seller-id}
 
-{% highlight javascript %}
-  "available_sorts": [
-    {
-      "id": "price_asc",
-      "name": "Menor precio",
-    },
-    {
-      "id": "price_desc",
-      "name": "Mayor precio",
-    }
-  ]
-{% endhighlight %}
-
-
-## Request {#search-request}
-
-To search and sort the results, you can specify a sort attribute 
+You can search for items that belong to a seller by id.
 
 <pre class="terminal">
-curl https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;sort=price_asc
+curl https://api.mercadolibre.com/sites/MLA/search?seller_id=.....
 </pre>
+
+
 
 ## Response {#search-response}
 
@@ -65,7 +50,7 @@ If you are interested in define response block size read [search paging](/search
           height="900">
 </iframe>
 <script type="text/javascript">
-            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?seller_id=123456';
+            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?nickname=TEST';
 </script>
 
 

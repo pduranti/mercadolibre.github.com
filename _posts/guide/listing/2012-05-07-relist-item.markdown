@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Relist an item
 categories: guides
 tags: Selling
@@ -15,14 +15,14 @@ To relist a finished listing, do the following API call:
 <pre class="terminal">
 curl -X POST -H "Content-Type: application/json" -d
 '{
-"listing_type_id": "silver",
-"quantity": 20,
-"price": 30
+  "listing_type_id": "silver",
+  "quantity": 20,
+  "price": 30
 }'
 
-https://api.mercadolibre.com/items/MLA421104745/relist?access_token=$ACCESS_TOKEN
+https://api.mercadolibre.com/items/MLA430387888/relist?access_token=$ACCESS_TOKEN
 </pre>
-In this example, you are relisting the item: “MLA421104745” increasing the quantity to 20 units, modifying the listing type to “silver” and setting a new price to 30.
+In this example, you are relisting the item: “MLA430387888” increasing the quantity to 20 units, modifying the listing type to “silver” and setting a new price to 30.
 
 Remember to check the Listing Type API for valid listing type codes.
 

@@ -12,7 +12,10 @@ guides:
 - Notifications
 - My Orders
 - Users
+- Category
 - Appendix
+- For Buyers
+- New Guides
 ---
 
 # Guides & SDKs

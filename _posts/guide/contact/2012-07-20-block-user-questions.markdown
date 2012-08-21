@@ -1,8 +1,9 @@
 ---
-layout: 2columns
+layout: guides
 title: Managing questions blacklist
 categories: guides
-tags: Contact
+tags: 
+- For Buyers
 ---
 
 ###Overview

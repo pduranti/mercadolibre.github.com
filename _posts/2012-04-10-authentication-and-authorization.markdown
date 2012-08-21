@@ -1,6 +1,6 @@
 ---
-layout: 2columns
-title: Authentication & Authorization
+layout: guides
+title: Authentication &amp; Authorization
 categories: tutorials popular
 tags: home
 ---
