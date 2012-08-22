@@ -7,13 +7,13 @@ guides:
 - Searching
 - Buying
 - Selling
+- For Buyers
 - My Publications
 - Notifications
 - My Orders
 - Users
 - Category
 - Appendix
-- For Buyers
 ---
 
 # Guides & SDKs

@@ -1,7 +1,6 @@
 ---
 layout: 1columns
 title: Category Map
-categories: [Category Map]
 ---
 
 # Guides 
