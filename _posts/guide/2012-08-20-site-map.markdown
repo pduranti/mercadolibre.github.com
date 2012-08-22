@@ -1,7 +1,7 @@
 ---
 layout: 1columns
 title: Site Map
-categories: Site-Map
+categories: [Site Map]
 ---
 
 # Guides 

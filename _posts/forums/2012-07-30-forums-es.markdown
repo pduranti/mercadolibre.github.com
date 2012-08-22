@@ -1,6 +1,7 @@
 ---
 layout: forums
 title: Foros 
+categories: Forums
 tags: home
 ---
 

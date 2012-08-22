@@ -4,7 +4,7 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
 <!--[if (gt IE 8)|!(IE)]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-	{% include meta-tags.html %}
+  {% include meta-tags.html %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ page.title }}</title>  
@@ -17,13 +17,17 @@
     <link rel="canonical" href="{{ page.url | canonical }}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
+    <script type="text/javascript">
+      function goToByScroll(id){
+          $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+      }
+    </script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
   </head>
   <body>
+
     <header class="ch-g1 main">
       <hgroup class="ch-g1-3">
         <h1><a href="/">MELI</a></h1>
@@ -31,23 +35,19 @@
       </hgroup>
       <nav class="ch-g2-3">
         <ul>
-          <li><a href="/getting-started">Getting Started</a></li>
-          <li><a href="/guides">Guides & SDKs</a></li>        
-          <li style="border:none"><a href="/forums">Forums</a></li>        
+          <li><a href="/core-concepts">Core Concepts</a></li>
+          <li><a href="/getting-started">Quickstart</a></li>
+          <li><a href="/guides">Guides</a></li>        
+          <li><a href="/javascript-sdk">Developer Tools</a></li>        
+          <li style="border:none"><a href="/forums">Forums</a></li>         
         </ul>
       </nav>
     </header>
 
-	<section class="main ch-g4-5">
-		<div class="ch-leftcolumn">
-      <div id="cse" style="width: 100%;">Loading</div>
-			{{ content }}
-			
-    </section>
-    <nav class="ch-g1-5 sidebar">
-      <h2>Related posts</h2>
+  <nav class="ch-g1-5 sidebar">
+      <h2>Guides</h2>
       <ul>
-		 {% for tag in page.tags %}
+     {% for tag in page.tags %}
           {% for post in site.tags.[tag] reversed %}
             {% assign current = nil %}
             {% if post.id == page.id %}
@@ -59,15 +59,16 @@
       </ul>
     </nav>
 
+    <section class="main ch-g4-5">
+    <div class="ch-leftcolumn">
+      {{ content }}
+    </section>
     <footer class="ch-g1">
       <div class="ch-g2-3 extras">
         <ul>
           <li>©2012 MercadoLibre</li>
         </ul>
       </div>
-      <p class="ch-g1-3 maintained-by">This project is maintained by <a href="https://github.com/mercadolibre">mercadolibre</a></p>
     </footer>
-    <script src="/javascripts/scale.fix.js"></script>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
 </body>
 </html>

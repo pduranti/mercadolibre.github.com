@@ -1,7 +1,8 @@
 ---
-layout: 1columns
+layout: forums
 title: Forums 
-categories: tutorials popular
+categories: Forums
+tags: home
 ---
 
 # Forums

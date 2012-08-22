@@ -1,7 +1,7 @@
 ---
-layout: guides
+layout: 2columns
 title: Design Considerations
-categories: tutorials popular
+categories: Quickstart
 tags: home
 ---
 
@@ -9,15 +9,20 @@ tags: home
 
 There are some things you should know about our APIs to make your life easier.
 
-### Table of Contents 
+<div class="contents">
+<h5>Table of Contents</h5>
 
-- [JSON](#json).
-- [JSONP](#jsonp).
-- [CORS](#cors).
-- [Date format (ISO 8601)](#iso8601)
-- [Handling errors](#error-format)
-- [Reducing responses](#selection).
-- [Using OPTIONS](#options)
+<dl>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('json')">JSON</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('jsonp')">JSONP</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('cors')">CORS</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('iso8601')">Date format (ISO 8601)</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('error-format')">Handling errors</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('selection')">Reducing responses</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('options')">Using OPTIONS</a></dt>
+</dl>
+</div>
+
 
 ## All responses are JSON encoded. {#json}
 JSON is a lightweight text-based open standard designed for human-readable data interchange. You can read more [here](http://en.wikipedia.org/wiki/JSON).

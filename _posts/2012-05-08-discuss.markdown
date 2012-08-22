@@ -1,6 +1,7 @@
 ---
-layout: guides
+layout: 2columns
 title: Discuss
+categories: Quickstart
 tags: home
 ---
 

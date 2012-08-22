@@ -1,7 +1,7 @@
 ---
-layout: guides
+layout: 2columns
 title: Authentication &amp; Authorization
-categories: tutorials popular
+categories: Quickstart
 tags: home
 ---
 

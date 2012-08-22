@@ -1,7 +1,7 @@
 ---
-layout: guides
+layout: 2columns
 title: Getting Started
-categories: tutorials popular
+categories: Quickstart
 tags: home
 ---
 
@@ -10,14 +10,16 @@ tags: home
 If you're reading this it's because you're wondering which is the easiest way to start using our APIs. Good news! It is dead simple!
 
 <div class="contents">
-  <h5>Table of Contents</h5>
-  <dl>
-    <dt><a href="#first-approach">Your first approach to the APIs</a></dt>
-    <dt><a href="#access-token-title">Get your access token!</a></dt>
-    <dt><a href="#use-access-token">Use your access token!</a></dt>
-    <dt><a href="#whats-next">What's next?</a></dt>
-  </dl>
+<h5>Table of Contents</h5>
+
+<dl>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('first-approach')">Your first approach to the APIs</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('access-token-title')">Get your access token!</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('use-access-token')">Use your access token!</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('whats-next')">What's next?</a></dt>
+</dl>
 </div>
+
 
 ## Your first approach to the APIs {#first-approach}
 Our APIs are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  

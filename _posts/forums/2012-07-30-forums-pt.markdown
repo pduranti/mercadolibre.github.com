@@ -1,6 +1,7 @@
 ---
 layout: forums
 title: Fóruns
+categories: Forums
 tags: home
 ---
 
