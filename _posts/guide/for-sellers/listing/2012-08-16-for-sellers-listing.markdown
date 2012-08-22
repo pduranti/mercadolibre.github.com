@@ -1,10 +1,6 @@
 ---
 layout: guides
 title: Sell your products and manage your orders
-categories: selling
-menues: Sellers
-tags: 
-- New Guides
 ---
 
 <div class="contents">

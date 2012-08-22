@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Update an item
-categories: guides
+categories: Guides
 tags: Selling
 ---
 

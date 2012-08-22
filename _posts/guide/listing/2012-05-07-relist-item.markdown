@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Relist an item
-categories: guides
+categories: Guides
 tags: Selling
 ---
 

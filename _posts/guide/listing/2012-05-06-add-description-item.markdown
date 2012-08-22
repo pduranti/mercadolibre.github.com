@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Add description to items
-categories: guides
+categories: Guides
 tags: Selling
 ---
 

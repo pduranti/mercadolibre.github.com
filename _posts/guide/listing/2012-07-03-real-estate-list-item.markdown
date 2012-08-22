@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Real estate listing
-categories: guides
+categories: Guides
 tags: Selling
 ---
 

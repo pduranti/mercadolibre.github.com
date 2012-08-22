@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: List items
-categories: guides
+categories: Guides
 tags: Selling
 ---
 

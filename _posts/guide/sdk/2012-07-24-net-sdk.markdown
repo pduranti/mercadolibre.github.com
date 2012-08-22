@@ -1,7 +1,7 @@
 ---
-layout: guides
+layout: 2columns
 title: .NET SDK
-categories: guides
+categories: [Developer Tools]
 tags: SDKs
 ---
 

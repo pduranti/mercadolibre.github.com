@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Search by category
-categories: guides
+categories: Guides
 tags: 
 - Searching
 ---

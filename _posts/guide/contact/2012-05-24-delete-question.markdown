@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Delete a question
-categories: guides
+categories: Guides
 tags: 
 - For Buyers
 ---

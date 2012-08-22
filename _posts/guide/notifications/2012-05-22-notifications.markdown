@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Listening to Notifications
-categories: guides
+categories: Guides
 tag: Notifications
 ---
 

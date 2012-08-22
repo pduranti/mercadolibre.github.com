@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Search by using filters
-categories: guides
+categories: Guides
 tags: 
 - Searching
 ---

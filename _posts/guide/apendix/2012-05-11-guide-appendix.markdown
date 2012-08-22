@@ -1,7 +1,7 @@
 ---
 layout: 1columns
 title: Appendix - Related APIs
-categories: guides
+categories: Guides
 tags: Appendix
 ---
 

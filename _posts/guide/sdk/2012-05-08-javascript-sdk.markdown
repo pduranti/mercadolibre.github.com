@@ -1,7 +1,7 @@
 ---
-layout: guides
+layout: 2columns
 title: Javascript SDK
-categories: guides
+categories: [Developer Tools]
 tags: SDKs
 ---
 

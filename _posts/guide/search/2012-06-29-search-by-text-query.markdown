@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Search by text query
-categories: guides
+categories: Guides
 tags: 
 - Searching
 ---

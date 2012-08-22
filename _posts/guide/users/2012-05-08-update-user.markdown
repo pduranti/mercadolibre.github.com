@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Update user information
-categories: guides
+categories: Guides
 tag: Users
 ---
 

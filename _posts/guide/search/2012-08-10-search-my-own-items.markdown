@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Search my own items
-categories: guides
+categories: Guides
 tags:
 - My Publications
 - Searching

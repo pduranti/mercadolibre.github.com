@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Validate item
-categories: guides
+categories: Guides
 tags: Selling
 ---
 

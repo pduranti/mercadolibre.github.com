@@ -1,7 +1,7 @@
 ---
 layout: 2columns
 title: Search for Product Ads
-categories: guides
+categories: Guides
 tags: Lost
 ---
 

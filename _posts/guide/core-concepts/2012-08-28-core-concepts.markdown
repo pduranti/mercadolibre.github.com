@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: 2columns
 title: Core concepts introduction
 categories: [Core concepts]
 tags: core-concepts
