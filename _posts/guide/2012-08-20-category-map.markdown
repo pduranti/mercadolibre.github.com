@@ -1,22 +1,15 @@
 ---
 layout: 1columns
-title: Site Map
-categories: [Site Map]
+title: Category Map
+categories: [Category Map]
 ---
 
 # Guides 
 
-<center>
-	{% for category in site.categories %} 
-		<a href="{{ category[1][0].url }}">{{ category[0] }}</a> | 
-	{% endfor %}
-</center>
-
-
 {% for category in site.categories %} 
 <h2 id="{{ category[0] }}-ref">{{ category[0] }}</h2>
 <ul>
-  {% for post in category[1] %} 
+  {% for post in category[1] reversed %} 
     <li><a href="{{ post.url }}">{{ post.title }}</a></li> 
 	
 	{% for post in category[1] %} 

@@ -33,13 +33,15 @@
       </hgroup>
       <nav class="ch-g2-3">
         <ul>
-          <li><a href="/core-concepts">Core Concepts</a></li>
-          <li><a href="/getting-started">Quickstart</a></li>
-          <li><a href="/guides">Guides</a></li>        
-          <li><a href="/javascript-sdk">Developer Tools</a></li>        
-          <li style="border:none"><a href="/forums">Forums</a></li>         
+          {% for category in site.categories %} 
+                {% assign current = nil %}
+                {% if category[0] == page.categories[0] %}
+                    {% assign current = 'current' %}
+                {% endif %}
+            <li><a class="{{ current }}" href="{{ category[1][0].url }}">{{ category[0] }} </a></li>
+          {% endfor %}
         </ul>
-      </nav>
+       </nav>
     </header>
 
 	<section class="main ch-g1">
