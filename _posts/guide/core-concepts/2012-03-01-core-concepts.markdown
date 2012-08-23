@@ -12,11 +12,47 @@ tags: core-concepts
 <h5>Table of Contents</h5>
 
 <dl>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('concept-1')">Concept 1</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('concept-2')">Concept 2</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('concept-3')">Concept 3</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('concept-4')">Concept 4</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('concept-5')">Concept 5</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('concept-6')">Concept 6</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('what-can-you-do')">What can you do at MELI and what cannot</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('entities')">Entities</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('product-vs-real-state')">Products vs Real state</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('listing-types')">Listing Types</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('credit-policy')">Credit policy</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('reputation')">Seller reputation</a></dt>
 </dl>
 </div>
+
+## What can you do at MELI and what cannot {#what-can-you-do}
+
+
+
+
+
+## Entities {#entities}
+
+
+
+
+
+
+## Products vs Real state {#product-vs-real-state}
+
+
+
+
+
+## Listing Types {#listing-types}
+
+
+
+
+
+## Credit policy {#credit-policy}
+
+
+
+
+
+## Seller reputation {#reputation}
+
+
+

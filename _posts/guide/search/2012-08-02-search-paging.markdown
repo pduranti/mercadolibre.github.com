@@ -11,18 +11,17 @@ tags:
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
-    <dt><a href="#paging-overview">Overview</a></dt>
-    <dt><a href="#paging-limit">Limit</a></dt>
-    <dt><a href="#paging-offset">Offset</a></dt>
-    <dt><a href="#paging-range">Define a range of results</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('paging-overview')">Overview</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('paging-limit')">Limit</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('paging-offset')">Offset</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('paging-range')">Define a range of results</a></dt>
   </dl>
 </div>
 
-
-##  Overview {#pagging-description}
+##  Overview {#paging-overview}
 
 You can define the page size of the result list. 
-There are 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). Those parameters define the size block of the results. 
+There are 2 parameters: <a href="javascript:void(0)" onClick="goToByScroll('paging-limit')">Limit</a> and <a href="javascript:void(0)" onClick="goToByScroll('paging-offset')">Offset</a>. Those parameters define the size block of the results. 
                           
 
 ![range slider](/images/range-slider.png)
