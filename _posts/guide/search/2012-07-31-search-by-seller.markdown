@@ -2,6 +2,7 @@
 layout: guides
 title: Search by seller
 categories: Guides
+guide: search
 tags: 
 - Searching
 ---

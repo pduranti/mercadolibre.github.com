@@ -2,6 +2,7 @@
 layout: guides
 title: Ask a question
 categories: Guides
+guide: buyers
 tags: 
 - For Buyers
 ---

@@ -2,6 +2,7 @@
 layout: guides
 title: Bookmark your items
 categories: Guides
+guide: buyers
 tags: 
 - For Buyers
 ---

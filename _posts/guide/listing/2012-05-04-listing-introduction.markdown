@@ -2,6 +2,7 @@
 layout: guides
 title: Listing introduction
 categories: Guides
+guide: seller
 tags: Selling
 ---
 

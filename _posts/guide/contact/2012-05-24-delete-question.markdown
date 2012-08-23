@@ -2,6 +2,7 @@
 layout: guides
 title: Delete a question
 categories: Guides
+guide: buyers
 tags: 
 - For Buyers
 ---

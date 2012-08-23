@@ -2,6 +2,7 @@
 layout: guides
 title: Search my own items
 categories: Guides
+guide: search
 tags:
 - My Publications
 - Searching

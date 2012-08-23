@@ -2,6 +2,7 @@
 layout: guides
 title: Add description to items
 categories: Guides
+guide: seller
 tags: Selling
 ---
 

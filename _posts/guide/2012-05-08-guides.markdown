@@ -2,6 +2,7 @@
 layout: 1columns
 title: Guides
 categories: Guides
+guide: all
 guides: 
 - SDKs
 - Searching

@@ -2,6 +2,7 @@
 layout: guides
 title: Add pictures to items
 categories: Guides
+guide: seller
 tags: Selling
 ---
 

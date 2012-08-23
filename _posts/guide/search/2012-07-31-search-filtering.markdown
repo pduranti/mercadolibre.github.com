@@ -2,6 +2,7 @@
 layout: guides
 title: Search by using filters
 categories: Guides
+guide: search
 tags: 
 - Searching
 ---

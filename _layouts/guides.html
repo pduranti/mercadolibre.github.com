@@ -80,8 +80,34 @@
     </header>
 
     <center>
-    <a href="/guides">All guides</a> | <a href="/bookmarks">Buyer guides</a> | <a href="/search-visual-introduction">Searching guide</a> | <a href="/listing-introduction">Selling guides</a>
+      {% assign current = nil %}
+      {% if page.guide == 'all' %}
+             {% assign current = 'current' %}
+      {% endif %}
+      <a class="{{ current }}" href="/guides">All guides</a> | 
+      
+      {% assign current = nil %}
+      {% if page.guide == 'buyers' %}
+             {% assign current = 'current' %}
+      {% endif %}
+      <a class="{{ current }}" href="/bookmarks">Buyer guides</a> | 
+      
+      {% assign current = nil %}
+      {% if page.guide == 'search' %}
+             {% assign current = 'current' %}
+      {% endif %}
+      <a class="{{ current }}" href="/search-visual-introduction">Searching guide</a> | 
+
+      {% assign current = nil %}
+      {% if page.guide == 'seller' %}
+             {% assign current = 'current' %}
+      {% endif %}
+      <a class="{{ current }}" href="/listing-introduction">Selling guides</a>
+
     </center>
+
+
+
 
     <nav class="ch-g1-5 sidebar">
       <h2>Guides</h2>

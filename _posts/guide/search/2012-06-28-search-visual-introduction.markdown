@@ -2,6 +2,7 @@
 layout: guides
 title: Search introduction
 categories: Guides
+guide: search
 tags: 
 - Searching
 ---

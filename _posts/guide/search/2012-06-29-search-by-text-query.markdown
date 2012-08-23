@@ -2,6 +2,7 @@
 layout: guides
 title: Search by text query
 categories: Guides
+guide: search
 tags: 
 - Searching
 ---
