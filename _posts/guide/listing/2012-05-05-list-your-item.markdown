@@ -7,19 +7,10 @@ tags: Selling
 
 # List your Item
 
-The first step in selling is list an item on MercadoLibre. Sellers can list an item by MercadoLibre site or by an application using Listing API. Both working exactly in selling.
-
-There are a number of considerations over an item as title, category, price, currency or description. You already know what items and attributes exists. If you don’t know we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
-
-Some properties of items affects the appeareance in various pages where items are viewed (the view item page, the search pages, the category browser page )  
-
-There are mandatory attributes to list an item. 
-
-So, let’s see how to list items in MELI. Don’t worry about the different attribute codes, we are going to explain each one later.
-
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('list-defining-attributes')">Defining attributes</a>
       <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-title-attribute')"> - Title</a></dd>
       <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-description-attribute')"> - Description</a></dd>
@@ -33,6 +24,18 @@ So, let’s see how to list items in MELI. Don’t worry about the different att
     <dt><a href="javascript:void(0)" onClick="goToByScroll('further-consideration')">Special considerations for real estate, vehicles &amp; services</a></dt>
   </dl>
 </div>
+
+## Overview {#overview}
+
+The first step in selling is list an item on MercadoLibre. Sellers can list an item by MercadoLibre site or by an application using Listing API. Both working exactly in selling.
+
+There are a number of considerations over an item as title, category, price, currency or description. You already know what items and attributes exists. If you don’t know we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
+
+Some properties of items affects the appeareance in various pages where items are viewed (the view item page, the search pages, the category browser page )  
+
+There are mandatory attributes to list an item. 
+
+So, let’s see how to list items in MELI. Don’t worry about the different attribute codes, we are going to explain each one later.
 
 ## Defining attributes {#list-required-attributes}
 
@@ -208,6 +211,3 @@ In MELI you can list different type of items which can be grouped in the followi
 *Vehicles    
 *Real estate    
 *Services    
-
-
-If you want to try with another example , [here](/real-estate-list-item) you can see how to list real estate items in MELI.

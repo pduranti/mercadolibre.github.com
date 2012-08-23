@@ -26,15 +26,15 @@ You should provide attributes related to your item at the time of listing.
 
 ## MELI listings result {#visual-explanation-listing}
 
-MELI listing shows these relevant item attributes: an [item title] (#item-title) (1) and an [item subtitle] (#item-title) (2), an [item price](#item-price) (3), a [seller category](#seller-category) (4), a [sold quantity](#sold-quantity) (5) and a [seller address](#seller-address) (6)
+MELI listing shows these relevant item attributes: an <a href="javascript:void(0)" onClick="goToByScroll('item-title')">item title</a> (1) and an <a href="javascript:void(0)" onClick="goToByScroll('item-title')">item subtitle</a> (2), an <a href="javascript:void(0)" onClick="goToByScroll('item-price')">item price</a> (3), a <a href="javascript:void(0)" onClick="goToByScroll('seller-category')">seller category</a> (4), a <a href="javascript:void(0)" onClick="goToByScroll('sold-quantity')">sold quantity</a> (5) and a <a href="javascript:void(0)" onClick="goToByScroll('seller-address')">seller address</a> (6)
 
 
 ![meli listing](/images/meli-listing.png)
 
 ## VIP - View Item Page {#visual-explanation-vip}
 
-After a search, if the user clicks an item he will find more specific information related to items. Below you can see an example of the VIP and the elements returned by a request such as [text query](/search-by-text-query). In this information you can see: the list of [item pictures](#item-pictures) (1), an [item title] (#item-title) (2), 
- an [item price](#item-price) (3), a [seller address](#seller-address) (4), a [sold quantity](#sold-quantity) (5), a link to [ask a question](/ask-a-question) (6), a [seller reputation] (#seller-reputation) (7) with a [seller category](#seller-category) and a tab with a [detailed description](#detailed-decription) (8). 
+After a search, if the user clicks an item he will find more specific information related to items. Below you can see an example of the VIP and the returned elements by a request such as [text query](/search-by-text-query). In this information you can see: the list of <a href="javascript:void(0)" onClick="goToByScroll('item-pictures')">item pictures</a> (1), an <a href="javascript:void(0)" onClick="goToByScroll('item-title')">item title</a> (2), an <a href="javascript:void(0)" onClick="goToByScroll('item-price')">item price</a> (3), a <a href="javascript:void(0)" onClick="goToByScroll('seller-address')">seller address</a> (4), a <a href="javascript:void(0)" onClick="goToByScroll('sold-quantity')">sold quantity</a> (5), a link to [ask a question](/ask-a-question) (6), a <a href="javascript:void(0)" onClick="goToByScroll('seller-reputation')">seller reputation</a> (7) with a <a href="javascript:void(0)" onClick="goToByScroll('seller-category')">seller category</a> and a tab with a <a href="javascript:void(0)" onClick="goToByScroll('detailed-decription')">detailed description</a> (8). 
+
 
 ![vip](/images/vip.png)
 
