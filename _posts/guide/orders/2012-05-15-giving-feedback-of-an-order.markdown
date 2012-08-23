@@ -7,14 +7,10 @@ tag: For Buyers
 
 #Feedback API
 
-##Overview
-After completing a sale and a purchase, according to MercadoLibre’s rules, each part has to provide feedback about the transaction (an order).
-This feedback says if the order was fulfilled and the seller and buyer rate each other respectively.
-Seller’s and buyer’s score on MercadoLibre platform is calculated based on these ratings.
-
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('url')">URL of Feedback APIs</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('parameters')">Valid Parameters</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('possible-reasons')">Possible values for reason</a></dt>
@@ -25,6 +21,11 @@ Seller’s and buyer’s score on MercadoLibre platform is calculated based on t
   </dl>
 </div>
 
+##Overview {#overview}
+
+After completing a sale and a purchase, according to MercadoLibre’s rules, each part has to provide feedback about the transaction (an order).
+This feedback says if the order was fulfilled and the seller and buyer rate each other respectively.
+Seller’s and buyer’s score on MercadoLibre platform is calculated based on these ratings.
 
 #API URL {#url}
 https://api.mercadolibre.com/orders/ORDER_ID/feedback

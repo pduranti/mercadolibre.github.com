@@ -20,6 +20,8 @@ tags:
 
 ## All your bookmarks {#find-bookmarks}
 
+In order to retrieve user bookmarks, you can use following URL:
+
 <pre class="terminal">
 curl https://api.mercadolibre.com/users/me/bookmarks?access_token=...
 </pre>
@@ -45,6 +47,8 @@ curl https://api.mercadolibre.com/users/me/bookmarks?access_token=...
 
 ## Bookmark an item {#bookmark-item}
 
+To bookmark an item, you can use the following URL:
+
 <pre class="terminal">
 
 curl -X POST -H "Content-Type: application/json" -d
@@ -67,9 +71,10 @@ https://api.mercadolibre.com/users/me/bookmarks/MLA5529?access_token=$ACCESS_TOK
 
 ## Response {#bookmark-response}
 
-{% highlight javascript %} 
+{% highlight javascript %}
 {
-	"item_id":"MLA426609874",
-	"bookmarked_date":"2012-08-21T10:43:32.978-04:00"
+  "item_id":"MLA426609874",
+  "bookmarked_date":"2012-08-21T10:43:32.978-04:00"
 }
 {% endhighlight %}
+

@@ -1,6 +1,7 @@
 ---
 layout: 1columns
 title: Category Map
+subcategory: all
 ---
 
 # Guides 

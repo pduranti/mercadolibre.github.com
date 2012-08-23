@@ -98,6 +98,10 @@
       </ul>
     </nav>
 
+    {% for post in site.related_posts %}
+      <a href="{{ post.url }}">{{ post.title }}</a><br />
+    {% endfor %}
+
     <section class="main ch-g4-5">
     <div class="ch-leftcolumn">
       {{ content }}
@@ -105,7 +109,9 @@
     <footer class="ch-g1">
       <div class="ch-g2-3 extras">
         <ul>
+          <li><a href="{{ page.previous.url }}">Previous: {{ page.previous.title }}</a></li> 
           <li>©2012 MercadoLibre</li>
+          <li><a href="{{ page.next.url }}">Next: {{ page.next.title }}</a></li> 
         </ul>
       </div>
     </footer>

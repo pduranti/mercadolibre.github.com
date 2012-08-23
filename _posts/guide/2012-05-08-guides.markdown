@@ -10,7 +10,6 @@ guides:
 - For Buyers
 - My Publications
 - Notifications
-- My Orders
 - Users
 - Category
 - Appendix
