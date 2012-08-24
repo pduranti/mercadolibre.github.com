@@ -66,49 +66,62 @@
         <h1><a href="/">MELI</a></h1>
         <h2>MELI Developer Products</h2>
       </hgroup>
-      <nav class="ch-g3-3">
+      <nav class="ch-g2-3">
         <ul>
           {% for category in site.categories %} 
-                {% assign current = nil %}
-                {% if category[0] == page.categories[0] %}
-                    {% assign current = 'current' %}
-                {% endif %}
-            <li><a class="{{ current }}" href="{{ category[1].last.url }}">{{ category[0] }} </a></li>
-          {% endfor %}
-            <li>
-              <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
+            
+            {% assign current = nil %}
+            {% if category[0] == page.categories[0] %}
+              {% assign current = 'current' %}
+            {% endif %}
+            
+            {% if category[0] == 'Guides' %}
+            <li class="option">
+              <div id="guides-menu" class="ch-dropdown-skin">
+                <span>{{ category[0] }}</span>
+                <ul>
+                    {% assign current = nil %}
+                    {% if page.guide == 'all' %}
+                           {% assign current = 'current' %}
+                    {% endif %}
+                  <li><a class="{{ current }}" href="/guides">All guides</a></li>
+                    
+                    {% assign current = nil %}
+                    {% if page.guide == 'buyers' %}
+                           {% assign current = 'current' %}
+                    {% endif %}
+                  <li><a class="{{ current }}" href="/bookmarks">Buyer guides</a></li>
+                    
+                    {% assign current = nil %}
+                    {% if page.guide == 'search' %}
+                           {% assign current = 'current' %}
+                    {% endif %}
+                  <li><a class="{{ current }}" href="/search-visual-introduction">Searching guide</a></li>
+
+                    {% assign current = nil %}
+                    {% if page.guide == 'seller' %}
+                           {% assign current = 'current' %}
+                    {% endif %}
+                  <li><a class="{{ current }}" href="/listing-introduction">Selling guides</a></li>
+                </ul>
+              </div>
             </li>
+            {% else %}
+              <li class="option"><a class="{{ current }}" href="{{ category[1].last.url }}">{{ category[0] }}</a></li>
+            {% endif %}
+          
+          {% endfor %}
+          <li class="option">
+            <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <center>
-      {% assign current = nil %}
-      {% if page.guide == 'all' %}
-             {% assign current = 'current' %}
-      {% endif %}
-      <a class="{{ current }}" href="/guides">All guides</a> | 
-      
-      {% assign current = nil %}
-      {% if page.guide == 'buyers' %}
-             {% assign current = 'current' %}
-      {% endif %}
-      <a class="{{ current }}" href="/bookmarks">Buyer guides</a> | 
-      
-      {% assign current = nil %}
-      {% if page.guide == 'search' %}
-             {% assign current = 'current' %}
-      {% endif %}
-      <a class="{{ current }}" href="/search-visual-introduction">Searching guide</a> | 
-
-      {% assign current = nil %}
-      {% if page.guide == 'seller' %}
-             {% assign current = 'current' %}
-      {% endif %}
-      <a class="{{ current }}" href="/listing-introduction">Selling guides</a>
-
-    </center>
-
+     
+    <script type="text/javascript">
+      var foo = $("#guides-menu").dropdown();
+    </script>
 
 
 

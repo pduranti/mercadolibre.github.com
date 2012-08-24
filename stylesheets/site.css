@@ -184,20 +184,18 @@ header.main h2 {
 
 
 header.main nav {
-	text-align: right;
-	margin-top: 20px;
+	margin-top: 12px;
 }
 
 header.main nav ul,
 header.main nav form {
-	display: inline;
 	padding: 0 5px;
 }
 
-header.main li {
+header.main .option {
 	border-right: 1px solid #ccc;
-	display:inline;
-	padding:0 10px;
+	display:inline-block;
+	padding:0 7px;
 }
 
 header.main li:last-child {
