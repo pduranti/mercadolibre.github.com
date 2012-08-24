@@ -21,17 +21,6 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
-    <script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-8863458-51']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
   </head>
   <body>
     <header class="ch-g1 main">
@@ -52,13 +41,14 @@
             	<form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
             </li>
         </ul>
-      </nav>
+       </nav>
     </header>
-
-
+	
 	<section class="main ch-g1">
 		{{ content }}
-
+		<div id="cse" style="width:100%;">
+		    <div class="ch-loading"></div>
+		</div>
 	</section>
 	
 	<footer class="ch-g1">
@@ -72,5 +62,48 @@
 	
 	<script src="javascripts/scale.fix.js"></script>
 	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+	<script src="http://www.google.com/jsapi"></script>
+	<script>
+		function parseQueryFromUrl() {
+			var queryParamName = 'q';
+			var search = window.location.search.substr(1);
+			var parts = search.split('&');
+			for ( var i = 0; i < parts.length; i++) {
+				var keyvaluepair = parts[i].split('=');
+				if (decodeURIComponent(keyvaluepair[0]) == queryParamName) {
+					return decodeURIComponent(keyvaluepair[1].split('+').join(
+							' '));
+				}
+			}
+			return '';
+		}
+		google.load('search', '1', {
+			language : 'en'
+		});
+		google
+				.setOnLoadCallback(
+						function() {
+							var customSearchOptions = {};
+							var customSearchControl = new google.search.CustomSearchControl(
+									'017586013854347464845:atz5lcehloe',
+									customSearchOptions);
+							customSearchControl
+									.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+
+							var options = new google.search.DrawOptions();
+							options.setAutoComplete(true);
+							options.enableSearchResultsOnly();
+							
+							customSearchControl.draw('cse', options);
+							var queryFromUrl = parseQueryFromUrl();
+							if (queryFromUrl) {
+								customSearchControl.execute(queryFromUrl);
+							}
+						}, true);
+	</script>
+
+</head>
+<body>
+
 </body>
 </html>

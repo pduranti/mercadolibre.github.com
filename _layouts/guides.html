@@ -66,7 +66,7 @@
         <h1><a href="/">MELI</a></h1>
         <h2>MELI Developer Products</h2>
       </hgroup>
-      <nav class="ch-g2-3">
+      <nav class="ch-g3-3">
         <ul>
           {% for category in site.categories %} 
                 {% assign current = nil %}
@@ -75,6 +75,9 @@
                 {% endif %}
             <li><a class="{{ current }}" href="{{ category[1].last.url }}">{{ category[0] }} </a></li>
           {% endfor %}
+            <li>
+              <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
+            </li>
         </ul>
       </nav>
     </header>
@@ -125,7 +128,6 @@
     </nav>
 
     <section class="main ch-g4-5">
-    <div class="ch-leftcolumn">
       {{ content }}
     </section>
     <footer class="ch-g1">
@@ -137,5 +139,8 @@
         </ul>
       </div>
     </footer>
+
+  <script src="javascripts/scale.fix.js"></script>
+  <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
 </body>
 </html>

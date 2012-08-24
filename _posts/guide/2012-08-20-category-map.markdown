@@ -6,6 +6,7 @@ subcategory: all
 
 # Guides 
 
+
 {% for category in site.categories %} 
 <h2 id="{{ category[0] }}-ref">{{ category[0] }}</h2>
 <ul>
