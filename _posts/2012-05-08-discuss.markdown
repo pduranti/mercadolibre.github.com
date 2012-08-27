@@ -2,7 +2,7 @@
 layout: 2columns
 title: Discuss
 categories: Quickstart
-tags: home
+tags: forum
 ---
 
 ## Get in contact with us and with other developers!

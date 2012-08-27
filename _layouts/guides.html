@@ -126,7 +126,7 @@
 
 
     <nav class="ch-g1-5 sidebar">
-      <h2>Guides</h2>
+      <h2>{{ page.categories }}</h2>
       <ul>
      {% for tag in page.tags %}
           {% for post in site.tags.[tag] reversed %}
@@ -143,15 +143,14 @@
     <section class="main ch-g4-5">
       {{ content }}
     </section>
-    <footer class="ch-g1">
-      <div class="ch-g2-3 extras">
-        <ul>
-          <li><a href="{{ page.previous.url }}">Previous: {{ page.previous.title }}</a></li> 
-          <li>©2012 MercadoLibre</li>
-          <li><a href="{{ page.next.url }}">Next: {{ page.next.title }}</a></li> 
-        </ul>
-      </div>
-    </footer>
+  <footer class="ch-g1">
+    <div class="ch-g2-3 extras">
+    <ul>
+      <li>©2012 MercadoLibre</li>
+    </ul>
+    </div>
+      <p class="ch-g1-3 maintained-by"><img src="/images/github.png" alt="Github">Report an issue on <a href="https://github.com/mercadolibre/API/issues">Github</a>&nbsp;&nbsp;&nbsp;<a href="http://www.twitter.com/MercadoLibre"><img src="/images/twitter.png" alt="Twitter">Follow us!!</a></p>
+  </footer>
 
   <script src="javascripts/scale.fix.js"></script>
   <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->

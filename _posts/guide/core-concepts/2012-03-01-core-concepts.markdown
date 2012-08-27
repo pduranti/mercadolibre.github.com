@@ -1,11 +1,11 @@
 ---
 layout: 2columns
-title: Core concepts introduction
+title: Introduction
 categories: [Core concepts]
 tags: core-concepts
 ---
 
-#Core-concepts introduction
+#Introduction
 
 
 <div class="contents">
