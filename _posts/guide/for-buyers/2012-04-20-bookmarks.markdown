@@ -11,12 +11,19 @@ tags:
 <h5>Table of Contents</h5>
 
 <dl>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
 	<dt><a href="javascript:void(0)" onClick="goToByScroll('find-bookmarks')">All your bookmarks</a></dt>
 	<dt><a href="javascript:void(0)" onClick="goToByScroll('bookmark-item')">Bookmark an item</a></dt>
 	<dt><a href="javascript:void(0)" onClick="goToByScroll('bookmark-delete')">Remove a bookmark</a></dt>
 	<dt><a href="javascript:void(0)" onClick="goToByScroll('bookmark-response')">Response</a></dt>
 </dl>
 </div>
+
+
+## Overview {#overview}
+
+Users can manage those interesting items using bookmark API, adding or removing references. They are synchronize with mobile apps. On MercadoLibre Site users have available all the time.
+
 
 
 ## All your bookmarks {#find-bookmarks}

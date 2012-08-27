@@ -1,5 +1,5 @@
 ---
-layout: forums
+layout: 2columns
 title: Forums 
 categories: Forums
 tags: forum

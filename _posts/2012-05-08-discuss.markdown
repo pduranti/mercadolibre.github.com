@@ -1,7 +1,7 @@
 ---
 layout: 2columns
 title: Discuss
-categories: Quickstart
+categories: Forums
 tags: forum
 ---
 

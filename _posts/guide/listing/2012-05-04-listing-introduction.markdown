@@ -10,6 +10,15 @@ tags: Selling
 
 As you know, MELI is an e-commerce platform in which users can buy and sell items. This tutorials are going to show you, the developer, how to list your item using the Items API.
 
+## Special considerations for real estate, vehicles & services {#further-consideration}
+
+In MELI you can list different type of items which can be grouped in the following categories:
+
+*Products    
+*Vehicles    
+*Real estate    
+*Services    
+
 
 ## What is an item? {#what-is-an-item}
 
@@ -71,184 +80,9 @@ Take a look at response retrieved. It has a lot of parameters. Use <code>OPTIONS
 In this guide we will cover just those before mentioned.
 
 
-## Item Title {#item-title}
-
-Each item has a title and subtitle. Item title will be used, for example in search by [text query](/search-by-text-query).
-
-{% highlight javascript %} 
-{
-  .... 	
-  "title": "Volante Rallye Super Surf Gol Parati Saveiro G1 G2 G3 G4 G5",
-  "subtitle": "Pode Ser Instalado Em Gm E Fiat /cubo Gratis + Brinde",
-  ...
-}
-{% endhighlight %}
-
-## Item Price {#item-price}
-
-Each item has a price number and a currency that complete real currency value. Currency changes by Site. For more details about currencies see [Currency API](/guide-appendix/#currencies-api)
-
-{% highlight javascript %} 
-{
-  .... 	
-  "price": 178.9,
-  "base_price": 178.9,
-  "currency_id": "BRL",
-  ...
-}
-{% endhighlight %}
-
-## Seller reputation {#seller-reputation}
-
-For each sale confirmed in MercadoLibre, seller and buyer have 21 days to send their feedback about. Those feedback could be positive, negative or neutral. The sum of the feedbacks are the reputation of sellers and buyers. 
-
-{% highlight javascript %} 
-{
-  .... 	
-  "seller_id": "21346017",
-  ...
-}
-{% endhighlight %}
-
-To retrieve seller reputation, you need to complete other operation using seller_id over [Users API](/info-user):
-
-<pre class="terminal">
-curl https://api.mercadolibre.com/users/21346017
-</pre>
-
-{% highlight javascript %} 
-{
-  .... 	
- "seller_reputation": - {
-    "level_id": "5_green",
-    "power_seller_status": "platinum",
-    "transactions": - {
-      "period": "3 months",
-      "total": 1947,
-      "completed": 1704,
-      "canceled": 243,
-      "ratings": - {
-        "positive": 0.99,
-        "negative": 0.01,
-        "neutral": 0.01,
-      },
-    },
-  },
-  ...
-}
-{% endhighlight %}
-
-
-## Seller category {#seller-category}
-
-In MercadoLibre sellers have a status. 
-
-{% highlight javascript %} 
-{
-  .... 	
- "seller_reputation": {
- 	....
-    "power_seller_status": "platinum",
-    
-    "transactions": {
-      	... 	
-      
-      "ratings": {
-      	....
-      },
-    },
-  },
-  ...
-}
-{% endhighlight %}
-
-## Seller address {#seller-address}
-
-In item attributes information you also see seller address as one of the relevant attributes.  
-
-{% highlight javascript %} 
- "seller_address": {
-    "id": 60959901,
-    "comment": "",
-    "address_line": "",
-    "zip_code": "",
-    "city": {
-      "id": "",
-      "name": "são paulo",
-    },
-    "state": {
-      "id": "BR-SP",
-      "name": "São Paulo",
-    },
-    "country": {
-      "id": "BR",
-      "name": "Brasil",
-    },
-    "latitude": "",
-    "longitude": "",
-  },
-{% endhighlight %}
-
-## Sold quantity {#sold-quantity}
-
-To complete seller details, you also see item sold quantity. 
-
-{% highlight javascript %} 
-{
-  .... 	
-  "sold_quantity": 1042,
-  ...
-}
-{% endhighlight %}
-
-## Item pictures {#item-pictures}
-
-Each of them has an id, the hiperlink to the picture, the secure hiperlink to the picture, picture dimension and the maximum possible dimension of the picture. 
-
-{% highlight javascript %} 
-{
-  .... 	
-  "pictures": [
-    {
-      "id": "MLB221253103_5910",
-      "url": "http://img2.mlstatic.com/s_MLB_v_O_f_221253103_5910.jpg",
-      "secure_url": "https://www.mercadolibre.com/jm/img?s=MLB&v=O&f=221253103_5910.jpg",
-      "size": "500x374",
-      "max_size": "500x374",
-    },
-    {
-	   ...    
-	}
-  ...
-}
-{% endhighlight %}
-
-## Detailed description {#detailed-description}
-{% highlight javascript %} 
-  "descriptions": - [
-    - {
-      "id": "MLB233759102-230695964",
-    },
-    - {
-      "id": "MLB233759102-260344107",
-    },
-  ],
- {% endhighlight %}
-
 
 ## Other considerations{#other-considerations}
 
 The Items API tutorials require a basic understanding of the curl Linux command, you can get information of how to use it in our Basic Curl Tutorial.
-To list an item with the Items API, you will need an access_token, we recommends that you read the [Authorization Tutorial](../authentication-and-authorization).
+To list an item with the Items API, you will need an access_token, we recommend that you read the [Authorization Tutorial](../authentication-and-authorization).
 Don’t worry if you don’t understand how to get an access_token, at the end of each tutorial you will see a Javascript example using the MELI Javascript SDK, that do not require access_token.
-
-<iframe id="search_api_embed"
-  src="javascript:void(0)"
-    scrolling="no"
-      frameborder="0"
-        width="100%"
-          height="900">
-</iframe>
-<script type="text/javascript">
-            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/items/MLB233759102';
-</script>

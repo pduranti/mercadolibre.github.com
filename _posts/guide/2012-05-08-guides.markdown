@@ -4,9 +4,7 @@ title: Guides
 categories: Guides
 guide: all
 guides: 
-- SDKs
 - Searching
-- Buying
 - Selling
 - For Buyers
 - My Publications
@@ -16,11 +14,9 @@ guides:
 - Appendix
 ---
 
-# Guides & SDKs
+# Guides
 
-This describes the resources that make up the official MELI API. If
-you have any problems or requests please contact
-[support](mailto:developers@mercadolibre.com?subject=Meli-API).
+This describes the resources that make up the official MELI API.
 
 **Note:** This API is in a beta state. Changes may occur.
 

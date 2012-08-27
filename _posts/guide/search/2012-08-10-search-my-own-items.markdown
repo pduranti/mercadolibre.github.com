@@ -8,9 +8,11 @@ tags:
 - Searching
 ---
 
-A very common use case is to search and show your own items. You can do it very easily, just read the following tutorial.
 
 # Search my own items
+
+A very common use case is to search and show your own items. 
+
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/users/$USER_ID/items/search?access_token=$ACCESS_TOKEN

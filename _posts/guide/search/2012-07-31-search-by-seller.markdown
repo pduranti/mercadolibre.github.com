@@ -43,17 +43,6 @@ Search response has a lot of parameters. Use <code>OPTIONS</code> http method to
 
 If you are interested in define response block size read [search paging](/search-paging) section.
 
-<iframe id="search_api_embed"
-  src="javascript:void(0)"
-    scrolling="no"
-      frameborder="0"
-        width="100%"
-          height="900">
-</iframe>
-<script type="text/javascript">
-            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?nickname=TEST';
-</script>
-
 
 For more information about search options you can check the website [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)
 
