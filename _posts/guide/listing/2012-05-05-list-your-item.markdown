@@ -12,17 +12,9 @@ tags: Selling
   <h5>Table of Contents</h5>
   <dl>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('list-defining-attributes')">Defining attributes</a>
-      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-title-attribute')"> - Title</a></dd>
-      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-description-attribute')"> - Description</a></dd>
-      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-condition-attribute')"> - Condition</a></dd>
-      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-available-quantity-attribute')"> - Available quantity</a></dd>
-      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-picture-attribute')"> - Pictures</a></dd>
-      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-category-attribute')"> - Category</a></dd>
-      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-price-attribute')"> - Price</a></dd>
-      <dd><a href="javascript:void(0)" onClick="goToByScroll('listing-type-attribute')"> - Listing type</a></dd>
-    </dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('further-consideration')">Special considerations for real estate, vehicles &amp; services</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('list-example')">Listing example</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('best-practices')">Best Practices</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('list-defining-attributes')">Defining attributes</a></dt>
   </dl>
 </div>
 
@@ -36,9 +28,54 @@ Some properties of items affects the appeareance in various pages where items ar
 
 There are mandatory attributes to list an item. 
 
-So, let’s see how to list items in MELI. Don’t worry about the different attribute codes, we are going to explain each one later.
+## Listing example{#list-example}
 
-## Defining attributes {#list-required-attributes}
+We're ready to list our first item. You can use the code below to create your first item:
+
+<pre class="terminal">
+curl -X POST -H "Content-Type: application/json" -d
+'{
+  "title":"Anteojos Ray Ban Wayfare",
+  "category_id":"MLA5529",
+  "price":10,
+  "currency_id":"ARS",
+  "available_quantity":1,
+  "buying_mode":"buy_it_now",
+  "listing_type_id":"bronze",
+  "condition":"new",
+  "description": "Item:, {{"<strong> Ray-Ban WAYFARER Gloss Black RB2140 901 </strong>" | xml_escape }} Model: RB2140. Size: 50mm. Name: WAYFARER. Color: Gloss Black. Includes Ray-Ban Carrying Case and Cleaning Cloth. New in Box",
+  "pictures":[
+    {"source":"http://upload.wikimedia.org/wikipedia/commons/f/fd/Ray_Ban_Original_Wayfarer.jpg"},
+    {"source":"http://en.wikipedia.org/wiki/File:Teashades.gif"}
+  ]
+}'
+https://api.mercadolibre.com/items?access_token=$ACCESS_TOKEN  
+</pre>
+
+The Items API will automatically download the provided images to MELI Storage and creates a listing for your item. You will receive the following Json response:
+
+{% highlight javascript %}
+{
+  "id":"MLA430387888",
+  "site_id":"MLA",
+  "title":"Anteojos Ray Ban Wayfare",
+  "sold_quantity":0,
+  "permalink":"http://articulo.mercadolibre.com.ar/MLA-430387888-anteojos-ray-ban-wayfare-_JM",
+  ...
+}
+{% endhighlight %}
+
+**Congratulations!** You have just listed your first item! You can access the Item’s VIP through the permalink attribute.  
+
+If you have questions regarding how to get your access token to list items, please refer to the [getting started](/getting-started) tutorial. In addition, if you wish to validate your item before listing, check out the [item validation](/validate-item) tutorial.    
+    
+**Note:** If you get any errors trying to post your item, please refer to the [selling conditions](http://www.mercadolibre.com/jm/ml.faqs.framework.main.FaqsController?pageId=FAQ&faqId=2407&categId=COST&type=FAQ) page. 
+
+## Best Practices {#best-practices}
+
+Please, don't use list operation to test item's definition. Instead, use [validate operation](/validate-item) item before use list operation.
+
+## Defining attributes {#list-defining-attributes}
 
 To create your first item you need a number of attributes that can be set, some are required and some optional. All define how the item is displayed, how buyers can purchase it and how it will be used in searching results.    
 
@@ -156,59 +193,3 @@ curl https://api.mercadolibre.com/sites/MLA/listing_types/silver
 {% endhighlight %}
 
 For more details about listing type costs you can visit [MercadoLibre help site](http://www.mercadolibre.com/jm/ml.faqs.framework.main.FaqsController?pageId=FAQ&faqId=2407&categId=COST&type=FAQ).
-
-## Listing example{#list-example}
-
-We're ready to list our first item. You can use the code below to create your first item:
-
-<pre class="terminal">
-curl -X POST -H "Content-Type: application/json" -d
-'{
-	"title":"Anteojos Ray Ban Wayfare",
-	"category_id":"MLA5529",
-	"price":10,
-	"currency_id":"ARS",
-	"available_quantity":1,
-	"buying_mode":"buy_it_now",
-	"listing_type_id":"bronze",
-	"condition":"new",
-	"description": "Item:, {{"<strong> Ray-Ban WAYFARER Gloss Black RB2140 901 </strong>" | xml_escape }} Model: RB2140. Size: 50mm. Name: WAYFARER. Color: Gloss Black. Includes Ray-Ban Carrying Case and Cleaning Cloth. New in Box",
-	"pictures":[
-		{"source":"http://upload.wikimedia.org/wikipedia/commons/f/fd/Ray_Ban_Original_Wayfarer.jpg"},
-		{"source":"http://en.wikipedia.org/wiki/File:Teashades.gif"}
-	]
-}'
-https://api.mercadolibre.com/items?access_token=$ACCESS_TOKEN  
-</pre>
-
-The Items API will automatically download the provided images to MELI Storage and creates a listing for your item. You will receive the following Json response:
-
-{% highlight javascript %}
-{
-  "id":"MLA430387888",
-  "site_id":"MLA",
-  "title":"Anteojos Ray Ban Wayfare",
-  "sold_quantity":0,
-  "permalink":"http://articulo.mercadolibre.com.ar/MLA-430387888-anteojos-ray-ban-wayfare-_JM",
-  ...
-}
-{% endhighlight %}
-
-**Congratulations!** You have just listed your first item! You can access the Item’s VIP through the permalink attribute.  
-
-If you have questions regarding how to get your access token to list items, please refer to the [getting started](/getting-started) tutorial. In addition, if you wish to validate your item before listing, check out the [item validation](/validate-item) tutorial.    
-    
-**Note:** If you get any errors trying to post your item, please refer to the [selling conditions](http://www.mercadolibre.com/jm/ml.faqs.framework.main.FaqsController?pageId=FAQ&faqId=2407&categId=COST&type=FAQ) page. 
-
-## Best Practices
-
-Please, don't use list operation to test item's definition. Instead, use [validate operation](/validate-item) item before use list operation.
-
-## Special considerations for real estate, vehicles & services {#further-consideration}
-
-In MELI you can list different type of items which can be grouped in the following categories:
-
-*Products    
-*Vehicles    
-*Real estate    
-*Services    
