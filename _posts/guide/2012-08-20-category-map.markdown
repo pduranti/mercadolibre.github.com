@@ -41,6 +41,8 @@ subcategory: all
 
 Testing plugin output of '_plugins/testplugin.rb': {% testplugin %}
 
+{% render_time page rendered at: %}
+
 
 {% for category in site.categories %} 
 <h2 id="{{ category[0] }}-ref">{{ category[0] }}</h2>
