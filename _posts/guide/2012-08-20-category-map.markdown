@@ -39,7 +39,7 @@ subcategory: all
 </script>
 
 
-{{ tag_cloud }}
+Testing plugin output of '_plugins/testplugin.rb': {% testplugin %}
 
 
 {% for category in site.categories %} 
