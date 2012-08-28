@@ -195,7 +195,7 @@ header.main nav form {
 header.main .option {
 	border-right: 1px solid #ccc;
 	display:inline-block;
-	padding:0 7px;
+	padding:0 6px;
 }
 
 header.main li:last-child {
