@@ -61,70 +61,9 @@
   <body>
     <div id="toTop">^ Back to Top</div>
 
-    <header class="ch-g1 main">
-      <hgroup class="ch-g1-3">
-        <h1><a href="/">MELI</a></h1>
-        <h2>MELI Developer Products</h2>
-      </hgroup>
-      <nav class="ch-g2-3">
-        <ul>
-          {% for category in site.categories %} 
-            
-            {% assign current = nil %}
-            {% if category[0] == page.categories[0] %}
-              {% assign current = 'current' %}
-            {% endif %}
-            
-            {% if category[0] == 'Guides' %}
-            <li class="option">
-              <div id="guides-menu" class="ch-dropdown-skin">
-                <span>{{ category[0] }}</span>
-                <ul>
-                    {% assign current = nil %}
-                    {% if page.guide == 'all' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/guides">All guides</a></li>
-                    
-                    {% assign current = nil %}
-                    {% if page.guide == 'buyers' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/bookmarks">Buyer guides</a></li>
-                    
-                    {% assign current = nil %}
-                    {% if page.guide == 'search' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/search-visual-introduction">Searching guide</a></li>
 
-                    {% assign current = nil %}
-                    {% if page.guide == 'seller' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/listing-introduction">Selling guides</a></li>
-                </ul>
-              </div>
-            </li>
-            {% else %}
-              <li class="option"><a class="{{ current }}" href="{{ category[1].last.url }}">{{ category[0] }}</a></li>
-            {% endif %}
-          
-          {% endfor %}
-          <li class="option">
-            <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+    {% include header.html %}
      
-    <script type="text/javascript">
-      var foo = $("#guides-menu").dropdown();
-    </script>
-
-
-
     <nav class="ch-g1-5 sidebar">
       <h2>{{ page.categories }}</h2>
       <ul>
@@ -143,14 +82,8 @@
     <section class="main ch-g4-5">
       {{ content }}
     </section>
-  <footer class="ch-g1">
-    <div class="ch-g2-3 extras">
-    <ul>
-      <li>©2012 MercadoLibre</li>
-    </ul>
-    </div>
-      <p class="ch-g1-3 maintained-by"><img src="/images/github.png" alt="Github">Report an issue on <a href="https://github.com/mercadolibre/API/issues" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;<a href="http://www.twitter.com/MercadoLibre" target="_blank"><img src="/images/twitter.png" alt="Twitter">Follow us!!</a></p>
-  </footer>
+
+    {% include footer.html %}
 
   <script src="javascripts/scale.fix.js"></script>
   <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
