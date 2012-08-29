@@ -8,8 +8,6 @@ tags: forum
 ## Get in contact with us and with other developers!
 You can submit questions or comments in our discussions group. Please visit our [forums](/forums).
 
-You can also send an e-mail to [developers@mercadolibre.com](mailto:developers@mercadolibre.com).
-
 We update our SDKs on a regular basis. All announcements will be made via Twitter [@melidevelopers](https://twitter.com/@melidevelopers).
 
 ## How can I contribute?
