@@ -2,7 +2,7 @@
 layout: guides
 title: Relist an item
 categories: Documentation
-guide: seller
+menu: seller
 tags: Selling
 ---
 

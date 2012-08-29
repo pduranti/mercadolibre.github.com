@@ -2,7 +2,7 @@
 layout: guides
 title: Search by seller
 categories: Documentation
-guide: search
+menu: search
 tags: 
 - Searching
 ---

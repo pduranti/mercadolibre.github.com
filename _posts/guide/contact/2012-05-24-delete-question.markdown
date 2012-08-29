@@ -2,7 +2,7 @@
 layout: guides
 title: Delete a question
 categories: Documentation
-guide: buyers
+menu: buyer
 tags: 
 - For Buyers
 ---

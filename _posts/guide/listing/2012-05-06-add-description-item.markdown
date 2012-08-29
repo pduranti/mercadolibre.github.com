@@ -2,7 +2,7 @@
 layout: guides
 title: Add description to items
 categories: Documentation
-guide: seller
+menu: seller
 tags: Selling
 ---
 

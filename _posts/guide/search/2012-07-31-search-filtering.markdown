@@ -2,7 +2,7 @@
 layout: guides
 title: Search by using filters
 categories: Documentation
-guide: search
+menu: search
 tags: 
 - Searching
 ---

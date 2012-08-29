@@ -2,7 +2,7 @@
 layout: guides
 title: Managing questions blacklist
 categories: Documentation
-guide: buyers
+menu: buyer
 tags: 
 - For Buyers
 ---

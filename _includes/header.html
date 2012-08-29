@@ -7,8 +7,8 @@
         <ul>
 
          {% assign current = nil %}
-         {% if page.menu == 'developer-tools' %}
-            {% assign current = 'quickstart' %}
+         {% if page.menu == 'quickstart' %}
+            {% assign current = 'current' %}
          {% endif %}
           <li class="option">
             <a class="{{ current }}" href="/getting-started">Quickstart</a>
@@ -19,15 +19,40 @@
             <span>Documentation</span>
               <ul>
                 {% assign current = nil %}
-                {% if page.guide == 'all' %}
+                {% if page.menu == 'all' %}
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/guides">All guides</a></li>
                 {% assign current = nil %}
-                {% if page.guide == 'api-reference' %}
+                {% if page.menu == 'overview' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/core-concepts">Overview</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'buyer' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/bookmarks">Buyer guides</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'search' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/search-visual-introduction">Searching guides</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'seller' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/listing-introduction">Selling guides</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'api-reference' %}
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/guide-appendix">API reference</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'authentication' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/authentication">Authentication</a></li>
               </ul>
             </div>
           </li>

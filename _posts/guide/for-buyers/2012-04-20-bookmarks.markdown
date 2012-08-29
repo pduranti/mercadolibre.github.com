@@ -2,7 +2,7 @@
 layout: guides
 title: Bookmark your items
 categories: Documentation
-guide: buyers
+menu: buyer
 tags: 
 - For Buyers
 ---

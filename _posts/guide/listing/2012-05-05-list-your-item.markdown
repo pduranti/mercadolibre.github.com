@@ -2,7 +2,7 @@
 layout: guides
 title: List items
 categories: Documentation
-guide: seller
+menu: seller
 tags: Selling
 ---
 
