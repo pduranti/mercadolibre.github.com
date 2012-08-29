@@ -1,7 +1,7 @@
 ---
 layout: 2columns
 title: Delete a Product Ad 
-categories: Guides
+categories: Documentation
 tags: Lost
 ---
 
