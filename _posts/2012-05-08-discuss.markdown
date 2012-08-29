@@ -1,9 +1,11 @@
 ---
 layout: guides
 title: Discuss
-categories: Forums
+categories: 
+- Forums
 menu: forums
-tags: forum
+tags: 
+- Forums
 ---
 
 ## Get in contact with us and with other developers!

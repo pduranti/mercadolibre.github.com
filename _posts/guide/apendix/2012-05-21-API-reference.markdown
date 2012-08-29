@@ -6,7 +6,6 @@ categories:
 menu: api-reference
 tags: 
 - Appendix
----
 apis:
 - ["https://api.mercadolibre.com/applications/121", "Applications"]
 - ["https://api.mercadolibre.com/users/99580221/addresses", "Addresses"]
