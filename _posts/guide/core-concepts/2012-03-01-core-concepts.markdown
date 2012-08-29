@@ -2,8 +2,8 @@
 layout: 2columns
 title: Introduction
 categories: Documentation
-guide: core-concepts
-tags: core-concepts
+guide: overview
+tags: overview
 ---
 
 #Introduction

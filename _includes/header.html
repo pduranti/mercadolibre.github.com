@@ -24,10 +24,10 @@
                   <li><a class="{{ current }}" href="/guides">All guides</a></li>
                     
                     {% assign current = nil %}
-                    {% if page.guide == 'core-concepts' %}
+                    {% if page.guide == 'overview' %}
                            {% assign current = 'current' %}
                     {% endif %}
-                  <li><a class="{{ current }}" href="/core-concepts">Documentation</a></li>
+                  <li><a class="{{ current }}" href="/core-concepts">Overview</a></li>
 
                     {% assign current = nil %}
                     {% if page.guide == 'quickstart' %}
@@ -52,6 +52,12 @@
                            {% assign current = 'current' %}
                     {% endif %}
                   <li><a class="{{ current }}" href="/listing-introduction">Selling guides</a></li>
+
+                    {% assign current = nil %}
+                    {% if page.guide == 'api-reference' %}
+                           {% assign current = 'current' %}
+                    {% endif %}
+                  <li><a class="{{ current }}" href="/guide-appendix">API Reference</a></li>
                 </ul>
               </div>
             </li>

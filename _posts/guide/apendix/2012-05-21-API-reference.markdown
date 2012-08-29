@@ -1,7 +1,8 @@
 ---
-layout: 1columns
+layout: 2columns
 title: Appendix - API Reference
 categories: Documentation
+guide: api-reference
 tags: Appendix
 apis:
 - ["https://api.mercadolibre.com/applications/121", "Applications"]

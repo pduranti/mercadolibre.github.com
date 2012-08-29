@@ -1,7 +1,8 @@
 ---
-layout: 1columns
+layout: 2columns
 title: Appendix - Related APIs
 categories: Documentation
+guide: api-reference
 tags: Appendix
 ---
 
