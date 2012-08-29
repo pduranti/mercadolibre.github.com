@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Search by seller
-categories: Guides
+categories: Documentation
 guide: search
 tags: 
 - Searching

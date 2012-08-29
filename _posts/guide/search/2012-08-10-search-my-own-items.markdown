@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Search my own items
-categories: Guides
+categories: Documentation
 guide: seller
 tags: Selling
 ---

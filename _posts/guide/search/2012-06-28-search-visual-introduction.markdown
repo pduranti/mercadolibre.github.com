@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Search introduction
-categories: Guides
+categories: Documentation
 guide: search
 tags: 
 - Searching

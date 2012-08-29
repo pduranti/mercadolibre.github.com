@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: List items
-categories: Guides
+categories: Documentation
 guide: seller
 tags: Orders
 ---

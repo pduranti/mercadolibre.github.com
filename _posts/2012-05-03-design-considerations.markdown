@@ -1,7 +1,8 @@
 ---
 layout: 2columns
 title: Design Considerations
-categories: Quickstart
+categories: Documentation
+guides: quickstart
 tags: home
 ---
 

@@ -12,7 +12,7 @@
               {% assign current = 'current' %}
             {% endif %}
             
-            {% if category[0] == 'Guides' %}
+            {% if category[0] == 'Documentation' %}
             <li class="option">
               <div id="guides-menu" class="ch-dropdown-skin">
                 <span>{{ category[0] }}</span>
@@ -23,6 +23,18 @@
                     {% endif %}
                   <li><a class="{{ current }}" href="/guides">All guides</a></li>
                     
+                    {% assign current = nil %}
+                    {% if page.guide == 'core-concepts' %}
+                           {% assign current = 'current' %}
+                    {% endif %}
+                  <li><a class="{{ current }}" href="/core-concepts">Documentation</a></li>
+
+                    {% assign current = nil %}
+                    {% if page.guide == 'quickstart' %}
+                           {% assign current = 'current' %}
+                    {% endif %}
+                  <li><a class="{{ current }}" href="/getting-started">Quickstart</a></li>
+
                     {% assign current = nil %}
                     {% if page.guide == 'buyers' %}
                            {% assign current = 'current' %}

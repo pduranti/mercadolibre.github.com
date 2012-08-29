@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Choose category
-categories: Guides
+categories: Documentation
 tags: Category
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: 2columns
 title: Pausing an item
-categories: Guides
+categories: Documentation
 tags: 
 - Lost
 ---

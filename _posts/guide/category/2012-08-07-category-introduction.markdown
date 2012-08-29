@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Category API
-categories: Guides
+categories: Documentation
 tags: Category
 ---
 

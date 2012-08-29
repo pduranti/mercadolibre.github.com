@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Private user information
-categories: Guides
+categories: Documentation
 tag: Users
 ---
 

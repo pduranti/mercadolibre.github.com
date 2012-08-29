@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: List with variations
-categories: Guides
+categories: Documentation
 guide: seller
 tags: Selling
 ---

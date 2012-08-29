@@ -1,7 +1,7 @@
 ---
 layout: 2columns
 title: Real estate listing
-categories: Guides
+categories: Documentation
 tags: Lost
 ---
 
