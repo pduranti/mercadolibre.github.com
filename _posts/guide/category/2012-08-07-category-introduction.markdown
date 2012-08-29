@@ -1,8 +1,11 @@
 ---
 layout: guides
 title: Category API
-categories: Documentation
-tags: Category
+categories: 
+- Seaching
+- Documentation
+tags: 
+- Category
 ---
 
 

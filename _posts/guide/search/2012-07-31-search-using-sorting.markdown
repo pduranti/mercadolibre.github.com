@@ -1,7 +1,9 @@
 ---
 layout: guides
 title: Search and sort the results
-categories: Documentation
+categories: 
+- Searching
+- Category
 menu: search
 tags: 
 - Searching

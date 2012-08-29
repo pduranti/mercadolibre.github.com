@@ -1,8 +1,11 @@
 ---
 layout: guides
 title: Choose category
-categories: Documentation
-tags: Category
+categories:
+- Searching
+- Category
+tags: 
+- Category
 ---
 
 

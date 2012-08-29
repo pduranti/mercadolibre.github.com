@@ -1,9 +1,13 @@
 ---
 layout: guides
 title: Add description to items
-categories: Selling Orders
+categories: 
+- Selling 
+- Orders
+- Notifications
 menu: seller
-tags: Selling
+tags: 
+- Selling
 ---
 
 

@@ -1,10 +1,13 @@
 ---
 layout: guides
 title: Managing questions blacklist
-categories: Documentation
+categories: 
+- Bookmarks
+- Questions
+- Feedback
 menu: buyer
 tags: 
-- For Buyers
+- Questions
 ---
 
 ###Overview

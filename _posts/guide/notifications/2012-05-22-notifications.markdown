@@ -1,8 +1,13 @@
 ---
 layout: guides
 title: Listening to Notifications
-categories: Documentation
-tag: Notifications
+categories: 
+- Selling 
+- Orders
+- Notifications
+menu: seller
+tags: 
+- Notifications
 ---
 
 #Notifications

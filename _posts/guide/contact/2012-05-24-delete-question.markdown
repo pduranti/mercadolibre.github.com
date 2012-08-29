@@ -1,10 +1,13 @@
 ---
 layout: guides
 title: Delete a question
-categories: Documentation
+categories: 
+- Bookmarks
+- Questions
+- Feedback
 menu: buyer
 tags: 
-- For Buyers
+- Questions
 ---
 
 #Delete a question

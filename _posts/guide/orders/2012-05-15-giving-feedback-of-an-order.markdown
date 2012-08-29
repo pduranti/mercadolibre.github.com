@@ -1,9 +1,13 @@
 ---
 layout: guides
 title: Giving feedback to an order
-categories: Documentation
+categories: 
+- Bookmarks
+- Questions
+- Feedback
 menu: buyer
-tag: For Buyers
+tags: 
+- Feedback
 ---
 
 #Feedback API

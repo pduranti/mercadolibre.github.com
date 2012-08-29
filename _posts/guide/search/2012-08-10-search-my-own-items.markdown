@@ -1,9 +1,13 @@
 ---
 layout: guides
 title: Search my own items
-categories: Selling Orders
+categories: 
+- Selling 
+- Orders
+- Notifications
 menu: seller
-tags: Orders
+tags: 
+- Orders
 ---
 
 

@@ -1,11 +1,14 @@
 ---
 layout: guides
 title: Add pictures to items
-categories: Selling Orders
+categories: 
+- Selling 
+- Orders
+- Notifications
 menu: seller
-tags: Selling
+tags: 
+- Selling
 ---
-
 
 # Add pictures to existing items
 

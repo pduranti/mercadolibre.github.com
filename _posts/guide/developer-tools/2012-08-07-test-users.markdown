@@ -1,9 +1,12 @@
 ---
-layout: 2columns
+layout: guides
 title: Test users
-categories: [Developer Tools]
+categories: 
+- SDKs 
+- Test Users
 menu: developer-tools
-tags: SDKs
+tags: 
+- Test Users
 ---
 
 # Create test users

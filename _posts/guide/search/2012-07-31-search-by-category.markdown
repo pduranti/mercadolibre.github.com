@@ -1,7 +1,8 @@
 ---
 layout: guides
 title: Search by category
-categories: Documentation
+categories: 
+- Searching
 menu: search
 tags: 
 - Searching

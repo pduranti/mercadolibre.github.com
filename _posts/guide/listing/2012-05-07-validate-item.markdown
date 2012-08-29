@@ -1,9 +1,13 @@
 ---
 layout: guides
 title: Validate item
-categories: Selling Orders
+categories: 
+- Selling 
+- Orders
+- Notifications
 menu: seller
-tags: Selling
+tags: 
+- Selling
 ---
 
 #Validate Item before posting

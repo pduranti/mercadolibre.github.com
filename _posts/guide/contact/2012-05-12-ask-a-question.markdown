@@ -1,10 +1,13 @@
 ---
 layout: guides
 title: Ask a question
-categories: Documentation
+categories: 
+- Bookmarks
+- Questions
+- Feedback
 menu: buyer
 tags: 
-- For Buyers
+- Questions
 ---
 
 

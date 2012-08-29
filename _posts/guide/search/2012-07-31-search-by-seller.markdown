@@ -1,7 +1,9 @@
 ---
 layout: guides
 title: Search by seller
-categories: Documentation
+categories: 
+- Searching
+- Category
 menu: search
 tags: 
 - Searching

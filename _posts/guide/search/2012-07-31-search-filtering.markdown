@@ -1,7 +1,9 @@
 ---
 layout: guides
 title: Search by using filters
-categories: Documentation
+categories: 
+- Searching
+- Category
 menu: search
 tags: 
 - Searching

@@ -1,9 +1,13 @@
 ---
 layout: guides
 title: List with variations
-categories: Selling Orders
+categories: 
+- Selling 
+- Orders
+- Notifications
 menu: seller
-tags: Selling
+tags: 
+- Selling
 ---
 
 

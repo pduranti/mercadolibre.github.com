@@ -1,10 +1,13 @@
 ---
 layout: guides
 title: Bookmark your items
-categories: Documentation
+categories: 
+- Bookmarks
+- Questions
+- Feedback
 menu: buyer
 tags: 
-- For Buyers
+- Bookmarks
 ---
 
 <div class="contents">

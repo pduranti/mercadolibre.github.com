@@ -1,9 +1,13 @@
 ---
 layout: guides
 title: Listing introduction
-categories: Selling Orders
+categories: 
+- Selling 
+- Orders
+- Notifications
 menu: seller
-tags: Selling
+tags: 
+- Selling
 ---
 
 # Listings Introduction

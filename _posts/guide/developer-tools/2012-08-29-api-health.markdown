@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: API Health
 menu: developer-tools
 ---

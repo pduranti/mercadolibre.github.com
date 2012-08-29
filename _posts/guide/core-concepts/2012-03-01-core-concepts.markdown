@@ -1,9 +1,11 @@
 ---
-layout: 2columns
+layout: guides
 title: Introduction
-categories: Documentation
+categories: 
+- Overview
 menu: overview
-tags: overview
+tags: 
+- Overview
 ---
 
 #Introduction

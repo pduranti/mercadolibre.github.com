@@ -1,11 +1,14 @@
 ---
 layout: guides
 title: Update an item
-categories: Selling Orders
+categories: 
+- Selling 
+- Orders
+- Notifications
 menu: seller
-tags: Selling
+tags: 
+- Selling
 ---
-
 
 
 #Update an Item
