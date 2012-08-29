@@ -1,9 +1,11 @@
 ---
 layout: guides
 title: OAuth introduction
-categories: Documentation
+categories: 
+- Authentication
 guide: authentication
-tags: Authentication
+tags: 
+- Authentication
 ---
 
 # OAuth introduction

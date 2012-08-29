@@ -1,9 +1,11 @@
 ---
 layout: guides
 title: Using OAuth
-categories: Documentation
+categories: 
+- Authentication
 guide: authentication
-tags: Authentication
+tags: 
+- Authentication
 ---
 
 # Authorizing an applications
