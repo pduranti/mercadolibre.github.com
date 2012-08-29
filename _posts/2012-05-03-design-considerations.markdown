@@ -1,9 +1,11 @@
 ---
 layout: guides
 title: Design Considerations
-categories: Quickstart
+categories: 
+- Quickstart
 menu: quickstart
-tags: home
+tags: 
+- Quickstart
 ---
 
 # Design Considerations

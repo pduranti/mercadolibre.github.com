@@ -1,9 +1,11 @@
 ---
 layout: guides
 title: Creating your own application
-categories: Quickstart
+categories: 
+- Quickstart
 menu: quickstart
-tags: home
+tags: 
+- Quickstart
 ---
 
 # Creating your own application

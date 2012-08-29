@@ -1,9 +1,11 @@
 ---
 layout: guides
 title: Getting Started
-categories: Quickstart
+categories: 
+- Quickstart
 menu: quickstart
-tags: home
+tags: 
+- Quickstart
 ---
 
 # Getting Started

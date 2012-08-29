@@ -1,9 +1,11 @@
 ---
 layout: guides
 title: Authentication &amp; Authorization
-categories: Quickstart
+categories: 
+- Quickstart
 menu: quickstart
-tags: home
+tags: 
+- Quickstart
 ---
 
 #Authentication & Authorization
