@@ -2,7 +2,7 @@
 layout: guides
 title: Giving feedback to an order
 categories: Documentation
-guide: buyers
+menu: buyer
 tag: For Buyers
 ---
 
