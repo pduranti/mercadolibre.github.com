@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Creating your own application
 categories: Quickstart
 menu: quickstart

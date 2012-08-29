@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Getting Started
 categories: Quickstart
 menu: quickstart
