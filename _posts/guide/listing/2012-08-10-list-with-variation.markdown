@@ -1,10 +1,11 @@
 ---
 layout: guides
 title: List with variations
-categories: Documentation
+categories: Selling Orders
 menu: seller
 tags: Selling
 ---
+
 
 #List an item with variation
 

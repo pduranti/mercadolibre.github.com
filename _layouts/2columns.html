@@ -67,11 +67,7 @@
     {% include header.html %}
 
   <nav class="ch-g1-5 sidebar">
-
-      {% for category in page.categories %} 
-      <h2 id="{{ category[0] }}-ref">{{ category[0] }}</h2>
-      {% endfor %}
-
+      <h2>{{ page.categories }}</h2>
       <ul>
      {% for tag in page.tags %}
           {% for post in site.tags.[tag] reversed %}

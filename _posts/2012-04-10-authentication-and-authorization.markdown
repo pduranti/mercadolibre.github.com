@@ -1,7 +1,7 @@
 ---
 layout: 2columns
 title: Authentication &amp; Authorization
-categories: Documentation
+categories: Quickstart
 menu: quickstart
 tags: home
 ---

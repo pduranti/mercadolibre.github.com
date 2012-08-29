@@ -1,7 +1,7 @@
 ---
 layout: 2columns
 title: Getting Started
-categories: Documentation
+categories: Quickstart
 menu: quickstart
 tags: home
 ---

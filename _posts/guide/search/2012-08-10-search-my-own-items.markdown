@@ -1,9 +1,9 @@
 ---
 layout: guides
 title: Search my own items
-categories: Documentation
+categories: Selling Orders
 menu: seller
-tags: Selling
+tags: Orders
 ---
 
 

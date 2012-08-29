@@ -1,10 +1,11 @@
 ---
 layout: guides
 title: List items
-categories: Documentation
+categories: Selling Orders
 menu: seller
 tags: Selling
 ---
+
 
 # List your Item
 

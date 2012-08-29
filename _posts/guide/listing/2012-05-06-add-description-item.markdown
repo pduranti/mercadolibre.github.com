@@ -1,10 +1,11 @@
 ---
 layout: guides
 title: Add description to items
-categories: Documentation
+categories: Selling Orders
 menu: seller
 tags: Selling
 ---
+
 
 # Add description to existing items
 

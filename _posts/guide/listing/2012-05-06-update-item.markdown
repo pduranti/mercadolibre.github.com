@@ -1,10 +1,11 @@
 ---
 layout: guides
 title: Update an item
-categories: Documentation
+categories: Selling Orders
 menu: seller
 tags: Selling
 ---
+
 
 
 #Update an Item

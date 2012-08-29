@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Listing introduction
-categories: Documentation
+categories: Selling Orders
 menu: seller
 tags: Selling
 ---

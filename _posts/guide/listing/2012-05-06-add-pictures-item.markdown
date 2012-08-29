@@ -1,10 +1,11 @@
 ---
 layout: guides
 title: Add pictures to items
-categories: Documentation
+categories: Selling Orders
 menu: seller
 tags: Selling
 ---
+
 
 # Add pictures to existing items
 
