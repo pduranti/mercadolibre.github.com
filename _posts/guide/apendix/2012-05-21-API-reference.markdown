@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: guides
 title: Appendix - API Reference
 categories: 
 - Appendix
