@@ -19,11 +19,6 @@
             <span>Documentation</span>
               <ul>
                 {% assign current = nil %}
-                {% if page.menu == 'all' %}
-                    {% assign current = 'current' %}
-                {% endif %}
-                <li><a class="{{ current }}" href="/guides">All guides</a></li>
-                {% assign current = nil %}
                 {% if page.menu == 'overview' %}
                     {% assign current = 'current' %}
                 {% endif %}
@@ -53,6 +48,11 @@
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/authentication">Authentication</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'all' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/guides">All guides</a></li>
               </ul>
             </div>
           </li>

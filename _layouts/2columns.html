@@ -64,11 +64,14 @@
   <body>
     <div id="toTop">^ Back to Top</div>
 
-
     {% include header.html %}
 
   <nav class="ch-g1-5 sidebar">
-      <h2>{{ page.categories }} </h2>
+
+      {% for category in page.categories %} 
+      <h2 id="{{ category[0] }}-ref">{{ category[0] }}</h2>
+      {% endfor %}
+
       <ul>
      {% for tag in page.tags %}
           {% for post in site.tags.[tag] reversed %}
