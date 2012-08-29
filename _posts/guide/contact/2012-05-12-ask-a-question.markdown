@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: Ask a question
-categories: Guides
+categories: Documentation
 guide: buyers
 tags: 
 - For Buyers
