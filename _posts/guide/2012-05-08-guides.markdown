@@ -2,7 +2,7 @@
 layout: 1columns
 title: Guides
 categories: Documentation
-guide: all
+menu: all
 guides: 
 - Searching
 - Selling

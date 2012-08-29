@@ -2,6 +2,7 @@
 layout: 1columns
 title: Category Map
 category: Documentation
+menu: all
 subcategory: all
 ---
 

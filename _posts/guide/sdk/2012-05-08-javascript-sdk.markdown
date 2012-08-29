@@ -2,6 +2,7 @@
 layout: 2columns
 title: Javascript SDK
 categories: [Developer Tools]
+menu: developer-tools
 tags: SDKs
 ---
 

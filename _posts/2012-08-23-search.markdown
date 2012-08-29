@@ -1,6 +1,7 @@
 ---
 layout: search
 title: Search
+menu: search
 ---
 
 

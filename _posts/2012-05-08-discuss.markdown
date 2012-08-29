@@ -2,6 +2,7 @@
 layout: 2columns
 title: Discuss
 categories: Forums
+menu: forums
 tags: forum
 ---
 

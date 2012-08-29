@@ -2,7 +2,7 @@
 layout: 2columns
 title: Creating your own application
 categories: Documentation
-guide: quickstart
+menu: quickstart
 tags: home
 ---
 

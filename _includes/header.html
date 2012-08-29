@@ -5,67 +5,47 @@
     </hgroup>
       <nav class="ch-g2-3">
         <ul>
-          {% for category in site.categories %} 
-            
-            {% assign current = nil %}
-            {% if category[0] == page.categories[0] %}
-              {% assign current = 'current' %}
-            {% endif %}
-            
-            {% if category[0] == 'Documentation' %}
-            <li class="option">
-              <div id="guides-menu" class="ch-dropdown-skin">
-                <span>{{ category[0] }}</span>
-                <ul>
-                    {% assign current = nil %}
-                    {% if page.guide == 'all' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/guides">All guides</a></li>
-                    
-                    {% assign current = nil %}
-                    {% if page.guide == 'overview' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/core-concepts">Overview</a></li>
 
-                    {% assign current = nil %}
-                    {% if page.guide == 'quickstart' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/getting-started">Quickstart</a></li>
+         {% assign current = nil %}
+         {% if page.menu == 'developer-tools' %}
+            {% assign current = 'quickstart' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/getting-started">Quickstart</a>
+          </li>
+        
+          <li class="option">
+            <div id="guides-menu" class="ch-dropdown-skin">
+            <span>Documentation</span>
+              <ul>
+                {% assign current = nil %}
+                {% if page.guide == 'all' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/guides">All guides</a></li>
+                {% assign current = nil %}
+                {% if page.guide == 'api-reference' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/guide-appendix">API reference</a></li>
+              </ul>
+            </div>
+          </li>
 
-                    {% assign current = nil %}
-                    {% if page.guide == 'buyers' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/bookmarks">Buyer guides</a></li>
-                    
-                    {% assign current = nil %}
-                    {% if page.guide == 'search' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/search-visual-introduction">Searching guide</a></li>
-
-                    {% assign current = nil %}
-                    {% if page.guide == 'seller' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/listing-introduction">Selling guides</a></li>
-
-                    {% assign current = nil %}
-                    {% if page.guide == 'api-reference' %}
-                           {% assign current = 'current' %}
-                    {% endif %}
-                  <li><a class="{{ current }}" href="/guide-appendix">API Reference</a></li>
-                </ul>
-              </div>
-            </li>
-            {% else %}
-              <li class="option"><a class="{{ current }}" href="{{ category[1].last.url }}">{{ category[0] }}</a></li>
-            {% endif %}
-          
-          {% endfor %}
+         {% assign current = nil %}
+         {% if page.menu == 'developer-tools' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/javascript-sdk">Developer Tools</a>
+          </li>
+         {% assign current = nil %}
+         {% if page.menu == 'forums' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/discuss">Forums</a>
+          </li>
           <li class="option">
             <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
           </li>
