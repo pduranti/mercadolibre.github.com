@@ -1,28 +1,33 @@
 ---
-layout: 2columns
+layout: guides
 title: Search and page the results
-categories: guides
+categories: 
+- Searching
+- Category
+menu: search
 tags: 
 - Searching
 ---
 
 # Search and page the results
 
-## Table of Contents
-- [Overview](#paging-overview)
-- [Limit](#paging-limit)
-- [Offset](#paging-offset)
-- [Define a range of results](#paging-range)
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('paging-overview')">Overview</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('paging-limit')">Limit</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('paging-offset')">Offset</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('paging-range')">Define a range of results</a></dt>
+  </dl>
+</div>
 
-
-##  Overview {#pagging-description}
+##  Overview {#paging-overview}
 
 You can define the page size of the result list. 
-There are 2 parameters: [limit](#paging-limit) and [offset](#paging-offset). Those parameters define the size block of the results. 
+There are 2 parameters: <a href="javascript:void(0)" onClick="goToByScroll('paging-limit')">Limit</a> and <a href="javascript:void(0)" onClick="goToByScroll('paging-offset')">Offset</a>. Those parameters define the size block of the results. 
                           
-<center>
+
 ![range slider](/images/range-slider.png)
-</center>
 
 Default values are offset=0 and limit=50. 
 
@@ -136,17 +141,5 @@ It retrieves a JSON data with an array of 5 items as shown:
 ## Response {#search-response}
 
 Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other APIs. It is a standard format to get [API documentation](/design-considerations/#options) 
-
-<iframe id="search_api_embed"
-  src="javascript:void(0)"
-    scrolling="no"
-      frameborder="0"
-        width="100%"
-          height="900">
-</iframe>
-<script type="text/javascript">
-            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?q=ipod nano';
-</script>
-
 
 For more information about search options you can check the website [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)

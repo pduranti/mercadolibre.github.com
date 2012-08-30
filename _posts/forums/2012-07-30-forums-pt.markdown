@@ -1,7 +1,7 @@
 ---
 layout: forums
 title: Fóruns
-tags: home
+categories: Forums
 ---
 
 <iframe id="forum_embed"

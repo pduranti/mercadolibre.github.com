@@ -1,8 +1,13 @@
 ---
-layout: 2columns
+layout: guides
 title: Delete a question
-categories: guides
-tags: Contact
+categories: 
+- Bookmarks
+- Questions
+- Feedback
+menu: buyer
+tags: 
+- Questions
 ---
 
 #Delete a question

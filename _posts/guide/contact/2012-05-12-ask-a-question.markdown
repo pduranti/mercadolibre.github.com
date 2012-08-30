@@ -1,8 +1,13 @@
 ---
-layout: 2columns
+layout: guides
 title: Ask a question
-categories: guides
-tags: Contact
+categories: 
+- Bookmarks
+- Questions
+- Feedback
+menu: buyer
+tags: 
+- Questions
 ---
 
 

@@ -1,7 +1,11 @@
 ---
-layout: 1columns
+layout: guides
 title: Discuss
-tags: home
+categories: 
+- Discuss
+menu: Discuss
+tags: 
+- How to contact us
 ---
 
 ## Get in contact with us and with other developers!

@@ -1,10 +1,14 @@
 ---
-layout: 2columns
+layout: guides
 title: Validate item
-categories: guides
-tags: Selling
+categories: 
+- Selling 
+- Orders
+- Notifications
+menu: seller
+tags: 
+- Selling
 ---
-
 
 #Validate Item before posting
 You can verify if you listing would be OK before sending a real POST to the Items API. The Items API provide a validation service to check you listing details before publishing it. It’s very useful to practice and check attributes variations!

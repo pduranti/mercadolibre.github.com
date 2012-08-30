@@ -1,8 +1,13 @@
 ---
-layout: 2columns
+layout: guides
 title: Relist an item
-categories: guides
-tags: Selling
+categories: 
+- Selling 
+- Orders
+- Notifications
+menu: seller
+tags: 
+- Selling
 ---
 
 #Relist an Item

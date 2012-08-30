@@ -1,8 +1,11 @@
 ---
-layout: 1columns
+layout: guides
 title: Appendix - Related APIs
-categories: guides
-tags: Appendix
+categories: 
+- Appendix
+menu: api-reference
+tags: 
+- Appendix
 ---
 
 #Appendix – Related APIs

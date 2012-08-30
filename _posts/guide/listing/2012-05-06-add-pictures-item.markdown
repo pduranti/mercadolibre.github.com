@@ -1,8 +1,13 @@
 ---
-layout: 2columns
+layout: guides
 title: Add pictures to items
-categories: guides
-tags: Selling
+categories: 
+- Selling 
+- Orders
+- Notifications
+menu: seller
+tags: 
+- Selling
 ---
 
 # Add pictures to existing items

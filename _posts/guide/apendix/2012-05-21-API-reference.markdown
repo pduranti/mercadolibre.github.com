@@ -1,8 +1,11 @@
 ---
-layout: 1columns
+layout: guides
 title: Appendix - API Reference
-categories: guides
-tags: Appendix
+categories: 
+- Appendix
+menu: api-reference
+tags: 
+- Appendix
 apis:
 - ["https://api.mercadolibre.com/applications/121", "Applications"]
 - ["https://api.mercadolibre.com/users/99580221/addresses", "Addresses"]

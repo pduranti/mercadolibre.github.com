@@ -4,7 +4,7 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
 <!--[if (gt IE 8)|!(IE)]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-	{% include meta-tags.html %}
+  {% include meta-tags.html %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ page.title }}</title>  
@@ -17,48 +17,59 @@
     <link rel="canonical" href="{{ page.url | canonical }}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
+    <style>
+    #toTop {
+        width:100px;
+            border:1px solid #ccc;
+            background:#f7f7f7;
+            text-align:center;
+            padding:5px;
+            position:fixed; /* this is the magic */
+            bottom:10px; /* together with this to put the div at the bottom*/
+            right:10px;
+            cursor:pointer;
+            display:none;
+            color:#333;
+            font-family:verdana;
+            font-size:11px;
+    }
+    </style>
+    <script>
+    $(function() {
+      $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+          $('#toTop').fadeIn(); 
+        } else {
+          $('#toTop').fadeOut();
+        }
+      });
+     
+      $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+      }); 
+    });
+    </script>
+
+    <script type="text/javascript">
+      function goToByScroll(id){
+          $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+      }
+    </script>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
-    <script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-8863458-51']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
   </head>
   <body>
-    <header class="ch-g1 main">
-      <hgroup class="ch-g1-3">
-        <h1><a href="/">MELI</a></h1>
-        <h2>MELI Developer Products</h2>
-      </hgroup>
-      <nav class="ch-g2-3">
-        <ul>
-          <li><a href="/getting-started">Getting Started</a></li>
-          <li><a href="/guides">Guides & SDKs</a></li>        
-          <li style="border:none"><a href="/forums">Forums</a></li>        
-        </ul>
-      </nav>
-    </header>
+    <div id="toTop">^ Back to Top</div>
 
-	<section class="main ch-g4-5">
-		<div class="ch-leftcolumn">
-      <div id="cse" style="width: 100%;">Loading</div>
-			{{ content }}
-			
-    </section>
-    <nav class="ch-g1-5 sidebar">
-      <h2>Related posts</h2>
+    {% include header.html %}
+
+  <nav class="ch-g1-5 sidebar">
+      <h2>{{ page.categories }}</h2>
       <ul>
-		 {% for tag in page.tags %}
+     {% for tag in page.tags %}
           {% for post in site.tags.[tag] reversed %}
             {% assign current = nil %}
             {% if post.id == page.id %}
@@ -70,26 +81,17 @@
       </ul>
     </nav>
 
+    <section class="main ch-g4-5">
+    <div class="ch-leftcolumn">
+      {{ content }}
+    </section>
     <footer class="ch-g1">
       <div class="ch-g2-3 extras">
         <ul>
           <li>©2012 MercadoLibre</li>
         </ul>
       </div>
-      <p class="ch-g1-3 maintained-by">This project is maintained by <a href="https://github.com/mercadolibre">mercadolibre</a></p>
-      <a href="https://github.com/mercadolibre/mercadolibre.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+      <p class="ch-g1-3 maintained-by"><img src="/images/github.png" alt="Github">Report an issue on <a href="https://github.com/mercadolibre/API/issues" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;<a href="http://www.twitter.com/MercadoLibre" target="_blank"><img src="/images/twitter.png" alt="Twitter">Follow us!!</a></p>
     </footer>
-    <script src="/javascripts/scale.fix.js"></script>
-    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-    <script type="text/javascript"> 
-        google.load('search', '1', {style : google.loader.themes.V2_DEFAULT});
-          google.setOnLoadCallback(function() {
-                  var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-                          '017586013854347464845:atz5lcehloe', customSearchOptions);
-                      customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-                          customSearchControl.draw('cse');
-                            }, true);
-                          </script>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
 </body>
 </html>

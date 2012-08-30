@@ -1,8 +1,6 @@
 ---
-layout: 2columns
+layout: guides
 title: Buying 
-categories: guides
-tags: Buying
 ---
 
 # Buying

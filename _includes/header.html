@@ -1,0 +1,78 @@
+<header class="ch-g1 main">
+    <hgroup class="ch-g1-3">
+    <h1><a href="/">MELI</a></h1>
+    <h2>MELI Developers</h2>
+    </hgroup>
+      <nav class="ch-g2-3">
+        <ul>
+
+         {% assign current = nil %}
+         {% if page.menu == 'quickstart' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/getting-started">First steps</a>
+          </li>
+        
+          <li class="option">
+            <div id="guides-menu" class="ch-dropdown-skin">
+            <span>Documentation</span>
+              <ul>
+                {% assign current = nil %}
+                {% if page.menu == 'overview' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/core-concepts">Overview</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'buyer' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/bookmarks">Buyer guides</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'search' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/search-visual-introduction">Searching guides</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'seller' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/listing-introduction">Selling guides</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'api-reference' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/guide-appendix">API reference</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'authentication' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/authentication">Authentication</a></li>
+              </ul>
+            </div>
+          </li>
+
+         {% assign current = nil %}
+         {% if page.menu == 'developer-tools' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/javascript-sdk">Developer Tools</a>
+          </li>
+         {% assign current = nil %}
+         {% if page.menu == 'forums' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/discuss">Discuss</a>
+          </li>
+          <li class="option">
+            <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
+          </li>
+        </ul>
+    </nav>
+</header>
+
+<script type="text/javascript">
+   var foo = $("#guides-menu").dropdown();
+</script>

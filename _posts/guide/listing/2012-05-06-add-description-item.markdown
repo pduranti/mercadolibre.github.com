@@ -1,9 +1,15 @@
 ---
-layout: 2columns
+layout: guides
 title: Add description to items
-categories: guides
-tags: Selling
+categories: 
+- Selling 
+- Orders
+- Notifications
+menu: seller
+tags: 
+- Selling
 ---
+
 
 # Add description to existing items
 

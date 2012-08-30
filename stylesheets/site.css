@@ -184,20 +184,18 @@ header.main h2 {
 
 
 header.main nav {
-	text-align: right;
-	margin-top: 20px;
+	margin-top: 12px;
 }
 
 header.main nav ul,
 header.main nav form {
-	display: inline;
 	padding: 0 5px;
 }
 
-header.main li {
+header.main .option {
 	border-right: 1px solid #ccc;
-	display:inline;
-	padding:0 10px;
+	display:inline-block;
+	padding:0 6px;
 }
 
 header.main li:last-child {
@@ -472,6 +470,7 @@ footer .maintained-by{
 	position:relative;
 	padding:20px 35px 20px 20px;
 	margin-top:20px;
+	width: 93%;
 }
 
 .contents h5 {

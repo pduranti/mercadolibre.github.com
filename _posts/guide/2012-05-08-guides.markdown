@@ -1,27 +1,22 @@
 ---
 layout: 1columns
 title: Guides
-categories: tutorials popular
+categories: Documentation
+menu: all
 guides: 
-- SDKs
 - Searching
-- Buying
 - Selling
-- Contact
+- Orders
 - My Publications
 - Notifications
-- My Orders
 - Users
 - Category
 - Appendix
-- New Guides
 ---
 
-# Guides & SDKs
+# Guides
 
-This describes the resources that make up the official MELI API. If
-you have any problems or requests please contact
-[support](mailto:developers@mercadolibre.com?subject=Meli-API).
+This describes the resources that make up the official MELI API.
 
 **Note:** This API is in a beta state. Changes may occur.
 

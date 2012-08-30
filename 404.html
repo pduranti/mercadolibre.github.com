@@ -23,33 +23,103 @@
 	<![endif]-->
 </head>
 <body>
-	<header class="ch-g1 main">
-		<hgroup class="ch-g1-3">
-			<h1><a href="/">MELI</a></h1>
-			<h2>MELI Developer Products</h2>
-		</hgroup>
-		<nav class="ch-g2-3">
-			<ul>
-				<li><a href="/getting-started">Getting Started</a></li>
-				<li><a href="/guides">Guides & SDKs</a></li>
-			</ul>
-		</nav>
-	</header>
+<header class="ch-g1 main">
+    <hgroup class="ch-g1-3">
+    <h1><a href="/">MELI</a></h1>
+    <h2>MELI Developer Products</h2>
+    </hgroup>
+      <nav class="ch-g2-3">
+        <ul>
+
+         {% assign current = nil %}
+         {% if page.menu == 'quickstart' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/getting-started">Quickstart</a>
+          </li>
+        
+          <li class="option">
+            <div id="guides-menu" class="ch-dropdown-skin">
+            <span>Documentation</span>
+              <ul>
+                {% assign current = nil %}
+                {% if page.menu == 'overview' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/core-concepts">Overview</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'buyer' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/bookmarks">Buyer guides</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'search' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/search-visual-introduction">Searching guides</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'seller' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/listing-introduction">Selling guides</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'api-reference' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/guide-appendix">API reference</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'authentication' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/authentication">Authentication</a></li>
+                {% assign current = nil %}
+                {% if page.menu == 'all' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/guides">All guides</a></li>
+              </ul>
+            </div>
+          </li>
+
+         {% assign current = nil %}
+         {% if page.menu == 'developer-tools' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/javascript-sdk">Developer Tools</a>
+          </li>
+         {% assign current = nil %}
+         {% if page.menu == 'forums' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/discuss">Forums</a>
+          </li>
+          <li class="option">
+            <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
+          </li>
+        </ul>
+    </nav>
+</header>
+
+<script type="text/javascript">
+   var foo = $("#guides-menu").dropdown();
+</script>
 
 	<section class="main ch-g1">
 		<h2>Sorry, we can't find the page you're looking for. <span class="error404">(Error 404)</span></h2>
 		<p>Would you like to add content to the site? You can <a href="https://github.com/mercadolibre/mercadolibre.github.com">fork repo on GitHub</a> and contribute!</p>
 	</section>
 
-	<footer class="ch-g1">
-		<div class="ch-g2-3 extras">
-		<ul>
-			<li>©2012 MercadoLibre</li>
-		</ul>
-		</div>
-		<p class="ch-g1-3 maintained-by">This project is maintained by <a href="https://github.com/mercadolibre">MercadoLibre</a></p>
-		<a href="https://github.com/mercadolibre/mercadolibre.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
-	</footer>
+  <footer class="ch-g1">
+    <div class="ch-g2-3 extras">
+      <ul>
+       <li>©2012 MercadoLibre</li>
+      </ul>
+    </div>
+      <p class="ch-g1-3 maintained-by"><img src="/images/github.png" alt="Github">Report an issue on <a href="https://github.com/mercadolibre/API/issues" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;<a href="http://www.twitter.com/MercadoLibre" target="_blank"><img src="/images/twitter.png" alt="Twitter">Follow us!!</a></p>
+  </footer>
 	
 	<script src="javascripts/scale.fix.js"></script>
 	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->

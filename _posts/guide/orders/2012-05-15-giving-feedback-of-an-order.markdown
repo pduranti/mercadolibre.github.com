@@ -1,25 +1,36 @@
 ---
-layout: 2columns
+layout: guides
 title: Giving feedback to an order
-categories: guides
-tag: My Orders
+categories: 
+- Bookmarks
+- Questions
+- Feedback
+menu: buyer
+tags: 
+- Feedback
 ---
 
 #Feedback API
 
-##Overview
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('url')">URL of Feedback APIs</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('parameters')">Valid Parameters</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('possible-reasons')">Possible values for reason</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('post-feedback-seller')">Post feedback as a Seller</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('post-feedback-buyer')">Post feedback as a Buyer</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('reply-feedback')">Reply on feedback you received</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('change-feedback')">Changing a previous feedback</a></dt>
+  </dl>
+</div>
+
+##Overview {#overview}
+
 After completing a sale and a purchase, according to MercadoLibre’s rules, each part has to provide feedback about the transaction (an order).
 This feedback says if the order was fulfilled and the seller and buyer rate each other respectively.
 Seller’s and buyer’s score on MercadoLibre platform is calculated based on these ratings.
-
-## Table of Contents
-- [URL of Feedback APIs](#url)
-- [Valid Parameters](#parameters)
-- [Possible values for reason](#possible-reasons)
-- [Post feedback as a Seller](#post-feedback-seller)
-- [Post feedback as a Buyer] (#post-feedback-buyer)
-- [Reply on feedback you received] (#reply-feedback)
-- [Changing a previous feedback] (#change-feedback)
 
 #API URL {#url}
 https://api.mercadolibre.com/orders/ORDER_ID/feedback

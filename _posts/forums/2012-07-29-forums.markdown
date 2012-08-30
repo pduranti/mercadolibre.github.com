@@ -1,7 +1,11 @@
 ---
-layout: 1columns
+layout: guides
 title: Forums 
-categories: tutorials popular
+categories: 
+- Forums
+menu: forums
+tags: 
+- Forums
 ---
 
 # Forums

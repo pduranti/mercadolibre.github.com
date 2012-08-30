@@ -1,8 +1,11 @@
 ---
-layout: 2columns
-title: Authentication & Authorization
-categories: tutorials popular
-tags: home
+layout: guides
+title: Authentication &amp; Authorization
+categories: 
+- Quickstart
+menu: quickstart
+tags: 
+- Quickstart
 ---
 
 #Authentication & Authorization
@@ -10,14 +13,19 @@ tags: home
 Authentication gives your app the ability to know the identity of a MELI user, and to read and write data via MELI's APIs. The platform uses [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) for authentication and authorization.  
 A successful authentication flow results in your application obtaining a user access token which can be used to make requests to MELI's APIs. 
 
-### Table of Contents
-- [Access token validity](#token-validity)
-- [Steps obtaining an access token](#steps-obtaining-token)
-- [Scenarios](#scenarios)
-- [Web Server Applications](#webserver-applications)
-- [Refresh your token](#token-refresh)
-- [Client-side Applications](#client-side-flow)
-- [Error Codes Reference](#error-codes)
+<div class="contents">
+<h5>Table of Contents</h5>
+
+<dl>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('token-validity')">Access token validity</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('steps-obtaining-token')">Steps obtaining an access token</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('scenarios')">Scenarios</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('webserver-applications')">Web Server Applications</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('token-refresh')">Refresh your token</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('client-side-flow')">Client-side Applications</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('error-codes')">Error Codes Reference</a></dt>
+</dl>
+</div>
 
 
 ##Access Token Validity & Expiration {#token-validity}
@@ -105,7 +113,7 @@ The app secret can be viewed when you log in to our [Applications Portal](http:/
 To authenticate your app and get a token make a *POST* to the following URL:
 
 <pre>
-https://api.mercadolibre.com/oauth/token?grant_type=authorization_code&client_id=CLIENT_ID&client_secret=CLIENT_SECRET&code=SECRET_CODE&redirect_uri=$APP_CALLBACK_URL
+https://api.mercadolibre.com/oauth/token?grant_type=authorization_code&amp;client_id=CLIENT_ID&amp;client_secret=CLIENT_SECRET&amp;code=SECRET_CODE&amp;redirect_uri=$APP_CALLBACK_URL
 </pre>
 
 <h4>Parameters</h4>
@@ -174,7 +182,7 @@ The consumer should make POST request to the token endpoint, with the following 
 
 <h4>URL to POST</h4>
 <pre>
-  https://api.mercadolibre.com/oauth/token?grant_type=refresh_token&client_id=&client_secret=&refresh_token=
+  https://api.mercadolibre.com/oauth/token?grant_type=refresh_token&amp;client_id=&amp;client_secret=&amp;refresh_token=
 </pre>
 
 
@@ -229,11 +237,11 @@ The main difference is that when the users grants your application with permissi
 
 You don't need to pass your redirect URL. Just make a GET request to this URL:
 
-<pre>https://auth.mercadolibre.com.ar/authorization?response_type=token&client_id=Client_id</pre>
+<pre>https://auth.mercadolibre.com.ar/authorization?response_type=token&amp;client_id=Client_id</pre>
 
 If your app is succesfully authenticated and the user grants permission (consent), the authorization server will redirect to your applications callback URL with an access token in the query string response like this:
 
-<pre>http://YOUR_URL#access_token=APP_USR-6092-3246532-cb45c82853f6e620bb0deda096b128d3-8035443&expires_in=10800&user_id=USER_ID&domains=APP_DOMAINS</pre>
+<pre>http://YOUR_URL#access_token=APP_USR-6092-3246532-cb45c82853f6e620bb0deda096b128d3-8035443&amp;expires_in=10800&amp;user_id=USER_ID&amp;domains=APP_DOMAINS</pre>
 
 **CONSIDERATIONS**
 

@@ -1,8 +1,13 @@
 ---
-layout: 2columns
+layout: guides
 title: Update an item
-categories: guides
-tags: Selling
+categories: 
+- Selling 
+- Orders
+- Notifications
+menu: seller
+tags: 
+- Selling
 ---
 
 

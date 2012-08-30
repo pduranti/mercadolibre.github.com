@@ -1,17 +1,24 @@
 ---
-layout: 2columns
+layout: guides
 title: Search by category
-categories: guides
+categories: 
+- Searching
+menu: search
 tags: 
 - Searching
 ---
 
 # Search by category
 
-### Table of Contents
-- [Overview](#search-overview)
-- [Request](#search-request)
-- [Response](#search-response)
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-overview')">Overview</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-request')">Request</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-response')">Response</a></dt>
+  </dl>
+</div>
+
 
 ## Overview: {#search-overview}
 
@@ -31,17 +38,6 @@ curl https://api.mercadolibre.com/sites/MLA/search?category=MLA5726
 ## Response {#search-response}
 
 Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other APIs. It is a standard format to get [API documentation](/design-considerations/#options) 
-
-<iframe id="search_api_embed"
-  src="javascript:void(0)"
-    scrolling="no"
-      frameborder="0"
-        width="100%"
-          height="900">
-</iframe>
-<script type="text/javascript">
-            document.getElementById('search_api_embed').src ='https://api.mercadolibre.com/sites/MLA/search?category=MLA5726';
-</script>
 
 
 For more information about search options you can check the website [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)

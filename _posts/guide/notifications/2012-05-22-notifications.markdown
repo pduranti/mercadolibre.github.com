@@ -1,8 +1,13 @@
 ---
-layout: 2columns
+layout: guides
 title: Listening to Notifications
-categories: guides
-tag: Notifications
+categories: 
+- Selling 
+- Orders
+- Notifications
+menu: seller
+tags: 
+- Notifications
 ---
 
 #Notifications

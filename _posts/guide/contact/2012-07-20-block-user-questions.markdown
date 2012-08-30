@@ -1,8 +1,13 @@
 ---
-layout: 2columns
+layout: guides
 title: Managing questions blacklist
-categories: guides
-tags: Contact
+categories: 
+- Bookmarks
+- Questions
+- Feedback
+menu: buyer
+tags: 
+- Questions
 ---
 
 ###Overview

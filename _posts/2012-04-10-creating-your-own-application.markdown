@@ -1,11 +1,14 @@
 ---
-layout: 2columns
+layout: guides
 title: Creating your own application
-categories: tutorials popular
-tags: home
+categories: 
+- Quickstart
+menu: quickstart
+tags: 
+- Quickstart
 ---
 
-## Creating your own application
+# Creating your own application
 
 The very first thing you'll probably want to do is to create an _application_ for MELI. When you do that you get a _client ID_ and a _client secret_, which are very important to use when [authenticating and authorizing](/authentication-and-authorization).
 
