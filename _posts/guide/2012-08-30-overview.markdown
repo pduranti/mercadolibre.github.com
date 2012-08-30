@@ -1,0 +1,225 @@
+---
+layout: guides
+title: Getting Started
+menu: quickstart
+---
+
+
+<div class="contents">
+<h5>Table of Contents</h5>
+
+<dl>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('register')">Register an application in MELI</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('profile')">Retrieves your own profile</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('response')">Response</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('next')">How to continue</a></dt>
+</dl>
+</div>
+
+## Register an application in MELI {#register}
+
+The very first thing you'll probably want to do is to create an _application_ for MELI. When you do that you get a _client ID_ and a _client secret_, which are very important to use when [authenticating and authorizing](/authentication-and-authorization).
+
+When you create an application you can start requesting users to grant you access to their information on their behalf, and offer them in exchange some cool features.
+
+So before continuing, make sure you are registered as a user. In case you want to create a user, do it now by browsing to [http://www.mercadolibre.com](http://www.mercadolibre.com).
+
+Now that you have a registered user, go to the [application manager](http://applications.mercadolibre.com) and create an application as described below:
+
+![App details](/images/application-details.png)
+
+
+
+
+## Retrieves your own profile {#profile}
+
+Using our [SDKs](/javascript-sdk) you be able to retrieve your own user profile using your application. 
+
+<div id="code">
+	<ul>
+		<li><a href="#javascript">Tab 1</a></li>
+		<li><a href="#php">Tab 2</a></li>
+		<li><a href="#java">Tab 3</a></li>
+	</ul>
+	<div>
+		<div id="javascript">
+Initialize the API with your client_id as follows:
+
+{% highlight javascript %}
+MELI.init({client_id: 10115});
+{% endhighlight %}
+				
+
+That's it. Afterwards, this line of code will show the First Name of your registration in MELI:
+
+{% highlight javascript %}
+MELI.get(
+  "/users/me",{},
+    function(data) { alert("Hello "+data[2].first_name) }
+);
+{% endhighlight %}
+		</div>
+		<div id="php">
+Initialize the SDK with your __client_id__ as follows:
+
+{% highlight php %}
+// Try to put this code at the top
+require '../src/meli.php';
+
+// Create our Application instance (replace this with your appId and secret).
+$meli = new Meli(array(
+    'appId'         => 10115,
+    'secret'        => 9ykscT65bzPBNQ2SrLqdapp5HbDYddzX,
+));
+			{% endhighlight %}
+		</div>
+		<div id="java">
+			{% highlight java %}
+
+Meli m = new Meli(10115, "9ykscT65bzPBNQ2SrLqdapp5HbDYddzX");
+
+m.authorize("the received code", "http://somecallbackurl");
+
+FluentStringsMap params = new FluentStringsMap();
+params.add("access_token", m.getAccessToken());
+Response response = m.get("/users/me", params);
+
+{% endhighlight %}
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$("#code").tabNavigator();
+</script>
+
+
+## Response {#response}
+
+
+{% highlight javascript %}
+{
+   "id":57249824,
+   "nickname":"TEST_VENTA_MLA1",
+   "registration_date":"2011-05-31T13:26:09.000-04:00",
+   "first_name":"Test",
+   "last_name":"Test",
+   "country_id":"AR",
+   "email":"test310511_5959@robot.com",
+   "identification":{
+      "type":"DNI",
+      "number":"27687784"
+   },
+   "phone":{
+      "area_code":"11",
+      "number":"4242-9990",
+      "extension":"8202",
+      "verified":false
+   },
+   "alternative_phone":{
+      "area_code":"",
+      "number":"46154789",
+      "extension":""
+   },
+   "user_type":"normal",
+   "logo":null,
+   "points":35,
+   "site_id":"MLA",
+   "permalink":"http://perfil.mercadolibre.com.ar/TEST_VENTA_MLA1",
+   "seller_experience":"ADVANCED",
+   "seller_reputation":{
+      "level_id":"5_green",
+      "power_seller_status":null,
+      "transactions":{
+         "period":"12 months",
+         "total":601,
+         "completed":539,
+         "canceled":62,
+         "ratings":{
+            "positive":1,
+            "negative":0,
+            "neutral":0
+         }
+      }
+   },
+   "buyer_reputation":{
+      "canceled_transactions":0,
+      "transactions":{
+         "period":"historic",
+         "total":22,
+         "completed":1,
+         "canceled":{
+            "total":0,
+            "paid":0
+         },
+         "unrated":{
+            "total":6,
+            "paid":0
+         },
+         "not_yet_rated":{
+            "total":15,
+            "paid":0,
+            "units":15
+         }
+      }
+   },
+   "status":{
+      "site_status":"active",
+      "list":{
+         "allow":true,
+         "codes":[
+
+         ],
+         "immediate_payment":{
+            "required":false,
+            "reasons":[
+
+            ]
+         }
+      },
+      "buy":{
+         "allow":true,
+         "codes":[
+
+         ],
+         "immediate_payment":{
+            "required":false,
+            "reasons":[
+
+            ]
+         }
+      },
+      "sell":{
+         "allow":true,
+         "codes":[
+
+         ],
+         "immediate_payment":{
+            "required":true,
+            "reasons":[
+               "mandatory"
+            ]
+         }
+      },
+      "billing":{
+         "allow":true,
+         "codes":[
+
+         ]
+      },
+      "mercadopago_tc_accepted":true,
+      "mercadopago_account_type":"personal",
+      "mercadoenvios":"not_accepted",
+      "immediate_payment":true
+   },
+   "credit":{
+      "consumed":470301.16,
+      "credit_level_id":"MLA1"
+   }
+}
+{% endhighlight %}
+
+
+## How to continue {#next}
+
+Next step 
