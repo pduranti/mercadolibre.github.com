@@ -1,13 +1,11 @@
 ---
-layout: 2columns
+layout: 1columns
 title: Discuss
 tags: home
 ---
 
 ## Get in contact with us and with other developers!
 You can submit questions or comments in our discussions group. Please visit our [forums](/forums).
-
-You can also send an e-mail to [developers@mercadolibre.com](mailto:developers@mercadolibre.com).
 
 We update our SDKs on a regular basis. All announcements will be made via Twitter [@melidevelopers](https://twitter.com/@melidevelopers).
 
@@ -19,7 +17,7 @@ We'd love to see what you are working on! If you have something cool you want to
 
 ### Bugs or suggestions
 
-Most of our projects are public in [GitHub](https://github.com/mercadolibre). Feel free to submit pull requests or issues if you find something that needs to be reviewed.
+You can file bugs or suggest enhancements to our APIs on our public [GitHub](https://github.com/mercadolibre/api/issues).
 
 You can also fork this site and help us keeping it updated and with helpful information!
 
