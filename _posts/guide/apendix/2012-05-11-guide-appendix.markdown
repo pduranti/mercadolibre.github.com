@@ -1,11 +1,11 @@
 ---
 layout: guides
-title: Appendix - Related APIs
+title: Related APIs
 categories: 
-- Appendix
+- API Reference
 menu: api-reference
 tags: 
-- Appendix
+- API Reference
 ---
 
 #Appendix – Related APIs

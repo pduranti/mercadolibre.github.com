@@ -2,12 +2,13 @@
 layout: guides
 title: Delete a question
 categories: 
-- Bookmarks
-- Questions
-- Feedback
-menu: buyer
+- Selling
+- Orders
+- Manage Questions
+- Notifications
+menu: seller
 tags: 
-- Questions
+- Manage Questions
 ---
 
 #Delete a question
