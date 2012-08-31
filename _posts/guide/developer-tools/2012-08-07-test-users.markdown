@@ -9,29 +9,39 @@ tags:
 - Test Users
 ---
 
+
 # Create test users
 
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('create-user')">Create an user</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('response')">Response</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('Policies')">Policies</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('create-user')">Create a user</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('considerations')">Considerations using Test Users</a></dt>
   </dl>
 </div>
 
 ## Overview {#overview}
 
-You can create test users to use in your application. With test users you can operate as a normal user publishing, buying, asking, etc. 
+You can create test users to support you in the process of developing with our APIs. Test users you can operate as normal users: listing, buying and asking questions.
+Test users don't have to pay for the charges generated.
 
-We strongly recommend working responsably with test users. Create only those are actually necessary.  
+Test users will eventually be washed out and you can create new ones.
 
-You can create up to 10 users.
+For the moment each user can create up to 10 test users.
 
-## Create an user 
+## How to create a test user {#create-user}
 
-To create a new one you need to use an access token. For more details about access token see [Authentication &amp; Authorization guide](/authentication-and-authorization). You must define MercadoLibre site id. For more details about sites see [Site API](https://api.mercadolibre.com/sites)
+You need to have your application and a valid user to obtain an access_token.
+If you didn't get your access_token yet, start here [Authentication &amp; Authorization guide](/authentication-and-authorization).
+
+site_id is the input parameter. It is the site where the user is allowed to operate e.g.: MLA, MLB, MLM
+
+For a complete list of sites see [Site API](https://api.mercadolibre.com/sites)
+
+### POST to create the user
+Each API call creates 1 test user.
+
 
 <pre class="terminal">
 
@@ -43,7 +53,8 @@ https://api.mercadolibre.com/users/test_user?access_token=...
 
 </pre>
 
-## Response {#response}
+### Response {#response}
+Id, nickname and password are returned in the response.
 
 {% highlight javascript %}
 {
@@ -54,20 +65,17 @@ https://api.mercadolibre.com/users/test_user?access_token=...
 }
 {% endhighlight %}
 
-## Policies {#policies}
+## Considerations using Test Users {#considerations}
 
-There are some consideration when working with test users.
+There are some consideration you need to know while working with test users.
 
 <ul class="ch-list parameters">
-	<li>Items must clarify that are for test porpouse. </li>
-	<li>Whenever possible you must list in categories like "others". </li>
-	<li>Don't publish items with high exposure with listing types "gold" and "gold_premium" that can appear in the home page</li>
-	<li>Test users must operate (buy, ask, etc) only between them.</li>
-	<li>Test users operate only over test items.</li>
+	<li>When you publish an item, the title must say it is a testing item.</li>
+	<li>List in "Others" categories as much as possible. </li>
+	<li>Do not publish items with listing types "gold" or "gold_premium" that can appear in the home page</li>
+	<li>Test users can only operate with test items. Test users can only buy and make questions on test items.</li>
 	<li>Test users without activity (buy, ask, publish, etc) in last 60 days will be removed.</li>
-	<li>Test items published by user test will be removed.</li>
+	<li>Test items are removed regularly.</li>
 </ul>
-
-
 
 
