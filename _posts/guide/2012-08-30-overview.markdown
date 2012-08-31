@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Getting Started
+title: TTFHW
 menu: quickstart
 ---
 
@@ -11,12 +11,15 @@ menu: quickstart
 <dl>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('register')">Register an application in MELI</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('profile')">Retrieves your own profile</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('apis')">Public &amp; Private APIs</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('response')">Response</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('next')">How to continue</a></dt>
 </dl>
 </div>
 
 ## Register an application in MELI {#register}
+
+
 
 The very first thing you'll probably want to do is to create an _application_ for MELI. When you do that you get a _client ID_ and a _client secret_, which are very important to use when [authenticating and authorizing](/authentication-and-authorization).
 
@@ -26,20 +29,22 @@ So before continuing, make sure you are registered as a user. In case you want t
 
 Now that you have a registered user, go to the [application manager](http://applications.mercadolibre.com) and create an application as described below:
 
-![App details](/images/application-details.png)
-
-
-
-
 ## Retrieves your own profile {#profile}
 
 Using our [SDKs](/javascript-sdk) you be able to retrieve your own user profile using your application. 
 
+<center>
+  <a href="/images/application-details.png">
+      <img src="/images/application-details.png" alt="App details">
+  </a>
+</center>
+
+
 <div id="code">
 	<ul>
-		<li><a href="#javascript">Tab 1</a></li>
-		<li><a href="#php">Tab 2</a></li>
-		<li><a href="#java">Tab 3</a></li>
+		<li><a href="#javascript">Javascript</a></li>
+		<li><a href="#php">PHP</a></li>
+		<li><a href="#java">Java</a></li>
 	</ul>
 	<div>
 		<div id="javascript">
@@ -92,6 +97,46 @@ Response response = m.get("/users/me", params);
 <script type="text/javascript">
 	$("#code").tabNavigator();
 </script>
+
+## Public &amp; Private APIs {#apis}
+
+
+Our APIs are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
+
+Some of these basic methods are:
+* GET: Retrieve information identified by the resource (see [GET](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3)).
+* POST: Create a new resource (see [POST](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5)).
+* PUT: Change a resource (see [PUT](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6)).
+* DELETE: Delete a resource (see [DELETE](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.7)).
+
+
+Our APIs will give you lots of information. Some of it is private, some of it is public. To access to public information you can use just an URL:
+
+<pre class="terminal">$ curl https://api.mercadolibre.com/countries</pre>
+
+You'll get a list of countries:
+    
+{% highlight javascript %}
+[
+  {
+    "id": "AR",
+    "name": "Argentina",
+    "locale": "es_AR",
+    "currency_id": "ARS",
+  },
+  ...
+]
+{% endhighlight %}
+
+But if you need to access to private informtaion you will get access only if you have an access token:
+
+<pre class="terminal">$ curl https://api.mercadolibre.com/users/me?access_token=...</pre>
+
+
+<img src="/images/authentication-authorization.png" alt="Authentication" />
+
+
+
 
 
 ## Response {#response}
@@ -220,6 +265,11 @@ Response response = m.get("/users/me", params);
 {% endhighlight %}
 
 
+
+## Try by yourself {#try}
+
+
+
 ## How to continue {#next}
 
-Next step 
+If you        
