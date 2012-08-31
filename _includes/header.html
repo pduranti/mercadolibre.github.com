@@ -60,11 +60,11 @@
             <a class="{{ current }}" href="/javascript-sdk">Developer Tools</a>
           </li>
          {% assign current = nil %}
-         {% if page.menu == 'forums' %}
+         {% if page.menu == 'community' %}
             {% assign current = 'current' %}
          {% endif %}
           <li class="option">
-            <a class="{{ current }}" href="/discuss">Discuss</a>
+            <a class="{{ current }}" href="/community">Community</a>
           </li>
           <li class="option">
             <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>

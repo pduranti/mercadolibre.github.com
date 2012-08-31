@@ -1,11 +1,6 @@
 ---
 layout: guides
 title: Forums 
-categories: 
-- Forums
-menu: forums
-tags: 
-- Forums
 ---
 
 # Forums

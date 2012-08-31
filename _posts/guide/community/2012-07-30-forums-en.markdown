@@ -1,7 +1,12 @@
 ---
 layout: forums
-title: Fóruns
-categories: Forums
+title: Forums
+categories: 
+- Community
+- Forums
+menu: community
+tags: 
+- Forums
 ---
 
 <iframe id="forum_embed"
@@ -13,7 +18,7 @@ categories: Forums
 </iframe>
 <script type="text/javascript">
             document.getElementById('forum_embed').src =
-                 'https://groups.google.com/forum/embed/?place=forum/pt-meli-developers'
+                 'https://groups.google.com/forum/embed/?place=forum/meli-developers'
                       + '&hideforumtitle=true&hidesubject=true&fragments=true&showsearch=true&showpopout=true&showtabs=false';
 </script>
 

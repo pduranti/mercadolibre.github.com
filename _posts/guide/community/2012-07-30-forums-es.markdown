@@ -1,7 +1,12 @@
 ---
 layout: forums
 title: Foros 
-categories: Forums
+categories: 
+- Community
+- Forums
+menu: community
+tags: 
+- Forums
 ---
 
 <iframe id="forum_embed"

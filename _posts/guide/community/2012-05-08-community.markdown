@@ -1,11 +1,12 @@
 ---
 layout: guides
-title: Discuss
+title: How to contact us
 categories: 
-- Discuss
-menu: Discuss
+- Community
+- Forums
+menu: community
 tags: 
-- How to contact us
+- Community
 ---
 
 ## Get in contact with us and with other developers!
