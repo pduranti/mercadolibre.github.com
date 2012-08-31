@@ -8,8 +8,6 @@ tags:
 - Quickstart
 ---
 
-# Getting Started
-
 If you're reading this it's because you're wondering which is the easiest way to start using our APIs. Good news! It is dead simple!
 
 <div class="contents">

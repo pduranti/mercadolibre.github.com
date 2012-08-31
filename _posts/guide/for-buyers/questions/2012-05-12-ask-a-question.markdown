@@ -4,7 +4,6 @@ title: Ask a question
 categories: 
 - Bookmarks
 - Questions
-- Feedback
 menu: buyer
 tags: 
 - Questions

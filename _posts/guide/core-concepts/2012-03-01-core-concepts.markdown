@@ -8,9 +8,6 @@ tags:
 - Overview
 ---
 
-#Introduction
-
-
 <div class="contents">
 <h5>Table of Contents</h5>
 

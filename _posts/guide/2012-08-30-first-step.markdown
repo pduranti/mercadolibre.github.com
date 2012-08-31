@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: TTFHW
+title: First Step
 menu: quickstart
 ---
 
@@ -20,7 +20,6 @@ menu: quickstart
 ## Register an application in MELI {#register}
 
 
-
 The very first thing you'll probably want to do is to create an _application_ for MELI. When you do that you get a _client ID_ and a _client secret_, which are very important to use when [authenticating and authorizing](/authentication-and-authorization).
 
 When you create an application you can start requesting users to grant you access to their information on their behalf, and offer them in exchange some cool features.
@@ -29,15 +28,15 @@ So before continuing, make sure you are registered as a user. In case you want t
 
 Now that you have a registered user, go to the [application manager](http://applications.mercadolibre.com) and create an application as described below:
 
-## Retrieves your own profile {#profile}
-
-Using our [SDKs](/javascript-sdk) you be able to retrieve your own user profile using your application. 
-
 <center>
-  <a href="/images/application-details.png">
+  <a href="/images/application-detail.png">
       <img src="/images/application-detail.png" alt="App details">
   </a>
 </center>
+
+## Retrieves your own profile {#profile}
+
+Using our [SDKs](/javascript-sdk) you be able to retrieve your own user profile using your application. 
 
 
 <div id="code">
@@ -131,7 +130,6 @@ You'll get a list of countries:
 But if you need to access to private informtaion you will get access only if you have an access token:
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/users/me?access_token=...</pre>
-
 
 ## Authentication &amp; Authorization {#authentication-authorization}
 
@@ -269,42 +267,12 @@ To allow an application to access to your data you need to be [authenticated](/a
 
 ## Try by yourself {#try}
 
-<div class="ch-g1-3">
-  <div class="ch-leftcolumn">
-    <input id="target" type="text" value="" /><BR>    
-    <input id="target" type="text" value="" /><BR>    
-    <input id="target" type="text" value="" /><BR>    
-    <input id="target" type="text" value="" /><BR>    
-    <input id="target" type="text" value="" /><BR>    
-    <input id="target" type="text" value="" /><BR>    
-  </div>
-</div>
-<div class="ch-g2-3">
-  <div class="ch-rightcolumn">
-{% highlight javascript %}
-{
-   "id":57249824,
-   "nickname":"TEST_VENTA_MLA1",
-   "registration_date":"2011-05-31T13:26:09.000-04:00",
-   "first_name":"Test",
-   "last_name":"Test",
-   "country_id":"AR",
-   "email":"test310511_5959@robot.com",
-   "identification":{
-      "type":"DNI",
-      "number":"27687784"
-   },
-...
-}
-{% endhighlight %}
-  </div>
-</div>
+Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 
 <center>
-  <input id="target" type="text" value="10115" />
+  Enter your application data ID:<input id="target" type="text" value="10115" />
   <input class="ch-btn ch-btn-small" type="button" id="show-my-info" value="Show my information"/>
 </center>
-
 
 <script>
     $(document).ready(function() {
@@ -332,7 +300,7 @@ To allow an application to access to your data you need to be [authenticated](/a
 
 ## How to continue {#next}
 
-Going through the [Authentication](/authentication) section will give you the knowledge about registration and gign-in. Reading [Authorization](/authorization) section you will see how applications grants and permission scopes. Platform uses [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) for authentication and authorization. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth 2.0, but you can read [OAuth](/oauth-introduction) section to implement your connection tool. 
+Going through the [Authentication](/authentication) section will give you the knowledge about registration and sign-in. Reading [Authorization](/authorization) section you will see how applications grants and permission scopes. Platform uses [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) for authentication and authorization. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth 2.0, but you can read [OAuth](/oauth-introduction) section to implement your connection tool. 
 
 [Documentation](/guides) section shows all available guides. If you are interested in to search items using MELI's APIs visit [Searching](/search-visual-introduction) section. If you are buy an item you can visit [Buyer](/bookmarks) guides. But if you are thinking in sell over MercadoLibre visit [Selling](/listing-introduction) guides.
 

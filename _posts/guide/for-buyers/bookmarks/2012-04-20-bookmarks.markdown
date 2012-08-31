@@ -4,7 +4,6 @@ title: Bookmark your items
 categories: 
 - Bookmarks
 - Questions
-- Feedback
 menu: buyer
 tags: 
 - Bookmarks
