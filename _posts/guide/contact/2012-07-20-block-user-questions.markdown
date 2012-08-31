@@ -2,12 +2,13 @@
 layout: guides
 title: Managing questions blacklist
 categories: 
-- Bookmarks
-- Questions
-- Feedback
-menu: buyer
+- Selling
+- Orders
+- Manage Questions
+- Notifications
+menu: seller
 tags: 
-- Questions
+- Manage Questions
 ---
 
 ###Overview

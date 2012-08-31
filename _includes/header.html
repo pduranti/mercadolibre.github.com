@@ -1,7 +1,7 @@
 <header class="ch-g1 main">
     <hgroup class="ch-g1-3">
     <h1><a href="/">MELI</a></h1>
-    <h2>MELI Developer Products</h2>
+    <h2>MELI Developers</h2>
     </hgroup>
       <nav class="ch-g2-3">
         <ul>
@@ -11,7 +11,7 @@
             {% assign current = 'current' %}
          {% endif %}
           <li class="option">
-            <a class="{{ current }}" href="/getting-started">Quickstart</a>
+            <a class="{{ current }}" href="/getting-started">First steps</a>
           </li>
         
           <li class="option">
@@ -48,11 +48,6 @@
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/authentication">Authentication</a></li>
-                {% assign current = nil %}
-                {% if page.menu == 'all' %}
-                    {% assign current = 'current' %}
-                {% endif %}
-                <li><a class="{{ current }}" href="/guides">All guides</a></li>
               </ul>
             </div>
           </li>
@@ -69,7 +64,7 @@
             {% assign current = 'current' %}
          {% endif %}
           <li class="option">
-            <a class="{{ current }}" href="/discuss">Forums</a>
+            <a class="{{ current }}" href="/discuss">Discuss</a>
           </li>
           <li class="option">
             <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
