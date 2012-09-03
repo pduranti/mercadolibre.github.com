@@ -2,10 +2,10 @@
 layout: guides
 title: Authentication &amp; Authorization
 categories: 
-- Quickstart
-menu: quickstart
+- Authentication
+guide: authentication
 tags: 
-- Quickstart
+- Authentication
 ---
 
 #Authentication & Authorization
