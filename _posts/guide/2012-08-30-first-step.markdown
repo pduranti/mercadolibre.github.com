@@ -9,25 +9,20 @@ menu: quickstart
 <h5>Table of Contents</h5>
 
 <dl>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('register')">Register an application in MELI</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('profile')">Retrieves your own profile</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('register')">Register an Application in MercadoLibre MELI</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('profile')">Retrieves your Own Profile</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('apis')">Public &amp; Private APIs</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('response')">Response</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('next')">How to continue</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('response')">JSON Response</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('next')">Next Steps</a></dt>
 </dl>
 </div>
 
-## Register an application in MELI {#register}
+## Register an Application in MercadoLibre MELI {#register}
 
 
-The very first thing you'll probably want to do is to create an _application_ for MELI. When you do that you get a _client ID_ and a _client secret_, which are very important to use when [authenticating and authorizing](/authentication-and-authorization).
+The very first thing you'll want to do is make sure you are a [registered user in MercadoLibre](http://www.mercadolibre.com).
 
-When you create an application you can start requesting users to grant you access to their information on their behalf, and offer them in exchange some cool features.
-
-So before continuing, make sure you are registered as a user. In case you want to create a user, do it now by browsing to [http://www.mercadolibre.com](http://www.mercadolibre.com).
-
-Now that you have a registered user, go to the [application manager](http://applications.mercadolibre.com) and create an application. Take a look on application ID and the Secret Key:
-
+Then, go to the [application manager](http://applications.mercadolibre.com) and create an application as described below. You'll get a client ID and a client secret which will be very important later on.
 
 <style type="text/css">
 img.appID
@@ -49,10 +44,9 @@ img.appSecret
 <br /><br />
 <img src="" class="appSecret">
 
-## Retrieves your own profile {#profile}
+## Retrieves your Own Profile {#profile}
 
-Using our [SDKs](/javascript-sdk) you be able to retrieve your own user profile using your application. 
-
+Using our [SDKs](/javascript-sdk) you'll be able to retrieve your own user profile using your own application.
 
 <div id="code">
 	<ul>
@@ -133,128 +127,29 @@ To allow an application to access to your data you need to be [authenticated](/a
 <img src="/images/authentication-authorization.png" alt="Authentication" />
 
 
-## Response {#response}
+## JSON Response {#response}
 
+All responses are JSON encoded. For more information visit [Design Considerations](/design-considerations/#json) section.
 
 {% highlight javascript %}
 {
    "id":57249824,
    "nickname":"TEST_VENTA_MLA1",
-   "registration_date":"2011-05-31T13:26:09.000-04:00",
    "first_name":"Test",
    "last_name":"Test",
    "country_id":"AR",
    "email":"test310511_5959@robot.com",
-   "identification":{
-      "type":"DNI",
-      "number":"27687784"
-   },
-   "phone":{
-      "area_code":"11",
-      "number":"4242-9990",
-      "extension":"8202",
-      "verified":false
-   },
-   "alternative_phone":{
-      "area_code":"",
-      "number":"46154789",
-      "extension":""
-   },
+   "identification":{...},
+   "phone":{...},
    "user_type":"normal",
    "logo":null,
    "points":35,
    "site_id":"MLA",
-   "permalink":"http://perfil.mercadolibre.com.ar/TEST_VENTA_MLA1",
    "seller_experience":"ADVANCED",
-   "seller_reputation":{
-      "level_id":"5_green",
-      "power_seller_status":null,
-      "transactions":{
-         "period":"12 months",
-         "total":601,
-         "completed":539,
-         "canceled":62,
-         "ratings":{
-            "positive":1,
-            "negative":0,
-            "neutral":0
-         }
-      }
-   },
-   "buyer_reputation":{
-      "canceled_transactions":0,
-      "transactions":{
-         "period":"historic",
-         "total":22,
-         "completed":1,
-         "canceled":{
-            "total":0,
-            "paid":0
-         },
-         "unrated":{
-            "total":6,
-            "paid":0
-         },
-         "not_yet_rated":{
-            "total":15,
-            "paid":0,
-            "units":15
-         }
-      }
-   },
-   "status":{
-      "site_status":"active",
-      "list":{
-         "allow":true,
-         "codes":[
-
-         ],
-         "immediate_payment":{
-            "required":false,
-            "reasons":[
-
-            ]
-         }
-      },
-      "buy":{
-         "allow":true,
-         "codes":[
-
-         ],
-         "immediate_payment":{
-            "required":false,
-            "reasons":[
-
-            ]
-         }
-      },
-      "sell":{
-         "allow":true,
-         "codes":[
-
-         ],
-         "immediate_payment":{
-            "required":true,
-            "reasons":[
-               "mandatory"
-            ]
-         }
-      },
-      "billing":{
-         "allow":true,
-         "codes":[
-
-         ]
-      },
-      "mercadopago_tc_accepted":true,
-      "mercadopago_account_type":"personal",
-      "mercadoenvios":"not_accepted",
-      "immediate_payment":true
-   },
-   "credit":{
-      "consumed":470301.16,
-      "credit_level_id":"MLA1"
-   }
+   "seller_reputation":{...},
+   "buyer_reputation":{...},
+   "status":{...},
+   "credit":{...}
 }
 {% endhighlight %}
 
@@ -326,7 +221,7 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 </script>
 
 
-## How to continue {#next}
+## Next Steps {#next}
 
 Going through the [Authentication](/authentication) section will give you the knowledge about registration and sign-in. Reading [Authorization](/authorization) section you will see how applications grants and permission scopes. Platform uses [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) for authentication and authorization. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth 2.0, but you can read [OAuth](/oauth-introduction) section to implement your connection tool. 
 
