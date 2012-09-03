@@ -160,16 +160,17 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 
 <div class="ch-g1">
   <div class="">
-    <div class="ch-g1-3">
+    <div class="ch-g1-2">
       <div class="ch-leftcolumn">
-        <p><pre id="nickname">  </pre></p>
-        <p><pre id="firstname">  </pre></p>
-        <p><pre id="lastname">  </pre></p>
-        <p><pre id="email">  </pre></p>
+        <p class="ch-form-row ch-form-required"><label for="nickname">Nickname:</label><span id="nickname"></span></p>
+        <p class="ch-form-row ch-form-required"><label for="firstname">First Name:</label><span id="firstname"></span></p>
+        <p class="ch-form-row ch-form-required"><label for="lastname">Last Name:</label><span id="lastname"></span></p>
+        <p class="ch-form-row ch-form-required"><label for="email">Email:</label><span id="email"></span></p>
+        <p class="ch-form-row ch-form-required"><label for="site">Site:</label><span id="site"></span></p>
       </div>
     </div>
 
-    <div class="ch-g2-3">
+    <div class="ch-g1-2">
       <div class="ch-rightcolumn">
         <p><pre id="me">{}</pre></p>
       </div>
@@ -185,10 +186,9 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 </center>
 
 <script>
-
     $(document).ready(function() {
- 
-        $('#show-my-info').click(function() {
+
+      $('#show-my-info').click(function() {
 
           var ID = parseInt($('#target').val());
           console.log(ID);
@@ -213,6 +213,9 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 
               $('#email').html(JSON.stringify(userInfo.email));
               $('#email').show();
+
+              $('#site').html(JSON.stringify(userInfo.site_id));
+              $('#site').show();
 
               $('#me').html(JSON.stringify(userInfo));
               $('#me').show();
