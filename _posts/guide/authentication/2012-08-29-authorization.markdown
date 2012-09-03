@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Authorizing an applications
+title: Authorizing an application
 categories: 
 - Authentication
 guide: authentication
@@ -8,4 +8,3 @@ tags:
 - Authentication
 ---
 
-# Authorizing an applications

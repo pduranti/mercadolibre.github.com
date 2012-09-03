@@ -8,4 +8,3 @@ tags:
 - Authentication
 ---
 
-# OAuth introduction

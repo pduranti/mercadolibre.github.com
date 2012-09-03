@@ -8,8 +8,6 @@ tags:
 - Authentication
 ---
 
-#Authentication & Authorization
-
 Authentication gives your app the ability to know the identity of a MELI user, and to read and write data via MELI's APIs. The platform uses [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) for authentication and authorization.  
 A successful authentication flow results in your application obtaining a user access token which can be used to make requests to MELI's APIs. 
 
