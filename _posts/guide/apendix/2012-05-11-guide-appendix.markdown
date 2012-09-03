@@ -8,8 +8,6 @@ tags:
 - API Reference
 ---
 
-#Appendix – Related APIs
-
 ### Table of Contents
 - [Overview](#overview)
 - [Categories API](#categories-api)

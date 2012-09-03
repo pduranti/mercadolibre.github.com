@@ -10,8 +10,8 @@ menu: quickstart
 
 <dl>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('register')">Register an Application in MercadoLibre MELI</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('profile')">Retrieves your Own Profile</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('apis')">Public &amp; Private APIs</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('profile')">Retrieves your Own Profile</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('response')">JSON Response</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('next')">Next Steps</a></dt>
 </dl>
@@ -43,6 +43,20 @@ img.appSecret
 <img src="" class="appID">
 <br /><br />
 <img src="" class="appSecret">
+
+
+## Public &amp; Private APIs {#apis}
+
+
+Our APIs are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
+
+Our APIs will give you lots of information. Some of it is private, some of it is public. To access to public information you can use just an URL:
+
+<pre class="terminal">$ curl https://api.mercadolibre.com/countries</pre>
+
+But if you need to access to private informtaion you will get access only if you have an access token:
+
+<pre class="terminal">$ curl https://api.mercadolibre.com/users/me?access_token=...</pre>
 
 ## Retrieves your Own Profile {#profile}
 
@@ -106,20 +120,6 @@ Response response = m.get("/users/me", params);
 	$("#code").tabNavigator();
 </script>
 
-## Public &amp; Private APIs {#apis}
-
-
-Our APIs are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
-
-Our APIs will give you lots of information. Some of it is private, some of it is public. To access to public information you can use just an URL:
-
-
-<pre class="terminal">$ curl https://api.mercadolibre.com/countries</pre>
-
-But if you need to access to private informtaion you will get access only if you have an access token:
-
-<pre class="terminal">$ curl https://api.mercadolibre.com/users/me?access_token=...</pre>
-
 ## Authentication &amp; Authorization {#authentication-authorization}
 
 To allow an application to access to your data you need to be [authenticated](/authentication) in MercadoLibre and confirm using [authorization](/authorization) stage. 
@@ -133,7 +133,6 @@ All responses are JSON encoded. For more information visit [Design Consideration
 
 {% highlight javascript %}
 {
-   "id":57249824,
    "nickname":"TEST_VENTA_MLA1",
    "first_name":"Test",
    "last_name":"Test",
@@ -163,10 +162,10 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
   <div class="">
     <div class="ch-g1-3">
       <div class="ch-leftcolumn">
-        <p><pre id="nickname">...</pre></p>
-        <p><pre id="firstname">...</pre></p>
-        <p><pre id="lastname">...</pre></p>
-        <p><pre id="email">...</pre></p>
+        <p><pre id="nickname">  </pre></p>
+        <p><pre id="firstname">  </pre></p>
+        <p><pre id="lastname">  </pre></p>
+        <p><pre id="email">  </pre></p>
       </div>
     </div>
 
@@ -186,6 +185,7 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 </center>
 
 <script>
+
     $(document).ready(function() {
  
         $('#show-my-info').click(function() {
@@ -213,6 +213,9 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 
               $('#email').html(JSON.stringify(userInfo.email));
               $('#email').show();
+
+              $('#me').html(JSON.stringify(userInfo));
+              $('#me').show();
             });
 
           });

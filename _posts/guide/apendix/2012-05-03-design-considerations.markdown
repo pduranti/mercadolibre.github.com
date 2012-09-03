@@ -2,13 +2,11 @@
 layout: guides
 title: Design Considerations
 categories: 
-- Quickstart
-menu: quickstart
+- API Reference
+menu: api-reference
 tags: 
-- Quickstart
+- API Reference
 ---
-
-# Design Considerations
 
 There are some things you should know about our APIs to make your life easier.
 

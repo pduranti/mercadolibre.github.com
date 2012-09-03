@@ -58,8 +58,6 @@ apis:
 ---
 
 
-# API Reference
-
 This section contains a list of the MELI API's.
 
 ##APIs
