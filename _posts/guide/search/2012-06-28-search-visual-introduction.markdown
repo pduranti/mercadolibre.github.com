@@ -9,8 +9,6 @@ tags:
 - Searching
 ---
 
-# Search introduction
-
 Search items is the most common thing to do in MercadoLibre. Here you can see different search criterias.
 API provides programmatic access to the search.
 

@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Search by using filters
+title: Search using filters
 categories: 
 - Searching
 - Category
@@ -8,8 +8,6 @@ menu: search
 tags: 
 - Searching
 ---
-
-# Search using filters
 
 <div class="contents">
   <h5>Table of Contents</h5>

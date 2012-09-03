@@ -2,14 +2,12 @@
 layout: guides
 title: Category API
 categories: 
-- Seaching
-- Documentation
+- Searching
+- Category
+menu: search
 tags: 
 - Category
 ---
-
-
-# Category API
 
 <div class="contents">
 <h5>Table of Contents</h5>

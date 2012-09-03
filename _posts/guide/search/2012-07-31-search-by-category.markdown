@@ -3,12 +3,11 @@ layout: guides
 title: Search by category
 categories: 
 - Searching
+- Category
 menu: search
 tags: 
 - Searching
 ---
-
-# Search by category
 
 <div class="contents">
   <h5>Table of Contents</h5>

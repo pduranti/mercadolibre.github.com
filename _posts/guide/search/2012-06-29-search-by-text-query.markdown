@@ -9,8 +9,6 @@ tags:
 - Searching
 ---
 
-# Search by text query
-
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>

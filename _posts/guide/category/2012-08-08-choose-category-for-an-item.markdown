@@ -1,9 +1,10 @@
 ---
 layout: guides
 title: Choose category
-categories:
+categories: 
 - Searching
 - Category
+menu: search
 tags: 
 - Category
 ---
