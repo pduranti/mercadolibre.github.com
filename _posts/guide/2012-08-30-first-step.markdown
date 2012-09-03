@@ -26,13 +26,28 @@ When you create an application you can start requesting users to grant you acces
 
 So before continuing, make sure you are registered as a user. In case you want to create a user, do it now by browsing to [http://www.mercadolibre.com](http://www.mercadolibre.com).
 
-Now that you have a registered user, go to the [application manager](http://applications.mercadolibre.com) and create an application as described below:
+Now that you have a registered user, go to the [application manager](http://applications.mercadolibre.com) and create an application. Take a look on application ID and the Secret Key:
 
-<center>
-  <a href="/images/application-detail.png">
-      <img src="/images/application-detail.png" alt="App details">
-  </a>
-</center>
+
+<style type="text/css">
+img.appID
+{
+  width:423px;
+  height:120px;
+  background:url(/images/application-detail.png) 0px -10px;
+}
+
+img.appSecret
+{
+  width:423px;
+  height:60px;
+  background:url(/images/application-detail.png) 0px -340px;
+}
+</style>
+
+<img src="" class="appID">
+<br /><br />
+<img src="" class="appSecret">
 
 ## Retrieves your own profile {#profile}
 
@@ -102,30 +117,10 @@ Response response = m.get("/users/me", params);
 
 Our APIs are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
 
-Some of these basic methods are:
-* GET: Retrieve information identified by the resource (see [GET](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3)).
-* POST: Create a new resource (see [POST](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5)).
-* PUT: Change a resource (see [PUT](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6)).
-* DELETE: Delete a resource (see [DELETE](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.7)).
-
-
 Our APIs will give you lots of information. Some of it is private, some of it is public. To access to public information you can use just an URL:
 
-<pre class="terminal">$ curl https://api.mercadolibre.com/countries</pre>
 
-You'll get a list of countries:
-    
-{% highlight javascript %}
-[
-  {
-    "id": "AR",
-    "name": "Argentina",
-    "locale": "es_AR",
-    "currency_id": "ARS",
-  },
-  ...
-]
-{% endhighlight %}
+<pre class="terminal">$ curl https://api.mercadolibre.com/countries</pre>
 
 But if you need to access to private informtaion you will get access only if you have an access token:
 
@@ -269,6 +264,27 @@ To allow an application to access to your data you need to be [authenticated](/a
 
 Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 
+<div class="ch-g1">
+  <div class="">
+    <div class="ch-g1-3">
+      <div class="ch-leftcolumn">
+        <p><pre id="nickname">...</pre></p>
+        <p><pre id="firstname">...</pre></p>
+        <p><pre id="lastname">...</pre></p>
+        <p><pre id="email">...</pre></p>
+      </div>
+    </div>
+
+    <div class="ch-g2-3">
+      <div class="ch-rightcolumn">
+        <p><pre id="me">{}</pre></p>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+</div>
+
 <center>
   Enter your application data ID:<input id="target" type="text" value="10115" />
   <input class="ch-btn ch-btn-small" type="button" id="show-my-info" value="Show my information"/>
@@ -278,18 +294,30 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
     $(document).ready(function() {
  
         $('#show-my-info').click(function() {
+
           var ID = parseInt($('#target').val());
           console.log(ID);
 
           MELI.init({client_id: ID});
-          MELI.logout();
-
+          
           MELI.login(function() {
 
             MELI.get('/users/me', null, function(data) {
               
-              var userInfo = JSON.stringify(data[2]);
+              var userInfo = data[2];
               console.log(userInfo);
+
+              $('#nickname').html(JSON.stringify(userInfo.nickname));
+              $('#nickname').show();
+
+              $('#firstname').html(JSON.stringify(userInfo.first_name));
+              $('#firstname').show();
+
+              $('#lastname').html(JSON.stringify(userInfo.last_name));
+              $('#lastname').show();
+
+              $('#email').html(JSON.stringify(userInfo.email));
+              $('#email').show();
             });
 
           });
