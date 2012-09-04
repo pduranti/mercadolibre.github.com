@@ -9,8 +9,6 @@ tags: SDKs
 ---
 
 
-#JAVA SDK
-
 The JAVA SDK enables you to access the API from a web application developed in [JAVA](http://www.java.com).
 It hides all the complexity of OAuth 2.0 and lets you focus on writing application code.
 

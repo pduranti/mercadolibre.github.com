@@ -9,8 +9,6 @@ tags: SDKs
 ---
 
 
-#Javascript SDK
-
 The JavaScript SDK enables you to access the API from a Web Browser.
 It  hides all the complexity of OAuth 2.0 and lets you focus on writing application code.
 

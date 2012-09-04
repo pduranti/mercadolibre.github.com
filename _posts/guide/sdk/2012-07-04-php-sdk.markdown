@@ -9,8 +9,6 @@ tags: SDKs
 ---
 
 
-#PHP SDK
-
 The PHP SDK enables you to access the API from a web application developed in [PHP](http://www.php.net).
 It  hides all the complexity of OAuth 2.0 and lets you focus on writing application code.
 

@@ -48,20 +48,20 @@ The Sites API shows the entirely MELI category structure for a particular countr
 As you can see, you get information related to Argentina MELI operation, one of the JSON attributes is “categories”, in which you have the first level of categories.
 
 {% highlight javascript %}
-"categories": - [
-- {
+"categories": [
+{
 "id": "MLA5725",
 "name": "Accesorios para VehÃ­culos",
 },
-- {
+{
 "id": "MLA1071",
 "name": "Animales y Mascotas",
 },
-- {
+{
 "id": "MLA1367",
 "name": "AntigÃ¼edades",
 },
-- {
+{
 "id": "MLA1743",
 "name": "Autos, Motos y Otros",
 },
@@ -78,19 +78,19 @@ For second level categories, or information related to specific categories, you 
 "name": "Animales y Mascotas",
 "permalink": "http://home.mercadolibre.com.ar/animales-y-mascotas",
 "total_items_in_this_category": "30434",
-"path_from_root": - [
-- {
-"id": "MLA1071",
-"name": "Animales y Mascotas",
-},
+"path_from_root": [
+	{
+	"id": "MLA1071",
+	"name": "Animales y Mascotas",
+	},
 ],
-"children_categories": - [
-- {
+"children_categories": [
+{
 "id": "MLA1100",
 "name": "Aves",
 "total_items_in_this_category": "1430",
 },
-- {
+{
 "id": "MLA1117",
 "name": "Caballos",
 "total_items_in_this_category": "1092",
@@ -151,11 +151,11 @@ In this case, you have to take a look at the “default_currency_id” attribute
 "mercadopago_version": "3",
 "default_currency_id": "ARS",
 "currencies": - [
-- {
+{
 "id": "USD",
 "symbol": "U$S",
 },
-- {
+{
 "id": "ARS",
 "symbol": "$",
 },
@@ -191,27 +191,27 @@ To see the complete list of listing types by country you have to use the listing
 
 {% highlight javascript %}
 [
-- {
+{
 "site_id": "MLA",
 "id": "gold_premium",
 "name": "Oro Premium",
 },
-- {
+{
 "site_id": "MLA",
 "id": "gold",
 "name": "Oro",
 },
-- {
+{
 "site_id": "MLA",
 "id": "silver",
 "name": "Plata",
 },
-- {
+{
 "site_id": "MLA",
 "id": "bronze",
 "name": "Bronce",
 },
-- {
+{
 "site_id": "MLA",
 "id": "free",
 "name": "Gratuita",
@@ -226,7 +226,7 @@ For more information related to each listing type, let’s access to the listing
 {% highlight javascript %}	
 {
 "id": "gold",
-"configuration": - {
+"configuration": {
 "name": "Oro",
 "listing_exposure": "high",
 "requires_picture": true,

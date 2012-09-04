@@ -9,7 +9,7 @@ menu: quickstart
 <h5>Table of Contents</h5>
 
 <dl>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('register')">Register an Application in MercadoLibre MELI</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('register')">Register an Application in MercadoLibre</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('apis')">Public &amp; Private APIs</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('profile')">Retrieves your Own Profile</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('response')">JSON Response</a></dt>
@@ -17,7 +17,7 @@ menu: quickstart
 </dl>
 </div>
 
-## Register an Application in MercadoLibre MELI {#register}
+## Register an Application in MercadoLibre {#register}
 
 
 The very first thing you'll want to do is make sure you are a [registered user in MercadoLibre](http://www.mercadolibre.com).

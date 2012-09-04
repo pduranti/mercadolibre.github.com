@@ -10,7 +10,9 @@ tags:
 ---
 
 
-# How to choose a category for list an item
+
+
+## How to choose a category for list an item
 
 There isn't a explicit way or tool to define an item category for your product. We will see diferent ways to discover what's the best category for an item.
 
