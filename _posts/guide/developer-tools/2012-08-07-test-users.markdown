@@ -10,8 +10,6 @@ tags:
 ---
 
 
-# Create test users
-
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
