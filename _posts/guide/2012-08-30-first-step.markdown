@@ -231,9 +231,7 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 
 Going through the [Authentication](/authentication) section will give you the knowledge about registration and sign-in. Reading [Authorization](/authorization) section you will see how applications grants and permission scopes. Platform uses [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) for authentication and authorization. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth 2.0, but you can read [OAuth](/oauth-introduction) section to implement your connection tool. 
 
-[Documentation](/guides) section shows all available guides. If you are interested in to search items using MELI's APIs visit [Searching](/search-visual-introduction) section. If you are buy an item you can visit [Buyer](/bookmarks) guides. But if you are thinking in sell over MercadoLibre visit [Selling](/listing-introduction) guides.
+You should now head over to our [Documentation](/guides) section and check out our guides. 
+If you are interested in to search items using MELI's APIs visit [Searching](/search-visual-introduction) section. If you are buy an item you can visit [Buyer](/bookmarks) guides. But if you are thinking in sell over MercadoLibre visit [Selling](/listing-introduction) guides.
 
-When you're ready, feel free to dive right into the [API reference](/guide-appendix) section to learn about the resources available via the MELI API.
-
-Visit [Forums](/discuss) section to know more about community. 
 
