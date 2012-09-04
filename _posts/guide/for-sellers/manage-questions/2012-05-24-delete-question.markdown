@@ -22,9 +22,10 @@ curl -X DELETE 'https://api.mercadolibre.com/questions/2264284172?access_token=$
 Successful response
 
 {% highlight javascript %}
+
 {"message":"Pregunta eliminada"}
 
-{% highlight %}
+{% endhighlight %}
 
 *For the moment the response text is in Spanish
 

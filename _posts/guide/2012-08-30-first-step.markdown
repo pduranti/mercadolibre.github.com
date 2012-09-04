@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: firststep
 title: First Step
 menu: quickstart
 ---
