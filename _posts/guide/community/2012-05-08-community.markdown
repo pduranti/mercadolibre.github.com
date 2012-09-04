@@ -1,36 +1,24 @@
 ---
 layout: guides
-title: How to contact us
+title: Contact Us
 categories: 
 - Community
-- Forums
 menu: community
 tags: 
 - Community
 ---
 
-## Get in contact with us and with other developers!
-You can submit questions or comments in our discussions group. Please visit our [forums](/forums).
+## Bugs? Suggestions? Shoot, we're ready!
 
-We update our SDKs on a regular basis. All announcements will be made via Twitter [@melidevelopers](https://twitter.com/@melidevelopers).
 
-## How can I contribute?
+- Twitter to stay up-to-date with announcements: [@melidevelopers](https://twitter.com/@melidevelopers)
+- IRC channel **#meli @ irc.freenode.net**
+- Report Bugs or Suggestions on [GitHub](https://github.com/mercadolibre/api/issues)
 
-### Show your applications
 
-We'd love to see what you are working on! If you have something cool you want to share with us and our community, feel free to post it in our mailing list so others can play with it. 
 
-### Bugs or suggestions
+##Share your Apps
 
-You can file bugs or suggest enhancements to our APIs on our public [GitHub](https://github.com/mercadolibre/api/issues).
+We'd love to see what you are working on! Feel free to post it in our mailing list or our Forums so others can
+play with it.
 
-You can also fork this site and help us keeping it updated and with helpful information!
-
-### Community
-
-Find us in our IRC channel **#meli @ irc.freenode.net**.
-
-Thanks, 
-
-- - -
-Meli developers
