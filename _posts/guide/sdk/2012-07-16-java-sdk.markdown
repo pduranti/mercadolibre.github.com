@@ -4,7 +4,8 @@ title: JAVA SDK
 categories: 
 - SDKs 
 - Test Users
-menu: developer-tools
+menu:
+- Tools
 tags: SDKs
 ---
 

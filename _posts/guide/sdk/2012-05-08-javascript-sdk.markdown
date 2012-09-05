@@ -4,7 +4,8 @@ title: Javascript SDK
 categories: 
 - SDKs 
 - Test Users
-menu: developer-tools
+menu: 
+- Tools
 tags: SDKs
 ---
 

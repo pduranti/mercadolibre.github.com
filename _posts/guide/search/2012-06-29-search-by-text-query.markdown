@@ -4,7 +4,8 @@ title: Search by text query
 categories: 
 - Searching
 - Category
-menu: search
+menu: 
+- Searching
 tags: 
 - Searching
 ---

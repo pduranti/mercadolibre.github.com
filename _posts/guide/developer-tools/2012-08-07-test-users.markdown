@@ -4,7 +4,8 @@ title: Create Test Users
 categories: 
 - SDKs 
 - Test Users
-menu: developer-tools
+menu: 
+- Tools
 tags: 
 - Test Users
 ---

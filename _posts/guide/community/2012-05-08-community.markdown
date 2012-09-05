@@ -1,9 +1,10 @@
 ---
-layout: guides
+layout: 2columns
 title: Contact Us
 categories: 
 - Community
-menu: community
+menu: 
+- Community
 tags: 
 - Community
 ---

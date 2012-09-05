@@ -2,10 +2,11 @@
 layout: guides
 title: Getting Started
 categories: 
-- Quickstart
-menu: quickstart
+- First Steps
+menu:
+- First Steps
 tags: 
-- Quickstart
+- First Steps
 ---
 
 If you're reading this it's because you're wondering which is the easiest way to start using our APIs. Good news! It is dead simple!

@@ -3,7 +3,8 @@ layout: forums
 title: Forums in English
 categories: 
 - Community
-menu: community
+menu: 
+- Community
 tags: 
 - Community
 ---

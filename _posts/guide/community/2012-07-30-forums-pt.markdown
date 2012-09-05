@@ -3,7 +3,8 @@ layout: forums
 title: Fóruns em Português
 categories: 
 - Community
-menu: community
+menu: 
+- Community
 tags: 
 - Community
 ---

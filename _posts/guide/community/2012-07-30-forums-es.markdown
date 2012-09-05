@@ -3,7 +3,8 @@ layout: forums
 title: Foros en Español 
 categories: 
 - Community
-menu: community
+menu: 
+- Community
 tags: 
 - Community
 ---

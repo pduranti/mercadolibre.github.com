@@ -4,7 +4,8 @@ title: Search using filters
 categories: 
 - Searching
 - Category
-menu: search
+menu: 
+- Searching
 tags: 
 - Searching
 ---

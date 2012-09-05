@@ -1,7 +1,8 @@
 ---
 layout: firststep
 title: First Steps
-menu: quickstart
+menu: 
+- First Steps
 ---
 
 

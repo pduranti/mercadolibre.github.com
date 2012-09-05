@@ -1,9 +1,10 @@
 ---
-layout: guides
+layout: firststep
 title: Introduction
 categories: 
 - Overview
-menu: overview
+menu:
+- Overview
 tags: 
 - Overview
 ---

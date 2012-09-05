@@ -7,14 +7,14 @@
         <ul>
 
          {% assign current = nil %}
-         {% if page.menu == 'quickstart' %}
+         {% if page.menu[0] == 'First Steps' %}
             {% assign current = 'current' %}
          {% endif %}
           <li class="option">
             <a class="{{ current }}" href="/first-step">First Steps</a>
           </li>
           {% assign current = nil %}
-          {% if page.menu == 'overview' %}
+          {% if page.menu[0] == 'Overview' %}
             {% assign current = 'current' %}
           {% endif %}
           <li class="option">
@@ -23,24 +23,29 @@
         
           <li class="option">
             <div id="guides-menu" class="ch-dropdown-skin">
-            <span>Documentation</span>
+            {% assign current = nil %}
+            {% if page.layout == 'guides' %}
+              {% assign current = 'current' %}
+            {% endif %}
+
+            <span><a class="{{ current }}" href="">Documentation</a></span>
               <ul>
                 {% assign current = nil %}
                 {% if page.menu == 'buyer' %}
                     {% assign current = 'current' %}
                 {% endif %}
-                <li><a class="{{ current }}" href="/bookmarks">{{ page.menu }}</a></li>
+                <li><a class="{{ current }}" href="/bookmarks">Buyer guides</a></li>
                 {% assign current = nil %}
-                {% if page.menu == 'search' %}
+                {% if page.menu[0] == 'Searching' %}
                     {% assign current = 'current' %}
                 {% endif %}
-                <li><a class="{{ current }}" href="/search-visual-introduction">Searching guides</a></li>
+                <li><a class="{{ current }}" href="/search-visual-introduction">Searching</a></li>
                 {% assign current = nil %}
                 {% if page.menu == 'seller' %}
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/listing-introduction">Selling guides</a></li>
-                <li><a href="https://developers.mercadopago.com/"  target="_blank">MercadoPago</a></li>
+                <li><a href="https://developers.mercadopago.com/" target="_blank">MercadoPago</a></li>
                 {% assign current = nil %}
                 {% if page.menu == 'api-reference' %}
                     {% assign current = 'current' %}
@@ -56,7 +61,7 @@
           </li>
 
          {% assign current = nil %}
-         {% if page.menu == 'developer-tools' %}
+         {% if page.menu[0] == 'Tools' %}
             {% assign current = 'current' %}
          {% endif %}
           <li class="option">

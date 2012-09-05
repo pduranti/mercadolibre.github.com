@@ -4,7 +4,8 @@ title: Category API
 categories: 
 - Searching
 - Category
-menu: search
+menu: 
+- Searching
 tags: 
 - Category
 ---

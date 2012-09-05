@@ -4,7 +4,8 @@ title: Search and page the results
 categories: 
 - Searching
 - Category
-menu: search
+menu: 
+- Searching
 tags: 
 - Searching
 ---

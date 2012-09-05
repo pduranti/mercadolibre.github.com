@@ -4,7 +4,8 @@ title: Search by category
 categories: 
 - Searching
 - Category
-menu: search
+menu: 
+- Searching
 tags: 
 - Searching
 ---

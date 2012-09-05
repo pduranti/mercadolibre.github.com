@@ -64,22 +64,24 @@
 
     {% include header.html %}
 
-    <a href="">{{ page.menu }}</a> >> <a href="">{{ page.tags }}</a> >> <a href="">{{ page.title }}</a> 
-     
     <nav class="ch-g1-5 sidebar">
-     {% for category in page.categories %}
-      <h2>{{ category }}</h2>
-      <ul>
-          {% for post in site.tags.[category] reversed %}
+     
+      <h1>{{ page.menu }}</h1>
+      <br />
 
+      {% for category in page.categories %}
+      <h2>{{ category }}</h2>
+
+        <ul>
+          {% for post in site.tags.[category] reversed %}
             {% assign current = nil %}
             {% if post.id == page.id %}
               {% assign current = 'current' %}
             {% endif %}
-          <li><a class="{{ current }}" href="{{ post.url }}">{{ post.title }}</a></li>
+            <li><a class="{{ current }}" href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
-      </ul>
-        {% endfor %}
+        </ul>
+          {% endfor %}
     </nav>
 
     <section class="main ch-g4-5">
