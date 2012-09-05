@@ -15,7 +15,6 @@ tags:
   <h5>Table of Contents</h5>
   <dl>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('url')">URL of Feedback APIs</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('parameters')">Valid Parameters</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('possible-reasons')">Possible values for reason</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('post-feedback-seller')">Post feedback as a Seller</a></dt>
@@ -30,9 +29,6 @@ tags:
 After completing a sale and a purchase, according to MercadoLibre’s rules, each part has to provide feedback about the transaction (an order).
 This feedback says if the order was fulfilled and the seller and buyer rate each other respectively.
 Seller’s and buyer’s score on MercadoLibre platform is calculated based on these ratings.
-
-#API URL {#url}
-https://api.mercadolibre.com/orders/ORDER_ID/feedback
 
 ##Parameters {#parameters}
 - `fulfilled` — If the transaction was fulfilled. Paid, shipped and accepted by the buyer. Must be true or false. (REQUIRED)
