@@ -159,32 +159,36 @@ All responses are JSON encoded. For more information visit [Design Consideration
 
 Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 
-<div class="ch-g1">
-  <div class="">
-    <div class="ch-g1-2">
-      <div class="ch-leftcolumn">
-        <p class="ch-form-row ch-form-required"><label for="nickname">Nickname:</label><span id="nickname"></span></p>
-        <p class="ch-form-row ch-form-required"><label for="firstname">First Name:</label><span id="firstname"></span></p>
-        <p class="ch-form-row ch-form-required"><label for="lastname">Last Name:</label><span id="lastname"></span></p>
-        <p class="ch-form-row ch-form-required"><label for="email">Email:</label><span id="email"></span></p>
-        <p class="ch-form-row ch-form-required"><label for="site">Site:</label><span id="site"></span></p>
-      </div>
-    </div>
+<center>
+  Enter your application application ID: <input id="target" type="text" value="10115" size="12" />
+  <input class="ch-btn ch-btn-small" type="button" id="show-my-info" value="Show my information"/>
+</center>
 
-    <div class="ch-g1-2">
-      <div class="ch-rightcolumn">
-        <p><pre id="me">{}</pre></p>
-      </div>
+<div id="try-by-yourself">
+  <ul>
+    <li><a href="#user-info">User Information</a></li>
+    <li><a href="#json-response">JSON Response</a></li>
+  </ul>
+  <div>
+    <div id="user-info">
+      <p class="ch-form-row ch-form-required"><label for="access_token">Access Token:</label><span id="access_token"></span></p>
+      <p class="ch-form-row ch-form-required"><label for="userid">User Id:</label><span id="userid"></span></p>
+      <p class="ch-form-row ch-form-required"><label for="nickname">Nickname:</label><span id="nickname"></span></p>
+      <p class="ch-form-row ch-form-required"><label for="firstname">First Name:</label><span id="firstname"></span></p>
+      <p class="ch-form-row ch-form-required"><label for="lastname">Last Name:</label><span id="lastname"></span></p>
+      <p class="ch-form-row ch-form-required"><label for="email">Email:</label><span id="email"></span></p>
+      <p class="ch-form-row ch-form-required"><label for="site">Site:</label><span id="site"></span></p>
     </div>
-
-    <div class="clearfix"></div>
+    <div id="json-response">
+      <p><pre id="me">{}</pre></p>
+    </div>
   </div>
 </div>
 
-<center>
-  Enter your application data ID:<input id="target" type="text" value="10115" />
-  <input class="ch-btn ch-btn-small" type="button" id="show-my-info" value="Show my information"/>
-</center>
+<script type="text/javascript">
+  $("#try-by-yourself").tabNavigator();
+ </script>
+
 
 <script>
     $(document).ready(function() {
@@ -202,6 +206,12 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
               
               var userInfo = data[2];
               console.log(userInfo);
+
+              $('#access_token').html(MELI.getToken());
+              $('#access_token').show();
+
+              $('#userid').html(JSON.stringify(userInfo.id));
+              $('#userid').show();
 
               $('#nickname').html(JSON.stringify(userInfo.nickname));
               $('#nickname').show();
