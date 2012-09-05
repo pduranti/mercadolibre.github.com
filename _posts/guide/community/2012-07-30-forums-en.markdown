@@ -1,12 +1,11 @@
 ---
 layout: forums
-title: Forums
+title: Forums in English
 categories: 
 - Community
-- Forums
 menu: community
 tags: 
-- Forums
+- Community
 ---
 
 <iframe id="forum_embed"
