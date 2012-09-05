@@ -157,11 +157,11 @@ header.main {
 }
 
 header.main h1 {
-	width:65px;
+	width:160px;
 	height:36px;
 	text-indent:999px;
 	overflow:hidden;
-	margin-top:14px;
+	margin-top:20px;
 }
 
 header.main h1 a {
