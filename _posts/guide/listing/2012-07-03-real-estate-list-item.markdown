@@ -24,13 +24,11 @@ You can list a real estate property by sending a POST request to our Items API w
 {% highlight javascript %}
 
 { 
-  "site_id": "MLA", <-- Indicates the country you are listing in
   "title": "Property title",
   "category_id": "MLA1474", <-- Operation and property type
-  "price": 50000,
+  "price": 100000,
   "currency_id": "ARS",
   "available_quantity": 1,
-  "buying_mode": "classified",
   "listing_type_id": "silver", <-- Publication type your item will be listed in
   "condition": "not_specified",
   "pictures": [
@@ -47,8 +45,8 @@ You can list a real estate property by sending a POST request to our Items API w
     "neighborhood": {
       "id": "TUxBQlBBUzgyNjBa"
     },
-    "latitude": -34.48755,   <-- Optional
-    "longitude": -58.56987,  <-- Optional
+    "latitude": -34.48755,  <-- Optional
+    "longitude": -58.56987, <-- Optional
   },  
   "attributes": [
     {
@@ -68,8 +66,8 @@ You can list a real estate property by sending a POST request to our Items API w
       "value_id": "MLA1472-BATHQTY-1"
     },
     {
-      "id": "MLA50547-BATHQTY",
-      "value_id": "MLA50547-BATHQTY-1"
+      "id": "MLA1472-BATHQTY",
+      "value_id": "MLA1472-BATHQTY-1"
     },
     {
       "id": "MLA1472-DORMQTY",
@@ -127,4 +125,4 @@ You can now follow the instructions to:
 
 [Relist your properties](/res-relist) 
 
-Don't hesitate to contact us for further assistance, comments and feedback about this tutorial, etc. at <a href="mailto:developers_re@mercadolibre.com" target="_blank">developers_re@mercadolibre.com</a>. We will get back to you as soon as possible!
+Don't hesitate to contact us for further assistance, comments and feedback about this tutorial, etc. at <a href="mailto:developers@mercadolibre.com" target="_blank">developers@mercadolibre.com</a>. We will get back to you as soon as possible!

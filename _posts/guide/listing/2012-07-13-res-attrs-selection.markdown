@@ -11,7 +11,7 @@ Attributes selection	{#attributesselection}
 --------------------
 When listing a property, its attributes will vary according to the chosen category. Once you have your Category ID, you can see its attributes by accessing the following URL:
 
-**https://api.mercadolibre.com/categories/SITE_IDCATEGORY_ID/attributes**
+**https://api.mercadolibre.com/categories/CATEGORY_ID/attributes**
 
 If your user belongs, for example, to Argentina, and the chosen category was 1467, then the URL would be: <a href="https://api.mercadolibre.com/categories/MLA1467/attributes" target="_blank">https://api.mercadolibre.com/categories/MLA1467/attributes</a>
 
