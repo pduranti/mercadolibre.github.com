@@ -13,7 +13,7 @@ tags:
 
 <ul class="ch-list parameters">
 <li>Twitter to stay up-to-date with announcements: [@melidevelopers](https://twitter.com/@melidevelopers)</li>
-<li>IRC channel **#meli @ irc.freenode.net**</li>
+<li>IRC channel <strong>#meli @ irc.freenode.net</strong></li>
 <li>Report Bugs or Suggestions on [GitHub](https://github.com/mercadolibre/api/issues)</li>
 </ul>
 
