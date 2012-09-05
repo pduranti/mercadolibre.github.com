@@ -26,50 +26,58 @@
 <header class="ch-g1 main">
     <hgroup class="ch-g1-3">
     <h1><a href="/">MELI</a></h1>
-    <h2>MELI Developers</h2>
+    <h2>Developers</h2>
     </hgroup>
       <nav class="ch-g2-3">
         <ul>
 
          {% assign current = nil %}
-         {% if page.menu == 'quickstart' %}
+         {% if page.menu[0] == 'First Steps' %}
             {% assign current = 'current' %}
          {% endif %}
           <li class="option">
             <a class="{{ current }}" href="/first-step">First Steps</a>
           </li>
+          {% assign current = nil %}
+          {% if page.menu[0] == 'Overview' %}
+            {% assign current = 'current' %}
+          {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/core-concepts">Overview</a>
+          </li>
         
           <li class="option">
             <div id="guides-menu" class="ch-dropdown-skin">
-            <span>Documentation</span>
+            {% assign current = nil %}
+            {% if page.layout == 'guides' %}
+              {% assign current = 'current' %}
+            {% endif %}
+
+            <span><a class="{{ current }}" href="">Documentation</a></span>
               <ul>
                 {% assign current = nil %}
-                {% if page.menu == 'overview' %}
+                {% if page.menu[0] == 'Buying Items' %}
                     {% assign current = 'current' %}
                 {% endif %}
-                <li><a class="{{ current }}" href="/core-concepts">Overview</a></li>
+                <li><a class="{{ current }}" href="/bookmarks">Buying Items</a></li>
                 {% assign current = nil %}
-                {% if page.menu == 'buyer' %}
+                {% if page.menu[0] == 'Searching for Items' %}
                     {% assign current = 'current' %}
                 {% endif %}
-                <li><a class="{{ current }}" href="/bookmarks">Buyer guides</a></li>
+                <li><a class="{{ current }}" href="/search-visual-introduction">Searching for Items</a></li>
                 {% assign current = nil %}
-                {% if page.menu == 'search' %}
+                {% if page.menu[0] == 'Sellers &amp; Integrators' %}
                     {% assign current = 'current' %}
                 {% endif %}
-                <li><a class="{{ current }}" href="/search-visual-introduction">Searching guides</a></li>
+                <li><a class="{{ current }}" href="/listing-introduction">Sellers &amp; Integrators</a></li>
+                <li><a href="https://developers.mercadopago.com/" target="_blank">MercadoPago</a></li>
                 {% assign current = nil %}
-                {% if page.menu == 'seller' %}
-                    {% assign current = 'current' %}
-                {% endif %}
-                <li><a class="{{ current }}" href="/listing-introduction">Selling guides</a></li>
-                {% assign current = nil %}
-                {% if page.menu == 'api-reference' %}
+                {% if page.menu[0] == 'API reference' %}
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/guide-appendix">API reference</a></li>
                 {% assign current = nil %}
-                {% if page.menu == 'authentication' %}
+                {% if page.menu[0] == 'Authentication' %}
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/authentication">Authentication</a></li>
@@ -78,11 +86,11 @@
           </li>
 
          {% assign current = nil %}
-         {% if page.menu == 'developer-tools' %}
+         {% if page.menu[0] == 'Tools' %}
             {% assign current = 'current' %}
          {% endif %}
           <li class="option">
-            <a class="{{ current }}" href="/javascript-sdk">Developer Tools</a>
+            <a class="{{ current }}" href="/javascript-sdk">Tools</a>
           </li>
          {% assign current = nil %}
          {% if page.menu == 'community' %}
