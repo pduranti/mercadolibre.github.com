@@ -31,28 +31,28 @@
             <span><a class="{{ current }}" href="">Documentation</a></span>
               <ul>
                 {% assign current = nil %}
-                {% if page.menu == 'buyer' %}
+                {% if page.menu[0] == 'Buying Items' %}
                     {% assign current = 'current' %}
                 {% endif %}
-                <li><a class="{{ current }}" href="/bookmarks">Buyer guides</a></li>
+                <li><a class="{{ current }}" href="/bookmarks">Buying Items</a></li>
                 {% assign current = nil %}
-                {% if page.menu[0] == 'Searching' %}
+                {% if page.menu[0] == 'Searching for Items' %}
                     {% assign current = 'current' %}
                 {% endif %}
-                <li><a class="{{ current }}" href="/search-visual-introduction">Searching</a></li>
+                <li><a class="{{ current }}" href="/search-visual-introduction">Searching for Items</a></li>
                 {% assign current = nil %}
-                {% if page.menu == 'seller' %}
+                {% if page.menu[0] == 'Sellers &amp; Integrators' %}
                     {% assign current = 'current' %}
                 {% endif %}
-                <li><a class="{{ current }}" href="/listing-introduction">Selling guides</a></li>
+                <li><a class="{{ current }}" href="/listing-introduction">Sellers &amp; Integrators</a></li>
                 <li><a href="https://developers.mercadopago.com/" target="_blank">MercadoPago</a></li>
                 {% assign current = nil %}
-                {% if page.menu == 'api-reference' %}
+                {% if page.menu[0] == 'API reference' %}
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/guide-appendix">API reference</a></li>
                 {% assign current = nil %}
-                {% if page.menu == 'authentication' %}
+                {% if page.menu[0] == 'Authentication' %}
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/authentication">Authentication</a></li>

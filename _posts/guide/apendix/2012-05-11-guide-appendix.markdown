@@ -3,7 +3,8 @@ layout: guides
 title: Related APIs
 categories: 
 - API Reference
-menu: api-reference
+menu:
+- API reference
 tags: 
 - API Reference
 ---

@@ -3,7 +3,8 @@ layout: guides
 title: Authorizing an application
 categories: 
 - Authentication
-guide: authentication
+menu:
+- Authentication
 tags: 
 - Authentication
 ---

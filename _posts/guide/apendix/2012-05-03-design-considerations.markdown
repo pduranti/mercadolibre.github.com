@@ -3,7 +3,8 @@ layout: guides
 title: Design Considerations
 categories: 
 - API Reference
-menu: api-reference
+menu:
+- API reference
 tags: 
 - API Reference
 ---

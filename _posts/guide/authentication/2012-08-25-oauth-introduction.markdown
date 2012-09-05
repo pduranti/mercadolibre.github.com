@@ -3,7 +3,8 @@ layout: guides
 title: OAuth introduction
 categories: 
 - Authentication
-guide: authentication
+menu:
+- Authentication
 tags: 
 - Authentication
 ---

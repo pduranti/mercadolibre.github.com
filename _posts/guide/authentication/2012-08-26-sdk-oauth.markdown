@@ -3,7 +3,8 @@ layout: guides
 title: OAuth &amp; SDKs
 categories: 
 - Authentication
-guide: authentication
+menu:
+- Authentication
 tags: 
 - Authentication
 ---

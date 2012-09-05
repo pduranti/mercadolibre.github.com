@@ -3,7 +3,8 @@ layout: guides
 title: API Directory
 categories: 
 - API Reference
-menu: api-reference
+menu:
+- API reference
 tags: 
 - API Reference
 apis:

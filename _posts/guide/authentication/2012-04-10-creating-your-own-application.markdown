@@ -3,7 +3,8 @@ layout: guides
 title: Creating your own application
 categories: 
 - Authentication
-guide: authentication
+menu:
+- Authentication
 tags: 
 - Authentication
 ---

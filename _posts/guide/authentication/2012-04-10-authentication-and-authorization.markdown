@@ -3,7 +3,8 @@ layout: guides
 title: Authentication &amp; Authorization
 categories: 
 - Authentication
-guide: authentication
+menu:
+- Authentication
 tags: 
 - Authentication
 ---
