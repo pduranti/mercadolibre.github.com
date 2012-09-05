@@ -52,15 +52,19 @@ Seller’s and buyer’s score on MercadoLibre platform is calculated based on t
 
 
 
-##POST a feedback (seller) {#post-feedback-seller}
+## POST a feedback (seller) {#post-feedback-seller}
 Posting a positive feedback after a seller ships a product to the buyer.
 
-{% highlight javascript %}
-{"rating":"positive",  "fulfilled":true, "message":"The product was paid in time and shipped to the buyer."}
+<pre class="terminal">
+curl -X POST -H "Content-Type: application/json" -d
+'{
+  "rating":"positive",  
+  "fulfilled":true, 
+  "message":"The product was paid in time and shipped to the buyer."
+}'
 
-https://api.mercadolibre.com/orders/ORDER_ID/feedback
-{% endhighlight %}
-
+https://api.mercadolibre.com/orders/$ORDER_ID/feedback?access_token=$ACCESS_TOKEN  
+</pre>
 
 ###Valid response
 
@@ -76,22 +80,38 @@ https://api.mercadolibre.com/orders/ORDER_ID/feedback
 ##POST feedback (buyer) {#post-feedback-buyer}
 Suppose the product size is not what the buyer wanted, thus he rates negative the transaction.
 
-{% highlight javascript %}
-{"rating":"NEGATIVE","fulfilled":false,"reason": "DESCRIPTION_DIDNT_MATCH_ARTICLE","message":"The product is not what I expected. It is too small."}
+<pre class="terminal">
+curl -X POST -H "Content-Type: application/json" -d
+'{
+  "rating":"NEGATIVE",
+  "fulfilled":false,
+  "reason": "DESCRIPTION_DIDNT_MATCH_ARTICLE",
+  "message":"The product is not what I expected. It is too small."
+}'
 
-https://api.mercadolibre.com/orders/ORDER_ID/feedback/
-{% endhighlight %}
-
-
+https://api.mercadolibre.com/orders/$ORDER_ID/feedback?access_token=$ACCESS_TOKEN  
+</pre>
 
 ##Reply a feedback {#reply-feedback}
 
 You can reply to some feedback that you received from the other part, to explain your reasons or give additional information to the other part.
 
 A reply is a POST request to this URL:
-{% highlight javascript %}
+
+
+<pre class="terminal">
+curl -X POST -H "Content-Type: application/json" -d
+'{
+  "rating":"NEGATIVE",
+  "fulfilled":false,
+  "reason": "DESCRIPTION_DIDNT_MATCH_ARTICLE",
+  "message":"The product is not what I expected. It is too small."
+}'
+
 https://api.mercadolibre.com/orders/<ORDER_ID>/feedback/<EXPERIENCE>
-{% endhighlight %}
+</pre>
+
+
 
 ###IMPORTANT NOTE:
 Experience can be: **sale** or **purchase**, depending on what is the other part ROLE. Because you are replying to some feedback you received previously.

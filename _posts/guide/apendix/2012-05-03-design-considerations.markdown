@@ -1,12 +1,12 @@
 ---
-layout: guides
+layout: firststep
 title: Design Considerations
 categories: 
-- API Reference
+- Design Considerations
 menu:
-- API reference
+- Design Considerations
 tags: 
-- API Reference
+- Design Considerations
 ---
 
 There are some things you should know about our APIs to make your life easier.
