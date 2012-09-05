@@ -160,7 +160,7 @@ All responses are JSON encoded. For more information visit [Design Consideration
 Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 
 <center>
-  Enter your application application ID: <input id="target" type="text" value="10115" size="12" />
+  Enter your application application ID: <input id="target" type="text" value="10115" size="8" />
   <input class="ch-btn ch-btn-small" type="button" id="show-my-info" value="Show my information"/>
 </center>
 
