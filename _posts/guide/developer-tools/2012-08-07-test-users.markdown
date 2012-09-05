@@ -22,19 +22,21 @@ tags:
 
 ## Overview {#overview}
 
-You can create test users to support you in the process of developing with our APIs. Test users you can operate as normal users: listing, buying and asking questions.
+You can create test users to support you in the process of developing with our APIs.
+Test users operate as normal users: listing, buying, asking questions and so on.
 Test users don't have to pay for the charges generated.
-
 Test users will eventually be washed out and you can create new ones.
 
 For the moment each user can create up to 10 test users.
 
 ## How to create a test user {#create-user}
 
-You need to have your application and a valid user to obtain an access_token.
+You need to obtain an application access_token with your own application and a user.
 If you didn't get your access_token yet, start here [Authentication &amp; Authorization guide](/authentication-and-authorization).
 
-site_id is the input parameter. It is the site where the user is allowed to operate e.g.: MLA, MLB, MLM
+<ul class="ch-list parameters">
+<li>site_id is the input parameter. It is the site where the user is allowed to operate e.g.: MLA, MLB, MLM</li>
+</ul>
 
 For a complete list of sites see [Site API](https://api.mercadolibre.com/sites)
 
