@@ -134,17 +134,17 @@ Response response = m.get("/users/me", params);
 All responses are JSON encoded. (For details on API design visit [Design Considerations](/design-considerations/#json)).
 
 
-## Give it a try! {#try}
+## Give it a try with your App! {#try}
 
-<center>
-  Enter the application ID you just created: <input id="target" type="text" value="10115" size="8" />
+<p>
+  Enter the application ID you just created: <input id="target" type="text" value="10115" size="6" /> &nbsp;
   <input class="ch-btn ch-btn-small" type="button" id="show-my-info" value="Show my information"/>
-</center>
+</p>
 
 <div id="try-by-yourself">
   <ul>
     <li><a href="#user-info">User Information</a></li>
-    <li><a href="#response">Response</a></li>
+    <li><a href="#response">JSON Response</a></li>
   </ul>
   <div>
     <div id="user-info">
