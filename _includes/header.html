@@ -52,10 +52,10 @@
                 <li><a class="{{ current }}" href="/listing-introduction">Sellers &amp; Integrators</a></li>
                 <li><a href="https://developers.mercadopago.com/" target="_blank">MercadoPago</a></li>
                 {% assign current = nil %}
-                {% if page.menu[0] == 'API reference' %}
+                {% if page.menu[0] == 'API Directory' %}
                     {% assign current = 'current' %}
                 {% endif %}
-                <li><a class="{{ current }}" href="/guide-appendix">API reference</a></li>
+                <li><a class="{{ current }}" href="/API-directory">API Directory</a></li>
                 {% assign current = nil %}
                 {% if page.menu[0] == 'Authentication' %}
                     {% assign current = 'current' %}

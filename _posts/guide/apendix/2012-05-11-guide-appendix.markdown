@@ -1,12 +1,6 @@
 ---
 layout: guides
 title: Related APIs
-categories: 
-- API Reference
-menu:
-- API reference
-tags: 
-- API Reference
 ---
 
 ### Table of Contents

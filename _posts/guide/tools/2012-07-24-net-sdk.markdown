@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: 2columns
 title: .NET SDK
 categories: 
 - SDKs 
