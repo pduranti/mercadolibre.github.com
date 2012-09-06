@@ -6,33 +6,23 @@ menu:
 ---
 
 
-<div class="contents">
-<h5>Table of Contents</h5>
-
-<dl>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('apis')">Public &amp; Private APIs</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('register')">Register an Application in MercadoLibre</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('profile')">Retrieve your Own Profile</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('response')">JSON Response</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('next')">Next Steps</a></dt>
-</dl>
-</div>
-
-## Public &amp; Private APIs {#apis}
+## Public &amp; Private Resources {#apis}
 
 
-Our APIs are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
+Our API are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
 
-Our APIs will give you lots of information. Some of it is private, some of it is public. To access to public information you can use just an URL:
+Our API will give you lots of information. Some of it is private, some of it is public. To access to public information you can use just an URL:
 
-<pre class="terminal">$ curl https://api.mercadolibre.com/countries</pre>
+<pre class="terminal">$ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
 
-But if you need to access to private informtaion you will get access only if you have an access token:
+
+But if you need to access to private Rersources you will need an access token:
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/users/me?access_token=...</pre>
 
 
-## Register an Application in MercadoLibre {#register}
+
+## Create your Application in MercadoLibre {#register}
 
 
 The very first thing you'll want to do is make sure you are a [registered user in MercadoLibre](http://www.mercadolibre.com).
@@ -63,7 +53,7 @@ img.appSecret
 <img src="" class="appSecret">
 
 
-## Retrieves your Own Profile {#profile}
+## Retrieve your User Information {#profile}
 
 Using our [SDKs](/javascript-sdk) you'll be able to retrieve your own user profile using your own application.
 
@@ -125,9 +115,9 @@ Response response = m.get("/users/me", params);
 	$("#code").tabNavigator();
 </script>
 
-## Authentication &amp; Authorization {#authentication-authorization}
+## Authorize your Application {#authentication-authorization}
 
-To allow an application to access to your data you need to be [authenticated](/authentication) in MercadoLibre and confirm using [authorization](/authorization) stage. 
+To allow an application to access to your data you need to be **authenticated** in MercadoLibre and then **authorize** the Application. 
 
 
 <!--<img src="/images/authentication-authorization.png" alt="Authentication" />-->
@@ -143,12 +133,10 @@ To allow an application to access to your data you need to be [authenticated](/a
 All responses are JSON encoded. For more information visit [Design Considerations](/design-considerations/#json) section.
 
 
-## Try by yourself {#try}
-
-Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
+## Give it a try! {#try}
 
 <center>
-  Enter your application application ID: <input id="target" type="text" value="10115" size="8" />
+  Enter the application ID you just created: <input id="target" type="text" value="10115" size="8" />
   <input class="ch-btn ch-btn-small" type="button" id="show-my-info" value="Show my information"/>
 </center>
 
