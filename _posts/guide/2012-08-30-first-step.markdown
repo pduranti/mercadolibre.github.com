@@ -132,52 +132,15 @@ To allow an application to access to your data you need to be [authenticated](/a
 
 <!--<img src="/images/authentication-authorization.png" alt="Authentication" />-->
 
-<style type="text/css">
-.under
-{
-  z-index:1;
-  box-shadow:10px 10px 10px 5px gray; 
-}
-.over
-{
-  position:relative;
-  left:-40px;
-  top:100px;
-  z-index:2;
-  box-shadow:10px 10px 10px 5px gray; 
-}
-</style>
 <div style="height:400px;">
-  <img src="/images/authentication.png" class="under" />
-  <img src="/images/authorization.png" class="over" />
+  <img src="/images/authentication.png" style="z-index:1;box-shadow:10px 10px 10px 5px gray;" />
+  <img src="/images/authorization.png" style="position:relative;left:-40px;top:100px;z-index:2;box-shadow:10px 10px 10px 5px gray;" />
 </div>
 
 
 ## JSON Response {#response}
 
 All responses are JSON encoded. For more information visit [Design Considerations](/design-considerations/#json) section.
-
-{% highlight javascript %}
-{
-   "nickname":"TEST_VENTA_MLA1",
-   "first_name":"Test",
-   "last_name":"Test",
-   "country_id":"AR",
-   "email":"test310511_5959@robot.com",
-   "identification":{...},
-   "phone":{...},
-   "user_type":"normal",
-   "logo":null,
-   "points":35,
-   "site_id":"MLA",
-   "seller_experience":"ADVANCED",
-   "seller_reputation":{...},
-   "buyer_reputation":{...},
-   "status":{...},
-   "credit":{...}
-}
-{% endhighlight %}
-
 
 
 ## Try by yourself {#try}
