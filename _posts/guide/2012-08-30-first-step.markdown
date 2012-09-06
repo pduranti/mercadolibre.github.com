@@ -10,13 +10,27 @@ menu:
 <h5>Table of Contents</h5>
 
 <dl>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('register')">Register an Application in MercadoLibre</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('apis')">Public &amp; Private APIs</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('register')">Register an Application in MercadoLibre</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('profile')">Retrieve your Own Profile</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('response')">JSON Response</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('next')">Next Steps</a></dt>
 </dl>
 </div>
+
+## Public &amp; Private APIs {#apis}
+
+
+Our APIs are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
+
+Our APIs will give you lots of information. Some of it is private, some of it is public. To access to public information you can use just an URL:
+
+<pre class="terminal">$ curl https://api.mercadolibre.com/countries</pre>
+
+But if you need to access to private informtaion you will get access only if you have an access token:
+
+<pre class="terminal">$ curl https://api.mercadolibre.com/users/me?access_token=...</pre>
+
 
 ## Register an Application in MercadoLibre {#register}
 
@@ -31,6 +45,7 @@ img.appID
   width:423px;
   height:120px;
   background:url(/images/application-detail.png) 0px -10px;
+  box-shadow:10px 10px 10px 5px gray; 
 }
 
 img.appSecret
@@ -38,26 +53,15 @@ img.appSecret
   width:423px;
   height:60px;
   background:url(/images/application-detail.png) 0px -340px;
+  box-shadow:10px 10px 10px 5px gray; 
 }
 </style>
 
+
 <img src="" class="appID">
-<br /><br />
+<br /><br /><br />
 <img src="" class="appSecret">
 
-
-## Public &amp; Private APIs {#apis}
-
-
-Our APIs are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
-
-Our APIs will give you lots of information. Some of it is private, some of it is public. To access to public information you can use just an URL:
-
-<pre class="terminal">$ curl https://api.mercadolibre.com/countries</pre>
-
-But if you need to access to private informtaion you will get access only if you have an access token:
-
-<pre class="terminal">$ curl https://api.mercadolibre.com/users/me?access_token=...</pre>
 
 ## Retrieves your Own Profile {#profile}
 
@@ -125,7 +129,28 @@ Response response = m.get("/users/me", params);
 
 To allow an application to access to your data you need to be [authenticated](/authentication) in MercadoLibre and confirm using [authorization](/authorization) stage. 
 
-<img src="/images/authentication-authorization.png" alt="Authentication" />
+
+<!--<img src="/images/authentication-authorization.png" alt="Authentication" />-->
+
+<style type="text/css">
+.under
+{
+  z-index:1;
+  box-shadow:10px 10px 10px 5px gray; 
+}
+.over
+{
+  position:relative;
+  left:-40px;
+  top:100px;
+  z-index:2;
+  box-shadow:10px 10px 10px 5px gray; 
+}
+</style>
+<div style="height:400px;">
+  <img src="/images/authentication.png" class="under" />
+  <img src="/images/authorization.png" class="over" />
+</div>
 
 
 ## JSON Response {#response}
