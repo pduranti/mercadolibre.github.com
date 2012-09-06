@@ -9,9 +9,9 @@ menu:
 ## Public &amp; Private Resources {#apis}
 
 
-Our API are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
+Our API are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this **_resource_**. 
 
-Our API will give you lots of information. Some of it is private, some of it is public. To access to public information you can use just an URL:
+Some Resources are public and others have private information. To access to public information you can use just an URL:
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
 
@@ -22,7 +22,7 @@ But if you need to access to private Rersources you will need an access token:
 
 
 
-## Create your Application in MercadoLibre {#register}
+## Create your own Application {#register}
 
 
 The very first thing you'll want to do is make sure you are a [registered user in MercadoLibre](http://www.mercadolibre.com).
@@ -51,6 +51,19 @@ img.appSecret
 <img src="" class="appID">
 <br /><br /><br />
 <img src="" class="appSecret">
+
+
+## Authorize your Application {#authentication-authorization}
+
+To allow an application to access to your data you need to be **authenticated** in MercadoLibre and then **authorize** the Application. 
+
+
+<!--<img src="/images/authentication-authorization.png" alt="Authentication" />-->
+
+<div style="height:400px;">
+  <img src="/images/authentication.png" style="z-index:1;box-shadow:10px 10px 10px 5px gray;" />
+  <img src="/images/authorization.png" style="position:relative;left:-40px;top:100px;z-index:2;box-shadow:10px 10px 10px 5px gray;" />
+</div>
 
 
 ## Retrieve your User Information {#profile}
@@ -114,18 +127,6 @@ Response response = m.get("/users/me", params);
 <script type="text/javascript">
 	$("#code").tabNavigator();
 </script>
-
-## Authorize your Application {#authentication-authorization}
-
-To allow an application to access to your data you need to be **authenticated** in MercadoLibre and then **authorize** the Application. 
-
-
-<!--<img src="/images/authentication-authorization.png" alt="Authentication" />-->
-
-<div style="height:400px;">
-  <img src="/images/authentication.png" style="z-index:1;box-shadow:10px 10px 10px 5px gray;" />
-  <img src="/images/authorization.png" style="position:relative;left:-40px;top:100px;z-index:2;box-shadow:10px 10px 10px 5px gray;" />
-</div>
 
 
 ## JSON Response {#response}
