@@ -65,10 +65,10 @@ This authorization code can be exchanged later for an access token and a refresh
 
 
 If a refresh token is present in the authorization code exchange, then it may be used to obtain new access tokens at any time. 
-This type of access to the API is called **offline**, since the user does not have to be present at the browser when the application obtains a new access token.
+This type of access is called **offline**, since the user does not have to be present at the browser when the application obtains a new access token.
 
  
-When invoking this dialog, you must pass your client id that is generated when you create your application in our [Applications Portal](http://applications.mercadolibre.com) (the client_id parameter) and the URL that the user's browser will be redirected to once app authorization is completed (the redirect_uri parameter).
+When invoking this dialog, you must pass your client id that is generated when you create your application in our [Applications Portal](http://applications.mercadolibre.com/) (the client_id parameter) and the URL that the user's browser will be redirected to once app authorization is completed (the redirect_uri parameter).
 
 <h3>Step 1: Obtain a code</h3>
 
@@ -255,15 +255,16 @@ Once the token expires, you will need to the redirect the user to the authorizat
 <table class="datagrid">
 <tbody>
   <tr><th>Error_code</th><th>Error message</th><th>Description</th></tr>
-  <tr><td>invalid_client</td><td>client_id [] o client_secret [] inválidos</td><td>The client identifier provided is invalid.</td></tr>
-  <tr><td>invalid_grant</td><td>Error validando el parámetro code.</td><td>The provided authorization grant is invalid, expired, revoked, or does not match the redirection URI used in the authorization request.</td></tr>
-  <tr><td>invalid_grant</td><td>Error validando las credenciales con el Usuario:{0} Password:{1}</td><td>The provided authorization grant is invalid.</td></tr>
-  <tr><td>invalid_grant</td><td>No se puede generar un token sin scope offline_access, el usuario {0} no tiene una sesion activa</td><td>The provided authorization grant is invalid, expired, revoked, or does not match the redirection URI used in the authorization request.</td></tr>
-  <tr><td>invalid_grant</td><td>Error generando el access token al usuario {0} para la aplicación {1} y scopes {2}</td><td>The provided authorization grant is invalid, expired, revoked, or does not match the redirection URI used in the authorization request.</td></tr>
-  <tr><td>invalid_client</td><td>.</td><td>The client identifier provided is invalid.</td></tr>
-  <tr><td>invalid_scope</td><td>.</td><td>The requested scope is invalid, unknown, or malformed.</td></tr>
-  <tr><td>unauthorized_client</td><td>.</td><td>The client is not authorized to request an authorization code using this method.</td></tr>
-  <tr><td>invalid_request</td><td>.</td><td>The request is missing a required parameter, includes an unsupported parameter or parameter value, or is otherwise malformed.</td></tr>
-  <tr><td>unsupported_grant_type</td><td>.</td><td>The authorization grant type is not supported by the authorization server.</td></tr>
+  <tr><td>invalid_client</td><td>Error getting client information for client_id: ${0}</td><td>Unknown user.</td></tr>
+  <tr><td>invalid_client</td><td>invalid client_id : {0}</td><td>The client identifier provided is invalid.</td></tr>
+  <tr><td>invalid_client</td><td>invalid client_id[{0}] or client_secret[{1}]</td><td>Invalid client_id or client_secret provided.</td></tr>
+  <tr><td>invalid_grant</td><td>To create an access token the user {0} must have an active session, or your application should request authorization for offline_access scope.</td><td>The provided authorization grant is invalid, expired, revoked, or does not match the redirection URI used in the authorization request.</td></tr>
+  <tr><td>invalid_grant</td><td>Error validating user credentials, user:{0}, password:{1}</td><td>Invalid crdentials.</td></tr>
+  <tr><td>invalid_grant</td><td>Error validating grant. Your authorization code or refresh token may be expired or it was already used.</td><td>Error validating the existing grant, it has expired or it was already used</td></tr>
+  <tr><td>invalid_grant</td><td>The client_id does not match the original</td><td>Client id does not match</td></tr>
+  <tr><td>invalid_grant</td><td>The redirect_uri does not match the original</td><td>Redirect URI does not match the original</td></tr>
+  <tr><td>invalid_scope</td><td>Invalid scope.</td><td>The requested scope is invalid, unknown, or malformed.</td></tr>
+  <tr><td>invalid_request</td><td>Wrong number of parameters with duplicate values.</td><td>The reques  is missing a required parameter, includes an unsupported parameter or parameter value, or is otherwise malformed.</td></tr>
+  <tr><td>unsupported_grant_type</td><td>Unsupported grant type: ${0}.</td><td>The authorization grant type is not supported by the authorization server.</td></tr>
 </tbody>
 </table>

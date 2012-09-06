@@ -1,42 +1,39 @@
 ---
-layout: guides
+layout: 2columns
 title: Create Test Users
 categories: 
-- SDKs 
-- Test Users
-menu: 
-- Tools
+- guides
+menu: developer-tools
 tags: 
-- Test Users
+- Users
 ---
 
+# Create test users
 
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('create-user')">Create a user</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('considerations')">Considerations using Test Users</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('Considerations')">Considerations using Test Users</a></dt>
   </dl>
 </div>
 
 ## Overview {#overview}
 
-You can create test users to support you in the process of developing with our APIs.
-Test users operate as normal users: listing, buying, asking questions and so on.
+You can create test users to support you in the process of developing with our APIs. Test users you can operate as normal users: listing, buying and asking questions.
 Test users don't have to pay for the charges generated.
+
 Test users will eventually be washed out and you can create new ones.
 
 For the moment each user can create up to 10 test users.
 
-## How to create a test user {#create-user}
+## How to create a test user 
 
-You need to obtain an application access_token with your own application and a user.
+You need to have your application and a valid user to obtain an access_token.
 If you didn't get your access_token yet, start here [Authentication &amp; Authorization guide](/authentication-and-authorization).
 
-<ul class="ch-list parameters">
-<li>site_id is the input parameter. It is the site where the user is allowed to operate e.g.: MLA, MLB, MLM</li>
-</ul>
+site_id is the input parameter. It is the site where the user is allowed to operate e.g.: MLA, MLB, MLM
 
 For a complete list of sites see [Site API](https://api.mercadolibre.com/sites)
 
@@ -66,7 +63,7 @@ Id, nickname and password are returned in the response.
 }
 {% endhighlight %}
 
-## Considerations using Test Users {#considerations}
+## Considerations using Test Users {#policies}
 
 There are some consideration you need to know while working with test users.
 
@@ -78,5 +75,4 @@ There are some consideration you need to know while working with test users.
 	<li>Test users without activity (buy, ask, publish, etc) in last 60 days will be removed.</li>
 	<li>Test items are removed regularly.</li>
 </ul>
-
 
