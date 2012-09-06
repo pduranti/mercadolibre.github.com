@@ -3,11 +3,11 @@ layout: 2columns
 title: Category Dump
 categories: 
 - SDKs 
-- Others
+- Other Tools
 menu: 
 - Tools
 tags: 
-- Others
+- Other Tools
 ---
 
 

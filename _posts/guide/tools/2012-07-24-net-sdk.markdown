@@ -3,7 +3,7 @@ layout: 2columns
 title: .NET SDK
 categories: 
 - SDKs 
-- Others
+- Other Tools
 menu: 
 - Tools
 tags: 
