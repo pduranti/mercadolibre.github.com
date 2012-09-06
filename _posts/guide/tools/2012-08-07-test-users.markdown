@@ -1,14 +1,14 @@
 ---
-layout: 2columns
+layout: guides
 title: Create Test Users
 categories: 
-- guides
-menu: developer-tools
+- SDKs 
+- Others
+menu: 
+- Tools
 tags: 
-- Users
+- Others
 ---
-
-# Create test users
 
 <div class="contents">
   <h5>Table of Contents</h5>

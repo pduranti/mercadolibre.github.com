@@ -3,10 +3,11 @@ layout: guides
 title: Javascript SDK
 categories: 
 - SDKs 
-- Test Users
+- Others
 menu: 
 - Tools
-tags: SDKs
+tags: 
+- SDKs
 ---
 
 

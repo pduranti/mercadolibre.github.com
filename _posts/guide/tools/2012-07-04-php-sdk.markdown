@@ -3,11 +3,13 @@ layout: guides
 title: PHP SDK
 categories: 
 - SDKs 
-- Test Users
+- Others
 menu: 
 - Tools
-tags: SDKs
+tags: 
+- SDKs
 ---
+
 
 
 The PHP SDK enables you to access the API from a web application developed in [PHP](http://www.php.net).

@@ -3,11 +3,13 @@ layout: guides
 title: JAVA SDK
 categories: 
 - SDKs 
-- Test Users
-menu:
+- Others
+menu: 
 - Tools
-tags: SDKs
+tags: 
+- SDKs
 ---
+
 
 
 The JAVA SDK enables you to access the API from a web application developed in [JAVA](http://www.java.com).

@@ -3,12 +3,12 @@ layout: guides
 title: .NET SDK
 categories: 
 - SDKs 
-- Test Users
-menu:
+- Others
+menu: 
 - Tools
-tags: SDKs
+tags: 
+- SDKs
 ---
-
 
 The .NET SDK enables you to access the API from a web application developed in [Microsoft .NET](http://www.microsoft.com/net) and [Mono](http://www.mono-project.com).
 It hides all the complexity of OAuth 2.0 and lets you focus on writing application code.
