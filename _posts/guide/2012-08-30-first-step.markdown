@@ -131,7 +131,7 @@ Response response = m.get("/users/me", params);
 
 ## JSON Response {#response}
 
-All responses are JSON encoded. For more information visit [Design Considerations](/design-considerations/#json) section.
+All responses are JSON encoded. (For details on API design visit [Design Considerations](/design-considerations/#json)).
 
 
 ## Give it a try! {#try}
