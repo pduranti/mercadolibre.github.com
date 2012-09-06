@@ -53,9 +53,9 @@ img.appSecret
 <img src="" class="appSecret">
 
 
-## Authorize your Application {#authentication-authorization}
+## Authorizing an Application
 
-To allow an application to access to your data you need to be **authenticated** in MercadoLibre and then **authorize** the Application. 
+Applications can only access private user resources, if the users gives explicit **authorization** to the Application.
 
 
 <!--<img src="/images/authentication-authorization.png" alt="Authentication" />-->
