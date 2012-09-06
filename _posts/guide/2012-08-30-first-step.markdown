@@ -155,7 +155,7 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
 <div id="try-by-yourself">
   <ul>
     <li><a href="#user-info">User Information</a></li>
-    <li><a href="#json-response">JSON Response</a></li>
+    <li><a href="#response">Response</a></li>
   </ul>
   <div>
     <div id="user-info">
@@ -167,7 +167,7 @@ Using [Javascript SDK](/javascript-sdk), we will show you how to use your app:
       <p class="ch-form-row ch-form-required"><label for="email">Email:</label><span id="email"></span></p>
       <p class="ch-form-row ch-form-required"><label for="site">Site:</label><span id="site"></span></p>
     </div>
-    <div id="json-response">
+    <div id="response">
       <p><pre id="me">{}</pre></p>
     </div>
   </div>
