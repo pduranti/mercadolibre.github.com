@@ -108,7 +108,7 @@ curl -X POST -H "Content-Type: application/json" -d
   "message":"The product is not what I expected. It is too small."
 }'
 
-https://api.mercadolibre.com/orders/<ORDER_ID>/feedback/<EXPERIENCE>
+https://api.mercadolibre.com/orders/$ORDER_ID/feedback/$EXPERIENCE
 </pre>
 
 
@@ -120,18 +120,27 @@ EXAMPLES:
 
 - As a **SELLER** you can send a POST request to a purchase feedback:
 
-{% highlight javascript %}
-{"reply": "The size was detailed in the description, however if you send it back we can refund you the money." }
 
-https://api.mercadolibre.com/orders/ORDER_ID/feedback/purchase?access_token={aSellersAccessToken}
-{% endhighlight %}
+<pre class="terminal">
+curl -X POST -H "Content-Type: application/json" -d
+'{
+  "reply": "The size was detailed in the description, however if you send it back we can refund you the money." 
+}'
+
+https://api.mercadolibre.com/orders/$ORDER_ID/feedback/purchase?access_token={aSellersAccessToken}
+</pre>
+
 
 - As a **BUYER** you can send a POST request to a sale feedback:
-{% highlight javascript %}
-{"reply": "I expected you to send me the correct size from the start." }
 
-https://api.mercadolibre.com/orders/ORDER_ID/feedback/sale?access_token={aBuyersAccessToken}
-{% endhighlight %}
+<pre class="terminal">
+curl -X POST -H "Content-Type: application/json" -d
+'{
+  "reply": "I expected you to send me the correct size from the start." 
+}'
+
+https://api.mercadolibre.com/orders/$ORDER_ID/feedback/sale?access_token={aBuyersAccessToken}
+</pre>
 
 
 ##Changing a feedback {#change-feedback}
@@ -142,24 +151,22 @@ Example: Upon receiving the money back from the seller you decide to change a ne
 
 A buyer should send a PUT request like this:
 
-{% highlight javascript %}
-{
-"rating":"NEUTRAL","fulfilled":false,"message":"I received the money back"
-}
+<pre class="terminal">
+curl -X PUT -H "Content-Type: application/json" -d
+'{
+  "rating":"NEUTRAL","fulfilled":false,"message":"I received the money back"
+}'
 
-https://api.mercadolibre.com/orders/ORDER_ID/feedback/purchase?access_token={aBuyersAccessToken}
-{% endhighlight %}
-
+https://api.mercadolibre.com/orders/$ORDER_ID/feedback/purchase?access_token={aBuyersAccessToken}
+</pre>
 
 A seller, on the contrary should send a PUT request to:
 
-{% highlight javascript %}
-{
-"rating":"NEUTRAL","fulfilled":false,"message":"OK I will change the feedback"
-}
+<pre class="terminal">
+curl -X PUT -H "Content-Type: application/json" -d
+'{
+  "rating":"NEUTRAL","fulfilled":false,"message":"OK I will change the feedback"
+}'
 
-https://api.mercadolibre.com/orders/ORDER_ID/feedback/sale?access_token={aSellersAccessToken}
-{% endhighlight %}
-
-
-
+https://api.mercadolibre.com/orders/$ORDER_ID/feedback/sale?access_token={aSellersAccessToken}
+</pre>
