@@ -9,7 +9,9 @@ menu:
 ## Public &amp; Private Resources {#apis}
 
 
-Our API are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this **_resource_**. 
+Our API is [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this **_resource_**. 
+
+All responses are JSON encoded. (For details on API design visit [Design Considerations](/design-considerations/#json)).
 
 Some Resources are public and others have private information. To access to public information you can use just an URL:
 
@@ -127,11 +129,6 @@ Response response = m.get("/users/me", params);
 <script type="text/javascript">
 	$("#code").tabNavigator();
 </script>
-
-
-## JSON Response {#response}
-
-All responses are JSON encoded. (For details on API design visit [Design Considerations](/design-considerations/#json)).
 
 
 ## Give it a try with your App! {#try}
