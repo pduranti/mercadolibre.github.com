@@ -7,7 +7,7 @@ menu:
 - API Directory
 tags: 
 - API Directory
-apis:
+apiCatalog:
 - ["https://api.mercadolibre.com/applications/121", "Applications"]
 - ["https://api.mercadolibre.com/users/99580221/addresses", "Addresses"]
 - ["https://api.mercadolibre.com/sites/MLA/card_issuers", "Card issuers"]
@@ -62,6 +62,6 @@ apis:
 This section contains a list of the MELI API's.
 
 ##API
-{% for api in page.apis | sort %}
+{% for api in page.apiCatalog | sort %}
 [{{ api[1] }}]({{ api[0] }})
 {% endfor %}

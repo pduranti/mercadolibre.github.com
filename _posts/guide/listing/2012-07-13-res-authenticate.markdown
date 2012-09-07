@@ -9,9 +9,9 @@ tags: Lost
 
 Authenticate	{#authenticate}
 ------------
-MercadoLibre's APIs work with the <a href="http://en.wikipedia.org/wiki/Oauth" target="_blank">OAuth authentication protocol</a>.
+MELI API works with the <a href="http://en.wikipedia.org/wiki/Oauth" target="_blank">OAuth authentication protocol</a>.
 
-There are certain actions that require you to identify as a MELI user (ie: listing a real estate property). To successfully accomplish this actions, you must get an access token that will allow you to identify your MELI user when interacting with the APIs, for a determined amount of time (after which you will have to get a new access token).
+There are certain actions that require you to identify as a MELI user (ie: listing a real estate property). To successfully accomplish this actions, you must get an access token that will allow you to identify your MELI user when interacting with the API, for a determined amount of time (after which you will have to get a new access token).
 
 ### Get an access token for your signed up user ### {#accesstokensignedupuser}
 
@@ -44,7 +44,7 @@ You will receive a response body in a JSON format with the following layout:
 {% endhighlight %}
 
 
-*YOUR_NEW_ACCESS_TOKEN* is now the access token required to interact with the APIs to list a real estate property. Keep in mind that this token will expire after the "expires_in" amount of seconds. Once expired your access token will no longer be valid and you will have to send a new request to the OAuth API to get a new access token.
+*YOUR_NEW_ACCESS_TOKEN* is now the access token required to interact with the API to list a real estate property. Keep in mind that this token will expire after the "expires_in" amount of seconds. Once expired your access token will no longer be valid and you will have to send a new request to the OAuth API to get a new access token.
 
 
 ### Get an access token for other users ### {#accesstokenotherusers}
@@ -100,7 +100,7 @@ You will receive a response body in a JSON format with the following layout:
 }
 {% endhighlight %}
 
-*YOUR_NEW_ACCESS_TOKEN* is now the access token required to interact with the APIs to list a real estate property on behalf the user who just granted permissions to your APP. Keep in mind that this token will expire after the "expires_in" amount of seconds. Once expired your access token will no longer be valid and you will have to get a new access token. To obtain from the second access token on, you will need *YOUR_REFRESH_TOKEN* and will have to send a POST request to the following URL:
+*YOUR_NEW_ACCESS_TOKEN* is now the access token required to interact with the API to list a real estate property on behalf the user who just granted permissions to your APP. Keep in mind that this token will expire after the "expires_in" amount of seconds. Once expired your access token will no longer be valid and you will have to get a new access token. To obtain from the second access token on, you will need *YOUR_REFRESH_TOKEN* and will have to send a POST request to the following URL:
 
 <pre class="terminal">
  https://api.mercadolibre.com/oauth/token?grant_type=refresh_token&client_id=YOUR_CLIENT_ID&client_secret=YOUR_SECRET_KEY&refresh_token=YOUR_REFRESH_TOKEN

@@ -14,7 +14,7 @@ Pictures are optional when listing, but they make a big difference in the public
  https://api.mercadolibre.com/pictures?access_token=YOUR_ACCESS_TOKEN 
 </pre>
 
-Remember *YOUR_ACCESS_TOKEN* is the necessary key to interact with cerain APIs, obtained in the [Authenticate section](/res-authenticate).
+Remember *YOUR_ACCESS_TOKEN* is the necessary key to interact with cerain API, obtained in the [Authenticate section](/res-authenticate).
 
 The request body is in this case a binary (instead of plain text), and the procedure varies according to the programming language you are working with.
 

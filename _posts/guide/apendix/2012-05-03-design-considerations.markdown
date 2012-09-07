@@ -27,9 +27,10 @@ There are some things you should know about our API to make your life easier.
 
 
 ## All responses are JSON encoded. {#json}
+
 JSON is a lightweight text-based open standard designed for human-readable data interchange. You can read more [here](http://en.wikipedia.org/wiki/JSON).
 
-All out APIs support JSON by default and will return JSON by default.
+Our  API support JSON by default and will return JSON by default.
 
 We also return HTML responses when you surf out API through a browser.
 
@@ -40,7 +41,7 @@ The [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) is an 
 We'll support [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) very soon!
 
 ### JSONP Usage
-All APIs we'll respond JSONP if you provide a `callback` parameter. The value of this parameter will be used as the callback function.
+API we'll respond JSONP if you provide a `callback` parameter. The value of this parameter will be used as the callback function.
 
 For example, doing:
 
@@ -96,7 +97,7 @@ As you can see, response is an array with 3 values:
 [Cross-origin resource sharing (CORS)](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) is a web browser technology specification which defines ways for a web server to allow its resources to be accessed by a web page from a different domain.
 This is a way to overcome the [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy).
 
-All the APIs return a special header:
+All the API return a special header:
 
 {% highlight http %}
 Access-Control-Allow-Origin: *
@@ -158,9 +159,9 @@ If you have a list of IDs of resources you want to retrieve. You can avoid makin
 <pre class="terminal">$ curl https://api.mercadolibre.com/currencies?ids=ARS,USD</pre>
 
 
-## All APIs will provide documentation in JSON format using OPTIONS. {#options}
+## API will provide documentation in JSON format using OPTIONS. {#options}
 
-There is a standard format to get API documentation. Use `OPTIONS` http method to get a `JSON` encoded response that will describe the API, with all the allowed methods and connections to other APIs.
+There is a standard format to get API documentation. Use `OPTIONS` http method to get a `JSON` encoded response that will describe the API, with all the allowed methods and connections to other part of API.
 
 <pre class="terminal">$ curl -X OPTIONS https://api.mercadolibre.com/currencies</pre>
 

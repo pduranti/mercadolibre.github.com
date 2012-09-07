@@ -25,7 +25,7 @@ Complete the on screen fields and you will receive a confirmation email to activ
 Complete the required additional information  {#additionalinfo}
 --------------------------------------------
 
-Make your user available for listing using MercadoLibre's APIs by completing some additional information (documentation, location, etc.). To accomplish this go to the following URL:
+Make your user available for listing using MELI API by completing some additional information (documentation, location, etc.). To accomplish this go to the following URL:
 
 <a href="http://www.mercadolibre.com" target="_blank">http://www.mercadolibre.com</a>
 

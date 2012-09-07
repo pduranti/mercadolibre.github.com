@@ -9,8 +9,8 @@ tags:
 - Authentication
 ---
 
-Authentication gives your app the ability to know the identity of a MELI user, and to read and write data via MELI's APIs. The platform uses [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) for authentication and authorization.  
-A successful authentication flow results in your application obtaining a user access token which can be used to make requests to MELI's APIs. 
+Authentication gives your app the ability to know the identity of a MELI user, and to read and write data via MELI's API. The platform uses [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) for authentication and authorization.  
+A successful authentication flow results in your application obtaining a user access token which can be used to make requests to MELI's API. 
 
 <div class="contents">
 <h5>Table of Contents</h5>
@@ -44,7 +44,7 @@ In the OAuth protocol this is called "user consent".
 If the user does not grant permission, MercadoLibre OAuth API returns an error.
 
 
-	Once your application is issued an access token, it can use it in a request to MercadoLibre APIs to request data that belongs to the user or take an action on his behalf.
+	Once your application is issued an access token, it can use it in a request to MercadoLibre API to request data that belongs to the user or take an action on his behalf.
 
 ## Different Scenarios {#scenarios}
 The MELI API supports two different authentication flows: server-side and client-side.
@@ -151,7 +151,7 @@ Besides the access token, the response also contains the time in seconds the acc
 
 
 ## Refresh your access token (optional) {#token-refresh}
-Access tokens have an expiration time. Typically a webserver application will need to access MercadoLibre APIs at any time. This is called offline_access because the user does not have to be present at the browser when the application obtains a new access token.
+Access tokens have an expiration time. Typically a webserver application will need to access MercadoLibre API at any time. This is called offline_access because the user does not have to be present at the browser when the application obtains a new access token.
 
 **How to obtain a refresh token?**
 
