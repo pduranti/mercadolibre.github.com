@@ -28,9 +28,9 @@ There are three groups of information in this form: Basic application info, Auth
 
 **- ID: ** This is your `client_id`. It must be used to retrieve an access token. 
 
-**- Secret Key: ** This is used too to retrieve your Don't share this secret with anyone.
+**- Secret Key: ** This is used too to retrieve an access token. Don't share this secret with anyone.
 
-**- Name: ** Name of your application. It must be unique on the Site.
+**- Name: ** Name of your application. It must be unique.
 
 **- Shortname: ** Name tha Meli uses to generate your application's URL. 
 
@@ -39,13 +39,15 @@ There are three groups of information in this form: Basic application info, Auth
 
 ###Authentication &amp; Security 
 
-**- Callback URL: Redirect URI. ** URL to return users to your app after they grant access. Only used if you do not pass in a redirect URL when you send the user to grant access.
+**- Callback URL: Redirect URI. ** URL to return users to your app after they grant access. 
 
-**- Domains: ** Authorized Javascript Origins. 
-Comma separated list of fully-qualified domain name of all pages that will call the JavaScript API. Only needed if using Javascript API. Must include protocol, host, and port (it not 80 or 443).
+**- Domains: ** Authorized Javascript Origins. Comma separated list of fully-qualified domain name of all pages that will use the client-side authentication. Only needed if using Javascript API. Don't include protocol or port.
 
 
-**- Scopes: ** Read | Write | Offline access
+**- Scopes: ** <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***Read:*** Allow to use API GET HTTP methods. <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***Write:*** Allow to use API PUT, POST and DELETE HTTP methods. <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***Offline Access:*** Allow to make request server side and refresh token. <br />
 
 
 ###Notification Settings
@@ -53,8 +55,3 @@ Comma separated list of fully-qualified domain name of all pages that will call 
 **- Notifications callback URL: ** Configure the public URL of your domain where you want to receive notifications for the different topics. 
 
 **- Topics: ** Comma separated list of ‘topics’ you want to subscribe to. There are three possible topics: orders, items, questions.
-
-**- Domains: ** Domains allowed to interact with MELI's Javascript SDK. 
-
-
-
