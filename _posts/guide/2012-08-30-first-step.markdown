@@ -6,7 +6,7 @@ menu:
 ---
 
 
-## Before start {#apis}
+## Before start {#api}
 
 
 Our API is [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this **_resource_**. 
@@ -216,7 +216,13 @@ Response response = m.get("/users/me", params);
 
 Going through the [Authentication](/authentication) section will give you the knowledge about registration and sign-in. Reading [Authorization](/authorization) section you will see how applications grants and permission scopes. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth 2.0.
 
-You should now head over to our [Documentation](/guides) section and check out our guides. 
-If you are interested in to search items using MELI's APIs visit [Searching](/search-visual-introduction) section. If you are buy an item you can visit [Buyer](/bookmarks) guides. But if you are thinking in sell over MercadoLibre visit [Selling](/listing-introduction) guides.
+You should now head over to our [Documentation](/guides) section and check out our guides:
+
+<ul>
+  <li><a href="/bookmarks">Buying Items</a></li>
+  <li><a href="/search-visual-introduction">Searching for Items</a></li>
+  <li><a href="/listing-introduction">Sellers &amp; Integrators</a></li>
+</ul>
+
 
 

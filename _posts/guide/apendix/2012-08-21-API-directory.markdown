@@ -61,7 +61,7 @@ apis:
 
 This section contains a list of the MELI API's.
 
-##APIs
+##API
 {% for api in page.apis | sort %}
 [{{ api[1] }}]({{ api[0] }})
 {% endfor %}

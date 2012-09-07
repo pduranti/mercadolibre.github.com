@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Listing introduction
+title: Introduction
 categories: 
 - Listing
 - Orders

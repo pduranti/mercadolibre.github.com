@@ -119,4 +119,4 @@ You will receive the following JSON response:
 }
 {% endhighlight %}
 
-**Congratulations!** you have created your first product Ad using the MELI APIs.
+**Congratulations!** you have created your first product Ad using the MELI API.

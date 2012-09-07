@@ -9,7 +9,7 @@ tags:
 - Design Considerations
 ---
 
-There are some things you should know about our APIs to make your life easier.
+There are some things you should know about our API to make your life easier.
 
 <div class="contents">
 <h5>Table of Contents</h5>

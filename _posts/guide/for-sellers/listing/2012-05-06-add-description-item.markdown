@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Add description to items
+title: Adding description
 categories: 
 - Listing
 - Orders

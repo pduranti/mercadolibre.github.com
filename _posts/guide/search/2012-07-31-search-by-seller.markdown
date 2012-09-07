@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: By Sellers
+title: By seller
 categories: 
 - Searching
 - Category
@@ -9,7 +9,7 @@ menu:
 tags: 
 - Searching
 ---
-
+	
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>

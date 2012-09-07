@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Add pictures to items
+title: Adding pictures
 categories: 
 - Listing
 - Orders
