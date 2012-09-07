@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Search by category
+title: By category
 categories: 
 - Searching
 - Category

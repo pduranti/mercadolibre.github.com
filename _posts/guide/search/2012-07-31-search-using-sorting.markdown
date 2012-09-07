@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Search and sort the results
+title: Sorting results
 categories: 
 - Searching
 - Category

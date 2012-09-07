@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Search by text query
+title: By text query
 categories: 
 - Searching
 - Category

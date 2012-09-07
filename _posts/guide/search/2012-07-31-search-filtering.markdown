@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Search using filters
+title: Using filters
 categories: 
 - Searching
 - Category

@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Search by seller
+title: By Sellers
 categories: 
 - Searching
 - Category
