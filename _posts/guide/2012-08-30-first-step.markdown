@@ -6,7 +6,7 @@ menu:
 ---
 
 
-## Public &amp; Private Resources {#apis}
+## Before Start {#apis}
 
 
 Our API is [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this **_resource_**. 
