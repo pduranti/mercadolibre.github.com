@@ -1,6 +1,6 @@
 ---
 layout: firststep
-title: First Steps
+title: Getting Started
 menu: 
 - First Steps
 ---
