@@ -3,11 +3,11 @@ layout: 2columns
 title: Application Manager
 categories: 
 - SDKs 
-- Other Tools
+- More Tools
 menu: 
 - Tools
 tags: 
-- Other Tools
+- More Tools
 ---
 
 The very first thing you'll probably want to do is to create an _application_ for MELI. When you do that you get a _client ID_ and a _client secret_, which are very important to use when [authenticating and authorizing](/authentication-and-authorization).

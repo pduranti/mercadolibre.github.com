@@ -3,11 +3,11 @@ layout: 2columns
 title: Chico UI Tools
 categories: 
 - SDKs 
-- Other Tools
+- More Tools
 menu: 
 - Tools
 tags: 
-- Other Tools
+- More Tools
 ---
 
 <br /><br /><br /><br />

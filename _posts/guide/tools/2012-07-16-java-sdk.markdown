@@ -3,7 +3,7 @@ layout: 2columns
 title: JAVA SDK
 categories: 
 - SDKs 
-- Other Tools
+- More Tools
 menu: 
 - Tools
 tags: 
