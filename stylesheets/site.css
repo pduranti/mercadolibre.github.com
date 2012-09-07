@@ -56,7 +56,7 @@ section.main h5 {
 /* Main sprite */
 .do-it div,
 header.main h1 a {
-	background:transparent url('../images/main.png') 0 0 no-repeat;
+	background:transparent url('../images/sprite.png') 0 0 no-repeat;
 }
 
 .do-it h3 a,
@@ -157,17 +157,17 @@ header.main {
 }
 
 header.main h1 {
-	width:160px;
+	width:65px;
 	height:36px;
 	text-indent:999px;
 	overflow:hidden;
-	margin-top:20px;
+	margin-top:17px;
 }
 
 header.main h1 a {
 	display:block;
-	width: 160px;
-	height: 36px;
+	width: 65px;
+	height: 32px;
 }
 
 html[lang=pt] header.main h1 {
@@ -177,7 +177,7 @@ html[lang=pt] header.main h1 {
 header.main h2 {
 	position:absolute;
 	top:22px;
-	left:175px;
+	left:70px;
 	color:#999;
 	margin:0;
 }
