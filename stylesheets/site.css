@@ -56,7 +56,7 @@ section.main h5 {
 /* Main sprite */
 .do-it div,
 header.main h1 a {
-	background:transparent url('../images/main.png') 0 0 no-repeat;
+	background:transparent url('../images/sprite.png') 0 0 no-repeat;
 }
 
 .do-it h3 a,
@@ -157,7 +157,7 @@ header.main {
 }
 
 header.main h1 {
-	width:160px;
+	width:65px;
 	height:36px;
 	text-indent:999px;
 	overflow:hidden;
@@ -166,7 +166,7 @@ header.main h1 {
 
 header.main h1 a {
 	display:block;
-	width: 160px;
+	width: 65px;
 	height: 36px;
 }
 
