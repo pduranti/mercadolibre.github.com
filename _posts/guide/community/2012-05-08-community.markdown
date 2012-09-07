@@ -12,9 +12,9 @@ tags:
 ## Bugs? Suggestions? Shoot, we're ready!
 
 <ul class="ch-list parameters">
-<li>Twitter to stay up-to-date with announcements: <a href="https://twitter.com/@melidevelopers">@melidevelopers</a></li>
+<li>Twitter to stay up-to-date with announcements: <a target="_blank" href="https://twitter.com/@melidevelopers">@melidevelopers</a></li>
 <li>IRC channel <strong>#meli @ irc.freenode.net</strong></li>
-<li>Report Bugs or Suggestions on <a href="https://github.com/mercadolibre/api/issues">GitHub</a></li>
+<li>Report Bugs or Suggestions on <a target="_blank" href="https://github.com/mercadolibre/api/issues">GitHub</a></li>
 </ul>
 
 
