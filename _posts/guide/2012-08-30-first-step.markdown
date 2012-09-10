@@ -35,7 +35,7 @@ Then, go to the [application manager](http://applications.mercadolibre.com) and 
 img.appID
 {
   width:423px;
-  height:120px;
+  height:200px;
   background:url(/images/application-detail.png) 0px -10px;
   box-shadow:10px 10px 10px 5px gray; 
 }
@@ -43,8 +43,8 @@ img.appID
 img.appSecret
 {
   width:423px;
-  height:60px;
-  background:url(/images/application-detail.png) 0px -340px;
+  height:70px;
+  background:url(/images/application-detail.png) 0 -450px;
   box-shadow:10px 10px 10px 5px gray; 
 }
 </style>

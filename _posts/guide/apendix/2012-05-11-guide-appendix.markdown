@@ -13,7 +13,7 @@ title: API relations
 
 ##Overview {#overview}
 
-Some of the tutorials described in this site need several “id’s” from different MELI’s API’s.
+Some of the tutorials described in this site need several “id’s” from different MELI’s API.
 
 For example, when you list an item, you have to specify the following attributes:
 
