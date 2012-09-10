@@ -15,7 +15,7 @@ Explore our API Resources.
 ##Resources
 <strong>http://api.mercadolibre.com<strong>
 <ul >
-  <li>users and applications</li>
+  <li><strong>users and applications</strong></li>
   <ul  class='ch-list parameters'>
     <li>/users</li>
     <li>/users/99580221/addresses</li>
