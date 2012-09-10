@@ -282,5 +282,8 @@ MELI.remove(url, params, function(data) {
 	var foo = $("#remove").expando();
 </script>
 
-If you want to contribute or you find something that needs to be fixed, just fork our SDK in (https://github.com/mercadolibre/mercadolibre.js) and pull requests as needed.
+You'll find the source code in the following location: [https://github.com/mercadolibre/mercadolibre.js](https://github.com/mercadolibre/mercadolibre.js)
 
+## Contribute 
+    
+If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/mercadolibre.js) and pull requests as needed.

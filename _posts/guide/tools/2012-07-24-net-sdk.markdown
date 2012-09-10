@@ -17,4 +17,6 @@ You'll find the source code in the following location: [https://github.com/merca
 
 With the source code you'll find documentation on how to use the SDK.
     
+## Contribute
+
 If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/net-sdk) and pull requests as needed.
