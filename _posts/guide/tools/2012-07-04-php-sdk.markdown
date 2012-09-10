@@ -3,7 +3,7 @@ layout: 2columns
 title: PHP SDK
 categories: 
 - SDKs 
-- Other Tools
+- More Tools
 menu: 
 - Tools
 tags: 
@@ -33,5 +33,4 @@ $meli = new Meli(array(
 
 You can use __getWithAccessToken__ to make requests to the API adding an __access_token__. Or just use __get__ method to make anonymous calls.
     
-If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/php-sdk) and pull requests as needed or get in touch
-through our [contact](/discuss) page
+If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/php-sdk) and pull requests as needed.

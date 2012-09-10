@@ -28,11 +28,11 @@ There are three groups of information in this form: Basic application info, Auth
 
 **- ID: ** This is your `client_id`. It must be used to retrieve an access token. 
 
-**- Secret Key: ** This is used too to retrieve an access token. Don't share this secret with anyone.
+**- Secret Key: ** This is used to retrieve an access token too. Don't share this secret with anyone.
 
 **- Name: ** Name of your application. It must be unique.
 
-**- Shortname: ** Name tha Meli uses to generate your application's URL. 
+**- Shortname: ** Name that Meli uses to generate your application's URL. 
 
 **- Description: ** This description, up to 150 characteres will be showed when application request authorization. 
 

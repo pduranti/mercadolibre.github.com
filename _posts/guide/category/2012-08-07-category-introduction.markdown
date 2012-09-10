@@ -30,7 +30,7 @@ In each MercadoLibre site has its own set of category. It means, Argentina's Mer
 
 To list an item in MercadoLibre users need to know the ID of the target category. To help users to validate a category ID, they can download the [complete category hierarchy](#categories-dump) with ID and human-friendly names. 
 
-Some of the tutorials described in this site need several “id’s” from different MELI’s API’s.
+Some of the tutorials described in this site need several “id’s” from different MELI’s API.
 
 ## Attributes {#category-attributes}
 
