@@ -59,9 +59,9 @@ apiCatalog:
 ---
 
 
-This section contains a list of the MELI API's.
+Explore our API Resources.
 
-##API
+##Resources
 {% for api in page.apiCatalog | sort %}
 [{{ api[1] }}]({{ api[0] }})
 {% endfor %}
