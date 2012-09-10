@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Search by seller
+title: By seller
 categories: 
 - Searching
 - Category
@@ -9,7 +9,7 @@ menu:
 tags: 
 - Searching
 ---
-
+	
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
@@ -40,7 +40,7 @@ curl https://api.mercadolibre.com/sites/MLA/search?seller_id=.....
 
 ## Response {#search-response}
 
-Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other APIs. It is a standard format to get [API documentation](/design-considerations/#options).
+Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other part of API. It is a standard format to get [API documentation](/design-considerations/#options).
 
 If you are interested in define response block size read [search paging](/search-paging) section.
 

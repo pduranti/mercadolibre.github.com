@@ -16,7 +16,7 @@ Listening to Notifications gives you the ability to have a real-time feed of the
 
 For example if you published an item and later it was paused, someone made you a question, purchase your item or even paid for it and requested a shipping; you will receive a Notification of a change on the resource.
 
-Notifications are a very convenient way to stay up-to-date with everything that you care, in the most efficient way for you, without having to query our APIs on a constant basis. You only get notified of the resource that changed.
+Notifications are a very convenient way to stay up-to-date with everything that you care, in the most efficient way for you, without having to query our API on a constant basis. You only get notified of the resource that changed.
 
 
 ## Table of Contents 

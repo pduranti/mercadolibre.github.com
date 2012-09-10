@@ -8,7 +8,7 @@ title: Real estate listing
 Preconditions 	{#preconditions}
 ---------------------------------
 
-[Having a basic knowledge of REST and how MELI APIs work](/getting-started)
+[Having a basic knowledge of REST and how MELI API works](/getting-started)
 
 [Having a MELI APP created](/res-create-app)
 
@@ -115,7 +115,7 @@ Note: after successfully listing an item, its status will be "not yet active" un
 
 [Click here](/res-validate) to learn how to validate your JSON before actually posting it to our Items API.
 
-If you were to receive an error status code on a response when communicating with our APIs, in most cases you will be able to determine the cause of the error by looking at the response body. In addition to the response status code, the response body will also contain detailed information regarding the error and will most likely help you understand the cause of it and how to solve different issues.
+If you were to receive an error status code on a response when communicating with our API, in most cases you will be able to determine the cause of the error by looking at the response body. In addition to the response status code, the response body will also contain detailed information regarding the error and will most likely help you understand the cause of it and how to solve different issues.
 
 You can now follow the instructions to:
 

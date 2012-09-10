@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Listing introduction
+title: Introduction
 categories: 
 - Listing
 - Orders
@@ -80,7 +80,7 @@ curl https://api.mercadolibre.com/items/MLB233759102
 }
 {% endhighlight %}
 
-Take a look at response retrieved. It has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other APIs. It is a standard format to get [API documentation](/design-considerations/#options).
+Take a look at response retrieved. It has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other parto fo API. It is a standard format to get [API documentation](/design-considerations/#options).
 In this guide we will cover just those before mentioned.
 
 

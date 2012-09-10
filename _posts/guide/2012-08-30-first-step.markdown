@@ -1,15 +1,17 @@
 ---
 layout: firststep
-title: First Steps
+title: Getting Started
 menu: 
 - First Steps
 ---
 
 
-## Public &amp; Private Resources {#apis}
+## Before you start
 
 
-Our API are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this **_resource_**. 
+Our API is [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this **_resource_**. 
+
+All responses are JSON encoded. (For details on API design visit [Design Considerations](/design-considerations/#json)).
 
 Some Resources are public and others have private information. To access to public information you can use just an URL:
 
@@ -33,7 +35,7 @@ Then, go to the [application manager](http://applications.mercadolibre.com) and 
 img.appID
 {
   width:423px;
-  height:120px;
+  height:200px;
   background:url(/images/application-detail.png) 0px -10px;
   box-shadow:10px 10px 10px 5px gray; 
 }
@@ -41,8 +43,8 @@ img.appID
 img.appSecret
 {
   width:423px;
-  height:60px;
-  background:url(/images/application-detail.png) 0px -340px;
+  height:70px;
+  background:url(/images/application-detail.png) 0 -450px;
   box-shadow:10px 10px 10px 5px gray; 
 }
 </style>
@@ -129,11 +131,6 @@ Response response = m.get("/users/me", params);
 </script>
 
 
-## JSON Response {#response}
-
-All responses are JSON encoded. (For details on API design visit [Design Considerations](/design-considerations/#json)).
-
-
 ## Give it a try with your App! {#try}
 
 <p>
@@ -217,9 +214,13 @@ All responses are JSON encoded. (For details on API design visit [Design Conside
 
 ## Next Steps {#next}
 
-Going through the [Authentication](/authentication) section will give you the knowledge about registration and sign-in. Reading [Authorization](/authorization) section you will see how applications grants and permission scopes. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth 2.0.
+Reading the [Authorization](/authorization) section you will see how applications manage and grant permission scopes. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth for you.
 
-You should now head over to our [Documentation](/guides) section and check out our guides. 
-If you are interested in to search items using MELI's APIs visit [Searching](/search-visual-introduction) section. If you are buy an item you can visit [Buyer](/bookmarks) guides. But if you are thinking in sell over MercadoLibre visit [Selling](/listing-introduction) guides.
+Later, you should head over to our Documentation section and find what best suits your goal:
+<ul class="ch-list parameters">
+  <li><a href="/bookmarks">Buying Items</a></li>
+  <li><a href="/search-visual-introduction">Searching for Items</a></li>
+  <li><a href="/listing-introduction">Sellers &amp; Integrators</a></li>
+</ul>
 
 

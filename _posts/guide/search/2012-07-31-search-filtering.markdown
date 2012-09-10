@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Search using filters
+title: Using filters
 categories: 
 - Searching
 - Category
@@ -75,7 +75,7 @@ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;price=700.0-1000.0
 
 ## Response {#search-response}
 
-Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other APIs. It is a standard format to get [API documentation](/design-considerations/#options) 
+Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other part of API . It is a standard format to get [API documentation](/design-considerations/#options) 
 
 
 For more information about search options you can check the website [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)

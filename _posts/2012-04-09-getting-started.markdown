@@ -9,13 +9,13 @@ tags:
 - First Steps
 ---
 
-If you're reading this it's because you're wondering which is the easiest way to start using our APIs. Good news! It is dead simple!
+If you're reading this it's because you're wondering which is the easiest way to start using our API. Good news! It is dead simple!
 
 <div class="contents">
 <h5>Table of Contents</h5>
 
 <dl>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('first-approach')">Your first approach to the APIs</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('first-approach')">Your first approach to the API</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('access-token-title')">Get your access token!</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('use-access-token')">Use your access token!</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('whats-next')">What's next?</a></dt>
@@ -23,8 +23,8 @@ If you're reading this it's because you're wondering which is the easiest way to
 </div>
 
 
-## Your first approach to the APIs {#first-approach}
-Our APIs are [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
+## Your first approach to the API {#first-approach}
+Our API is [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
 
 Some of these basic methods are:
 * GET: Retrieve information identified by the resource (see [GET](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3)).
@@ -71,7 +71,7 @@ In this case you'll get the information of Brazil.
 {% endhighlight %}
 
 ## Get your access token! {#access-token-title}
-Our APIs will give you lots of information. Some of it is private, meaning you'll get access only if you have an _access token_.
+Our API will give you lots of information. Some of it is private, meaning you'll get access only if you have an _access token_.
 For example if you want to get your own information:
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/users/me</pre>
@@ -80,7 +80,7 @@ You'll get a `403 Forbidden` http status code. This means you need this special 
 
 > NOTE: Access tokens will be granted to you by the owner of the information you are trying to access. See [Authentication & Authorization](/authentication-and-authorization).
 
-In order to start playing with the APIs, click the button to get an access token.
+In order to start playing with the API, click the button to get an access token.
 <p><input class="ch-btn ch-btn-small" type="button" id="get-access-token" value="Get my access token" />
 <pre id="token"><code id="access_token">token</code></pre></p>
 
@@ -97,7 +97,7 @@ Now that you have an acccess token, the developers site application can access y
 
 ## What's next? {#whats-next}
 
-Now you know what are our REST APIs, and you know how to obtain an access token and use it to access different resources. Probably the next step should be [creating your own application](/creating-your-own-application) or you can also check [what can you do with the APIs](/guides).
+Now you know what are our REST API, and you know how to obtain an access token and use it to access different resources. Probably the next step should be [creating your own application](/creating-your-own-application) or you can also check [what can you do with the API](/guides).
 
 <script>
     $(document).ready(function() {

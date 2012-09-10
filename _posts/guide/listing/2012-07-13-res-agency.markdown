@@ -22,7 +22,7 @@ Once there, click on the "Tus datos y registraci&oacute;n" tab and then on the "
 
 You will then be redirected to a form which must be filled with the proper information and you will also be able to choose your desired promotional package. After completing the form, one of our agents will get in touch with you.
 
-Keep in mind that having a promotional pack <u>is not mandatory</u> for publishing using the APIs.
+Keep in mind that having a promotional pack <u>is not mandatory</u> for publishing using the API.
 
 If you have indeed acquired a promotional pack for your agency, you can access it's information by sending a GET request to the following URL:
 
@@ -30,7 +30,7 @@ If you have indeed acquired a promotional pack for your agency, you can access i
  https://api.mercadolibre.com/users/me/promotion_packs?access_token=YOUR_ACCESS_TOKEN
 </pre>
 
-*YOUR_ACCESS_TOKEN* is the key that will allow you to authenticate when using MercadoLibre's APIs. You will learn how to obtain the access token on the [Authenticate section](/res-authenticate).
+*YOUR_ACCESS_TOKEN* is the key that will allow you to authenticate when using MELI's API. You will learn how to obtain the access token on the [Authenticate section](/res-authenticate).
 
 If you wish to see detailed information regarding your promotional pack, you can do so by sending a GET request to the following URL:
 

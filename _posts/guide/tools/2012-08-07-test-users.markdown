@@ -3,11 +3,11 @@ layout: 2columns
 title: Create Test Users
 categories: 
 - SDKs 
-- Other Tools
+- More Tools
 menu: 
 - Tools
 tags: 
-- Other Tools
+- More Tools
 ---
 
 <div class="contents">
@@ -21,7 +21,7 @@ tags:
 
 ## Overview {#overview}
 
-You can create test users to support you in the process of developing with our APIs. Test users you can operate as normal users: listing, buying and asking questions.
+You can create test users to support you in the process of developing with our API. Test users you can operate as normal users: listing, buying and asking questions.
 Test users don't have to pay for the charges generated.
 
 Test users will eventually be washed out and you can create new ones.

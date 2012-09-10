@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Search introduction
+title: Introduction
 categories: 
 - Searching
 - Category

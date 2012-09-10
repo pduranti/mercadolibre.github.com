@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Related APIs
+title: API relations
 ---
 
 ### Table of Contents
@@ -13,7 +13,7 @@ title: Related APIs
 
 ##Overview {#overview}
 
-Some of the tutorials described in this site need several “id’s” from different MELI’s API’s.
+Some of the tutorials described in this site need several “id’s” from different MELI’s API.
 
 For example, when you list an item, you have to specify the following attributes:
 
@@ -31,7 +31,7 @@ For example, when you list an item, you have to specify the following attributes
 
 {% endhighlight %}
 
-As you can see in the JSON above, you need to specify the **category_id**, the **currency_id** and the **listing_type_id**. This particular three fields are mandatory and only accepts pre-defined id’s. You can see the different id’s that these fields accept by looking at the Category, Currencies and Listing Type APIs.
+As you can see in the JSON above, you need to specify the **category_id**, the **currency_id** and the **listing_type_id**. This particular three fields are mandatory and only accepts pre-defined id’s. You can see the different id’s that these fields accept by looking at the Category, Currencies and Listing Type API.
 
 
 

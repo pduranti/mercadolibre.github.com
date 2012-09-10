@@ -3,27 +3,55 @@ layout: 2columns
 title: Application Manager
 categories: 
 - SDKs 
-- Other Tools
+- More Tools
 menu: 
 - Tools
 tags: 
-- Other Tools
+- More Tools
 ---
 
-The very first thing you'll probably want to do is to create an _application_ for MELI. When you do that you get a _client ID_ and a _client secret_, which are very important to use when [authenticating and authorizing](/authentication-and-authorization).
+To create an _application_ for MELI, you must use the [Application Manager](http://applications.mercadolibre.com). **You need to choose your country to create a new one**.
 
-When you create an application you can start requesting users to grant you access to their information on their behalf, and offer them in exchange some cool features.
-
-So before continuing, make sure you are registered as a user. In case you want to create a user, do it now by browsing to [http://www.mercadolibre.com](http://www.mercadolibre.com).
-
-Now that you have a registered user, go to the [application manager](http://applications.mercadolibre.com) and create an application as described below:
-
-![App create](/images/applications.png)
+<center>
+	<br /><br />
+	<img src="/images/application-detail.png" style="box-shadow:0px 0px 30px 10px gray;" />
+	<br /><br />
+</center>
 
 
-Fill in the form with the required information and select the `read` and `write` scopes. Once you've submitted the form, your application will be created and you will be redirected to your application detail page.
+## Application Data
 
-![App detail](/images/application-detail.png)
+There are three groups of information in this form: Basic application info, Authentication &amp; Security and Notification Settings.
 
-The attributes you will need for the MELI api are: `ID` (your `client_id`) and the  `Secret key` to retrieve the corresponding access tokens. Make sure to protect and keep confidential this information.
 
+###Basic Application Info
+
+**- ID: ** This is your `client_id`. It must be used to retrieve an access token. 
+
+**- Secret Key: ** This is used to retrieve an access token too. Don't share this secret with anyone.
+
+**- Name: ** Name of your application. It must be unique.
+
+**- Shortname: ** Name that Meli uses to generate your application's URL. 
+
+**- Description: ** This description, up to 150 characteres will be showed when application request authorization. 
+
+
+###Authentication &amp; Security 
+
+**- Callback URL: Redirect URI. ** URL to return users to your app after they grant access. 
+
+**- Domains: ** Authorized Javascript Origins. Comma separated list of fully-qualified domain name of all pages that will use the client-side authentication. Only needed if using Javascript API. Don't include protocol or port.
+
+
+**- Scopes: ** <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***Read:*** Allow to use API GET HTTP methods. <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***Write:*** Allow to use API PUT, POST and DELETE HTTP methods. <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***Offline Access:*** Allow to make request server side and refresh token. <br />
+
+
+###Notification Settings
+
+**- Notifications callback URL: ** Configure the public URL of your domain where you want to receive notifications for the different topics. 
+
+**- Topics: ** Comma separated list of ‘topics’ you want to subscribe to. There are three possible topics: orders, items, questions.

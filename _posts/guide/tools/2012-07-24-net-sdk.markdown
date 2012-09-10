@@ -3,7 +3,7 @@ layout: 2columns
 title: .NET SDK
 categories: 
 - SDKs 
-- Other Tools
+- More Tools
 menu: 
 - Tools
 tags: 
@@ -17,4 +17,6 @@ You'll find the source code in the following location: [https://github.com/merca
 
 With the source code you'll find documentation on how to use the SDK.
     
-If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/net-sdk) and pull requests as needed or get in touch through our [contact](/discuss) page
+## Contribute
+
+If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/net-sdk) and pull requests as needed.

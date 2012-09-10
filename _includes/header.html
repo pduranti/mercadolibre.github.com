@@ -5,20 +5,19 @@
     </hgroup>
       <nav class="ch-g2-3">
         <ul>
-
          {% assign current = nil %}
          {% if page.menu[0] == 'First Steps' %}
             {% assign current = 'current' %}
          {% endif %}
           <li class="option">
-            <a class="{{ current }}" href="/first-step">First Steps</a>
+            <a class="{{ current }}" href="/first-step">Getting Started</a>
           </li>
           {% assign current = nil %}
           {% if page.menu[0] == 'Overview' %}
             {% assign current = 'current' %}
           {% endif %}
           <li class="option">
-            <a class="{{ current }}" href="/core-concepts">Overview</a>
+            <a class="{{ current }}" href="/core-concepts">Why with us</a>
           </li>
         
           <li class="option">
@@ -36,6 +35,11 @@
                 {% endif %}
                 <li><a class="{{ current }}" href="/design-considerations">Design Considerations</a></li>
                 {% assign current = nil %}
+                {% if page.menu[0] == 'Authentication' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/authentication">Authentication</a></li>
+                {% assign current = nil %}
                 {% if page.menu[0] == 'Buying Items' %}
                     {% assign current = 'current' %}
                 {% endif %}
@@ -50,17 +54,12 @@
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/listing-introduction">Sellers &amp; Integrators</a></li>
-                <li><a href="https://developers.mercadopago.com/" target="_blank">MercadoPago</a></li>
+                <li><a href="https://developers.mercadopago.com/" target="_blank">Payments &amp; Collections</a></li>
                 {% assign current = nil %}
                 {% if page.menu[0] == 'API Directory' %}
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/API-directory">API Directory</a></li>
-                {% assign current = nil %}
-                {% if page.menu[0] == 'Authentication' %}
-                    {% assign current = 'current' %}
-                {% endif %}
-                <li><a class="{{ current }}" href="/authentication">Authentication</a></li>
               </ul>
             </div>
           </li>
