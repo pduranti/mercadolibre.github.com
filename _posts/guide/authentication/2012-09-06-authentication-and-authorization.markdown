@@ -41,7 +41,29 @@ The basic idea behind OAuth protocol is that you need a token to make a secure c
 
 ##What is a token? Why do I need one? {#tokens-explained}
   
-A token is an encrypted string that represents the user credentials. If you have a valid token our servers can know which application is making the call, for which user, and with that permissions and all of that was authorized by the user. 
+A token is an encrypted string that represents the user credentials. If you have a valid token our servers can know which application is making the call, on behalf of which user, and with which permissions, being sure that all af this was authorized by the user. 
+
+<div class="ch-box">
+  <div id="tokens">
+        <p><strong>More about authentication and Authorization</strong></p>
+        <div>
+          <p>At a high level the OAuth 2.0 protocol involves three different steps: User Authentication (login), Application Authorization and Application Authentication.</p>
+
+          <p><strong>1. User Authentication:</strong> ensure that the user is who he says he is. It is performed redirecting the user to MercadoLibre login URL.</p>
+          <p><strong>2. Application Authorization:</strong> After login the user will see a page with exactly what data and capabilities is willing to grant your application permissions.<br>
+            In the OAuth protocol this is called "user consent".</p>
+          <p><strong>3. Application Authentication:</strong> If the users agrees to grant your app those permissions, your application will be sent directly an access token or an authorization code (which later is used to obtain an access token).<br>
+            If the user does not grant permission, MercadoLibre OAuth API returns an error.</p>
+
+            <p>Once your application is issued an access token, it can use it in a request to MercadoLibre APIs to request data that belongs to the user or take an action on his behalf.</p>
+
+  </div>
+  </div>
+</div>
+<script>
+  var foo = $("#tokens").expando();
+</script>
+
 
 ##How do I get that token? {#getting-a-token}
 
@@ -74,6 +96,42 @@ The client side flow is better suited for applications that uses client-side(doh
 After you get the access token you can make calls to the APIs with it to gain access to private data such as user details.
 <pre> https://api.mercadolibre.com/users/me?access_token=...</pre>
 
+
+<div class="ch-box">
+  <div id="clientSideLarge">
+    <p><strong>Client-side flow explained</strong></p>
+      <div>
+        <p>This flow is suitable for clients incapable of maintaining their client credentials confidential (for authenticating with the authorization server) such as client applications residing in a user-agent, typically implemented in a browser using a scripting language such as JavaScript, or native applications.</p>
+
+        <p>These clients cannot keep client secrets confidential and the authentication of the client is based on the user-agent’s same-origin policy. As a redirection-based profile, the client must be capable of interacting with the resource owner’s user-agent (typically a webbrowser) and capable of receiving incoming requests (via redirection) from the authorization server. </p>
+
+        <p>Unlike the authorization code flow in which the client makes separate requests for authorization and access token, the client receives the access token as the result of the authorization request.</p>
+
+        <p>If you are going to choose this alternative, we strongly suggest you use the <a href="/javascript-sdk/">Javascript SDK</a> This SDK hides for you all the complexity of the OAuth protocol and it will save you lots of time.</p>
+
+        <h4><strong>Client-side flow Overview</strong></h4>
+        <p/>
+        <p>The main difference is that when the users grants your application with permission, MercadoLibre will give your application an access token (not a code).</p>
+
+        <p>You don't need to pass your redirect URL. Just make a GET request to this URL:</p>
+
+        <pre>https://auth.mercadolibre.com.ar/authorization?response_type=token&amp;client_id=Client_id</pre>
+
+        <p>If your app is succesfully authenticated and the user grants permission (consent), the authorization server will redirect to your applications callback URL with an access token in the query string response like this:</p>
+
+        <pre>http://YOUR_URL#access_token=APP_USR-6092-3246532-cb45c82853f6e620bb0deda096b128d3-8035443&amp;expires_in=10800&amp;user_id=USER_ID&amp;domains=APP_DOMAINS</pre>
+
+        <h4><strong>CONSIDERATIONS</strong></h4>
+        <p/>
+        <p>Keep in mind that using this flow you will not be able to obtain a refresh token. Once the token expires, you will need to the redirect the user to the authorization URL again to obtain a full new access token. </p>
+
+  </div>
+  </div>
+</div>
+<script>
+  var foo = $("#clientSideLarge").expando();
+</script>
+
 ##Server-side flow {#server-side-brief}
 
 **Note:** This will briefly explain the authentication/authorization flow but We **strongly** encourage you to use our provided SDKs instead of coding it by yourself since a bug in this process can lead to serious security problems.
@@ -85,7 +143,6 @@ In this case the first steps of the flow are the same, but when the user grants 
 Here you must exchange this code for an access token issuing a POST request to...
 <pre>https://api.mercadolibre.com/oauth/token?grant_type=authorization_code&client_id=CLIENT_ID&client_secret=CLIENT_SECRET&code=SECRET_CODE&redirect_uri=$APP_CALLBACK_URL</pre>
 ...where you will receive in the response the access token, the expiration time and a refresh token (if you requested offline-access permissions) that you will use to get a new token when the actual token is expired. (all this happens in server side)
-
 
 
 <div class="ch-box">
@@ -270,7 +327,7 @@ All of them implement OAuth flows and you are free to add new functions. Just <a
 
 ##Some notes about tokens {#notes}
 
-<h4>Token validity and expiration</h4>
+<h4><strong>Token validity and expiration</strong></h4>
 
 When you obtain an access token, it will be valid immediately and usable in requests to the API for a limited period. After that period has elapsed, the access token is considered to have expired and the user will need to be authenticated again in order for your app to obtain a fresh access token. The duration for which a given access token is valid depends on how it was generated.
 
@@ -280,72 +337,6 @@ If the user provided you offline access then by using server-side authentication
 
 <pre>https://api.mercadolibre.com/oauth/token?grant_type=refresh_token&client_id=&client_secret=&refresh_token=</pre>
 you will get a new access_token and also a new refresh token. Note that a refresh token can be used only once. 
-
-
-<div class="ch-box">
-  <div id="getToken">
-        <p><strong>Getting a token</strong> (large) </p>
-        <div>
-          <p>At a high level the OAuth 2.0 protocol involves three different steps: User Authentication (login), Application Authorization and Application Authentication.</p>
-
-          <p><strong>1. User Authentication:</strong> ensure that the user is who he says he is. It is performed redirecting the user to MercadoLibre login URL.</p>
-          <p><strong>2. Application Authorization:</strong> After login the user will see a page with exactly what data and capabilities is willing to grant your application permissions.<br>
-            In the OAuth protocol this is called "user consent".</p>
-          <p><strong>3. Application Authentication:</strong> If the users agrees to grant your app those permissions, your application will be sent directly an access token or an authorization code (which later is used to obtain an access token).<br>
-            If the user does not grant permission, MercadoLibre OAuth API returns an error.</p>
-
-            <p>Once your application is issued an access token, it can use it in a request to MercadoLibre APIs to request data that belongs to the user or take an action on his behalf.</p>
-
-## Different Scenarios {#scenarios}
-The MELI API supports two different authentication flows: server-side and client-side.
-
-The server-side flow is used whenever you need to call the API from a Webserver Application and even access the API on behalf of the user when he is not in front of the browser. This is called offline access.
-
-If you want to interact with the API from a desktop or mobile application you should use the client-side flow.
-
-
-  </div>
-  </div>
-</div>
-<script>
-  var foo = $("#getToken").expando();
-</script>
-
-
-
-
-## Client-side Applications authentication {#client-side-flow}
-This flow is suitable for clients incapable of maintaining their client credentials confidential (for authenticating with the authorization server) such as client applications residing in a user-agent, typically implemented in a browser using a scripting language such as JavaScript, or native applications.
-
-These clients cannot keep client secrets confidential and the authentication of the client is based on the user-agent’s same-origin policy.
-As a redirection-based profile, the client must be capable of interacting with the resource owner’s user-agent (typically a web
-browser) and capable of receiving incoming requests (via redirection) from the authorization server.
-
-Unlike the authorization code flow in which the client makes separate requests for authorization and access token, the client receives the access token as the result of the authorization request.
-
-If you are going to choose this alternative, we strongly suggest you use the [Javascript SDK](http://developers.mercadolibre.com/javascript-sdk/). This SDK hides for you all the complexity of the OAuth protocol and it will save you lots of time.
-
-
-
-**Client-side flow Overview**
-
-The main difference is that when the users grants your application with permission, MercadoLibre will give your application an access token (not a code).
-
-You don't need to pass your redirect URL. Just make a GET request to this URL:
-
-<pre>https://auth.mercadolibre.com.ar/authorization?response_type=token&amp;client_id=Client_id</pre>
-
-If your app is succesfully authenticated and the user grants permission (consent), the authorization server will redirect to your applications callback URL with an access token in the query string response like this:
-
-<pre>http://YOUR_URL#access_token=APP_USR-6092-3246532-cb45c82853f6e620bb0deda096b128d3-8035443&amp;expires_in=10800&amp;user_id=USER_ID&amp;domains=APP_DOMAINS</pre>
-
-**CONSIDERATIONS**
-
-Keep in mind that using this flow you will not be able to obtain a refresh token. 
-Once the token expires, you will need to the redirect the user to the authorization URL again to obtain a full new access token.
-
-
-
 
 ##Error Codes Reference {#error-codes}
 
