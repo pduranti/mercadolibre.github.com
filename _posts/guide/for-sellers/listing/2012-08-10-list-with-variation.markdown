@@ -2,12 +2,15 @@
 layout: guides
 title: List with variations
 categories: 
-- Selling 
+- Listing
 - Orders
+- Manage Questions
 - Notifications
-menu: seller
+- Answer Questions
+menu: 
+- Sellers &amp; Integrators
 tags: 
-- Selling
+- Listing
 ---
 
 
