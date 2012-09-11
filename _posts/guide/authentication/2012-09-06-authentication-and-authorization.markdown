@@ -14,6 +14,17 @@ tags:
 
 <dl>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('introduction')">Introduction</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('basic-concepts')">Basic concepts</a></dt>
+  <dt><a href="javascript:voId(0)" onclick="goToByScroll('tokens-explained')">What is a token? Why do I need one? </a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('getting-a-token')">How do I get that token? </a></dt>
+  <dt><a href="javascript:void(0)" onclick="goToByScroll('client-side-brief')">Client-side flow </a></dt>
+  <dt><a href="javascript:void(0)" onclick="goToByScroll('server-side-brief')">Server-side flow </a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('sdks')">Existing SDKs </a></dt>
+  <dt><a href="javascript:void(0)" onclick="goToByScroll('notes')">Some notes about tokens </a></dt>
+  <dt><a href="javascript:void(0)" onclick="goToByScroll('scenarios')"> Different Scenarios </a></dt>
+  <dt><a href="javascript:void(0)" onclick="goToByScroll('client-side-flow')"> Client-side Applications authentication </a></dt>
+  <dt><a hrrf="javascript:void(0)" onclick="goToByScroll('error-codes')">Error Codes Reference </a></dt>
+
 </dl>
 </div>
 ##Introduction {#introduction}
@@ -26,7 +37,7 @@ We will explain shortly how to use [OAuth 2.0](http://tools.ietf.org/pdf/draft-i
 
 ##Basic concepts {#basic-concepts}
 
-The basic idea behind oAuth protocol is that you need a token to make a secure call to an API, and the rest of this guide will explain why is this needed and how to obtain that token whether you are working with client-side or server-side scripting. 
+The basic idea behind OAuth protocol is that you need a token to make a secure call to an API, and the rest of this guide will explain why is this needed and how to obtain that token whether you are working with client-side or server-side scripting. 
 
 ##What is a token? Why do I need one? {#tokens-explained}
   
@@ -254,7 +265,7 @@ We already provide SDKs for
   <li>Javascript (client-side)</li>
 </ul>
   
-All of them implement oAuth flows and you are free to add new functions. Just <a href="https://github.com/mercadolibre/mercadolibre.github.com">fork repo on GitHub</a>
+All of them implement OAuth flows and you are free to add new functions. Just <a href="https://github.com/mercadolibre/mercadolibre.github.com">fork repo on GitHub</a>
 
 
 ##Some notes about tokens {#notes}
