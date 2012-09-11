@@ -1,13 +1,13 @@
 ---
-layout: firststep
+layout: 2columns
 title: Developers Console
 categories: 
-- API Directory
-menu:
-- API Directory
+- SDKs 
+- More Tools
+menu: 
+- Tools
 tags: 
-- API Directory
----	
-
+- More Tools
+---
 
 <iframe src="https://apigee.com/TioBorracho/embed/console/Miumercado" width="100%" height="800px"></iframe>
