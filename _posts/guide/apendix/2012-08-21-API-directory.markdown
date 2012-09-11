@@ -10,7 +10,7 @@ tags:
 ---
 
 
-Explore our API Resources. <code>auth:</code> <strong>Requires authentication</strong>
+Explore our API Resources. <code>auth</code> <strong>: Requires authentication</strong>
 
 <h4>https://api.mercadolibre.com</h4>
 
@@ -18,7 +18,7 @@ Explore our API Resources. <code>auth:</code> <strong>Requires authentication</s
   <strong>users and applications</strong>
   <ul class='ch-list parameters'>
     <li><a href="https://api.mercadolibre.com/users" target="_blank">/users</a></li>
-    <li><a href="https://api.mercadolibre.com/users/{user_id}/addresses" target="_blank">/users/{user_id}/addresses</a><code>(requires auth)</code></li>
+    <li><a href="https://api.mercadolibre.com/users/{user_id}/addresses" target="_blank">/users/{user_id}/addresses</a><code>auth</code></li>
     <li><a href="https://api.mercadolibre.com/users/{user_id}/accepted_payment_methods" target="_blank">/users/{user_id}/accepted_payment_methods</a><code>auth</code></li>
     <li><a href="https://api.mercadolibre.com/applications" target="_blank">/applications</a></li>
     <li><a href="https://api.mercadolibre.com/scopes" target="_blank">/scopes</a></li>
