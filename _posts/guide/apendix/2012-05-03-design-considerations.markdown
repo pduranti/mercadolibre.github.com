@@ -37,9 +37,7 @@ We also return HTML responses when you surf out API through a browser.
 We use `Accept` header to decide which response we return.
 
 ## To overcome same origin policy, JSONP is also supported. {#jsonp}
-The [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) is an important security concept. To overcome it you can use [JSONP](http://en.wikipedia.org/wiki/JSONP).
-We'll support [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) very soon!
-
+The [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) is an important security concept. To overcome it we suggest to use [JSONP](http://en.wikipedia.org/wiki/JSONP) and [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing).
 ### JSONP Usage
 API we'll respond JSONP if you provide a `callback` parameter. The value of this parameter will be used as the callback function.
 
