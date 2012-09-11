@@ -1,12 +1,12 @@
 ---
 layout: firststep
-title: Why With Us
+title: Why Develop With Us
 categories: 
-- Why With Us
+- Why Develop With Us
 menu:
-- Why With Us
+- Why Develop With Us
 tags: 
-- Why With Us
+- Why Develop With Us
 ---
 
 ## About Us
@@ -16,7 +16,7 @@ We are the biggest e-commerce platform in Latin America, connecting people from 
 Our ecosystem:
 
 <ul class="ch-list parameters">
-<li><strong>Marketplace</strong>: Buy and list items in one of our categories. List vehicles, real estate or services in our classifieds</li>
+<li><strong>Marketplace</strong> is our core product, where people can buy and sell at fixed price or list almost any product, vehicle, real estate or service.</li>
 <li><strong>MercadoPago</strong> is a service that lets you send and receive money online for purchases on MercadoLibre or in any
 other commerce that integrates with the platform. If you're a collector or want to develop a payments related
 app, head over to <a href="https://developers.mercadopago.com/" target="_blank">MercadoPago Developers.</a></li>
@@ -26,14 +26,15 @@ searches and product pages.</li>
 </ul>
 
 
-## Reasons to Integrate with Our API
+## Reasons to Integrate With Our API
 
 <section id="additional">
 <nav class="ch-g1-3">
 <div class="ch-centercolumn">
 <h3>Engage More Users</h3>
 <ul class="ch-list parameters">
-<li>Increase your traffic with our
+<li>Access our public read-only data such as listings, categories, popular searches and much more.</li>
+<li>Increase your traffic taking advantage of our
 millions of items and users.</li>
 <li>Build web or mobile apps for
 buyers and sellers.</li>
