@@ -7,61 +7,76 @@ menu:
 - API Directory
 tags: 
 - API Directory
-apiCatalog:
-- ["https://api.mercadolibre.com/applications/121", "Applications"]
-- ["https://api.mercadolibre.com/users/99580221/addresses", "Addresses"]
-- ["https://api.mercadolibre.com/sites/MLA/card_issuers", "Card issuers"]
-- ["https://api.mercadolibre.com/categories/MLA87668/attributes", "Category Attributes"]
-- ["https://api.mercadolibre.com/domains/1", "Catalog Domains Attributes"]
-- ["https://api.mercadolibre.com/domains", "Catalog Domains"]
-- ["https://api.mercadolibre.com/sites/MLA/catalog_products/7710", "Catalog products"]
-- ["https://api.mercadolibre.com/sites/MLA/catalog_products/800767/reviews/search", "Catalog Reviews"]
-- ["https://api.mercadolibre.com/sites/MLA/catalog_products/816346/recommendations/search?site=MLA&amp;recommType=VISTOVIS", "Catalog Recomendation"]
-- ["https://api.mercadolibre.com/categories/MLA1071", "Categories"]
-- ["https://api.mercadolibre.com/sites/MLA/categories", "Categories Site"]
-- ["https://api.mercadolibre.com/cities/TUxBQ0NBUGZlZG1sYQ", "Cities"]
-- ["https://api.mercadolibre.com/countries", "Countries"]
-- ["https://api.mercadolibre.com/currencies/USD", "Currencies"]
-- ["https://api.mercadolibre.com/currency_conversions/search?from=ARS&amp;to=USD", "Currency conversions"]
-- ["https://api.mercadolibre.com/sites/MLA/deals", "Deals"]
-- ["https://api.mercadolibre.com/sites/MLA/featured_items/HP", "Featured Items"]
-- ["https://api.mercadolibre.com/geolocation/ip/200.1.1.1", "Geolocation"]
-- ["https://api.mercadolibre.com/sites/MLA/hot_items/search?limit=5&amp;category=MLA1743", "Hot Items"]
-- ["https://api.mercadolibre.com/items/MLA87828458", "Items"]
-- ["https://api.mercadolibre.com/sites/MLA/listing_types", "Listing Types"]
-- ["https://api.mercadolibre.com/sites/MLA/listing_exposures", "Listing exposures"]
-- ["https://api.mercadolibre.com/sites/MLA/listing_prices?price=1", "Listing prices"]
-- ["https://api.mercadolibre.com/sites/MLA/listing_types/", "Listing types"]
-- ["https://api.mercadolibre.com/states/TUxBUENBUGw3M2E1", "Location States"]
-- ["https://api.mercadolibre.com/sites/MLA/merchs/PROD_NHP", "Merch"]
-- ["https://api.mercadolibre.com/mclics/system/MLA/cfg/ad_max_mcpc", "MercadoClics Ads"]
-- ["https://api.mercadolibre.com/sites/MLA/news/search?category=MLA1743", "News"]
-- ["https://api.mercadolibre.com/orders/1414505?caller.id=11133985", "Orders"]
-- ["https://api.mercadolibre.com/payment_methods/MLAMC", "Payment methods"]
-- ["https://api.mercadolibre.com/sites/MLA/payment_methods", "Payment methods (MP)"]
-- ["https://api.mercadolibre.com/payment_types", "Payment types"]
-- ["https://api.mercadolibre.com/pictures/MLA719522498_032011", "Pictures"]
-- ["https://api.mercadolibre.com/users/89330146/promotion_pack_combos/124?caller.id=89330146", "Promotion pack combos"]
-- ["https://api.mercadolibre.com/users/2767066/promotion_packs?caller.id=2767066", "Promotion packs"]
-- ["https://api.mercadolibre.com/questions/1918461935", "Questions"]
-- ["https://api.mercadolibre.com/scopes", "Scopes"]
-- ["https://api.mercadolibre.com/sites/MLA/searchUrl?q=ipod", "Search api"]
-- ["https://api.mercadolibre.com/sites/MLA/searchbackend", "Search backend"]
-- ["https://api.mercadolibre.com/sites/MLA/searchUrl?q=ipod", "Search url"]
-- ["https://api.mercadolibre.com/sites/MLA/metatags/HOME", "SEO HOME"]
-- ["https://api.mercadolibre.com/sites/MLA/metatags/SEARCH", "SEO SEARCH"]
-- ["https://api.mercadolibre.com/shipping_methods/100009", "Shipping"]
-- ["https://api.mercadolibre.com/site_domains/www.mercadolibre.com.ar", "Site domains"]
-- ["https://api.mercadolibre.com/sites/MLA", "Site Description"]
-- ["https://api.mercadolibre.com/sites", "Sites"]
-- ["https://api.mercadolibre.com/sites/MLA/trends/search?category=MLA1042", "Trends"]
-- ["https://api.mercadolibre.com/users/20", "Users"]
 ---
 
 
-Explore our API Resources.
+Explore our API Resources. <code>auth:</code> <strong>Requires authentication</strong>
 
-##Resources
-{% for api in page.apiCatalog | sort %}
-[{{ api[1] }}]({{ api[0] }})
-{% endfor %}
+<h4>https://api.mercadolibre.com</h4>
+
+<br>
+  <strong>users and applications</strong>
+  <ul class='ch-list parameters'>
+    <li><a href="https://api.mercadolibre.com/users" target="_blank">/users</a></li>
+    <li><a href="https://api.mercadolibre.com/users/{user_id}/addresses" target="_blank">/users/{user_id}/addresses</a><code>(requires auth)</code></li>
+    <li><a href="https://api.mercadolibre.com/users/{user_id}/accepted_payment_methods" target="_blank">/users/{user_id}/accepted_payment_methods</a><code>auth</code></li>
+    <li><a href="https://api.mercadolibre.com/applications" target="_blank">/applications</a></li>
+    <li><a href="https://api.mercadolibre.com/scopes" target="_blank">/scopes</a></li>
+  </ul>
+
+<strong>sites and categories entities</strong>
+  <ul class='ch-list parameters'>
+    <li><a href="https://api.mercadolibre.com/sites" target="_blank">/sites</a></li>
+    <li><a href="https://api.mercadolibre.com/sites/{site_id}" target="_blank">/sites/{site_id}</a></li>
+    <li><a href="https://api.mercadolibre.com/site_domains/www.mercadolibre.com.ar" target="_blank">/site_domains/{site_domain_url}</a></li>
+    <li><a href="https://api.mercadolibre.com/sites/{site_id}/listing_types" target="_blank">/sites/{site_id}/listing_types</a></li>
+    <li><a href="https://api.mercadolibre.comsites/{site_id}/listing_exposures" target="_blank">sites/{site_id}/listing_exposures</a></li>
+    <li><a href="https://api.mercadolibre.com/sites/{site_id}/listing_prices?price=1" target="_blank">/sites/{site_id}/listing_prices?price=1</a></li>
+    <li><a href="https://api.mercadolibre.com/sites/{site_id}/categories" target="_blank">/sites/{site_id}/categories</a></li>
+    <li><a href="https://api.mercadolibre.com/categories/{category_id}" target="_blank">/categories/{category_id}</a></li>
+    <li><a href="https://api.mercadolibre.com/categories/{category_id}/attributes" target="_blank">/categories/{category_id}/attributes</a></li>
+  </ul>
+
+<strong>countries, currencies, ...</strong>
+  <ul class='ch-list parameters'>
+      <li><a href="https://api.mercadolibre.com/countries" target="_blank">/countries</a></li>
+      <li><a href="https://api.mercadolibre.com/countries/{country_id}" target="_blank">/countries/{country_id}</a></li>
+      <li><a href="https://api.mercadolibre.com/states/{state_id}" target="_blank">/states/{state_id}</a></li>
+      <li><a href="https://api.mercadolibre.com/cities/{city_id}" target="_blank">/cities/{city_id}</a></li>
+      <li><a href="https://api.mercadolibre.com/currencies" target="_blank">/currencies</a></li>
+      <li><a href="https://api.mercadolibre.com/currencies/BRL" target="_blank">/currencies/{currency_id}</a></li>
+      <li><a href="https://api.mercadolibre.com/currency_conversions/search?from=ARS&amp;to=USD" target="_blank">/currency_conversions/search?from={currency_id}&amp;to={currency_id}</a></li>
+  </ul>
+
+<strong>items and searches</strong>
+  <ul class='ch-list parameters'>
+    <li><a href="https://api.mercadolibre.com/items/MLA87828458" target="_blank">/items/{item_id}</a></li>
+    <li><a href="https://api.mercadolibre.com/pictures/MLA719522498_032011" target="_blank">/pictures/{picture_id}</a></li>
+    <li><a href="https://api.mercadolibre.com/sites/MLA/searchUrl?q=ipod" target="_blank">/sites/{site_id}/searchUrl?q=ipod </a></li>
+    <li><a href="https://api.mercadolibre.com/sites/MLA/search?q=ipod" target="_blank">/sites/{site_id}/search?q=ipod </a></li>
+    <li><a href="https://api.mercadolibre.com/sites/MLA/hot_items/search?limit=5&amp;category=MLA1743" target="_blank">/sites/{site_id}/hot_items/search?limit=5&amp;category={category_id} </a></li>
+    <li><a href="https://api.mercadolibre.com/sites/MLA/featured_items/HP" target="_blank">/sites/{site_id}/featured_items/{pool_id} </a></li>
+    <li><a href="https://api.mercadolibre.com/sites/MLA/trends/search?category=MLA1042" target="_blank">/sites/{site_id}/trends/search?category={category_id} </a></li>
+  </ul>
+
+<strong>orders and payments</strong>
+  <ul class='ch-list parameters'>
+    <li><a href="https://api.mercadolibre.com/orders" target="_blank">/orders</a><code>auth</code><code>auth</code></li>
+    <li><a href="https://api.mercadolibre.com/payments" target="_blank">/payments</a><code>auth</code></li>
+    <li><a href="https://api.mercadolibre.com/collections" target="_blank">/collections</a><code>auth</code></li>
+    <li><a href="https://api.mercadolibre.com/payment_methods/MLAMC" target="_blank">/payment_methods/{payment_method_id}</a></li>
+    <li><a href="https://api.mercadolibre.com/sites/MLA/payment_methods" target="_blank">/sites/{site_id}/payment_methods</a></li>
+    <li><a href="https://api.mercadolibre.com/feedback" target="_blank">/feedback</a><code>auth</code></li>
+  </ul>
+
+<strong>questions</strong>
+  <ul class='ch-list parameters'>
+    <li><a href="https://api.mercadolibre.com/questions" target="_blank">/questions</a><code>auth</code></li>
+    <li><a href="https://api.mercadolibre.com/questions/search" target="_blank">/questions/search</a></li>
+    <li><a href="https://api.mercadolibre.com/questions" target="_blank">/questions</a></li>
+    <li><a href="https://api.mercadolibre.com/users/{seller_id}/questions_blacklist" target="_blank">/users/{seller_id}/questions_blacklist</a><code>auth</code></li>
+  </ul>
+
+
+
+
