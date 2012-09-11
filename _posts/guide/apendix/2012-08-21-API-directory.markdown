@@ -10,15 +10,16 @@ tags:
 ---
 
 
-Explore our API Resources.
+Explore our API Resources. <code>auth:</code> <strong>Requires authentication</strong>
 
 <h4>https://api.mercadolibre.com</h4>
+
 <br>
   <strong>users and applications</strong>
   <ul class='ch-list parameters'>
     <li><a href="https://api.mercadolibre.com/users" target="_blank">/users</a></li>
-    <li><a href="https://api.mercadolibre.com/users/{user_id}/addresses" target="_blank">/users/{user_id}/addresses</a></li>
-    <li><a href="https://api.mercadolibre.com/users/{user_id}/accepted_payment_methods" target="_blank">/users/{user_id}/accepted_payment_methods</a></li>
+    <li><a href="https://api.mercadolibre.com/users/{user_id}/addresses" target="_blank">/users/{user_id}/addresses</a><code>(requires auth)</code></li>
+    <li><a href="https://api.mercadolibre.com/users/{user_id}/accepted_payment_methods" target="_blank">/users/{user_id}/accepted_payment_methods</a><code>auth</code></li>
     <li><a href="https://api.mercadolibre.com/applications" target="_blank">/applications</a></li>
     <li><a href="https://api.mercadolibre.com/scopes" target="_blank">/scopes</a></li>
   </ul>
@@ -43,8 +44,8 @@ Explore our API Resources.
       <li><a href="https://api.mercadolibre.com/states/{state_id}" target="_blank">/states/{state_id}</a></li>
       <li><a href="https://api.mercadolibre.com/cities/{city_id}" target="_blank">/cities/{city_id}</a></li>
       <li><a href="https://api.mercadolibre.com/currencies" target="_blank">/currencies</a></li>
-      <li><a href="https://api.mercadolibre.com/currencies/BRL" target="_blank">/currencies/BRL</a></li>
-      <li><a href="https://api.mercadolibre.com/currency_conversions/search?from=ARS&amp;to=USD" target="_blank">/currency_conversions/search?from=ARS&amp;to=USD</a></li>
+      <li><a href="https://api.mercadolibre.com/currencies/BRL" target="_blank">/currencies/{currency_id}</a></li>
+      <li><a href="https://api.mercadolibre.com/currency_conversions/search?from=ARS&amp;to=USD" target="_blank">/currency_conversions/search?from={currency_id}&amp;to={currency_id}</a></li>
   </ul>
 
 <strong>items and searches</strong>
@@ -55,25 +56,27 @@ Explore our API Resources.
     <li><a href="https://api.mercadolibre.com/sites/MLA/search?q=ipod" target="_blank">/sites/{site_id}/search?q=ipod </a></li>
     <li><a href="https://api.mercadolibre.com/sites/MLA/hot_items/search?limit=5&amp;category=MLA1743" target="_blank">/sites/{site_id}/hot_items/search?limit=5&amp;category={category_id} </a></li>
     <li><a href="https://api.mercadolibre.com/sites/MLA/featured_items/HP" target="_blank">/sites/{site_id}/featured_items/{pool_id} </a></li>
-    <li><a href="https://api.mercadolibre.com/sites/MLA/trends/search?category=MLA1042" target="_blank">/sites/MLA/trends/search?category=MLA1042 </a></li>
+    <li><a href="https://api.mercadolibre.com/sites/MLA/trends/search?category=MLA1042" target="_blank">/sites/{site_id}/trends/search?category={category_id} </a></li>
   </ul>
 
 <strong>orders and payments</strong>
   <ul class='ch-list parameters'>
-    <li><a href="https://api.mercadolibre.com/orders" target="_blank">/orders</a></li>
-    <li><a href="https://api.mercadolibre.com/payments" target="_blank">/payments</a></li>
-    <li><a href="https://api.mercadolibre.com/collections" target="_blank">/collections</a></li>
+    <li><a href="https://api.mercadolibre.com/orders" target="_blank">/orders</a><code>auth</code><code>auth</code></li>
+    <li><a href="https://api.mercadolibre.com/payments" target="_blank">/payments</a><code>auth</code></li>
+    <li><a href="https://api.mercadolibre.com/collections" target="_blank">/collections</a><code>auth</code></li>
     <li><a href="https://api.mercadolibre.com/payment_methods/MLAMC" target="_blank">/payment_methods/{payment_method_id}</a></li>
     <li><a href="https://api.mercadolibre.com/sites/MLA/payment_methods" target="_blank">/sites/{site_id}/payment_methods</a></li>
-    <li><a href="https://api.mercadolibre.com/feedback" target="_blank">/feedback</a></li>
+    <li><a href="https://api.mercadolibre.com/feedback" target="_blank">/feedback</a><code>auth</code></li>
   </ul>
 
 <strong>questions</strong>
   <ul class='ch-list parameters'>
-    <li><a href="https://api.mercadolibre.com/questions" target="_blank">/questions</a></li>
+    <li><a href="https://api.mercadolibre.com/questions" target="_blank">/questions</a><code>auth</code></li>
     <li><a href="https://api.mercadolibre.com/questions/search" target="_blank">/questions/search</a></li>
     <li><a href="https://api.mercadolibre.com/questions" target="_blank">/questions</a></li>
-    <li><a href="https://api.mercadolibre.com/users/{seller_id}/questions_blacklist" target="_blank">/users/{seller_id}/questions_blacklist</a></li>
+    <li><a href="https://api.mercadolibre.com/users/{seller_id}/questions_blacklist" target="_blank">/users/{seller_id}/questions_blacklist</a><code>auth</code></li>
   </ul>
+
+
 
 

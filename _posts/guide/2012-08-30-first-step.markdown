@@ -106,14 +106,14 @@ require '../src/meli.php';
 // Create our Application instance (replace this with your appId and secret).
 $meli = new Meli(array(
     'appId'         => 10115,
-    'secret'        => 9ykscT65bzPBNQ2SrLqdapp5HbDYddzX,
+    'secret'        => 54dfgdgwgw8gfAdgDJDIULkdjhgp87,
 ));
 			{% endhighlight %}
 		</div>
 		<div id="java">
 			{% highlight java %}
 
-Meli m = new Meli(10115, "9ykscT65bzPBNQ2SrLqdapp5HbDYddzX");
+Meli m = new Meli(10115, "9ykscjsghdPBNQ2SrLqdapp5HbSasswd");
 
 m.authorize("the received code", "http://somecallbackurl");
 
