@@ -325,10 +325,10 @@ Here you must exchange this code for an access token issuing a POST request to..
 We already provide SDKs for 
 
 <ul class="ch-list">
-  <li>Java</li>
-  <li>.NET</li>
-  <li>PHP</li>
-  <li>Javascript (client-side)</li>
+  <li><a href="/java-sdk/">Java</a></li>
+  <li><a href="/net-sdk/">.NET</a></li>
+  <li><a href="/php-sdk/">PHP</a></li>
+  <li><a href="/javascript-sdk/">Javascript (client-side)</a></li>
 </ul>
   
 All of them implement OAuth flows and you are free to add new functions. Just <a href="https://github.com/mercadolibre/mercadolibre.github.com">fork repo on GitHub</a>
