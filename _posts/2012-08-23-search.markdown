@@ -5,6 +5,6 @@ menu: search
 ---
 
 
-# Results
+# Results for: $query
 
 	
