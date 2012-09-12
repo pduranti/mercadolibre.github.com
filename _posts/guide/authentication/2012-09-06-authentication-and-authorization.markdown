@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: firststep
 title: Authentication &amp; Authorization Essentials
 categories: 
 - Authentication
