@@ -14,6 +14,7 @@ tags:
 
 <dl>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('introduction')">Introduction</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('should-i')">Should I read all this?</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('basic-concepts')">Basic concepts</a></dt>
   <dt><a href="javascript:voId(0)" onclick="goToByScroll('tokens-explained')">What is a token? Why do I need one? </a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('getting-a-token')">How do I get that token? </a></dt>
@@ -34,6 +35,14 @@ MercadoLibre platform lets you access different resources through API calls. As 
 To handle the authentication throughout the platform We use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) protocol. This is a standard, secure yet simple protocol that covers most use cases you should encounter interacting with MercadoLibre APIs. 
 
 We will explain shortly how to use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) authentication in some simple cases and you can read further in the following sections.
+
+##Should I read all this {#should-i}
+
+We definitely think you **should**. It is always good to know what is happenning behind when you use a sdk/framework but at the same time We **encourage** you to use our provided <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a> to connect and "talk" to the APIs.
+
+These <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a> implement the OAuth protocol and on one hand leverages you from coding everything again and on the other hand every security issue or bug discovered can be fixed on a centralized place. If you think that there should be any enhancements please feel free to contribute to these <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a>. It is a win-win situation.
+
+**Note**: We covered the server-side flows in PHP, Java and .NET, and client-side flows in javascript. If you plan to develop in other programming languages or for mobile you will have to code the OAuth flows by yourselves or contribute with an SDK to be used by all of us.
 
 ##Basic concepts {#basic-concepts}
 
@@ -316,10 +325,10 @@ Here you must exchange this code for an access token issuing a POST request to..
 We already provide SDKs for 
 
 <ul class="ch-list">
-  <li>Java</li>
-  <li>.NET</li>
-  <li>PHP</li>
-  <li>Javascript (client-side)</li>
+  <li><a href="/java-sdk/">Java</a></li>
+  <li><a href="/net-sdk/">.NET</a></li>
+  <li><a href="/php-sdk/">PHP</a></li>
+  <li><a href="/javascript-sdk/">Javascript (client-side)</a></li>
 </ul>
   
 All of them implement OAuth flows and you are free to add new functions. Just <a href="https://github.com/mercadolibre/mercadolibre.github.com">fork repo on GitHub</a>
