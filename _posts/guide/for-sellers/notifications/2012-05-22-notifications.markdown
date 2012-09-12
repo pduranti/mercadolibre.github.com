@@ -3,6 +3,7 @@ layout: guides
 title: Listening to Notifications
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications

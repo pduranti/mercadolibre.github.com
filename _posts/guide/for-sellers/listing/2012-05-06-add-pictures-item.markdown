@@ -3,6 +3,7 @@ layout: guides
 title: Adding pictures
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications

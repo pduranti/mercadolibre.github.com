@@ -3,13 +3,14 @@ layout: guides
 title: Update an item
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Listing
+- Manage Listings
 ---
 
 

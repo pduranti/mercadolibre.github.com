@@ -3,6 +3,7 @@ layout: guides
 title: Answer a Question
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications

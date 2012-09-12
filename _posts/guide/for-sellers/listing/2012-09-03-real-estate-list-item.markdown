@@ -1,6 +1,16 @@
 ---
 layout: guides
 title: Real estate listing
+categories: 
+- Listing
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Manage Listings
 ---
 
 #List Real Estate properties

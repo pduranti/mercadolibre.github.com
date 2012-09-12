@@ -3,13 +3,14 @@ layout: guides
 title: Search my own items
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Orders
+- Manage Listings
 ---
 
 A very common use case is to search and show your own items. 

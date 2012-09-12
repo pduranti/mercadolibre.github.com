@@ -3,6 +3,7 @@ layout: guides
 title: List with variations
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications

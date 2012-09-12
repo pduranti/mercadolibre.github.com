@@ -3,6 +3,7 @@ layout: guides
 title: Managing questions blacklist
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications

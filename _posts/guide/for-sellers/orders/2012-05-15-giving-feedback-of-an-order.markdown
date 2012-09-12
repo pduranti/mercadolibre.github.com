@@ -3,6 +3,7 @@ layout: guides
 title: Giving feedback to an order
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications

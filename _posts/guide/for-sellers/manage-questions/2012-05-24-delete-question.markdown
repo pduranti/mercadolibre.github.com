@@ -3,6 +3,7 @@ layout: guides
 title: Delete a question
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications
