@@ -27,10 +27,11 @@
 
     	
 	<section class="main ch-g1">
-		{{ content }}
+		<h1 id="title">Resuls for: </h1>		
 		<div id="cse" style="width:100%;">
 		    <div class="ch-loading"></div>
 		</div>
+		{{ content }}
 	</section>
 	
 	<footer class="ch-g1">
@@ -53,8 +54,7 @@
 			for ( var i = 0; i < parts.length; i++) {
 				var keyvaluepair = parts[i].split('=');
 				if (decodeURIComponent(keyvaluepair[0]) == queryParamName) {
-					return decodeURIComponent(keyvaluepair[1].split('+').join(
-							' '));
+					return decodeURIComponent(keyvaluepair[1].split('+').join(' '));
 				}
 			}
 			return '';
@@ -79,6 +79,10 @@
 							customSearchControl.draw('cse', options);
 							var queryFromUrl = parseQueryFromUrl();
 							if (queryFromUrl) {
+								$('#title').html('Results for: ' + queryFromUrl);
+
+								$('#q').val(queryFromUrl);
+								
 								customSearchControl.execute(queryFromUrl);
 							}
 						}, true);

@@ -4,7 +4,3 @@ title: Search
 menu: search
 ---
 
-
-# Results
-
-	
