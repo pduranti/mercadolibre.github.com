@@ -6,7 +6,6 @@ categories:
 - Orders
 - Manage Questions
 - Notifications
-- Answer Questions
 menu: 
 - Sellers &amp; Integrators
 tags: 

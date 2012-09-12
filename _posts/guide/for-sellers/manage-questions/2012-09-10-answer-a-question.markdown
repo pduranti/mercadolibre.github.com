@@ -6,11 +6,10 @@ categories:
 - Orders
 - Manage Questions
 - Notifications
-- Answer Questions
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Answer Questions
+- Manage Questions
 ---
 
 We also provide a way to answer a question.
