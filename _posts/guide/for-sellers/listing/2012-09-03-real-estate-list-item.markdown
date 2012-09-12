@@ -13,16 +13,16 @@ tags:
 - Manage Listings
 ---
 
-#List Real Estate properties
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('publish')">List a real estate property</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('list-example')">Listing example</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('best-practices')">Best Practices</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('list-defining-attributes')">Defining attributes</a></dt>
+  </dl>
+</div>
 
-Preconditions 	{#preconditions}
----------------------------------
-
-[Having a basic knowledge of REST and how MELI API works](/getting-started)
-
-[Having a MELI APP created](/res-create-app)
-
-[Getting an access token (authentication)](/res-authenticate)
 
 List a real estate property 	{#publish}
 ---------------------------------

@@ -18,8 +18,8 @@ Explore our API Resources.
   <strong>users and applications</strong>
   <ul class='ch-list parameters'>
     <li><a href="https://api.mercadolibre.com/users" target="_blank">/users</a></li>
-    <li><a href="https://api.mercadolibre.com/users/user_id/addresses" target="_blank">/users/{user_id}/addresses</a><code>private</code></li>
-    <li><a href="https://api.mercadolibre.com/users/{user_id}/accepted_payment_methods" target="_blank">/users/{user_id}/accepted_payment_methods</a><code>private</code></li>
+    <li><a href="https://api.mercadolibre.com/users/user_id/addresses" target="_blank">/users/{user_id}/addresses?access_token={...}</a></li>
+    <li><a href="https://api.mercadolibre.com/users/{user_id}/accepted_payment_methods" target="_blank">/users/{user_id}/accepted_payment_methods?access_token={...}</a></li>
     <li><a href="https://api.mercadolibre.com/applications" target="_blank">/applications</a></li>
     <li><a href="https://api.mercadolibre.com/scopes" target="_blank">/scopes</a></li>
   </ul>
@@ -61,19 +61,19 @@ Explore our API Resources.
 
 <strong>orders and payments</strong>
   <ul class='ch-list parameters'>
-    <li><a href="https://api.mercadolibre.com/orders" target="_blank">/orders</a><code>private</code></li>
-    <li><a href="https://api.mercadolibre.com/payments" target="_blank">/payments</a><code>private</code></li>
-    <li><a href="https://api.mercadolibre.com/collections" target="_blank">/collections</a><code>private</code></li>
+    <li><a href="https://api.mercadolibre.com/orders" target="_blank">/orders?access_token={...}</a></li>
+    <li><a href="https://api.mercadolibre.com/payments" target="_blank">/payments?access_token={...}</a></li>
+    <li><a href="https://api.mercadolibre.com/collections" target="_blank">/collections?access_token={...}</a></li>
     <li><a href="https://api.mercadolibre.com/payment_methods/MLAMC" target="_blank">/payment_methods/{payment_method_id}</a></li>
     <li><a href="https://api.mercadolibre.com/sites/MLA/payment_methods" target="_blank">/sites/{site_id}/payment_methods</a></li>
-    <li><a href="https://api.mercadolibre.com/feedback" target="_blank">/feedback</a><code>private</code></li>
+    <li><a href="https://api.mercadolibre.com/feedback" target="_blank">/feedback?access_token={...}</a></li>
   </ul>
 
 <strong>questions</strong>
   <ul class='ch-list parameters'>
-    <li><a href="https://api.mercadolibre.com/questions" target="_blank">/questions</a><code>private</code></li>
+    <li><a href="https://api.mercadolibre.com/questions" target="_blank">/questions?access_token={...}</a></li>
     <li><a href="https://api.mercadolibre.com/questions/search" target="_blank">/questions/search</a></li>
-    <li><a href="https://api.mercadolibre.com/users/{seller_id}/questions_blacklist" target="_blank">/users/{seller_id}/questions_blacklist</a><code>private</code></li>
+    <li><a href="https://api.mercadolibre.com/users/{seller_id}/questions_blacklist" target="_blank">/users/{seller_id}/questions_blacklist?access_token={...}</a></li>
   </ul>
 
 
