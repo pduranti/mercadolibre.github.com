@@ -14,16 +14,6 @@ tags:
 ---
 
 
-<div class="contents">
-  <h5>Table of Contents</h5>
-  <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('list-example')">Listing example</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('best-practices')">Best Practices</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('list-defining-attributes')">Defining attributes</a></dt>
-  </dl>
-</div>
-
 ## Overview {#overview}
 
 The first step in selling is list an item on MercadoLibre. Sellers can list an item by MercadoLibre site or by an application using Listing API. Both working exactly in selling.
@@ -32,7 +22,18 @@ There are a number of considerations over an item as title, category, price, cur
 
 Some properties of items affects the appeareance in various pages where items are viewed (the view item page, the search pages, the category browser page )  
 
-There are mandatory attributes to list an item. 
+Also there are mandatory attributes to list an item. 
+
+
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('list-example')">Listing example</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('best-practices')">Best Practices</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('list-defining-attributes')">Defining attributes</a></dt>
+  </dl>
+</div>
+
 
 ## Listing example{#list-example}
 
