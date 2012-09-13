@@ -73,7 +73,7 @@ The Items API will automatically download the provided images to MELI Storage an
 
 **Congratulations!** You have just listed your first item! You can access the Item’s VIP through the permalink attribute.  
 
-If you have questions regarding how to get your access token to list items, please refer to the [getting started](/getting-started) tutorial. In addition, if you wish to validate your item before listing, check out the [item validation](/validate-item) tutorial.    
+If you have questions regarding how to get your access token to list items, please refer to the [getting started](/first-step) tutorial. In addition, if you wish to validate your item before listing, check out the [item validation](/validate-item) tutorial.    
     
 **Note:** If you get any errors trying to post your item, please refer to the [selling conditions](http://www.mercadolibre.com/jm/ml.faqs.framework.main.FaqsController?pageId=FAQ&faqId=2407&categId=COST&type=FAQ) page. 
 
