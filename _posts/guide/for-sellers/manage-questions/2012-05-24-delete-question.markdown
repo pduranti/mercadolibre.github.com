@@ -25,10 +25,8 @@ Successful response
 
 {% highlight javascript %}
 
-{"message":"Pregunta eliminada"}
+{"message":"Question deleted.a"}
 
 {% endhighlight %}
-
-*For the moment the response text is in Spanish
 
 
