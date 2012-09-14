@@ -13,10 +13,14 @@ tags:
 - Listing
 ---
 
+## Overview {#overview}
+
+Escribir cuales son las consideraciones especiales para  Real Estate. Por ejemplo la ubicacion. 
+
+
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('considerations')">Considerations</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('example')">Example</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('locationselection')">Location selection</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('jsonfullspecs')">Real Estate JSON full specification</a></dt>
@@ -24,11 +28,6 @@ tags:
   </dl>
 </div>
 
-
-## Considerations {#considerations}
-
-
-Escribir cuales son las consideraciones especiales para  Real Estate. Por ejemplo la ubicacion. 
 
 
 ## Example 	{#example}

@@ -19,22 +19,24 @@ For example if you published an item and later it was paused, someone made you a
 
 Notifications are a very convenient way to stay up-to-date with everything that you care, in the most efficient way for you, without having to query our API on a constant basis. You only get notified of the resource that changed.
 
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('how-to-subscribe')">How to Subscribe</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('topics')">Available Topics</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('considerations')">Considerations</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('structure')"></a>Structure of Notifications</dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('orders-topic')">Order topic</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('questions-topic')">Questions topic</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('items-topic')">Items topic</a></dt>
+  </dl>
+</div>
 
-## Table of Contents 
-- [How to Subscribe](#how-to-subscribe)
-- [Available Topics](#topics)
-- [Considerations](#considerations)
-- [Structure of Notifications](#structure)
-+ [Order topic](#orders-topic)
-+ [Questions topic](#questions-topic)
-+ [Items topic](#items-topic)
+## How do I subscribe to the Notifications? {#how-to-subscribe}
 
-
----
-##How do I subscribe to the Notifications? {#how-to-subscribe}
 In the Applications Page where you created your App, you can edit the details and specify which 'topics' you will listen to.
 (see [Applications Page](http://applications.mercadolibre.com)).
-_If you haven't created your App yet go to [Creating your app section] (http://developers.mercadolibre.com/creating-your-own-application/)_
+_If you haven't created your App yet go to [Creating your app section](http://developers.mercadolibre.com/creating-your-own-application/)_
 
   - **Notifications callback URL** Configure the public URL of your domain where you want to receive notifications for the different topics. e.g.: “http://myshoes-app.com/callbacks”.
 
