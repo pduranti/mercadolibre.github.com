@@ -10,21 +10,19 @@ tags:
 - Searching
 ---
 
-<div class="contents">
-  <h5>Table of Contents</h5>
-  <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-overview')">Overview</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-request')">Request</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-response')">Response</a></dt>
-  </dl>
-</div>
-
-
 ## Overview: {#search-overview}
 
 The search operation retrieves a list of items. Then you can refine your search using search filters. Search filters allow to limit your results to those that matches a criteria. Typically, you use these filters when you are interested in refining a previous search result. 
 
 There are different kind of filters and each article has different ones.  
+
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-request')">Request</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-response')">Response</a></dt>
+  </dl>
+</div>
 
 ## Request {#search-request}
 

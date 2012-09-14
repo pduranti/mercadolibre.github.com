@@ -10,18 +10,18 @@ tags:
 - Searching
 ---
 
+## Overview: {#search-overview}
+
+Search operation retrieves items that satisfy the search criteria. Text query is the basic option to search items. You should use space between words if you have multiple words. It searches items when one of the specified words matches with the item title. Queries aren't case-sensitive.
+
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-overview')">Overview</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('search-request')">Request</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('search-response')">Response</a></dt>
   </dl>
 </div>
 
-## Overview: {#search-overview}
-
-Search operation retrieves items that satisfy the search criteria. Text query is the basic option to search items. You should use space between words if you have multiple words. It searches items when one of the specified words matches with the item title. Queries aren't case-sensitive.
 
 ## Request {#search-request}
 
