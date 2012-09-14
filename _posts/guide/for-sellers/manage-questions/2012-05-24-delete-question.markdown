@@ -18,7 +18,7 @@ Sometimes you want to delete the question someone made you.
 Just do a DELETE request with the questionId and an access token of the seller of that item.
 
 <pre class="terminal">
-curl -X DELETE 'https://api.mercadolibre.com/questions/2264284172?access_token=$ACCESS_TOKEN'
+curl -X DELETE 'https://api.mercadolibre.com/questions/${question_id}?access_token=$ACCESS_TOKEN'
 </pre>
 
 Successful response
