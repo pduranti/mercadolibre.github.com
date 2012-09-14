@@ -25,7 +25,7 @@ Successful response
 
 {% highlight javascript %}
 
-{"message":"Question deleted.a"}
+{"message":"Question deleted."}
 
 {% endhighlight %}
 
