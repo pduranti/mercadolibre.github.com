@@ -10,27 +10,25 @@ tags:
 - Category
 ---
 
-<div class="contents">
-<h5>Table of Contents</h5>
-
-<dl>
-	<dt><a href="javascript:void(0)" onClick="goToByScroll('overview')">Overview</a></dt>
-	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-attributes')">Attributes</a></dt>
-	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-api')">Categories API</a></dt>
-</dl>
-</div>
-
-
-
 ## Overview {#overview}
 
 On MercadoLibre site, categories are a hierarchical set of groups in which items of a similar nature are listed. Categories help buyers find the kinds of items they want, as the buyer only needs to look in one category or a few categories to find items they are interested in. Sellers benefit from the use of categories by the increased likelihood of a sale due to better and faster access to items by prospective buyers.
 
 In each MercadoLibre site has its own set of category. It means, Argentina's MercadoLibre site has different categories than Brazil's MercadoLibre site. For more details about sites see [Site API](https://api.mercadolibre.com/sites). To discover category for a specific site you can see [Categories API](#categories-api) section. 
 
-To list an item in MercadoLibre users need to know the ID of the target category. To help users to validate a category ID, they can download the [complete category hierarchy](#categories-dump) with ID and human-friendly names. 
+To list an item in MercadoLibre users need to know the ID of the target category. To help users to validate a category ID, they can download the [complete category hierarchy](/category-dump) with ID and human-friendly names. 
 
 Some of the tutorials described in this site need several “id’s” from different MELI’s API.
+
+<div class="contents">
+<h5>Table of Contents</h5>
+
+<dl>
+	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-attributes')">Attributes</a></dt>
+	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-api')">Categories API</a></dt>
+</dl>
+</div>
+
 
 ## Attributes {#category-attributes}
 
@@ -121,7 +119,7 @@ For example, when you list an item, you have to specify the following attributes
 
 As you can see in the JSON above, you need to specify the **category_id**, the **currency_id** and the **listing_type_id**. This particular three fields are mandatory and only accepts pre-defined id’s. You can see the different id’s that these fields accept by looking at the Category, Currencies and Listing Type API.
 
-## Categories API {#categories-api}
+## Categories API {#category-api}
 
 The Sites API shows the entirely MELI category structure for a particular country, in this case Argentina.
 

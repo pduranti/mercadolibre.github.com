@@ -10,19 +10,22 @@ tags:
 - Searching
 ---
 
+## Overview: {#search-overview}
+
+Each search result can be sorted using available sorts. You must check available sorts and use them to refine your search. 
+
+
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-overview')">Overview</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-request')">Request</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-available')">Check available sorts</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-response')">Request</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('search-response')">Response</a></dt>
   </dl>
 </div>
 
 
-## Overview: {#search-overview}
-
-Each search result can be sorted using available sorts. You must check available sorts and use them to refine your search. 
+## Check available sorts {#search-available}
 
 For example, if you search an item using a simple [search by query](/search-by-text-query)
 
@@ -33,6 +36,8 @@ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
 you can check which the available sorts are:
 
 {% highlight javascript %}
+{
+  ...
   "available_sorts": [
     {
       "id": "price_asc",
@@ -42,9 +47,10 @@ you can check which the available sorts are:
       "id": "price_desc",
       "name": "Mayor precio",
     }
-  ]
+  ],
+  ...
+}
 {% endhighlight %}
-
 
 ## Request {#search-request}
 

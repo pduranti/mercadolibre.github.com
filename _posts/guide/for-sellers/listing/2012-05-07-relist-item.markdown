@@ -3,14 +3,14 @@ layout: guides
 title: Relist an item
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications
-- Answer Questions
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Listing
+- Manage Listings
 ---
 
 In case you need to list an item again (it could happen if you sold the specified quantity or the allowed listing time expired), you can use the relist function that Items API provides.

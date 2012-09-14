@@ -3,10 +3,10 @@ layout: guides
 title: Introduction
 categories: 
 - Listing
+- Manage Listings
 - Orders
 - Manage Questions
 - Notifications
-- Answer Questions
 menu: 
 - Sellers &amp; Integrators
 tags: 

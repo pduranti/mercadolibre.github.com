@@ -10,21 +10,20 @@ tags:
 - Searching
 ---
 
-<div class="contents">
-  <h5>Table of Contents</h5>
-  <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-overview')">Overview</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-request')">Request</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-response')">Response</a></dt>
-  </dl>
-</div>
-
-
 ## Overview: {#search-overview}
 
 The search operation returns items which belong to a MercadoLibre item category. 
 
 For more details about categories and the category hierarchy see [Categories API](/category-introduction). 
+
+
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-request')">Request</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-response')">Response</a></dt>
+  </dl>
+</div>
 
 
 ## Request {#search-request}

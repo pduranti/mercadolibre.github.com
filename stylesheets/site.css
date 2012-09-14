@@ -464,19 +464,35 @@ footer .maintained-by{
 
 
 .contents {
-	background:#f9f9f9 url('../../src/images/noise.gif') 0 0 repeat;
 	border:1px solid #efefef;
 	display:inline-block;
 	position:relative;
 	padding:20px 35px 20px 20px;
 	margin-top:20px;
-	width: 93%;
 }
 
 .contents h5 {
 	font-size:14px;
 	font-weight:bold;
 	margin:0 0 10px;
+}
+
+.menubar {
+	background:#f9f9f9 url('../../src/images/noise.gif') 0 0 repeat;
+	border:1px solid #efefef;
+	display:inline-block;
+	position:relative;
+	padding:20px 35px 20px 20px;
+	margin-top:20px;
+}
+
+.menubar h5 {
+	font-size:14px;
+	font-weight:bold;
+	margin:0 0 10px;
+}
+.menubar h2 {
+	color:#C0C0C0;
 }
 /*
 .contents p {
