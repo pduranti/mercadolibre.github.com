@@ -32,26 +32,6 @@
             font-size:11px;
     }
     </style>
-    <script>
-    $(function() {
-      $(window).scroll(function() {
-        if($(this).scrollTop() != 0) {
-          $('#toTop').fadeIn();
-        } else {
-          $('#toTop').fadeOut();
-        }
-      });
-
-      $('#toTop').click(function() {
-        $('body,html').animate({scrollTop:0},800);
-      });
-    });
-    </script>
-    <script type="text/javascript">
-      function goToByScroll(id){
-          $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
-      }
-    </script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -97,7 +77,28 @@
     var foo = $("#guides-menu").dropdown();
     -->
   </script>
+    <script>
+    $(function() {
+      $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+          $('#toTop').fadeIn();
+        } else {
+          $('#toTop').fadeOut();
+        }
+      });
+
+      $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+      });
+    });
+    </script>
+    <script type="text/javascript">
+      function goToByScroll(id){
+          $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+      }
+    </script>
     <script src="/javascripts/scale.fix.js"></script>
+
     <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
 </body>
 </html>
