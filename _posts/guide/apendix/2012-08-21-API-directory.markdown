@@ -37,7 +37,7 @@ Explore our API Resources.
     <li><a href="https://api.mercadolibre.com/categories/{category_id}/attributes" target="_blank">/categories/{category_id}/attributes</a></li>
   </ul>
 
-<strong>Locations and Currency</strong>
+<strong>Locations and Currencies</strong>
   <ul class='ch-list parameters'>
       <li><a href="https://api.mercadolibre.com/countries" target="_blank">/countries</a></li>
       <li><a href="https://api.mercadolibre.com/countries/{country_id}" target="_blank">/countries/{country_id}</a></li>
@@ -48,7 +48,7 @@ Explore our API Resources.
       <li><a href="https://api.mercadolibre.com/currency_conversions/search?from=ARS&amp;to=USD" target="_blank">/currency_conversions/search?from={currency_id}&amp;to={currency_id}</a></li>
   </ul>
 
-<strong>Items and Search</strong>
+<strong>Items and Searches</strong>
   <ul class='ch-list parameters'>
     <li><a href="https://api.mercadolibre.com/items/MLA87828458" target="_blank">/items/{item_id}</a></li>
     <li><a href="https://api.mercadolibre.com/pictures/MLA719522498_032011" target="_blank">/pictures/{picture_id}</a></li>
