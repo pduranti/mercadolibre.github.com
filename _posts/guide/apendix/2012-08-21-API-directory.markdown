@@ -19,8 +19,8 @@ Explore our API Resources.
   <ul class='ch-list parameters'>
     <li><a href="https://api.mercadolibre.com/users" target="_blank">/users</a></li>
     <li><a href="https://api.mercadolibre.com/users/user_id/addresses" target="_blank">/users/{user_id}/addresses?access_token={...}</a></li>
-    <li><a href="https://api.mercadolibre.com/users/{user_id}/accepted_payment_methods" target="_blank">/users/{user_id}/accepted_payment_methods?access_token={...}</a></li>
-    <li><a href="https://api.mercadolibre.com/applications" target="_blank">/applications</a></li>
+    <li><a href="https://api.mercadolibre.com/users/{user_id}/accepted_payment_methods" target="_blank">/users/{user_id}/accepted_payment_methods</a></li>
+    <li><a href="https://api.mercadolibre.com/applications/{app_id}" target="_blank">/applications/{app_id}</a></li>
     <li><a href="https://api.mercadolibre.com/scopes" target="_blank">/scopes</a></li>
   </ul>
 
