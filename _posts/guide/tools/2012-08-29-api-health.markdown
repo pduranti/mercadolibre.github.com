@@ -2,6 +2,13 @@
 layout: 2columns
 title: API Health
 menu: developer-tools
+categories: 
+- SDKs 
+- More Tools
+menu: 
+- Tools
+tags: 
+- More Tools
 ---
 <script src="/javascripts/twitter.js">
 </script>
