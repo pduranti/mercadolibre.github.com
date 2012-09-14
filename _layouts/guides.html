@@ -7,12 +7,10 @@
   {% include meta-tags.html %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ page.title }}</title>  
-    
-    <script src="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-jquery.min.js"></script>
-    <script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
+    <title>{{ page.title }}</title>
+
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
-    <link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-mesh.min.css">
+    <link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.11/chico-mesh.min.css">
     <link rel="stylesheet" href="/stylesheets/site.css">
     <link rel="canonical" href="{{ page.url | canonical }}" />
 
@@ -38,15 +36,15 @@
     $(function() {
       $(window).scroll(function() {
         if($(this).scrollTop() != 0) {
-          $('#toTop').fadeIn(); 
+          $('#toTop').fadeIn();
         } else {
           $('#toTop').fadeOut();
         }
       });
-     
+
       $('#toTop').click(function() {
         $('body,html').animate({scrollTop:0},800);
-      }); 
+      });
     });
     </script>
     <script type="text/javascript">
@@ -70,7 +68,7 @@
     </section>
 
     <nav class="ch-g1-5 sidebar">
-     
+
       <div class="menubar">
       <h1>{{ page.menu }}</h1>
       <br />
@@ -88,12 +86,18 @@
           {% endfor %}
         </ul>
           {% endfor %}
-      </div>    
+      </div>
     </nav>
 
     {% include footer.html %}
-
-  <script src="/javascripts/scale.fix.js"></script>
-  <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  <script src="http://static.mlstatic.com/org-img/ch/ui/0.11/chico-jquery.min.js"></script>
+  <script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
+  <script type="text/javascript">
+    <!--
+    var foo = $("#guides-menu").dropdown();
+    -->
+  </script>
+    <script src="/javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
 </body>
 </html>

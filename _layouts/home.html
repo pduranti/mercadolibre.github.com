@@ -10,17 +10,15 @@
 	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 	<title>{{ page.title }}</title>
 
-	<script src="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-jquery.min.js"></script>
-	<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	
+
 	<link rel="stylesheet" href="/stylesheets/pygment_trac.css" />
-	<link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-mesh.min.css" />
+	<link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.11/chico-mesh.min.css" />
 	<link rel="stylesheet" href="/stylesheets/site.css" />
 	<link href="/feed/" rel="alternate" type="application/rss+xml" title="MELI dev feed" />
 
-   
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -47,15 +45,15 @@
 				<p>Create your own application and start playing with our API.</p>
 				<p>Go now</p>
 			</article>
-			
+
 			<article class="ch-g1-4">
 				<h3>Guide</h3>
 				<div class="learn"></div>
 				<p>Check the examples and documentation and start using the API to build amazing apps.</p>
 				<p>View the guides</p>
 			</article>
-			
-			
+
+
 			<article class="ch-g1-4">
 				<h3>Community</h3>
 				<div class="collaborate"></div>
@@ -65,7 +63,15 @@
 		</section>
 	</section>
 
-    {% include footer.html %}
+	{% include footer.html %}
+	<script src="http://static.mlstatic.com/org-img/ch/ui/0.11/chico-jquery.min.js"></script>
+	<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
+	<script type="text/javascript">
+		<!--
+		var foo = $("#guides-menu").dropdown();
+		-->
+	</script>
+
 	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
 </body>
 </html>
