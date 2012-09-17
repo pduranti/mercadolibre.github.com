@@ -9,19 +9,14 @@
          {% if page.menu[0] == 'First Steps' %}
             {% assign current = 'current' %}
          {% endif %}
-          <li class="option">
-            <a class="{{ current }}" href="/first-step">Getting Started</a>
-          </li>
+          <li class="option"><a class="{{ current }}" href="/first-step">Getting Started</a></li>
           {% assign current = nil %}
           {% if page.menu[0] == 'Why Develop With Us' %}
             {% assign current = 'current' %}
           {% endif %}
-          <li class="option">
-            <a class="{{ current }}" href="/core-concepts">Why Develop With Us</a>
-          </li>
+          <li class="option"><a class="{{ current }}" href="/core-concepts">Why Develop With Us</a></li>
 
-          <li class="option">
-            <div id="guides-menu" class="ch-dropdown-skin">
+          <li class="option"><div id="guides-menu" class="ch-dropdown-skin">
             {% assign current = nil %}
             {% if page.layout == 'guides' %}
               {% assign current = 'current' %}
@@ -61,26 +56,19 @@
                 {% endif %}
                 <li><a class="{{ current }}" href="/API-directory">API Directory</a></li>
               </ul>
-            </div>
-          </li>
+            </div></li>
 
          {% assign current = nil %}
          {% if page.menu[0] == 'Tools' %}
             {% assign current = 'current' %}
          {% endif %}
-          <li class="option">
-            <a class="{{ current }}" href="/javascript-sdk">Tools</a>
-          </li>
+          <li class="option"><a class="{{ current }}" href="/javascript-sdk">Tools</a></li>
          {% assign current = nil %}
          {% if page.menu == 'community' %}
             {% assign current = 'current' %}
          {% endif %}
-          <li class="option">
-            <a class="{{ current }}" href="/community">Community</a>
-          </li>
-          <li class="option">
-            <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site" style="width:130px"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
-          </li>
+          <li class="option"><a class="{{ current }}" href="/community">Community</a></li>
+          <li class="option"><form action="/search"><input id="q" type="search" name="q" placeholder="Search this site" style="width:130px"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form></li>
         </ul>
     </nav>
 </header>

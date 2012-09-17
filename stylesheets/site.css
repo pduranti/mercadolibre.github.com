@@ -189,21 +189,28 @@ header.main nav {
 
 header.main nav ul,
 header.main nav form {
-	padding: 0 5px;
+	padding:0;
 }
 
 header.main .option {
-	border-right: 1px solid #ccc;
-	display:inline-block;
-	padding:0 4px;
+	display:inline;
 }
 
-header.main li:last-child {
-	border: none;
-	padding-right: 0;
+header.main .option > a{
+	border-left: 1px solid #ccc;
+	display:inline-block;
+	line-height: 13px;
+	padding:0 0 0 0;
+	margin-left: 0;
+}
+
+header.main .option:first-child a,
+header.main .option:last-child{
+	border-left: none;
 }
 
 header.main nav form {
+	display: inline;
 }
 
 header.main input#query {
@@ -794,18 +801,18 @@ ol.indent.i1 h2 {font-size:21px;}
 ol.indent.i1 h4 {font-size:17px;}
 ol.indent.i1 h5 {font-size:15px;}
 ol.indent.i1 h6 {font-size:13px;}
-ol.indent.i1 h2, 
-ol.indent.i1 h3, 
-ol.indent.i1 h4, 
-ol.indent.i1 h5, 
-ol.indent.i1 h6 
+ol.indent.i1 h2,
+ol.indent.i1 h3,
+ol.indent.i1 h4,
+ol.indent.i1 h5,
+ol.indent.i1 h6
 {margin-bottom:5px;margin-top:17px;font-size:14px;font-weight:bold;margin-left:-12px;}
 ol.indent.i1 h3 {font-size:15px;margin-top:50px;}
-ol.indent.i1 h2:before, 
-ol.indent.i1 h3:before, 
-ol.indent.i1 h4:before, 
-ol.indent.i1 h5:before, 
-ol.indent.i1 h6:before 
+ol.indent.i1 h2:before,
+ol.indent.i1 h3:before,
+ol.indent.i1 h4:before,
+ol.indent.i1 h5:before,
+ol.indent.i1 h6:before
 {content:"";font-size:10px;color:#dddddd;display:inline-block;margin-right:6px;}
 
 ol.indent li{position:relative;margin-bottom:1em;}
@@ -837,7 +844,7 @@ q.single:after{content:"'";}
 .demo-questions iframe{
 	height:300px;
 }
-	
+
 .demo-buy iframe{
 	height:200px;
 }
