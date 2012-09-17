@@ -231,12 +231,23 @@ header.main .option:first-child a
 
 header.main .ch-dropdown-skin > span
 {
+
 	padding-right:18px;
 }
 
 header.main .ch-dropdown-trigger:after
 {
 	right:1px;
+}
+
+header.main .no-js .ch-hide
+{
+	display:block;
+}
+
+.ch-hide
+{
+	display: none;
 }
 
 header.main .ch-dropdown-trigger.ch-dropdown-trigger-on {
@@ -253,8 +264,6 @@ header.main nav form {
 	display:inline-block;
 	height: 18px;
 	line-height: 18px;
-
-
 }
 
 .head-search-input {
@@ -270,9 +279,6 @@ header.main nav form {
 .head-search-input:focus {
 	width: 9em;
 }
-
-
-
 
 .description {
 	position:absolute;
@@ -903,20 +909,20 @@ section.main h2.terms{font-size:16px;}
 .number{font-size:9px;display:inline-block;color:#222;padding:0 5px;margin:3px 5px 0 0;-webkit-border-radius:3px;background:#fff;height:1.6em;line-height:1.6em;vertical-align:top;border-right:solid 1px #666666;border-left:solid 1px #666666;margin-left:-22px;}
 
 #toTop {
-        width:100px;
-            border:1px solid #ccc;
-            background:#f7f7f7;
-            text-align:center;
-            padding:5px;
-            position:fixed; /* this is the magic */
-            bottom:10px; /* together with this to put the div at the bottom*/
-            right:10px;
-            cursor:pointer;
-            display:none;
-            color:#333;
-            font-family:verdana;
-            font-size:11px;
-    }
+width:100px;
+border:1px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:5px;
+position:fixed; /* this is the magic */
+bottom:10px; /* together with this to put the div at the bottom*/
+right:10px;
+cursor:pointer;
+display:none;
+color:#333;
+font-family:verdana;
+font-size:11px;
+}
 
 
 
