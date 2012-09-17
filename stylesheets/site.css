@@ -161,12 +161,12 @@ header.main h1 {
 	height:36px;
 	text-indent:999px;
 	overflow:hidden;
-	margin-top:17px;
+	margin-top:14px;
 }
 
 header.main h1 a {
 	display:block;
-	width: 65px;
+	width: 57px;
 	height: 32px;
 }
 
@@ -176,15 +176,16 @@ html[lang=pt] header.main h1 {
 
 header.main h2 {
 	position:absolute;
-	top:22px;
-	left:70px;
+	top:19px;
+	left:71px;
 	color:#999;
 	margin:0;
 }
 
 
 header.main nav {
-	margin-top: 12px;
+	margin-top: 20px;
+	text-align: right;
 }
 
 header.main nav ul,
@@ -193,53 +194,82 @@ header.main nav form {
 }
 
 header.main .option {
-	display:inline;
+	display: inline;
+	line-height: 18px;
+	text-align: left;
+	vertical-align: top;
+
 }
 
-header.main .option > a{
+.header-attenuated a
+{
+	color:#ccc;
+}
+
+.header-attenuated .current {
+	color:#000;
+}
+
+header.main .option > a,
+header.main .ch-dropdown-skin > span
+{
+	font-family: "Lucida Grande",​Arial,​sans-serif;
 	border-left: 1px solid #ccc;
 	display:inline-block;
-	line-height: 13px;
-	padding:0 0 0 0;
+	line-height: 18px;
+	padding:0 8px 0 13px;
 	margin-left: 0;
+
 }
 
-header.main .option:first-child a,
-header.main .option:last-child{
+
+
+header.main .option:first-child a
+{
 	border-left: none;
 }
 
+header.main .ch-dropdown-skin > span
+{
+	padding-right:18px;
+}
+
+header.main .ch-dropdown-trigger:after
+{
+	right:1px;
+}
+
+header.main .ch-dropdown-trigger.ch-dropdown-trigger-on {
+	border-color: #CCCCCC;
+	border-right-color: #fff;
+	border-radius: 0;
+	border-width: none;
+	box-shadow: 0 0 0 rgba(100, 100, 100, 0.1);
+}
+
+
 header.main nav form {
-	display: inline;
+	border-left: 1px solid #ccc;
+	display:inline-block;
+	height: 18px;
+	line-height: 18px;
+
+
 }
 
-header.main input#query {
-	border: 1px solid #CCCCCC;
-	margin: 0;
-	padding: 5px;
-	width: 35%;
+.head-search-input {
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: -4px 9px 0 13px;
+	width: 5em;
 }
 
-header.main input#search {
-	background: #FFF url('../images/see.png') no-repeat center center;
-	border: 1px solid #CCCCCC;
-	-o-border-radius: 0 3px 3px 0;
-	-ms-border-radius: 0 3px 3px 0;
-	-moz-border-radius: 0 3px 3px 0;
-	-webkit-border-radius: 0 3px 3px 0;
-	border-radius: 0 3px 3px 0;
-	height: 22px;
-	left: -1px;
-	position: relative;
-	text-indent: 25px;
-	/*top: 2px;*/
-	width: 26px;
+.head-search-input:focus {
+	width: 9em;
 }
-
-
-
-
-
 
 
 
@@ -487,10 +517,9 @@ footer .maintained-by{
 .menubar {
 	background:#f9f9f9 url('../../src/images/noise.gif') 0 0 repeat;
 	border:1px solid #efefef;
-	display:inline-block;
 	position:relative;
 	padding:20px 35px 20px 20px;
-	margin-top:20px;
+	margin:20px 0 0 10px;
 }
 
 .menubar h5 {
@@ -872,4 +901,4 @@ section.main h2.terms{font-size:16px;}
 */
 .number{font-size:9px;display:inline-block;color:#fefefe;padding:0 5px;margin:3px 5px 0 0;-webkit-border-radius:3px;background:#444444;height:1.6em;line-height:1.6em;vertical-align:top;}
 .number{font-size:9px;display:inline-block;color:#222;padding:0 5px;margin:3px 5px 0 0;-webkit-border-radius:3px;background:#fff;height:1.6em;line-height:1.6em;vertical-align:top;border-right:solid 1px #666666;border-left:solid 1px #666666;margin-left:-22px;}
-.current {font-weight: bold;}
+
