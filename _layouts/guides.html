@@ -5,63 +5,11 @@
 <!--[if (gt IE 8)|!(IE)]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
   {% include meta-tags.html %}
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ page.title }}</title>  
-    
-    <script src="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-jquery.min.js"></script>
-    <script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
-    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
-    <link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-mesh.min.css">
-    <link rel="stylesheet" href="/stylesheets/site.css">
-    <link rel="canonical" href="{{ page.url | canonical }}" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <style>
-    #toTop {
-        width:100px;
-            border:1px solid #ccc;
-            background:#f7f7f7;
-            text-align:center;
-            padding:5px;
-            position:fixed; /* this is the magic */
-            bottom:10px; /* together with this to put the div at the bottom*/
-            right:10px;
-            cursor:pointer;
-            display:none;
-            color:#333;
-            font-family:verdana;
-            font-size:11px;
-    }
-    </style>
-    <script>
-    $(function() {
-      $(window).scroll(function() {
-        if($(this).scrollTop() != 0) {
-          $('#toTop').fadeIn(); 
-        } else {
-          $('#toTop').fadeOut();
-        }
-      });
-     
-      $('#toTop').click(function() {
-        $('body,html').animate({scrollTop:0},800);
-      }); 
-    });
-    </script>
-    <script type="text/javascript">
-      function goToByScroll(id){
-          $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
-      }
-    </script>
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
+  <title>{{ page.title }}</title>
+  {% include link-tags.html %}
+  {% include script-tags-head.html %}
+</head>
   <body>
-    <div id="toTop">^ Back to Top</div>
-
-
     {% include header.html %}
 
     <section class="main ch-g4-5">
@@ -70,30 +18,9 @@
     </section>
 
     <nav class="ch-g1-5 sidebar">
-     
-      <div class="menubar">
-      <h1>{{ page.menu }}</h1>
-      <br />
-
-      {% for category in page.categories %}
-      <h2>{{ category }}</h2>
-
-        <ul>
-          {% for post in site.tags.[category] reversed %}
-            {% assign current = nil %}
-            {% if post.id == page.id %}
-              {% assign current = 'current' %}
-            {% endif %}
-            <li><a class="{{ current }}" href="{{ post.url }}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
-          {% endfor %}
-      </div>    
+      {% include sidebar.html %}
     </nav>
 
     {% include footer.html %}
-
-  <script src="/javascripts/scale.fix.js"></script>
-  <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
 </body>
 </html>

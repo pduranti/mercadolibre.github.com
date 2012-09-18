@@ -40,7 +40,8 @@ section.main h2 {
 
 section.main h3 {
 	font-size:18px;
-	margin:35px 0 10px;
+	margin:0 0 26px;
+	line-height: 1.5em;
 }
 
 section.main h4 {
@@ -121,6 +122,10 @@ code {
 	border-radius: 3px;
 }
 
+pre code{
+	border: none;
+}
+
 .javascript {
    border: none;
 
@@ -161,12 +166,12 @@ header.main h1 {
 	height:36px;
 	text-indent:999px;
 	overflow:hidden;
-	margin-top:17px;
+	margin-top:14px;
 }
 
 header.main h1 a {
 	display:block;
-	width: 65px;
+	width: 57px;
 	height: 32px;
 }
 
@@ -176,66 +181,109 @@ html[lang=pt] header.main h1 {
 
 header.main h2 {
 	position:absolute;
-	top:22px;
-	left:70px;
+	top:19px;
+	left:71px;
 	color:#999;
 	margin:0;
 }
 
 
 header.main nav {
-	margin-top: 12px;
+	margin-top: 20px;
+	text-align: right;
 }
 
 header.main nav ul,
 header.main nav form {
-	padding: 0 5px;
+	padding:0;
 }
 
 header.main .option {
-	border-right: 1px solid #ccc;
-	display:inline-block;
-	padding:0 4px;
+	display: inline;
+	line-height: 18px;
+	text-align: left;
+	vertical-align: top;
+
 }
 
-header.main li:last-child {
-	border: none;
-	padding-right: 0;
+.header-attenuated a
+{
+	color:#ccc;
 }
+
+.header-attenuated .current {
+	color:#000;
+}
+
+header.main .option > a,
+header.main .ch-dropdown-skin > span
+{
+	font-family: "Lucida Grande",​Arial,​sans-serif;
+	border-left: 1px solid #ccc;
+	display:inline-block;
+	line-height: 18px;
+	padding:0 8px 0 13px;
+	margin-left: 0;
+
+}
+
+
+
+header.main .option:first-child a
+{
+	border-left: none;
+}
+
+header.main .ch-dropdown-skin > span
+{
+
+	padding-right:18px;
+}
+
+header.main .ch-dropdown-trigger:after
+{
+	right:1px;
+}
+
+header.main .no-js .ch-hide
+{
+	display:block;
+}
+
+.ch-hide
+{
+	display: none;
+}
+
+header.main .ch-dropdown-trigger.ch-dropdown-trigger-on {
+	border-color: #CCCCCC;
+	border-right-color: #fff;
+	border-radius: 0;
+	border-width: none;
+	box-shadow: 0 0 0 rgba(100, 100, 100, 0.1);
+}
+
 
 header.main nav form {
+	border-left: 1px solid #ccc;
+	display:inline-block;
+	height: 18px;
+	line-height: 18px;
 }
 
-header.main input#query {
-	border: 1px solid #CCCCCC;
-	margin: 0;
-	padding: 5px;
-	width: 35%;
+.head-search-input {
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: -4px 9px 0 13px;
+	width: 5em;
 }
 
-header.main input#search {
-	background: #FFF url('../images/see.png') no-repeat center center;
-	border: 1px solid #CCCCCC;
-	-o-border-radius: 0 3px 3px 0;
-	-ms-border-radius: 0 3px 3px 0;
-	-moz-border-radius: 0 3px 3px 0;
-	-webkit-border-radius: 0 3px 3px 0;
-	border-radius: 0 3px 3px 0;
-	height: 22px;
-	left: -1px;
-	position: relative;
-	text-indent: 25px;
-	/*top: 2px;*/
-	width: 26px;
+.head-search-input:focus {
+	width: 9em;
 }
-
-
-
-
-
-
-
-
 
 .description {
 	position:absolute;
@@ -289,6 +337,7 @@ section.main .description h2 {
 
 section.main .do-it h3 {
 	margin-top: 0;
+	margin-bottom: 10px;
 	font-size: 20px;
 	line-height: 1.1em;
 }
@@ -374,21 +423,34 @@ footer {
 	padding: 10px 0;
 }
 
-footer .extras > ul > li {
-	border-right: 1px solid #CCCCCC;
+.extra > li
+{
 	display: inline;
+}
+
+.extra > li
+{
+	display: inline-block;
+	border-left: 1px solid #EFEFEF;
 	padding: 0 10px;
 }
 
-footer .extras li:last-child {
-	border:none;
+.extra > li:first-child
+{
+	border-left: none;
 }
 
-footer .language.secondary.ch-dropdown{
-	padding:0;
+.extra-copyright,
+.extra-termns
+{
+	float: left;
 }
-footer .secondary .ch-dropdown-trigger {
-	font-size: 11px;
+
+.extra-report-issue,
+.extra-twitter
+{
+	float: right;
+	text-align: right;
 }
 
 footer .social {
@@ -403,6 +465,17 @@ footer .maintained-by{
 
 .sidebar{
 	margin-top: 34px;
+}
+
+
+.sidebar h1{
+	font-size: 16px;
+}
+
+
+.sidebar h2{
+	font-size: 13px;
+
 }
 
 .sidebar h2:first-child{
@@ -465,10 +538,15 @@ footer .maintained-by{
 
 .contents {
 	border:1px solid #efefef;
-	display:inline-block;
+	display:block;
 	position:relative;
 	padding:20px 35px 20px 20px;
 	margin-top:20px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
 }
 
 .contents h5 {
@@ -478,12 +556,16 @@ footer .maintained-by{
 }
 
 .menubar {
-	background:#f9f9f9 url('../../src/images/noise.gif') 0 0 repeat;
+	background:#f9f9f9 url("../images/noise.gif") repeat scroll 0 0;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
 	border:1px solid #efefef;
-	display:inline-block;
 	position:relative;
 	padding:20px 35px 20px 20px;
-	margin-top:20px;
+	margin:20px 0 0 10px;
 }
 
 .menubar h5 {
@@ -794,18 +876,18 @@ ol.indent.i1 h2 {font-size:21px;}
 ol.indent.i1 h4 {font-size:17px;}
 ol.indent.i1 h5 {font-size:15px;}
 ol.indent.i1 h6 {font-size:13px;}
-ol.indent.i1 h2, 
-ol.indent.i1 h3, 
-ol.indent.i1 h4, 
-ol.indent.i1 h5, 
-ol.indent.i1 h6 
+ol.indent.i1 h2,
+ol.indent.i1 h3,
+ol.indent.i1 h4,
+ol.indent.i1 h5,
+ol.indent.i1 h6
 {margin-bottom:5px;margin-top:17px;font-size:14px;font-weight:bold;margin-left:-12px;}
 ol.indent.i1 h3 {font-size:15px;margin-top:50px;}
-ol.indent.i1 h2:before, 
-ol.indent.i1 h3:before, 
-ol.indent.i1 h4:before, 
-ol.indent.i1 h5:before, 
-ol.indent.i1 h6:before 
+ol.indent.i1 h2:before,
+ol.indent.i1 h3:before,
+ol.indent.i1 h4:before,
+ol.indent.i1 h5:before,
+ol.indent.i1 h6:before
 {content:"";font-size:10px;color:#dddddd;display:inline-block;margin-right:6px;}
 
 ol.indent li{position:relative;margin-bottom:1em;}
@@ -837,7 +919,7 @@ q.single:after{content:"'";}
 .demo-questions iframe{
 	height:300px;
 }
-	
+
 .demo-buy iframe{
 	height:200px;
 }
@@ -865,4 +947,28 @@ section.main h2.terms{font-size:16px;}
 */
 .number{font-size:9px;display:inline-block;color:#fefefe;padding:0 5px;margin:3px 5px 0 0;-webkit-border-radius:3px;background:#444444;height:1.6em;line-height:1.6em;vertical-align:top;}
 .number{font-size:9px;display:inline-block;color:#222;padding:0 5px;margin:3px 5px 0 0;-webkit-border-radius:3px;background:#fff;height:1.6em;line-height:1.6em;vertical-align:top;border-right:solid 1px #666666;border-left:solid 1px #666666;margin-left:-22px;}
-.current {font-weight: bold;}
+
+#toTop {
+width:100px;
+border:1px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:5px;
+position:fixed; /* this is the magic */
+bottom:20px; /* together with this to put the div at the bottom*/
+right:10px;
+cursor:pointer;
+display:none;
+color:#333;
+font-family:verdana;
+font-size:11px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+
+
+

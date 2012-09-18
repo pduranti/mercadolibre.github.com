@@ -4,36 +4,19 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
 <!--[if (gt IE 8)|!(IE)]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	{% include meta-tags.html %}
 	<title>{{ page.title }}</title>
-
-	<script src="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-jquery.min.js"></script>
-	<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
-	<link rel="stylesheet" href="/stylesheets/pygment_trac.css" />
-	<link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-mesh.min.css" />
-	<link rel="stylesheet" href="/stylesheets/site.css" />
-	<link rel="canonical" href="{{ page.url | canonical }}" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
+	{% include link-tags.html %}
+	{% include script-tags-head.html %}
+ </head>
   <body>
-    
+
      {% include header.html %}
-    
+
 	<section class="main ch-g1">
 		{{ content }}
 	</section>
-	
-    {% include footer.html %}
-	
-	<script src="javascripts/scale.fix.js"></script>
 
-	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    {% include footer.html %}
 </body>
 </html>

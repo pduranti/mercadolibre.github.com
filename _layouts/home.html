@@ -3,28 +3,12 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
 <!--[if (gt IE 8)|!(IE)]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-  <head>
+<head>
 	{% include meta-tags.html %}
-
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 	<title>{{ page.title }}</title>
-
-	<script src="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-jquery.min.js"></script>
-	<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	
-	<link rel="stylesheet" href="/stylesheets/pygment_trac.css" />
-	<link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-mesh.min.css" />
-	<link rel="stylesheet" href="/stylesheets/site.css" />
-	<link href="/feed/" rel="alternate" type="application/rss+xml" title="MELI dev feed" />
-
-   
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
+	{% include link-tags.html %}
+	{% include script-tags-head.html %}
+</head>
 
     {% include header.html %}
 
@@ -32,40 +16,40 @@
 		<section class="description ch-g1">
 			<article>
 				<h2>Our API. Your ideas.</h2>
-				<h3>Start building amazing Apps.<br>
-				We've got 70 million users waiting just for you.</h3>
-				<br>
-				<a href="/first-step" class="ch-btn">Take your first steps</a>
+				<h3>
+					Start building amazing Apps.<br>
+					We've got 70 million users waiting just for you.
+				</h3>
+				<a href="/first-step" class="ch-btn ch-btn-big">Take your first steps</a>
 				<figure><img src="images/puzzle.png" alt="Puzzle logo" width="351" height="239" /></figure>
 			</article>
 		</section>
 
 		<section class="do-it ch-g1 home-content">
-		        <article class="ch-g1-4">
-				<h3>Create your Applicatio</h3>
+			<article class="ch-g1-3">
+				<h3>Create your Application</h3>
 				<div class="create"></div>
 				<p>Create your own application and start playing with our API.</p>
-				<p>Go now</p>
+				<!--p>Go now</p-->
 			</article>
-			
-			<article class="ch-g1-4">
+
+			<article class="ch-g1-3">
 				<h3>Guide</h3>
 				<div class="learn"></div>
 				<p>Check the examples and documentation and start using the API to build amazing apps.</p>
-				<p>View the guides</p>
+				<!--p>View the guides</p-->
 			</article>
-			
-			
-			<article class="ch-g1-4">
+
+
+			<article class="ch-g1-3">
 				<h3>Community</h3>
 				<div class="collaborate"></div>
 				<p>Get involved with the developer's community network.</p>
-				<p>Go now</p>
+				<!--p>Go now</p-->
 			</article>
 		</section>
 	</section>
 
-    {% include footer.html %}
-	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+	{% include footer.html %}
 </body>
 </html>

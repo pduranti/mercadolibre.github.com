@@ -4,92 +4,24 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
 <!--[if (gt IE 8)|!(IE)]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	{% include meta-tags.html %}
 	<title>{{ page.title }}</title>
-
-	<script src="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-jquery.min.js"></script>
-	<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
-	<link rel="stylesheet" href="/stylesheets/pygment_trac.css" />
-	<link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-mesh.min.css" />
-	<link rel="stylesheet" href="/stylesheets/site.css" />
-	<link rel="canonical" href="{{ page.url | canonical }}" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
+	{% include link-tags.html %}
+	{% include script-tags-head.html %}
+</head>
   <body>
     {% include header.html %}
 
-    	
+
 	<section class="main ch-g1">
-		<h1 id="title">Resuls for: </h1>		
+		<h1 id="title">Resuls for: </h1>
 		<div id="cse" style="width:100%;">
 		    <div class="ch-loading"></div>
 		</div>
 		{{ content }}
 	</section>
-	
-	<footer class="ch-g1">
-  	<div class="ch-g2-3 extras">
-		  <ul>
-			 <li>©2012 MercadoLibre</li>
-		  </ul>
-		</div>
-      <p class="ch-g1-3 maintained-by"><img src="/images/github.png" alt="Github">Report an issue on <a href="https://github.com/mercadolibre/API/issues" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;<a href="http://www.twitter.com/MercadoLibre" target="_blank"><img src="/images/twitter.png" alt="Twitter">Follow us!!</a></p>
-	</footer>
-	
-	<script src="javascripts/scale.fix.js"></script>
-	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
-	<script src="http://www.google.com/jsapi"></script>
-	<script>
-		function parseQueryFromUrl() {
-			var queryParamName = 'q';
-			var search = window.location.search.substr(1);
-			var parts = search.split('&');
-			for ( var i = 0; i < parts.length; i++) {
-				var keyvaluepair = parts[i].split('=');
-				if (decodeURIComponent(keyvaluepair[0]) == queryParamName) {
-					return decodeURIComponent(keyvaluepair[1].split('+').join(' '));
-				}
-			}
-			return '';
-		}
-		google.load('search', '1', {
-			language : 'en'
-		});
-		google
-				.setOnLoadCallback(
-						function() {
-							var customSearchOptions = {};
-							var customSearchControl = new google.search.CustomSearchControl(
-									'017586013854347464845:atz5lcehloe',
-									customSearchOptions);
-							customSearchControl
-									.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
 
-							var options = new google.search.DrawOptions();
-							options.setAutoComplete(true);
-							options.enableSearchResultsOnly();
-							
-							customSearchControl.draw('cse', options);
-							var queryFromUrl = parseQueryFromUrl();
-							if (queryFromUrl) {
-								$('#title').html('Results for: ' + queryFromUrl);
-
-								$('#q').val(queryFromUrl);
-								
-								customSearchControl.execute(queryFromUrl);
-							}
-						}, true);
-	</script>
-
-</head>
-<body>
+	{% include footer.html %}
 
 </body>
 </html>
