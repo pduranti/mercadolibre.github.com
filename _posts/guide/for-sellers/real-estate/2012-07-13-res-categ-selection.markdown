@@ -1,14 +1,20 @@
 ---
-layout: 2columns
-title: Real estate listing
-categories: Documentation
-tags: Lost
+layout: guides
+title: Operation and property type selection
+categories: 
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Real Estate
 ---
 
-#List Real Estate properties
 
-Operation and property type selection	{#categselection}
----------------------------------------
 To list a real estate property, you will have to choose the operation and property type for the propety. **This in MELI is known as "category_id"**. First, determine the "SITE_ID" that corresponds to the country your user belongs to. To accomplish this go to the following URL:
 
 <a href="https://api.mercadolibre.com/sites" target="_blank">https://api.mercadolibre.com/sites</a>

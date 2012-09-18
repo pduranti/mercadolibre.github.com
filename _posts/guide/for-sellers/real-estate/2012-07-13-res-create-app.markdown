@@ -1,14 +1,18 @@
 ---
-layout: 2columns
-title: Real estate listing
-categories: Documentation
-tags: Lost
+layout: guides
+title: Create your MELI APP 
+categories: 
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Real Estate
 ---
-
-#List Real Estate properties
-
-Create your MELI APP 	{#createapp} 
-----------------------------
 
 Before creating your MELI APP you will need to [have a MELI signed up user](/res-signup-user).
 

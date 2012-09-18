@@ -1,14 +1,19 @@
 ---
-layout: 2columns
-title: Real estate listing
-categories: Documentation
-tags: Lost
+layout: guides
+title: Real Estate JSON full specification 
+categories: 
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Real Estate
 ---
 
-#List Real Estate properties
-
-Real Estate JSON full specification 	{#jsonfullspecs}
------------------------------------
 A real estate property JSON is composed by the following information (an example is provided below the table):
 
 Field				  |	Description

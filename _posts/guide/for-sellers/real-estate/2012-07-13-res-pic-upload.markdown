@@ -1,14 +1,20 @@
 ---
-layout: 2columns
-title: Real estate listing
-categories: Documentation
-tags: Lost
+layout: guides
+title: Pictures upload
+categories: 
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Real Estate
 ---
 
-#List Real Estate properties
 
-Pictures upload	{#picupload}
-------------
 Pictures are optional when listing, but they make a big difference in the publication quality and results (visits and contacts), specially when talking about real estate properties. *<u>If you already have your pictures uploadad to an accesible web URL, you can then skip this picture uploading step</u> and send these URLs directly as seen in the [JSON example](/new-real-estate-list-item). However, if your pictures are stored locally, you will then have to upload them to our Pictures API, by sending a POST request to the following URL:
 <pre class="terminal">
  https://api.mercadolibre.com/pictures?access_token=YOUR_ACCESS_TOKEN 

@@ -3,6 +3,7 @@ layout: guides
 title: Adding attributes
 categories: 
 - Listing
+- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions

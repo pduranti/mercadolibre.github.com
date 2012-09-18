@@ -3,6 +3,7 @@ layout: guides
 title: Search my own items
 categories: 
 - Listing
+- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions

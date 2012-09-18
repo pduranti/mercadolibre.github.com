@@ -3,6 +3,7 @@ layout: guides
 title: Managing questions blacklist
 categories: 
 - Listing
+- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions

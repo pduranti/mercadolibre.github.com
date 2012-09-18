@@ -83,7 +83,7 @@ Using our [SDKs](/javascript-sdk) you'll be able to retrieve your own user profi
 Initialize the API with your client_id as follows:
 
 {% highlight javascript %}
-MELI.init({client_id: 10115});
+MELI.init({client_id: 6092});
 {% endhighlight %}
 				
 
@@ -105,7 +105,7 @@ require '../src/meli.php';
 
 // Create our Application instance (replace this with your appId and secret).
 $meli = new Meli(array(
-    'appId'         => 10115,
+    'appId'         => 6092,
     'secret'        => 54dfgdgwgw8gfAdgDJDIULkdjhgp87,
 ));
 			{% endhighlight %}
@@ -113,7 +113,7 @@ $meli = new Meli(array(
 		<div id="java">
 			{% highlight java %}
 
-Meli m = new Meli(10115, "9ykscjsghdPBNQ2SrLqdapp5HbSasswd");
+Meli m = new Meli(6092, "9ykscjsghdPBNQ2SrLqdapp5HbSasswd");
 
 m.authorize("the received code", "http://somecallbackurl");
 
@@ -134,7 +134,7 @@ Response response = m.get("/users/me", params);
 ## Give it a try with your App! {#try}
 
 <p>
-  Enter the application ID you just created: <input id="target" type="text" value="10115" size="6" /> &nbsp;
+  Enter the application ID you just created: <input id="target" type="text" value="6092" size="6" /> &nbsp;
   <input class="ch-btn ch-btn-small" type="button" id="show-my-info" value="Show my information"/>
 </p>
 

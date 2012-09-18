@@ -1,14 +1,20 @@
 ---
-layout: 2columns
-title: Real estate listing
-categories: Documentation
-tags: Lost
+layout: guides
+title: Authenticate
+categories: 
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Real Estate
 ---
 
-#List Real Estate properties
 
-Authenticate	{#authenticate}
-------------
 MELI API works with the <a href="http://en.wikipedia.org/wiki/Oauth" target="_blank">OAuth authentication protocol</a>.
 
 There are certain actions that require you to identify as a MELI user (ie: listing a real estate property). To successfully accomplish this actions, you must get an access token that will allow you to identify your MELI user when interacting with the API, for a determined amount of time (after which you will have to get a new access token).

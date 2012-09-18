@@ -3,6 +3,7 @@ layout: guides
 title: Answer a Question
 categories: 
 - Listing
+- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions

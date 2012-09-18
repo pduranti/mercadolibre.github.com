@@ -3,6 +3,7 @@ layout: guides
 title: Adding description
 categories: 
 - Listing
+- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions

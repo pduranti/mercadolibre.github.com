@@ -1,14 +1,19 @@
 ---
-layout: 2columns
-title: Real estate listing
-categories: Documentation
-tags: Lost
+layout: guides
+title: How to sign up a MELI user
+categories: 
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Real Estate
 ---
 
-#List Real Estate properties
-
-How to sign up a MELI user {#signUp} 
----------------------------
 
 To accomplish this go to the following URL:
 

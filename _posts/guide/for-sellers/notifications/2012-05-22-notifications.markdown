@@ -3,6 +3,7 @@ layout: guides
 title: Listening to Notifications
 categories: 
 - Listing
+- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions

@@ -3,6 +3,7 @@ layout: guides
 title: Update an item
 categories: 
 - Listing
+- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions

@@ -1,14 +1,19 @@
 ---
-layout: 2columns
-title: Real estate listing
-categories: Documentation
-tags: Lost
+layout: guides
+title: Validate your Real Estate JSON
+categories: 
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Real Estate
 ---
 
-#List Real Estate properties
-
-Validate your Real Estate JSON {#validate}
-------------------------------
 
 If you want you can validate your JSON before actually listing it by sending it in a POST request body to the following URL:
 

@@ -1,14 +1,18 @@
 ---
-layout: 2columns
-title: Real estate listing
-categories: Documentation
-tags: Lost
+layout: guides
+title: Modify, pause or finalize your property publication
+categories: 
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Real Estate
 ---
-
-#List Real Estate properties
-
-Modify, pause or finalize your property publication {#modify}
----------------------------------------------------
 
 You can use our Items API to visualize the details of a property, by accessing the following URL (by browser or by sending a GET request):
 

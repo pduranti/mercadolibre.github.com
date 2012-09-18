@@ -1,14 +1,19 @@
 ---
-layout: 2columns
-title: Real estate listing
-categories: Documentation
-tags: Lost
+layout: guides
+title: Location selection
+categories: 
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Real Estate
 ---
 
-#List Real Estate properties
-
-Location selection	{#locationselection} 
-------------------
 To list a real estate property, you will have to determine the property location, which includes state, city and in most cases neighborhood as well. To accomplish this access the following URL:
 
 <a href="https://api.mercadolibre.com/classified_locations/countries" target="_blank">https://api.mercadolibre.com/classified_locations/countries</a>

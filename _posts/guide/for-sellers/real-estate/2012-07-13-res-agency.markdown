@@ -1,14 +1,22 @@
 ---
-layout: 2columns
-title: Real estate listing
-categories: Documentation
-tags: Lost
+layout: guides
+title: List Real Estate properties
+categories: 
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
+menu: 
+- Sellers &amp; Integrators
+tags: 
+- Real Estate
 ---
 
-#List Real Estate properties
 
 Identify as a Real Estate Agency 	{#identifyasagency} 
-------------------------------------------------
+
 
 If you are a real estate agency, you can identify your user as such to gain access to our promotional real estate packs. To accomplish this access the Help section, as shown on figure 4.
 
