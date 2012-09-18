@@ -21,25 +21,7 @@
     </section>
 
     <nav class="ch-g1-5 sidebar">
-
-      <div class="menubar">
-      <h1>{{ page.menu }}</h1>
-      <br />
-
-      {% for category in page.categories %}
-      <h2>{{ category }}</h2>
-
-        <ul>
-          {% for post in site.tags.[category] reversed %}
-            {% assign current = nil %}
-            {% if post.id == page.id %}
-              {% assign current = 'current' %}
-            {% endif %}
-            <li><a class="{{ current }}" href="{{ post.url }}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
-          {% endfor %}
-      </div>
+      {% include sidebar.html %}
     </nav>
 
     {% include footer.html %}

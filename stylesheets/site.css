@@ -122,6 +122,10 @@ code {
 	border-radius: 3px;
 }
 
+pre code{
+	border: none;
+}
+
 .javascript {
    border: none;
 
@@ -461,6 +465,17 @@ footer .maintained-by{
 
 .sidebar{
 	margin-top: 34px;
+}
+
+
+.sidebar h1{
+	font-size: 16px;
+}
+
+
+.sidebar h2{
+	font-size: 13px;
+
 }
 
 .sidebar h2:first-child{
