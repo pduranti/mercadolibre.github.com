@@ -40,7 +40,8 @@ section.main h2 {
 
 section.main h3 {
 	font-size:18px;
-	margin:35px 0 10px;
+	margin:0 0 26px;
+	line-height: 1.5em;
 }
 
 section.main h4 {
@@ -332,6 +333,7 @@ section.main .description h2 {
 
 section.main .do-it h3 {
 	margin-top: 0;
+	margin-bottom: 10px;
 	font-size: 20px;
 	line-height: 1.1em;
 }
@@ -417,21 +419,34 @@ footer {
 	padding: 10px 0;
 }
 
-footer .extras > ul > li {
-	border-right: 1px solid #CCCCCC;
+.extra > li
+{
 	display: inline;
+}
+
+.extra > li
+{
+	display: inline-block;
+	border-left: 1px solid #EFEFEF;
 	padding: 0 10px;
 }
 
-footer .extras li:last-child {
-	border:none;
+.extra > li:first-child
+{
+	border-left: none;
 }
 
-footer .language.secondary.ch-dropdown{
-	padding:0;
+.extra-copyright,
+.extra-termns
+{
+	float: left;
 }
-footer .secondary .ch-dropdown-trigger {
-	font-size: 11px;
+
+.extra-report-issue,
+.extra-twitter
+{
+	float: right;
+	text-align: right;
 }
 
 footer .social {
@@ -521,7 +536,12 @@ footer .maintained-by{
 }
 
 .menubar {
-	background:#f9f9f9 url('../../src/images/noise.gif') 0 0 repeat;
+	background:#f9f9f9 url("../images/noise.gif") repeat scroll 0 0;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
 	border:1px solid #efefef;
 	position:relative;
 	padding:20px 35px 20px 20px;
@@ -915,13 +935,18 @@ background:#f7f7f7;
 text-align:center;
 padding:5px;
 position:fixed; /* this is the magic */
-bottom:10px; /* together with this to put the div at the bottom*/
+bottom:20px; /* together with this to put the div at the bottom*/
 right:10px;
 cursor:pointer;
 display:none;
 color:#333;
 font-family:verdana;
 font-size:11px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
 }
 
 
