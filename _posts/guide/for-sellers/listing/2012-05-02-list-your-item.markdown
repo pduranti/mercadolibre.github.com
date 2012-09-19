@@ -101,7 +101,7 @@ Also you have details about this attribute in MercadoLibre as you can see the [v
 
 ### Condition {#listing-condition-attribute}
 
-When publish an item in MercadoLibre site you need to declare if the item is <strong>new</strong> or <strong>used</strong>. This attribute is mandatory to complete a list operation.
+When publish an item you need to declare if the condition is <strong>new</strong>, <strong>used</strong> or <strong>not_specified</strong>. . This attribute is mandatory to complete a list operation.
 
 ### Available quantity {#listing-available-quantity-attribute}
 
@@ -110,7 +110,7 @@ It defines the amount of items availables to be sold. The highest value is defin
 
 ### Pictures {#listing-picture-attribute}
 
-Pictures are not mandatory but we strongly recommend to use them in listing an item. Pictures can make an item more appealing, and give buyers a better idea of the item's appearance. Basically you should add an array of, at the most, six URL pictures. 
+Good pictures can make an item more appealing, and give buyers a better idea of the item's appearance. Basically you should add an array of up to six URL pictures. 
 
 {% highlight javascript %} 
 {
@@ -124,7 +124,8 @@ Pictures are not mandatory but we strongly recommend to use them in listing an i
 }
 {% endhighlight %}
 
-Also you can upload your picture en MELI. For more details about how to update a picture visit [add pictures item](/add-pictures-item) section.
+You can also add or change [pictures to your item](/add-pictures-item) later on.
+
 
 ### Category {#listing-category-attribute}
 
