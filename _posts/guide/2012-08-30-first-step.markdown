@@ -1,6 +1,7 @@
 ---
 layout: firststep
 title: Getting Started
+special_command: onload="startDrawing();"
 menu: 
 - First Steps
 ---
@@ -21,7 +22,6 @@ Some Resources are public and others have private information. To access to publ
 But if you need to access to private Rersources you will need an access token:
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/users/me?access_token=...</pre>
-
 
 
 ## Create your own Application {#register}
@@ -126,10 +126,6 @@ Response response = m.get("/users/me", params);
 	</div>
 </div>
 
-<script type="text/javascript">
-	$("#code").tabNavigator();
-</script>
-
 
 ## Give it a try with your App! {#try}
 
@@ -160,10 +156,13 @@ Response response = m.get("/users/me", params);
 </div>
 
 <script>
-    $(document).ready(function() {
 
+  window.onload = function() { startDrawing(); }
+  
+  function startDrawing(){
       $("#try-by-yourself").tabNavigator();
-    
+      $("#code").tabNavigator();
+      
       $('#show-my-info').click(function() {
 
           var ID = parseInt($('#target').val());
@@ -205,7 +204,8 @@ Response response = m.get("/users/me", params);
 
           });
         });
-     });
+
+  }
 </script>
 
 
