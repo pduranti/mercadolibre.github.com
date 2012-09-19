@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Category API
+title: Category selection
 categories: 
 - Listing
 - Real Estate

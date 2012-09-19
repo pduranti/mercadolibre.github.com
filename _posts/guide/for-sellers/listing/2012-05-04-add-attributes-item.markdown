@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Adding attributes
+title: Attributes selection
 categories: 
 - Listing
 - Real Estate
