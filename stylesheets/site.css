@@ -208,12 +208,15 @@ header.main .option {
 
 .header-attenuated a
 {
-	color:#ccc;
+	color:#999999;
 }
 
 .header-attenuated .current {
 	color:#000;
 }
+
+header.main .option .current,
+header.main .ch-dropdown-skin .current {color: #333;}
 
 header.main .option > a,
 header.main .ch-dropdown-skin > span
@@ -278,11 +281,11 @@ header.main nav form {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	margin: -4px 9px 0 13px;
-	width: 5em;
+	width: 9em;
 }
 
 .head-search-input:focus {
-	width: 9em;
+	width: 11em;
 }
 
 .description {
@@ -568,6 +571,9 @@ footer .maintained-by{
 	margin:20px 0 0 10px;
 }
 
+.menubar h1 {
+	margin-top: 0;
+}
 .menubar h5 {
 	font-size:14px;
 	font-weight:bold;
@@ -947,7 +953,7 @@ section.main h2.terms{font-size:16px;}
 */
 .number{font-size:9px;display:inline-block;color:#fefefe;padding:0 5px;margin:3px 5px 0 0;-webkit-border-radius:3px;background:#444444;height:1.6em;line-height:1.6em;vertical-align:top;}
 .number{font-size:9px;display:inline-block;color:#222;padding:0 5px;margin:3px 5px 0 0;-webkit-border-radius:3px;background:#fff;height:1.6em;line-height:1.6em;vertical-align:top;border-right:solid 1px #666666;border-left:solid 1px #666666;margin-left:-22px;}
-.current {font-weight: bold;}
+
 
 #toTop {
 width:100px;
