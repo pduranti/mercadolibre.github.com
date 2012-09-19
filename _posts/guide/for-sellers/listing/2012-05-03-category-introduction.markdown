@@ -16,25 +16,92 @@ tags:
 
 ## Overview {#overview}
 
-On MercadoLibre site, categories are a hierarchical set of groups in which items of a similar nature are listed. Categories help buyers find the kinds of items they want, as the buyer only needs to look in one category or a few categories to find items they are interested in. Sellers benefit from the use of categories by the increased likelihood of a sale due to better and faster access to items by prospective buyers.
+Categories are a hierarchical set of groups in which items of a similar nature are listed. Called "Category Tree".
+Categories help buyers find the kinds of items they want, as the buyer only needs to look in one category or a few categories to find items they are interested in. 
+Sellers benefit from the use of categories by the increased likelihood of a sale due to better and faster access to items by prospective buyers.
 
-In each MercadoLibre site has its own set of category. It means, Argentina's MercadoLibre site has different categories than Brazil's MercadoLibre site. For more details about sites see [Site API](https://api.mercadolibre.com/sites). To discover category for a specific site you can see [Categories API](#categories-api) section. 
+Each site has its own set of category. This means that Argentina's site has different categories than Brazil's site.
+The Categories for each country are accessed by site.
+[Argentina Categories](https://api.mercadolibre.com/sites/MLA/categories)
+[Brazil Categories](https://api.mercadolibre.com/sites/MLB/categories)
 
-To list an item in MercadoLibre users need to know the ID of the target category. To help users to validate a category ID, they can download the [complete category hierarchy](/category-dump) with ID and human-friendly names. 
+Before listing an ite, you need to traverse the category structure and select in which category you want it to appear.
+To help you traverse the Category Tree you can download the [complete category hierarchy](/category-dump) with ID and human-friendly names. 
 
-Some of the tutorials described in this site need several “id’s” from different MELI’s API.
 
 <div class="contents">
-<h5>Table of Contents</h5>
+<h5>Contents</h5>
 
 <dl>
-	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-attributes')">Attributes</a></dt>
-	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-api')">Categories API</a></dt>
+	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-api')">Categories by Site</a></dt>
+	<dt><a href="javascript:void(0)" onClick="goToByScroll('category-attributes')">Categories JSON</a></dt>
 </dl>
 </div>
 
 
-## Attributes {#category-attributes}
+## Categories by Site {#category-api}
+
+The Sites API can give you the category structure for a particular country, in this case Argentina.
+
+	https://api.mercadolibre.com/sites/MLA/categories  
+
+{% highlight javascript %}
+"categories": [
+	{
+	"id": "MLA5725",
+	"name": "Accesorios para Vehiculos",
+	},
+	{
+	"id": "MLA1071",
+	"name": "Animales y Mascotas",
+	},
+	{
+	"id": "MLA1367",
+	"name": "Antigüedades",
+	},
+	{
+	"id": "MLA1743",
+	"name": "Autos, Motos y Otros",
+},
+{% endhighlight %}
+
+
+For second level categories, or information related to specific categories, you have to use the Categories API sending the category ID as a URL parameter. 
+The next example shows “Animales y Mascotas” Category:
+
+	https://api.mercadolibre.com/categories/MLA1071
+
+{% highlight javascript %}
+{
+	"id": "MLA1071",
+	"name": "Animales y Mascotas",
+	"permalink": "http://home.mercadolibre.com.ar/animales-y-mascotas",
+	"total_items_in_this_category": "30434",
+	"path_from_root": [
+		{
+			"id": "MLA1071",
+			"name": "Animales y Mascotas",
+		},
+	],
+	"children_categories": [
+		{
+			"id": "MLA1100",
+			"name": "Aves",
+			"total_items_in_this_category": "1430",
+		},
+		{
+			"id": "MLA1117",
+			"name": "Caballos",
+			"total_items_in_this_category": "1092",
+		},
+	.
+	.
+{% endhighlight %}
+
+As you can see, you get the “path_from_root” and "children_categories" attributes, use these attributes to browse the categories tree to find the specific category for your item.
+
+
+## Categories JSON {#category-attributes}
 
 Working with a special category, "imported Givenchy women perfume", we will discribe some important attributes. 
 
@@ -122,64 +189,3 @@ For example, when you list an item, you have to specify the following attributes
 {% endhighlight %}
 
 As you can see in the JSON above, you need to specify the **category_id**, the **currency_id** and the **listing_type_id**. This particular three fields are mandatory and only accepts pre-defined id’s. You can see the different id’s that these fields accept by looking at the Category, Currencies and Listing Type API.
-
-## Categories API {#category-api}
-
-The Sites API shows the entirely MELI category structure for a particular country, in this case Argentina.
-
-	https://api.mercadolibre.com/sites/MLA/  
-As you can see, you get information related to Argentina MELI operation, one of the JSON attributes is “categories”, in which you have the first level of categories.
-
-{% highlight javascript %}
-"categories": [
-	{
-	"id": "MLA5725",
-	"name": "Accesorios para Vehiculos",
-	},
-	{
-	"id": "MLA1071",
-	"name": "Animales y Mascotas",
-	},
-	{
-	"id": "MLA1367",
-	"name": "Antigüedades",
-	},
-	{
-	"id": "MLA1743",
-	"name": "Autos, Motos y Otros",
-},
-{% endhighlight %}
-
-
-For second level categories, or information related to specific categories, you have to use the Categories API sending the category ID as a URL parameter. The next example shows the information related to the “Animales y Mascotas” Category:
-
-	https://api.mercadolibre.com/categories/MLA1071
-
-{% highlight javascript %}
-{
-	"id": "MLA1071",
-	"name": "Animales y Mascotas",
-	"permalink": "http://home.mercadolibre.com.ar/animales-y-mascotas",
-	"total_items_in_this_category": "30434",
-	"path_from_root": [
-		{
-			"id": "MLA1071",
-			"name": "Animales y Mascotas",
-		},
-	],
-	"children_categories": [
-		{
-			"id": "MLA1100",
-			"name": "Aves",
-			"total_items_in_this_category": "1430",
-		},
-		{
-			"id": "MLA1117",
-			"name": "Caballos",
-			"total_items_in_this_category": "1092",
-		},
-	.
-	.
-{% endhighlight %}
-
-As you can see, you get the “path_from_root” and "children_categories" attributes, use these attributes to browse the categories tree to find the specific category for your item.
