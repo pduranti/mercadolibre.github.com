@@ -59,8 +59,10 @@ A token is an encrypted string that represents the user credentials. If you have
           <p>At a high level the OAuth 2.0 protocol involves three different steps: User Authentication (login), Application Authorization and Application Authentication.</p>
 
           <p><strong>1. User Authentication:</strong> ensure that the user is who he says he is. It is performed redirecting the user to MercadoLibre login URL.</p>
+          <img src="/images/login_auth.png"/>
           <p><strong>2. Application Authorization:</strong> After login the user will see a page with exactly what data and capabilities is willing to grant your application permissions.<br>
             In the OAuth protocol this is called "user consent".</p>
+          <img src="/images/authorization.png"/>
           <p><strong>3. Application Authentication:</strong> If the users agrees to grant your app those permissions, your application will be sent directly an access token or an authorization code (which later is used to obtain an access token).<br>
             If the user does not grant permission, MercadoLibre OAuth API returns an error.</p>
 
@@ -155,9 +157,8 @@ Here you must exchange this code for an access token issuing a POST request to..
         <p>This authorization code can be exchanged later for an access token and a refresh token.</p>
 
         <h3>Overview</h3> 
-        <img srd="/images/ML-oauth-server-side.png"/>
-
-        <p>If a refresh token is present in the authorization code exchange, then it may be used to obtain new access tokens at any time. This type of access is called **offline**, since the user does not have to be present at the browser when the application obtains a new access token.</p>
+        
+        <p>If a refresh token is present in the authorization code exchange, then it may be used to obtain new access tokens at any time. This type of access is called **offline**, since the user does not have to be present at the browser when the application obtains a new access token. The details regarding offline-access permission are explained in <a href="/application-manager">the Application Manager guide</a></p>
 
         <p>When invoking this dialog, you must pass your client id that is generated when you create your application in our [Applications Portal](http://applications.mercadolibre.com/) (the client_id parameter) and the URL that the user's browser will be redirected to once app authorization is completed (the redirect_uri parameter).</p>
 
