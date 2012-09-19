@@ -2,16 +2,9 @@
 layout: guides
 title: Create your MELI APP 
 categories: 
-- Listing
-- Real Estate
-- Manage Listings
-- Orders
-- Manage Questions
-- Notifications
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Real Estate
 ---
 
 Before creating your MELI APP you will need to [have a MELI signed up user](/res-signup-user).

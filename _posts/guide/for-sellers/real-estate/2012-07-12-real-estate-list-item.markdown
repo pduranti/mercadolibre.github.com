@@ -19,9 +19,9 @@ Preconditions   {#preconditions}
 
 [Having a basic knowledge of REST and how MELI APIs work](/first-step)
 
-[Having a MELI APP created](/res-create-app)
+[Having a MELI APP created](/application-manager)
 
-[Getting an access token (authentication)](/res-authenticate)
+[Getting an access token (authentication)](/authentication-and-authorization)
 
 List a real estate property   {#publish}
 ---------------------------------
@@ -100,9 +100,9 @@ You can list a real estate property by sending a POST request to our Items API w
 To complete the JSON with the necessary info, follow this steps:
 
 - 1\. [Operation and property type selection](/res-categ-selection)
-- 2\. [Attributes selection](/res-attrs-selection)
+- 2\. [Attributes selection](/add-attributes-item)
 - 3\. [Location selection](/res-loc-selection)
-- 4\. [Pictures upload (optional)](/res-pic-upload)
+- 4\. [Pictures upload (optional)](/add-pictures-item)
 
 [Click here](/res-json-full-specs) to see the full specification of possible elements you can send in a real estate property JSON.
 
@@ -122,7 +122,7 @@ If the property was successfully listed, you will receive a "201 Created" respon
 
 Note: after successfully listing an item, its status will be "not yet active" until it passes our security filters and automatically gets activated. This process should take no longer than an hour.
 
-[Click here](/res-validate) to learn how to validate your JSON before actually posting it to our Items API.
+[Click here](/validate-item) to learn how to validate your JSON before actually posting it to our Items API.
 
 If you were to receive an error status code on a response when communicating with our APIs, in most cases you will be able to determine the cause of the error by looking at the response body. In addition to the response status code, the response body will also contain detailed information regarding the error and will most likely help you understand the cause of it and how to solve different issues.
 
@@ -130,4 +130,4 @@ You can now follow the instructions to:
 
 [Modify, pause or finalize your property publication](/res-modify-pause-finalize)
 
-[Relist your properties](/res-relist) 
+[Relist your properties](/relist-item) 

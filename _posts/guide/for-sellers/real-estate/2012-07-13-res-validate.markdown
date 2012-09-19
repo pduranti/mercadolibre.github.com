@@ -2,16 +2,9 @@
 layout: guides
 title: Validate your Real Estate JSON
 categories: 
-- Listing
-- Real Estate
-- Manage Listings
-- Orders
-- Manage Questions
-- Notifications
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Real Estate
 ---
 
 

@@ -11,7 +11,7 @@ categories:
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Real Estate
+- Manage Listings
 ---
 
 You can use our Items API to visualize the details of a property, by accessing the following URL (by browser or by sending a GET request):

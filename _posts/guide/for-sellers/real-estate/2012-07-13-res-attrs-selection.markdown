@@ -2,16 +2,9 @@
 layout: guides
 title: Attributes selection
 categories: 
-- Listing
-- Real Estate
-- Manage Listings
-- Orders
-- Manage Questions
-- Notifications
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Real Estate
 ---
 
 When listing a property, its attributes will vary according to the chosen category. Once you have your Category ID, you can see its attributes by accessing the following URL:
