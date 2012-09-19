@@ -159,14 +159,11 @@ Response response = m.get("/users/me", params);
   </div>
 </div>
 
-<script type="text/javascript">
-  $("#try-by-yourself").tabNavigator();
- </script>
-
-
 <script>
     $(document).ready(function() {
 
+      $("#try-by-yourself").tabNavigator();
+    
       $('#show-my-info').click(function() {
 
           var ID = parseInt($('#target').val());

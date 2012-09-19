@@ -3,7 +3,6 @@ layout: guides
 title: Introduction
 categories: 
 - Searching
-- Category
 menu: 
 - Searching for Items
 tags: 

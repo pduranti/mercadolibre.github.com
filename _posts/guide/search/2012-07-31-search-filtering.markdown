@@ -3,7 +3,6 @@ layout: guides
 title: Using filters
 categories: 
 - Searching
-- Category
 menu: 
 - Searching for Items
 tags: 

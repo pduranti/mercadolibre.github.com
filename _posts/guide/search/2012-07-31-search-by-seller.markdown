@@ -3,7 +3,6 @@ layout: guides
 title: By seller
 categories: 
 - Searching
-- Category
 menu: 
 - Searching for Items
 tags: 

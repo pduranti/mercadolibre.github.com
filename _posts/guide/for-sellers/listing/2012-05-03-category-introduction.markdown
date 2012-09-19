@@ -2,12 +2,16 @@
 layout: guides
 title: Category API
 categories: 
-- Searching
-- Category
+- Listing
+- Real Estate
+- Manage Listings
+- Orders
+- Manage Questions
+- Notifications
 menu: 
-- Searching for Items
+- Sellers &amp; Integrators
 tags: 
-- Category
+- Listing
 ---
 
 ## Overview {#overview}

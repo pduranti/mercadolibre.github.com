@@ -3,7 +3,6 @@ layout: guides
 title: Paging results
 categories: 
 - Searching
-- Category
 menu: 
 - Searching for Items
 tags: 

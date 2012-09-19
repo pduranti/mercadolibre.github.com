@@ -11,7 +11,7 @@ categories:
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Listing
+- Manage Listings
 ---
 
 Previously you have learned how to list an item in MELI providing the Pictures URL’s. This tutorial is going to show you how to upload your picture files to MELI storage and link them to your item.

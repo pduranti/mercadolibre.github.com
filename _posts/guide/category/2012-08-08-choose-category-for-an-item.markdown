@@ -1,15 +1,3 @@
----
-layout: guides
-title: Choose category
-categories: 
-- Searching
-- Category
-menu: 
-- Searching for Items
-tags: 
-- Category
----
-
 
 
 
