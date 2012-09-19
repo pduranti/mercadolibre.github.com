@@ -28,7 +28,7 @@ But if you need to access to private Rersources you will need an access token:
 
 The very first thing you'll want to do is make sure you are a [registered user in MercadoLibre](http://www.mercadolibre.com).
 
-Then, go to the [application manager](http://applications.mercadolibre.com) and create an application as described below. You'll get a client ID and a client secret which will be very important later on.
+Then, go to the [application manager](http://applications.mercadolibre.com) and create an application as described below. You'll get a client ID and a client secret which will be very important later on. You can read about how to use this tool on the [application manager guide](/application-manager)
 
 <style type="text/css">
 img.appID
@@ -210,7 +210,7 @@ Response response = m.get("/users/me", params);
 
 ## Next Steps {#next}
 
-Reading the [Authorization](/authorization) section you will see how applications manage and grant permission scopes. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth for you.
+Reading the [Authorization](/authentication-and-authorization) section you will see how applications manage and grant permission scopes. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth for you.
 
 Later, you should head over to our Documentation section and find what best suits your goal:
 <ul class="ch-list parameters">
