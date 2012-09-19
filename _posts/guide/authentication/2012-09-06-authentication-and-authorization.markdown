@@ -1,6 +1,6 @@
 ---
 layout: firststep
-title: Authentication &amp; Authorization Essentials
+title: Authentication &amp; Authorization
 categories: 
 - Authentication
 menu:
@@ -69,10 +69,6 @@ A token is an encrypted string that represents the user credentials. If you have
   </div>
   </div>
 </div>
-<script>
-  var foo = $("#tokens").expando();
-</script>
-
 
 ##How do I get that token? {#getting-a-token}
 
@@ -137,9 +133,6 @@ After you get the access token you can make calls to the APIs with it to gain ac
   </div>
   </div>
 </div>
-<script>
-  var foo = $("#clientSideLarge").expando();
-</script>
 
 ##Server-side flow {#server-side-brief}
 
@@ -315,10 +308,6 @@ Here you must exchange this code for an access token issuing a POST request to..
     </div>
   </div>
 </div>
-<script>
-  var foo = $("#serverSideLarge").expando();
-</script>
-
   
 ##Existing SDKs {#sdks}
 
@@ -365,3 +354,15 @@ you will get a new access_token and also a new refresh token. Note that a refres
   <tr><td>unsupported_grant_type</td><td>Unsupported grant type: ${0}.</td><td>The authorization grant type is not supported by the authorization server.</td></tr>
 </tbody>
 </table>
+
+<script type="text/javascript">
+
+window.onload = function() { startDrawing(); }
+  
+function startDrawing(){
+  $("#tokens").expando();
+  $("#clientSideLarge").expando();
+  $("#serverSideLarge").expando();
+
+}
+</script>
