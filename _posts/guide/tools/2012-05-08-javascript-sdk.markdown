@@ -104,9 +104,6 @@ MELI.init({ client_id: 6586 });
 		</div>
 	</div>
 </div>
-<script>
-	var foo = $("#init").expando();
-</script>
 
 <div class="ch-box">
 	<div id="login">
@@ -129,9 +126,6 @@ MELI.login(function() {
 		</div>
 	</div>
 </div>
-<script>
-	var foo = $("#login").expando();
-</script>
 
 <div class="ch-box">
 	<div id="logout">
@@ -148,10 +142,6 @@ MELI.logout();
 	</div>
 </div>
 
-<script>
-	var foo = $("#logout").expando();
-</script>
-
 <div class="ch-box">
 	<div id="getToken">
 		<p><strong><strong>getToken</strong>()</strong></p>
@@ -166,10 +156,6 @@ if(!MELI.getToken()) {
 		</div>
 	</div>
 </div>
-
-<script>
-	var foo = $("#getToken").expando();
-</script>
 
 <div class="ch-box">
 	<div id="getLoginStatus">
@@ -199,10 +185,6 @@ MELI.getLoginStatus(function(data) {
 	</div>
 </div>
 
-<script>
-	var foo = $("#getLoginStatus").expando();
-</script>
-
 <div class="ch-box">
 	<div id="get">
 		<p><strong>get</strong>(url, params, callback)</p>
@@ -223,10 +205,6 @@ MELI.get('/users/me', null, function(data) {
 	</div>
 </div>
 
-<script>
-	var foo = $("#get").expando();
-</script>
-
 <div class="ch-box">
 	<div id="post">
 		<p><strong>post</strong>(url, params, callback)</p>
@@ -241,10 +219,6 @@ MELI.post(url, params, function(data) {
 	</div>
 </div>
 
-<script>
-	var foo = $("#post").expando();
-</script>
-
 <div class="ch-box">
 	<div id="put">
 		<p><strong>put</strong>(url, params, callback)</p>
@@ -257,12 +231,6 @@ MELI.put(url, params, function(data) {
 		</div>
 	</div>
 </div>
-
-<script>
-	var foo = $("#put").expando();
-</script>
-
-
 
 <div class="ch-box">
 	<div id="remove">
@@ -278,12 +246,25 @@ MELI.remove(url, params, function(data) {
 	</div>
 </div>
 
-<script>
-	var foo = $("#remove").expando();
-</script>
-
 You'll find the source code in the following location: [https://github.com/mercadolibre/mercadolibre.js](https://github.com/mercadolibre/mercadolibre.js)
 
 ## Contribute 
     
 If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/mercadolibre.js) and pull requests as needed.
+
+<script type="text/javascript">
+
+window.onload = function() { startDrawing(); }
+  
+function startDrawing(){
+	$("#login").expando();
+	$("#init").expando();
+	$("#logout").expando();
+	$("#getToken").expando();
+	$("#remove").expando();
+	$("#put").expando();
+	$("#post").expando();
+	$("#get").expando();
+	$("#getLoginStatus").expando();
+}
+</script>

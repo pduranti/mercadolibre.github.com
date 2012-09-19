@@ -1,7 +1,6 @@
 ---
 layout: firststep
 title: Getting Started
-special_command: onload="startDrawing();"
 menu: 
 - First Steps
 ---
