@@ -14,11 +14,13 @@ tags:
 - Manage Listings
 ---
 
-Previously you have learned how to list an item in MELI providing the Pictures URL’s. This tutorial is going to show you how to upload your picture files to MELI storage and link them to your item.
+## Overview 
 
-Users can upload pictures with at most 10 MB. Picture format can be .jpg, .jpeg, .png or .gif (without animation). A zoom function lets buyers to roll over a picture for a close-up look. With this feature, we recommend that your pictures be 800 pixels or larger.
+Pictures are optional when listing, but they make a big difference in the publication quality and results (visits and contacts). This tutorial is going to show you how to add and upload pictures. 
 
-##Upload the Picture
+Users can upload pictures with at most 10 MB. Picture format can be .jpg, .jpeg, .png or .gif (without animation). A zoom function lets buyers to roll over a picture for a close-up look. For that reason we recommend to use pictures larger than 800 pixels.
+
+## Upload the Picture
 
 The following POST will upload your picture to the MELI Storage
 
@@ -38,7 +40,7 @@ It will return a JSON describing the picture details, remember to save the pictu
 }
 {% endhighlight %}
 
-##Link the Picture to the Item
+## Link the Picture to the Item
 
 Using this picture “id” retrieved you can link the previous uploaded picture to your item.
 
@@ -52,3 +54,5 @@ https://api.mercadolibre.com/items/MLA421101451/pictures?access_token=$ACCESS_TO
 </pre>
 
 That’s all!. Go to your item’s VIP (using the permalink field) and check the new picture.
+
+Note: There is currently a maximum amount of fifteen pictures per property.

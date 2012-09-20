@@ -22,6 +22,8 @@ When listing an item, its attributes will vary according to the chosen category.
 curl https://api.mercadolibre.com/categories/CATEGORY_ID/attributes
 </pre>
 
+See [category documentation](/category-introduction) for more details about categories hierarchy.
+
 
 ## Attributes types
 
@@ -57,11 +59,11 @@ If your user belongs, for example, to Argentina, and the chosen category was 146
 Each attribute has id, name, type, tags and values.
 
 <ul class="ch-list parameters">
-<li>An attribute with the "tags" element containing "fixed" means that this attribute is indeed fixed, and *you don't need to send it* with the property JSON.</li>
+<li>An attribute with the "tags" element containing "fixed" means that this attribute is indeed fixed, and <strong>you don't need to send it</strong> with the property JSON.</li>
 
-<li>Attribute type "list" means you will have a list of the possible values, for which you will have to send the desired value **id**.</li>
+<li>Attribute type "list" means you will have a list of the possible values, for which you will have to send the desired value <strong>id</strong>.</li>
 
-<li>Attribute type "boolean" means you will have two possible values (one for true, one for false), for which you will have to send the desired value **id**.</li>
+<li>Attribute type "boolean" means you will have two possible values (one for true, one for false), for which you will have to send the desired value <strong>id</strong>.</li>
 
 <li>Attribute type "string" with "tags" not containing "fixed" means you will have to send the desired value as text.</li>
 
