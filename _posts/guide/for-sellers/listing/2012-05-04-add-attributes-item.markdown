@@ -22,6 +22,8 @@ When listing an item, its attributes will vary according to the chosen category.
 curl https://api.mercadolibre.com/categories/CATEGORY_ID/attributes
 </pre>
 
+See [category documentation](/category-introduction) for more details about categories hierarchy.
+
 
 ## Attributes types
 

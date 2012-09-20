@@ -27,7 +27,6 @@ tags:
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('preconditions')">Preconditions</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('publish')">List a real estate property</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('operation')">Operation and property type selection</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('attributes')">Attributes selection</a></dt>
@@ -114,13 +113,9 @@ You can list a real estate property by sending a POST request to our Items API w
 {% endhighlight %}
 
 
-
-
-To complete the JSON with the necessary info, follow this steps:
-
 ## Operation and property type selection {#operation}
 
-To list a real estate property, you will have to choose the operation and property type for the propety. **This in MELI is known as "category_id"**. First, determine the "SITE_ID" that corresponds to the country your user belongs to. To accomplish this go to the following URL:
+To list a real estate property, you will have to choose the operation and property type for the property. **This in MELI is known as "category_id"**. First, determine the "SITE_ID" that corresponds to the country your user belongs to. To accomplish this go to the following URL:
 
 <a href="https://api.mercadolibre.com/sites" target="_blank">https://api.mercadolibre.com/sites</a>
 
@@ -129,7 +124,7 @@ Once there you will be able to determine your SITE_ID, which is the "id" for you
 Now that you have your SITE_ID, you can now access the following URL (by browser or by sending a GET request):
 
 <pre class="terminal">
- https://api.mercadolibre.com/categories/SITE_ID1459
+ curl https://api.mercadolibre.com/categories/SITE_ID1459
 </pre>
 
 If your user belongs, for example, to Argentina, then the URL would be: <a href="https://api.mercadolibre.com/categories/MLA1459" target="_blank">https://api.mercadolibre.com/categories/MLA1459</a>
