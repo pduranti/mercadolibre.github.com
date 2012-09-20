@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: List Real Estate properties
+title: Identify as a Real Estate Agency
 categories: 
 - Listing
 - Real Estate
@@ -13,9 +13,6 @@ menu:
 tags: 
 - Real Estate
 ---
-
-
-Identify as a Real Estate Agency 	{#identifyasagency} 
 
 
 If you are a real estate agency, you can identify your user as such to gain access to our promotional real estate packs. To accomplish this access the Help section, as shown on figure 4.
