@@ -3,7 +3,6 @@ layout: guides
 title: Real estate listing
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions
@@ -11,7 +10,7 @@ categories:
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Real Estate
+- Listing
 ---
 
 
@@ -285,9 +284,9 @@ If you were to receive an error status code on a response when communicating wit
 
 NOTE: Info sobre paquetes
 
-[Modify listing](/)
+[Modify listing](/modify-listing)
 
-[Change listing status](/) 
+[Change listing status](/change-listing-status) 
 
 
 ## Relist your properties {#relist-item}
