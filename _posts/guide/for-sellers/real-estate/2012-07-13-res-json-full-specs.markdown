@@ -11,7 +11,7 @@ categories:
 menu: 
 - Sellers &amp; Integrators
 tags: 
-- Real Estate
+
 ---
 
 A real estate property JSON is composed by the following information (an example is provided below the table):
