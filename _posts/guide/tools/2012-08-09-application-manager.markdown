@@ -49,6 +49,9 @@ There are three groups of information in this form: Basic application info, Auth
 &nbsp;&nbsp;&nbsp;&nbsp;***Write:*** Allow to use API PUT, POST and DELETE HTTP methods. <br />
 &nbsp;&nbsp;&nbsp;&nbsp;***Offline Access:*** Allow to make request server side and refresh token. <br />
 
+###Special notes about offline-access
+
+Some applications interacts with MELI APIs just while the user is online, but other apps may do so without the need of the user being online. In those cases the app needs to request offline-access scope. This special permission allows the app to keep an active token even if the user is not logged at MELI in that moment. If you request this permission you will get an extra field in the access token (only in server-side flow). That field is de refresh-token that allows the app to get a new valid token when the previous one is expired.
 
 ###Notification Settings
 
