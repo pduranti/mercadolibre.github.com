@@ -1,9 +1,8 @@
 ---
 layout: guides
-title: Modify, pause or finalize your property publication
+title: Modify listing
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions
@@ -11,6 +10,7 @@ categories:
 menu: 
 - Sellers &amp; Integrators
 tags: 
+- Manage Listings
 ---
 
 You can use our Items API to visualize the details of a property, by accessing the following URL (by browser or by sending a GET request):

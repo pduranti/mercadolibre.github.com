@@ -3,7 +3,6 @@ layout: guides
 title: Category selection
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions

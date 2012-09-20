@@ -3,7 +3,6 @@ layout: guides
 title: Introduction
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions
@@ -16,19 +15,21 @@ tags:
 
 In our Marketplace people can buy and sell items and publish classifieds for real estate and motors, in this section you are going to learn how to do it with our API.
 
-## Special considerations for real estate, vehicles & services {#further-consideration}
+## Listing in different verticals {#further-consideration}
 
 Listings are divided in one of the following categories:
 
-*Products    
-*Vehicles    
-*Real estate    
-*Services    
+*Products: almost anything that can be sold such as a computer, book, shoes or even a dog. 
+Classifieds
+*Motors: You can list cars, motorbikes, a boat
+*Real estate: You can list any kind of property
+*Services: Offer your professional services
 
 
-## What is an item? {#what-is-an-item}
+## Items? {#what-is-an-item}
 
-Each object that can be sold or bought is an item, for example: A book, a computer, a telephone, a car, a table, a house, even a dog. The item is owned by a user.
+Anything that is listing to be sold or contracted is an <strong>item</strong> entity in our API.
+Every item has an <strong>owner</strong>. The owner is the user who listed the item.
 
 ## What happens when I list an Item?{#item-list}
 

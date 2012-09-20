@@ -3,7 +3,6 @@ layout: guides
 title: Adding pictures
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions
@@ -18,7 +17,10 @@ tags:
 
 Pictures are optional when listing, but they make a big difference in the publication quality and results (visits and contacts). This tutorial is going to show you how to add and upload pictures. 
 
-Users can upload pictures with at most 10 MB. Picture format can be .jpg, .jpeg, .png or .gif (without animation). A zoom function lets buyers to roll over a picture for a close-up look. For that reason we recommend to use pictures larger than 800 pixels.
+Users can upload pictures with at most 10 MB. Picture format can be .jpg, .jpeg, .png or .gif (without animation). 
+
+### Zooming
+For pictures larger than than 800 pixels, a zoom widget is activated that lets buyers roll over and take a close-up look. This is highly recommended for Clothes and Real Estate properties.
 
 ## Upload the Picture
 

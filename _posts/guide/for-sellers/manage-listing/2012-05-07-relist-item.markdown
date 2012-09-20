@@ -3,7 +3,6 @@ layout: guides
 title: Relist an item
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions
