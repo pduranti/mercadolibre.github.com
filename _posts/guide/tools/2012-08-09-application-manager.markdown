@@ -10,7 +10,10 @@ tags:
 - More Tools
 ---
 
-To create an _application_ for MELI, you must use the [Application Manager](http://applications.mercadolibre.com). **You need to choose your country to create a new one**.
+To create an _App_, you must use the [Application Manager](http://applications.mercadolibre.com). **You need to choose your country to create a new one**. 
+
+If your APP will list properties **only on behalf your signed up user**, then complete the fields in the form, checking both "read" and "write" scopes and click on the "Create application" button (you can complete the "Callback URL" with any data, it won't be used). However, **if you want your APP to list properties on behalf other MELI's signed up users**, then at this step you must complete the fields in the form, checking the "read", "write" and "offline_access" scopes, and in the Callback URL will have to be completed with a URL to which users will be redirected right after granting permissions to your APP, explained further ahead in the [Authenticate section](/authentication-and-authorization).
+
 
 <center>
 	<br /><br />
@@ -19,12 +22,14 @@ To create an _application_ for MELI, you must use the [Application Manager](http
 </center>
 
 
+
 ## Application Data
 
 There are three groups of information in this form: Basic application info, Authentication &amp; Security and Notification Settings.
 
 
 ###Basic Application Info
+
 
 **- ID: ** This is your `client_id`. It must be used to retrieve an access token. 
 
@@ -38,6 +43,7 @@ There are three groups of information in this form: Basic application info, Auth
 
 
 ###Authentication &amp; Security 
+
 
 **- Callback URL: Redirect URI. ** URL to return users to your app after they grant access. 
 
@@ -54,6 +60,7 @@ There are three groups of information in this form: Basic application info, Auth
 Some applications interacts with MELI APIs just while the user is online, but other apps may do so without the need of the user being online. In those cases the app needs to request offline-access scope. This special permission allows the app to keep an active token even if the user is not logged at MELI in that moment. If you request this permission you will get an extra field in the access token (only in server-side flow). That field is de refresh-token that allows the app to get a new valid token when the previous one is expired.
 
 ###Notification Settings
+
 
 **- Notifications callback URL: ** Configure the public URL of your domain where you want to receive notifications for the different topics. 
 
