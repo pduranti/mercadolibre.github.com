@@ -1,30 +1,29 @@
 ---
 layout: guides
 title: Getting Started
-categories: 
+categories:
 - First Steps
 menu:
 - First Steps
-tags: 
+tags:
 - First Steps
 ---
 
 If you're reading this it's because you're wondering which is the easiest way to start using our API. Good news! It is dead simple!
 
 <div class="contents">
-<h5>Table of Contents</h5>
-
-<dl>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('first-approach')">Your first approach to the API</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('access-token-title')">Get your access token!</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('use-access-token')">Use your access token!</a></dt>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('whats-next')">What's next?</a></dt>
-</dl>
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('first-approach')">Your first approach to the API</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('access-token-title')">Get your access token!</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('use-access-token')">Use your access token!</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('whats-next')">What's next?</a></dt>
+  </dl>
 </div>
 
 
 ## Your first approach to the API {#first-approach}
-Our API is [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).  
+Our API is [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfer), which means that every url provides information on different business entities. We call this _resource_. The way you can operate on resources is by using HTTP _methods_ (see [HTTP Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)).
 
 Some of these basic methods are:
 * GET: Retrieve information identified by the resource (see [GET](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3)).
@@ -37,7 +36,7 @@ So for example if you curl:
 <pre class="terminal">$ curl https://api.mercadolibre.com/countries</pre>
 
 You'll get a list of countries:
-    
+
 {% highlight javascript %}
 [
   {

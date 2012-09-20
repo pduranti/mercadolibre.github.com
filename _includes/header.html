@@ -65,7 +65,7 @@
          {% endif %}
           <li class="option"><a class="{{ current }}" href="/javascript-sdk">Tools</a></li>
          {% assign current = nil %}
-         {% if page.menu == 'community' %}
+         {% if page.menu[0] == 'Community' %}
             {% assign current = 'current' %}
          {% endif %}
           <li class="option"><a class="{{ current }}" href="/community">Community</a></li>
