@@ -14,7 +14,7 @@ tags:
 - Manage Listings
 ---
 
-Previously you have learned how to list an item in MELI providing the Pictures URL’s. This tutorial is going to show you how to upload your picture files to MELI storage and link them to your item.
+This tutorial is going to show you how to add and upload picture files.
 
 Users can upload pictures with at most 10 MB. Picture format can be .jpg, .jpeg, .png or .gif (without animation). A zoom function lets buyers to roll over a picture for a close-up look. With this feature, we recommend that your pictures be 800 pixels or larger.
 
