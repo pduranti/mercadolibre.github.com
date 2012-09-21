@@ -35,9 +35,9 @@ Then resolve the [Authentication](/authentication-and-authorization) to get an a
   </dl>
 </div>
 
-## Identify as a Real Estate Agency {#agency}
+## Register as a Real Estate Agency {#agency}
 
-If you are a real estate agency, you can identify your user as such to gain access to our promotional real estate packs. To accomplish this access the Help section, as shown on figure 4.
+If you are a real estate agency, you can register your user as such to gain access to our promotional real estate packs. To accomplish this access the Help section, as shown on figure 4.
 
 ![Help](/images/new-realestate-4.png){:style="width:700px;"}
 *<center>figure 4</center>*
