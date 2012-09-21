@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Listening to Notifications
+title: Receiving Notifications
 categories: 
 - Listing
 - Real Estate
