@@ -14,15 +14,11 @@ tags:
 ---
 
 
-## Preconditions
+## Overview
 
-[Having a basic knowledge of REST and how MELI APIs work](/first-step)
-
-[Having a MELI APP created](/application-manager)
-
-[Getting an access token (authentication)](/authentication-and-authorization)
-
-[List items documentation](/list-your-item)
+Listing in Real Estate classifieds is a special case of listing any other item.
+Make sure you go over the [First Steps](/first-step) for developing with our API, you [created your App](/application-manager).
+Then resolve the [Authentication](/authentication-and-authorization) to get an access_token and go throw the first steps of [List items](/list-your-item).
 
 
 <div class="contents">
