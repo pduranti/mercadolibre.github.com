@@ -30,14 +30,13 @@ tags:
   <dl>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('agency')">Identify as a Real Estate Agency</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('publish')">List a real estate property</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('operation')">Operation and property type selection</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('attributes')">Attributes selection</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-loc-selection')">Location selection</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('add-pictures-item')">Pictures upload (optional)</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-json-full-specs')">Real Estate JSON full specification</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-modify-pause-finalize')">Modify, pause or finalize your property publication</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('relist-item')">Relist your properties</a></dt>
-  </dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('operation')">Operation and Property Type Selection</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('attributes')">Attributes Selection</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-loc-selection')">Location Selection</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('add-pictures-item')">Pictures Upload</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-json-full-specs')">Real Estate JSON specification</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-modify-pause-finalize')">Modify, change status and Re-List</a></dt>
+    dl>
 </div>
 
 ## Identify as a Real Estate Agency {#agency}
