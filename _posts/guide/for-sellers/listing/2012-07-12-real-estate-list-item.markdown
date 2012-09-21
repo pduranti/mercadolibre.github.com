@@ -22,7 +22,7 @@ tags:
 
 [Getting an access token (authentication)](/authentication-and-authorization)
 
-[List items](/list-your-item)
+[List items documentation](/list-your-item)
 
 
 <div class="contents">
