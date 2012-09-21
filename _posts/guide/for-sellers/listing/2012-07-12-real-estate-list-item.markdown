@@ -36,7 +36,7 @@ tags:
     <dt><a href="javascript:void(0)" onClick="goToByScroll('add-pictures-item')">Pictures Upload</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('res-json-full-specs')">Real Estate JSON specification</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('res-modify-pause-finalize')">Modify, change status and Re-List</a></dt>
-  <dl>
+  </dl>
 </div>
 
 ## Identify as a Real Estate Agency {#agency}

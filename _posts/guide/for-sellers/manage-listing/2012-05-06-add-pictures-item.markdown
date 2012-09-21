@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Adding pictures
+title: Working with pictures
 categories: 
 - Listing
 - Manage Listings

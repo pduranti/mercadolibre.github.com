@@ -54,7 +54,7 @@ Applications can only access private user resources if the users gives explicit 
 
 <div style="height:400px;">
   <img src="/images/authentication.png" style="z-index:1;box-shadow:10px 10px 10px 5px gray;" />
-  <img src="/images/authorization.png" style="position:relative;left:400px;top:40px;z-index:2;box-shadow:10px 10px 10px 5px gray;" />
+  <img src="/images/authorization.png" style="position:relative;left:350px;top:-200px;z-index:2;box-shadow:10px 10px 10px 5px gray;" />
 </div>
 
 
