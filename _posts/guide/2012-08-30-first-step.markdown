@@ -37,7 +37,7 @@ Then, go to the [application manager](http://applications.mercadolibre.com) and 
 <style type="text/css">
 img.appID
 {
-  width:423px;
+  width:500px;
   height:260px;
   background:url(/images/application-detail.png) 0px 0px;
   box-shadow:10px 10px 10px 5px gray; 
