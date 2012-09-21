@@ -5,7 +5,7 @@ categories:
 - Bookmarks
 - Questions
 menu: 
-- Buying Items
+- Shopping
 tags: 
 - Bookmarks
 ---
