@@ -1,6 +1,6 @@
 body {
 	width:1000px;
-	font-family: "Lucida Grande", Arial, sans-serif;
+	font-family:'Lucida Grande',Arial,sans-serif;
 }
 
 a:visited
@@ -250,7 +250,7 @@ header.main .ch-dropdown-skin .current {color: #333;}
 header.main .option > a,
 header.main .ch-dropdown-skin > span
 {
-	font-family: "Lucida Grande",​Arial,​sans-serif;
+	font-family:'Lucida Grande',Arial,sans-serif;
 	border-left: 1px solid #ccc;
 	display:inline-block;
 	line-height: 18px;
