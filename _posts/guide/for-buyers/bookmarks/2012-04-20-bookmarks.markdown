@@ -10,9 +10,14 @@ tags:
 - Bookmarks
 ---
 
+
+
 ## Overview {#overview}
 
+
 Users can manage those interesting items using bookmark API, adding or removing references. They are synchronize with mobile apps. On MercadoLibre Site users have available all the time.
+
+
 
 <div class="contents">
 <h5>Table of Contents</h5>
