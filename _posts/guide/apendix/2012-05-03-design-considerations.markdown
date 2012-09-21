@@ -18,6 +18,7 @@ There are some things you should know about our API to make your life easier.
   <dt><a href="javascript:void(0)" onClick="goToByScroll('json')">JSON</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('jsonp')">JSONP</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('cors')">CORS</a></dt>
+  <dt><a href="javascript:void(0)" onClick="goToByScroll('utf8')">UTF-8</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('iso8601')">Date format (ISO 8601)</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('error-format')">Handling errors</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('selection')">Reducing responses</a></dt>
@@ -106,6 +107,23 @@ This allows the browser to access information provided by the API, even being in
 All the major browsers have support for CORS.
 
 So basically this means that you **don't have to do anything** and you get to access the API directly from your browser doing regular ajax calls, with all the standard method, and avoid doing dirty things, like JSONP.
+
+## All requests/responses are UTF-8 encoded. {#utf8}
+
+<pre>
+User: Are you really telling me that I can only use UTF-8 with MELI APIs?
+We: Yes.
+User: Really?
+We: Yes.
+User: Only?
+We: Yes. We hope this has been enlightening for you.
+User: But, I must--
+We: Thank you, come again.
+User: But--
+We: Thank you, come again.
+</pre>
+
+If it seems alike the dialog among Apu, Homer and the C.E.O. of Kwik-E- Mart... it is not pure coincidence.
 
 ## All dates are ISO 8601 encoded. {#iso8601}
 
