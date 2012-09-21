@@ -293,4 +293,7 @@ NOTE: Info sobre paquetes
 
 ## Relist your properties {#relist-item}
 
+
+Real estate listings have an expiration date on MercadoLibre. This expiration date is usually up to two months since the activation date (depending if a promotional pack is active). Once an item has reached its expiration date, it will be automatically finalized and will no longer be visible to other users. When this ocurrs, you may choose to relist your property to make it active again. Relisting implies the creation of a NEW item with the exact same elements as its parent.
+
 [Relist a property](/relist-item) 
