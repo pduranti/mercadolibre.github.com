@@ -42,9 +42,9 @@ Note: the JSON sent must not contain the Item ID.
 
 If your property was successfully modified, you will receive a "200 OK" response status. Keep in mind that it can take some time to see the property's new information refreshed.
 
-### Add new information to your property's description ### {#addtext}
+### Add new descriptions ### {#addtext}
 
-To add new information to your property's description, you must send a POST request to the following URL:
+To add new description, you can do it sending a POST request to the following URL:
 
 <pre class="terminal">
  https://api.mercadolibre.com/items/ITEM_ID/descriptions?access_token=YOUR_ACCESS_TOKEN
