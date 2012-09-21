@@ -69,25 +69,3 @@ In the request body you must send:
 
 If the description was successfully posted, you will receive a "201 Created" status code. Keep in mind that it might take some minutes for you new description to be shown.
 
-### Finalize, pause or reactive your publication ### {#finalize}
-
-To accomplish this, the process is very similar to "Modify your property publication". All you have to do is send a PUT request to our Items API with a status change, to the following URL:
-
-<pre class="terminal">
- https://api.mercadolibre.com/items/ITEM_ID?access_token=YOUR_ACCESS_TOKEN
-</pre>
-
-Possible values are:
-
-- closed: finalizes your publication. Once closed, it cannot be reactivated again, but it can be [relisted](/res-relist).
-- paused: pauses your publication. Once paused, it will not be visible by other MercadoLibre's users, but it will not be closed and it can be reactivated later on.
-- active: reactivates a previously paused item.
-
-
-JSON example:
-{% highlight javascript %}
-{
-  "status":"paused"
-}
-{% endhighlight %}
-Note: the value passed in the "status" key is case sensitive and thus must be sent in lowercase.
