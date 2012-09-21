@@ -14,8 +14,6 @@ tags:
 ---
 
 
-#List an item with variation
-
 You already know what items and attributes are. If you don't know we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
 
 To see a list of allowed attributes in a category, you can access the Categories API with the parameter /attributes
