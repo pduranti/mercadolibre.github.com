@@ -9,11 +9,17 @@ tags:
 - Authentication
 ---
 
+## Overview {#overview}
+
+MercadoLibre platform lets you access different resources through API calls. As you already know there are some public resources that can be accessed anonymously (such as product search) and other resources that require some kind of authentication (user data, payments, modify your selling products).
+
+To handle the authentication throughout the platform We use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) protocol. This is a standard, secure yet simple protocol that covers most use cases you should encounter interacting with MercadoLibre APIs. 
+
+We will explain shortly how to use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) authentication in some simple cases and you can read further in the following sections.
+
 <div class="contents">
 <h5>Table of Contents</h5>
-
 <dl>
-  <dt><a href="javascript:void(0)" onClick="goToByScroll('introduction')">Introduction</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('should-i')">Should I read all this?</a></dt>
   <dt><a href="javascript:void(0)" onClick="goToByScroll('basic-concepts')">Basic concepts</a></dt>
   <dt><a href="javascript:voId(0)" onclick="goToByScroll('tokens-explained')">What is a token? Why do I need one? </a></dt>
@@ -28,13 +34,6 @@ tags:
 
 </dl>
 </div>
-##Introduction {#introduction}
-
-MercadoLibre platform lets you access different resources through API calls. As you already know there are some public resources that can be accessed anonymously (such as product search) and other resources that require some kind of authentication (user data, payments, modify your selling products).
-
-To handle the authentication throughout the platform We use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) protocol. This is a standard, secure yet simple protocol that covers most use cases you should encounter interacting with MercadoLibre APIs. 
-
-We will explain shortly how to use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) authentication in some simple cases and you can read further in the following sections.
 
 ##Should I read all this {#should-i}
 
