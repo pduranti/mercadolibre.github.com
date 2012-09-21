@@ -3,7 +3,7 @@ layout: guides
 title: Create your MELI APP 
 categories: 
 menu: 
-- List &amp; Sell
+- Listing &amp; Selling
 tags: 
 ---
 

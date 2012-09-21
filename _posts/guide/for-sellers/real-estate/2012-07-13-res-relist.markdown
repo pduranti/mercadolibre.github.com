@@ -2,7 +2,7 @@
 layout: guides
 title: Relist your properties
 categories: 
-- List &amp; Sell
+- Listing &amp; Selling
 tags: 
 ---
 

@@ -9,7 +9,7 @@ categories:
 - Manage Questions
 - Notifications
 menu: 
-- List &amp; Sell
+- Listing &amp; Selling
 tags:
 - Manage Questions
 ---

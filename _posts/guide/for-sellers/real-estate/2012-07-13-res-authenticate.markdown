@@ -3,7 +3,7 @@ layout: guides
 title: Authenticate
 categories: 
 menu: 
-- List &amp; Sell
+- Listing &amp; Selling
 tags: 
 ---
 
