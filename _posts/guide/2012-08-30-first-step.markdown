@@ -216,7 +216,7 @@ Later, you should head over to our Documentation section and find what best suit
 <ul class="ch-list parameters">
   <li><a href="/bookmarks">Shopping</a></li>
   <li><a href="/search-visual-introduction">Searching</a></li>
-  <li><a href="/listing-introduction">Sellers &amp; Integrators</a></li>
+  <li><a href="/listing-introduction">List &amp; Sell</a></li>
 </ul>
 
 

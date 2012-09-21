@@ -3,7 +3,7 @@ layout: guides
 title: Validate your Real Estate JSON
 categories: 
 menu: 
-- Sellers &amp; Integrators
+- List &amp; Sell
 tags: 
 ---
 

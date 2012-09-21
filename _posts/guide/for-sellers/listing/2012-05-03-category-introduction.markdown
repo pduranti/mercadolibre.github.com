@@ -8,7 +8,7 @@ categories:
 - Manage Questions
 - Notifications
 menu: 
-- Sellers &amp; Integrators
+- List &amp; Sell
 tags: 
 - Listing
 ---

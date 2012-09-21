@@ -3,7 +3,7 @@ layout: guides
 title: Attributes selection
 categories: 
 menu: 
-- Sellers &amp; Integrators
+- List &amp; Sell
 tags: 
 ---
 

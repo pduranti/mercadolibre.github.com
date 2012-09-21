@@ -3,7 +3,7 @@ layout: guides
 title: Create your MELI APP 
 categories: 
 menu: 
-- Sellers &amp; Integrators
+- List &amp; Sell
 tags: 
 ---
 

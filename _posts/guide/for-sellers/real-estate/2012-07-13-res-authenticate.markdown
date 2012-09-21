@@ -3,7 +3,7 @@ layout: guides
 title: Authenticate
 categories: 
 menu: 
-- Sellers &amp; Integrators
+- List &amp; Sell
 tags: 
 ---
 

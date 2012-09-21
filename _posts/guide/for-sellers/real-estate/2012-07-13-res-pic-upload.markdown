@@ -3,7 +3,7 @@ layout: guides
 title: Pictures upload
 categories: 
 menu: 
-- Sellers &amp; Integrators
+- List &amp; Sell
 tags: 
 ---
 
