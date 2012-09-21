@@ -4,7 +4,7 @@ title: Using filters
 categories: 
 - Searching
 menu: 
-- Searching for Items
+- Searching
 tags: 
 - Searching
 ---

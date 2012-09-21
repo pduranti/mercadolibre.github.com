@@ -4,7 +4,7 @@ title: Sorting results
 categories: 
 - Searching
 menu: 
-- Searching for Items
+- Searching
 tags: 
 - Searching
 ---

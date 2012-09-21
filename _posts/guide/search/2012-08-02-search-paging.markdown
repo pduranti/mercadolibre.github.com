@@ -4,7 +4,7 @@ title: Paging results
 categories: 
 - Searching
 menu: 
-- Searching for Items
+- Searching
 tags: 
 - Searching
 ---

@@ -4,7 +4,7 @@ title: By text query
 categories: 
 - Searching
 menu: 
-- Searching for Items
+- Searching
 tags: 
 - Searching
 ---
