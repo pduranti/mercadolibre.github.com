@@ -15,12 +15,16 @@ All responses are JSON encoded. (For details on API design visit [Design Conside
 
 Some Resources are public and others have private information. To access to public information you can use just an URL:
 
-<pre class="terminal">$ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
+<pre class="terminal">
+$ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
+</pre>
 
 
 But if you need to access to private Rersources you will need an access token:
 
-<pre class="terminal">$ curl https://api.mercadolibre.com/users/me?access_token=...</pre>
+<pre class="terminal">
+$ curl https://api.mercadolibre.com/users/me?access_token=...
+</pre>
 
 
 ## Create your own Application {#register}
@@ -34,32 +38,19 @@ Then, go to the [application manager](http://applications.mercadolibre.com) and 
 img.appID
 {
   width:423px;
-  height:200px;
-  background:url(/images/application-detail.png) 0px -10px;
-  box-shadow:10px 10px 10px 5px gray; 
-}
-
-img.appSecret
-{
-  width:423px;
-  height:70px;
-  background:url(/images/application-detail.png) 0 -450px;
+  height:260px;
+  background:url(/images/application-detail.png) 0px 0px;
   box-shadow:10px 10px 10px 5px gray; 
 }
 </style>
 
-
 <img src="" class="appID">
-<br /><br /><br />
-<img src="" class="appSecret">
-
 
 ## Authorizing an Application
 
 Applications can only access private user resources if the users gives explicit **authorization** to the Application.
 
 
-<!--<img src="/images/authentication-authorization.png" alt="Authentication" />-->
 
 <div style="height:400px;">
   <img src="/images/authentication.png" style="z-index:1;box-shadow:10px 10px 10px 5px gray;" />

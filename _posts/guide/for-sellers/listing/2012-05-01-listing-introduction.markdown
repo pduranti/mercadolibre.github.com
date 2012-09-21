@@ -19,11 +19,11 @@ In our Marketplace people can buy and sell items and publish classifieds for rea
 
 Listings are divided in one of the following categories:
 
-*Products: almost anything that can be sold such as a computer, book, shoes or even a dog. 
-Classifieds.<br/>
-*Motors: You can list cars, motorbikes, a boat.<br/>
-*Real estate: You can list any kind of property.<br/>
-*Services: Offer your professional services.<br/>
+**Products**: almost anything that can be sold such as a computer, book, shoes or even a dog. <br/>
+**Classifieds:**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;***Motors:*** You can list cars, motorbikes, a boat.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;***Real estate:*** You can list any kind of property.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;***Services:*** Offer your professional services.<br/>
 
 
 ## Items? {#what-is-an-item}

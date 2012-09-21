@@ -139,7 +139,7 @@ You can also add or change [pictures to your item](/add-pictures-item) later on.
 
 ### Category {#listing-category-attribute}
 
-Sellers must define a category in MercadoLibre site. This attribute is mandatory and only accepts pre-defined id's. For more information about category details see [categories documentation](/category-introduction). If you need to know which is the best category for your item see [defining best category for an item](/choose-category-for-an-item) section.
+Sellers must define a category in MercadoLibre site. This attribute is mandatory and only accepts pre-defined id's. For more information about category details see [categories documentation](/category-introduction). 
 
 {% highlight javascript %} 
 {
