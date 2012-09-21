@@ -22,6 +22,8 @@ tags:
 
 [Getting an access token (authentication)](/authentication-and-authorization)
 
+[List items](/list-your-item)
+
 
 <div class="contents">
   <h5>Table of Contents</h5>
