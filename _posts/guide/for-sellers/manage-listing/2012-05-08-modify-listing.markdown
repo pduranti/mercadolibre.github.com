@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Modify listing
+title: Modify Items
 categories: 
 - Listing
 - Manage Listings
@@ -13,39 +13,30 @@ tags:
 - Manage Listings
 ---
 
-You can use our Items API to visualize the details of a property, by accessing the following URL (by browser or by sending a GET request):
+You can modify an item fields after it has been listed using our API.
 
 <pre class="terminal">
  https://api.mercadolibre.com/items/ITEM_ID
 </pre>
 
-Example: https://api.mercadolibre.com/items/MLA12345678
 
-### Modify your property ### {#modifsub}
+You can modify the values for pictures, title, available quantity, price, attributes, etc. 
 
-Using our Items API you will be able to modify the same elements that you are currently able to modify when browsing our site with a browser, such as pictures, title, available quantity, price, attributes, etc. For security reasons, description cannot be modified, but you will find instructions on how to add new information to your description further ahead.
+<strong>NOTE on descriptions:</strong>For our rules to protect buyers descriptions cannot be modified when the item has sales.
 
 To modify a property, send a PUT request to the following URL:
-
-<pre class="terminal">
- https://api.mercadolibre.com/items/ITEM_ID?access_token=YOUR_ACCESS_TOKEN
-</pre>
-
-In the request headers include:
-<pre class="terminal">
- content-type: application/json
- accepts: application/json 
-</pre>
 
 You must send a JSON formatted body with the elements you wish to modify.
 
 Example:
-{% highlight javascript %}
+<pre class="terminal">
+curl -X POST -H "Content-Type: application/json" -H "Accept: application/json" -d
 { 
   "title": "Your new title",
   "price": 1000
 }
-{% endhighlight %}
+https://api.mercadolibre.com/items/ITEM_ID?access_token=YOUR_ACCESS_TOKEN
+</pre>
 
 Note: the JSON sent must not contain the Item ID.
 
