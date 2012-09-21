@@ -3,7 +3,6 @@ layout: guides
 title: List with variations
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions
@@ -14,8 +13,6 @@ tags:
 - Listing
 ---
 
-
-#List an item with variation
 
 You already know what items and attributes are. If you don't know we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
 

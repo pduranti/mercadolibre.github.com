@@ -5,11 +5,6 @@
     </hgroup>
       <nav class="ch-g3-4">
         <ul>
-          {% assign current = nil %}
-          {% if page.menu[0] == 'Why Develop With Us' %}
-            {% assign current = 'current' %}
-          {% endif %}
-          <li class="option header-attenuated"><a class="{{ current }}" href="/develop-with-us">Why Develop With Us</a></li>
          {% assign current = nil %}
          {% if page.menu[0] == 'First Steps' %}
             {% assign current = 'current' %}
@@ -65,7 +60,7 @@
          {% endif %}
           <li class="option"><a class="{{ current }}" href="/javascript-sdk">Tools</a></li>
          {% assign current = nil %}
-         {% if page.menu == 'community' %}
+         {% if page.menu[0] == 'Community' %}
             {% assign current = 'current' %}
          {% endif %}
           <li class="option"><a class="{{ current }}" href="/community">Community</a></li>

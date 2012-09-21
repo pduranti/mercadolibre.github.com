@@ -3,6 +3,21 @@ body {
 	font-family: "Lucida Grande", Arial, sans-serif;
 }
 
+a:visited
+{
+color:#0637B3;
+}
+
+.ch-dropdown-skin .ch-dropdown-content
+{
+	padding: 15px 55px 15px 14px;
+	border-top: none;
+}
+
+.ch-dropdown-skin .ch-dropdown-content li {
+list-style: none;
+line-height: 1.8em;
+}
 
 section.main p,
 section.main .datagrid,
@@ -27,15 +42,28 @@ section.main {
 	margin-top:15px;
 }
 
+.main-content
+{
+	float:left;
+	margin-top:25px;
+	width:650px;
+	padding-right:50px;
+}
+
+section.main img {
+	max-width:100%;
+}
+
 section.main h1 {
 	font-size:36px;
-	margin-bottom:15px;
+	margin-bottom:30px;
 	line-height:1em;
 }
 
 section.main h2 {
 	font-size:24px;
 	margin:40px 0 20px 0;
+	line-height: 1.3em;
 }
 
 section.main h3 {
@@ -211,7 +239,8 @@ header.main .option {
 	color:#999999;
 }
 
-.header-attenuated .current {
+.header-attenuated .current,
+.sidebar .current {
 	color:#000;
 }
 
@@ -305,9 +334,13 @@ header.main nav form {
 	position:relative;
 }
 
+section.main .description-secondary-action{
+margin-left:15px;font-size:14px;display: inline-block;
+}
+
 section.main .description h2 {
 	font-size:36px;
-	margin:30px 0 30px;
+	margin:12px 0 12px;
 }
 
 .description p {
@@ -467,7 +500,9 @@ footer .maintained-by{
 
 
 .sidebar{
-	margin-top: 34px;
+	margin-top: 20px;
+	width:300px;
+	float:left;
 }
 
 

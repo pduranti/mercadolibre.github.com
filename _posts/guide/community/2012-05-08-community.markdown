@@ -1,5 +1,5 @@
 ---
-layout: 2columns
+layout: 1columns
 title: Contact Us
 categories: 
 - Community
@@ -9,18 +9,21 @@ tags:
 - Community
 ---
 
-## Bugs? Suggestions? Shoot, we're ready!
+<h1>Community</h1>
+
+
+## Questions? Get in touch with our community, we're ready!
 
 <ul class="ch-list parameters">
-<li>Twitter to stay up-to-date with announcements: <a target="_blank" href="https://twitter.com/@melidevelopers">@melidevelopers</a></li>
-<li>IRC channel <strong>#meli @ irc.freenode.net</strong></li>
-<li>Report Bugs or Suggestions on <a target="_blank" href="https://github.com/mercadolibre/api/issues">GitHub</a></li>
+<li>Follow us on Twitter to stay up-to-date with announcements: <a target="_blank" href="https://twitter.com/@melidevelopers">@melidevelopers</a></li>
+<li>Discuss with the Developers Community on our Forums in: <a href="forums-en">English</a>, <a href="forums-sp">Spanish</a> or <a href="forums-pt">Portuguese</a>.</li>
+<li>Find us on the <strong>IRC channel: #meli@irc.freenode.net</strong></li>
+<li>Found an issue in our API? Report it on <a target="_blank" href="https://github.com/mercadolibre/api/issues">GitHub</a>!</li>
 </ul>
 
 
+## 1° MercadoLivre Developer Conference
 
-##Share your Apps
+<h3>31 de Outubro de 2012. Hotel Renaissance - São Paulo, Brasil <a href="http://devconf.mercadolibre.com/">Sign Up!</a></h3>
 
-We'd love to see what you are working on! Feel free to post it in our mailing list or our Forums so others can
-play with it.
 

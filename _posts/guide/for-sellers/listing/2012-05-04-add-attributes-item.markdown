@@ -3,7 +3,6 @@ layout: guides
 title: Attributes selection
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions
@@ -21,6 +20,8 @@ When listing an item, its attributes will vary according to the chosen category.
 <pre class="terminal">
 curl https://api.mercadolibre.com/categories/CATEGORY_ID/attributes
 </pre>
+
+See [category documentation](/category-introduction) for more details about categories hierarchy.
 
 
 ## Attributes types
