@@ -3,115 +3,57 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
 <!--[if (gt IE 8)|!(IE)]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-  <head>
+<head>
 	{% include meta-tags.html %}
-
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 	<title>{{ page.title }}</title>
+	{% include link-tags.html %}
+	{% include script-tags-head.html %}
+</head>
 
-	<script src="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-jquery.min.js"></script>
-	<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	
-	<link rel="stylesheet" href="/stylesheets/pygment_trac.css" />
-	<link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-mesh.min.css" />
-	<link rel="stylesheet" href="/stylesheets/site.css" />
-	<link href="/feed/" rel="alternate" type="application/rss+xml" title="MELI dev feed" />
-
-   
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-8863458-51']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
-  </head>
-  <body>
-    <header class="ch-g1 main">
-      <hgroup class="ch-g1-3">
-        <h1><a href="/">MELI</a></h1>
-        <h2>MELI Developer Site</h2>
-      </hgroup>
-      <nav class="ch-g2-3">
-        <ul>
-          <li><a href="/getting-started">Getting Started</a></li>
-          <li><a href="/guides">Guides & SDKs</a></li>        
-          <li style="border:none"><a href="/forums">Forums</a></li>        
-        </ul>
-      </nav>
-    </header>
+    {% include header.html %}
 
 	<section class="main ch-g1">
 		<section class="description ch-g1">
 			<article>
-				<h2>Welcome!</h2>
-				<p>Whether you are an individual developer with a killer MELI App, or an Enterprise Sized Business launching a solution for MELI members, our powerful collection of web services can help you tap into the power of the marketplace.</p>
-				<a href="/getting-started" class="ch-btn">Getting Started</a>
+				<h2>Our API. Your ideas.</h2>
+				<h3>
+					Start building amazing Apps.<br>
+					We've got 70 million users waiting just for you.
+				</h3>
+				<a href="/first-step" class="ch-btn ch-btn-big">Take your first steps</a>
+          			<a class="description-secondary-action" href="/develop-with-us">Why Develop With Us</a>
+
 				<figure><img src="images/puzzle.png" alt="Puzzle logo" width="351" height="239" /></figure>
 			</article>
 		</section>
 
 		<section class="do-it ch-g1 home-content">
-			<article class="ch-g1-4">
-				<h3><a href="/guides">Guides & SDKs</a></h3>
-				<div class="learn"></div>
-				<p>Check the examples and documentation and start using the APIs to build amazing apps.</p>
-				<p><a href="/guides" class="seeAll">View the guides</a></p>
-			</article>
-			<article class="ch-g1-4">
-				<h3><a href="/design-considerations">Design & Considerations</a></h3>
+			<article class="ch-g1-3">
+				<h3><a href="/application-manager">Create your Application</a></h3>
 				<div class="create"></div>
-				<p>Learn some basic design rules that will boost your work experience.</p>
-				<p><a href="/design-considerations" class="seeAll">Read now</a></p>
+				<p>Create your own application and start playing with our API.</p>
+				<p><a href="/application-manager" class="seeAll">Go now</a></p>
 			</article>
-			<article class="ch-g1-4">
-				<h3><a href="earn-money">Earn money</a></h3>
-				<div class="money"></div>
-				<p>Make money by building amazing applications.</p>
-				<p><a href="earn-money" class="seeAll">See how</a></p>
+
+			<article class="ch-g1-3">
+				<h3><a href="/authentication-and-authorization">Authentication</a></h3>
+				<div class="learn"></div>
+				<p>You build apps that provides services to users, then you need a tool to control access! We provide that by using OAuth 2.0.</p>
+				<p><a href="/authentication-and-authorization" class="seeAll">Learn More</a></p>
 			</article>
-			<article class="ch-g1-4">
-				<h3><a href="/discuss">Discuss</a></h3>
+
+
+			<article class="ch-g1-3">
+				<h3><a href="/community">Community</a></h3>
 				<div class="collaborate"></div>
-				<p>Get involved with the developer's community network.</p>
-				<p><a href="/discuss" class="seeAll">Go now</a></p>
+				<p>Get involved with the Developer's Community network.</p>
+				<p><strong>1° Developer Conference</strong></p>
+				<p>October 31 2012. Hotel Renaissance - São Paulo, Brasil</p>
+				<p><a href="http://devconf.mercadolivre.com/" target="_blank" class="seeAll">Sign Up Now!</a></p>
 			</article>
 		</section>
 	</section>
 
-	<footer class="ch-g1">
-    <div id="cse" style="width: 100%;">Loading</div>
-		<div class="ch-g2-3 extras">
-		<ul>
-			<li>©2012 MercadoLibre</li>
-		</ul>
-		</div>
-		<p class="ch-g1-3 maintained-by">This project is maintained by <a href="https://github.com/mercadolibre">MercadoLibre</a></p>
-		<a href="https://github.com/mercadolibre/mercadolibre.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
-	</footer>
-	
-	<script src="javascripts/scale.fix.js"></script>
-  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-  <script type="text/javascript"> 
-      google.load('search', '1', {style : google.loader.themes.V2_DEFAULT});
-        google.setOnLoadCallback(function() {
-                var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-                        '017586013854347464845:atz5lcehloe', customSearchOptions);
-                    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-                        customSearchControl.draw('cse');
-                          }, true);
-                        </script>
-	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+	{% include footer.html %}
 </body>
 </html>

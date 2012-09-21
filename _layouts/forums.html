@@ -4,66 +4,19 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
 <!--[if (gt IE 8)|!(IE)]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	{% include meta-tags.html %}
 	<title>{{ page.title }}</title>
-
-	<script src="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-jquery.min.js"></script>
-	<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
-	<link rel="stylesheet" href="/stylesheets/pygment_trac.css" />
-	<link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-mesh.min.css" />
-	<link rel="stylesheet" href="/stylesheets/site.css" />
-	<link rel="canonical" href="{{ page.url | canonical }}" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-8863458-51']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
-  </head>
+	{% include link-tags.html %}
+	{% include script-tags-head.html %}
+</head>
   <body>
-    <header class="ch-g1 main">
-      <hgroup class="ch-g1-3">
-        <h1><a href="/">MELI</a></h1>
-        <h2>MELI Developer Products</h2>
-      </hgroup>
-      <nav class="ch-g2-3">
-        <ul>
-          <li><a href="/getting-started">Getting Started</a></li>
-          <li style="border:none"><a href="/guides">Guides</a></li>
-        </ul>
-      </nav>
-    </header>
+    {% include header.html %}
 
-
-	<section class="main ch-g1">
+	<section class="main main-content ch-g1">
 		{{ content }}
 
 	</section>
-	
-	<footer class="ch-g1">
-		<div class="ch-g2-3 extras">
-		<ul>
-			<li>©2012 MercadoLibre</li>
-		</ul>
-		</div>
-		<p class="ch-g1-3 maintained-by">This project is maintained by <a href="https://github.com/mercadolibre">MercadoLibre</a></p>
-		<a href="https://github.com/mercadolibre/mercadolibre.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
-	</footer>
-	
-	<script src="javascripts/scale.fix.js"></script>
-	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+
+	{% include footer.html %}
 </body>
 </html>

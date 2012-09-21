@@ -8,11 +8,8 @@
 	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 	<title>404</title>
 
-	<script src="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-jquery.min.js"></script>
-	<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
-	
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	
+
 	<link rel="stylesheet" href="/stylesheets/pygment_trac.css" />
 	<link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/0.10.5/chico-mesh.min.css" />
 	<link rel="stylesheet" href="/stylesheets/site.css" />
@@ -23,34 +20,114 @@
 	<![endif]-->
 </head>
 <body>
-	<header class="ch-g1 main">
-		<hgroup class="ch-g1-3">
-			<h1><a href="/">MELI</a></h1>
-			<h2>MELI Developer Products</h2>
-		</hgroup>
-		<nav class="ch-g2-3">
-			<ul>
-				<li><a href="/getting-started">Getting Started</a></li>
-				<li><a href="/guides">Guides & SDKs</a></li>
-			</ul>
-		</nav>
-	</header>
+<header class="ch-g1 main">
+    <hgroup class="ch-g1-3">
+    <h1><a href="/">MELI</a></h1>
+    <h2>Developers</h2>
+    </hgroup>
+      <nav class="ch-g2-3">
+        <ul>
+         {% assign current = nil %}
+         {% if page.menu[0] == 'First Steps' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/first-step">Getting Started</a>
+          </li>
+          {% assign current = nil %}
+          {% if page.menu[0] == 'Overview' %}
+            {% assign current = 'current' %}
+          {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/core-concepts">Why with us</a>
+          </li>
+
+          <li class="option">
+            <div id="guides-menu" class="ch-dropdown-skin">
+            {% assign current = nil %}
+            {% if page.layout == 'guides' %}
+              {% assign current = 'current' %}
+            {% endif %}
+
+            <span><a class="{{ current }}" href="">Documentation</a></span>
+              <ul>
+                {% assign current = nil %}
+                {% if page.menu[0] == 'Design Considerations' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/design-considerations">Design Considerations</a></li>
+                {% assign current = nil %}
+                {% if page.menu[0] == 'Authentication' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/authentication-and-authorization">Authentication</a></li>
+                {% assign current = nil %}
+                {% if page.menu[0] == 'Buying Items' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/bookmarks">Buying Items</a></li>
+                {% assign current = nil %}
+                {% if page.menu[0] == 'Searching for Items' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/search-visual-introduction">Searching for Items</a></li>
+                {% assign current = nil %}
+                {% if page.menu[0] == 'Sellers &amp; Integrators' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/listing-introduction">Sellers &amp; Integrators</a></li>
+                <li><a href="https://developers.mercadopago.com/" target="_blank">Payment &amp; Collection</a></li>
+                {% assign current = nil %}
+                {% if page.menu[0] == 'API Directory' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/API-directory">API Directory</a></li>
+              </ul>
+            </div>
+          </li>
+
+         {% assign current = nil %}
+         {% if page.menu[0] == 'Tools' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/javascript-sdk">Tools</a>
+          </li>
+         {% assign current = nil %}
+         {% if page.menu == 'community' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option">
+            <a class="{{ current }}" href="/community">Community</a>
+          </li>
+          <li class="option">
+            <form action="/search"><input id="q" type="search" name="q" placeholder="Search this site"/><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form>
+          </li>
+        </ul>
+    </nav>
+</header>
+
+
+
 
 	<section class="main ch-g1">
 		<h2>Sorry, we can't find the page you're looking for. <span class="error404">(Error 404)</span></h2>
 		<p>Would you like to add content to the site? You can <a href="https://github.com/mercadolibre/mercadolibre.github.com">fork repo on GitHub</a> and contribute!</p>
 	</section>
 
-	<footer class="ch-g1">
-		<div class="ch-g2-3 extras">
-		<ul>
-			<li>©2012 MercadoLibre</li>
-		</ul>
-		</div>
-		<p class="ch-g1-3 maintained-by">This project is maintained by <a href="https://github.com/mercadolibre">MercadoLibre</a></p>
-		<a href="https://github.com/mercadolibre/mercadolibre.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
-	</footer>
-	
+  <footer class="ch-g1">
+    <div class="ch-g2-3 extras">
+      <ul>
+       <li>©2012 MercadoLibre</li>
+      </ul>
+    </div>
+      <p class="ch-g1-3 maintained-by"><img src="/images/github.png" alt="Github">Report an issue on <a href="https://github.com/mercadolibre/API/issues" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;<a href="http://www.twitter.com/MercadoLibre" target="_blank"><img src="/images/twitter.png" alt="Twitter">Follow us!!</a></p>
+  </footer>
+	 <script src="http://static.mlstatic.com/org-img/ch/ui/0.11/chico-jquery.min.js"></script>
+  <script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
+  <script type="text/javascript">
+     var foo = $("#guides-menu").dropdown();
+  </script>
 	<script src="javascripts/scale.fix.js"></script>
 	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
 </body>

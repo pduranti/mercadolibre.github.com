@@ -1,8 +1,8 @@
 ---
 layout: 2columns
 title: Create a Product Ad 
-categories: guides
-tags: Advertising
+categories: Documentation
+tags: Lost
 ---
 
 # Create a Product Ad
@@ -119,4 +119,4 @@ You will receive the following JSON response:
 }
 {% endhighlight %}
 
-**Congratulations!** you have created your first product Ad using the MELI APIs.
+**Congratulations!** you have created your first product Ad using the MELI API.
