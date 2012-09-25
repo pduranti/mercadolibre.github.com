@@ -16,7 +16,7 @@ tags:
 
 <ul class="ch-list parameters">
 <li>Follow us on Twitter to stay up-to-date with announcements: <a target="_blank" href="https://twitter.com/@melidevelopers">@melidevelopers</a></li>
-<li>Discuss with the Developers Community on our Forums in: <a href="/forums-en">English</a>, <a href="/forums-sp">Spanish</a> or <a href="/forums-pt">Portuguese</a>.</li>
+<li>Discuss with the Developers Community on our Forums in: <a href="/forums-en">English</a>, <a href="/forums-es">Spanish</a> or <a href="/forums-pt">Portuguese</a>.</li>
 <li>Find us on the <strong>IRC channel: #meli@irc.freenode.net</strong></li>
 <li>Found an issue in our API? Report it on <a target="_blank" href="https://github.com/mercadolibre/api/issues">GitHub</a>!</li>
 </ul>
