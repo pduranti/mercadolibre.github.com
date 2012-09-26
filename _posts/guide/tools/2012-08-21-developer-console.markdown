@@ -19,5 +19,5 @@ tags:
 </iframe>
 <script type="text/javascript">
             document.getElementById('apigee_embed').src =
-                 'https://apigee.com/tioborracho/embed/console/Miumercado?v=2';
+                 'https://apigee.com/meli/embed/console/melidev?v=2';
 </script>
