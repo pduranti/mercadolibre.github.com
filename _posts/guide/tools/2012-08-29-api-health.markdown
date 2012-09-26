@@ -1,6 +1,6 @@
 ---
 layout: 2columns
-title: API Health
+title: Platform Health
 menu: developer-tools
 categories: 
 - SDKs 
@@ -12,13 +12,18 @@ tags:
 <script src="/javascripts/twitter.js">
 </script>
 
-<div id="globalStatus" style="border-bottom: 1px solid #efefef;padding: 10px; font-size: 20px;">
+<div id="apiStatus" style="border-bottom: 1px solid #efefef;padding: 10px; font-size: 20px;">
 </div>
-<div id="jstwitter">
+<div id="apiUpdates">
+</div>
+
+<div id="feedStatus" style="border-bottom: 1px solid #efefef;padding: 10px; font-size: 20px;">
+</div>
+<div id="feedUpdates">
 </div>
      
 <style>
-    #jstwitter {
+#apiUpdates {
     width: 600px;
     font-family: georgia;
     font-size: 15px;
@@ -26,23 +31,25 @@ tags:
     padding: 10px;
 }
  
-#jstwitter .tweet {
+#apiUpdates .tweet {
     margin: 0 auto 15px auto;
     padding: 0 0 15px 0;
     border-bottom: 1px dotted #ccc;
 }
  
-#jstwitter .tweet a {
+#apiUpdates .tweet a {
     text-decoration: none;
     color: #13c9d0;
 }
  
-#jstwitter .tweet a:hover {
+#apiUpdates .tweet a:hover {
     text-decoration: underline;
 }
  
-#jstwitter .tweet .time {
+#apiUpdates .tweet .time {
     font-size: 10px;
     font-style: italic;
     color: #666666;
-}</style>
+}
+</style>
+

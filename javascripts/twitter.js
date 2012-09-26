@@ -1,10 +1,10 @@
 JQTWEET = {
      
     // Set twitter username, number of tweets & id/class to append tweets
-    user: 'MeliStatus',
+    user: 'MeliApi',
     numTweets: 5,
-    appendTo: '#jstwitter',
-    globalStatus: '#globalStatus',
+    apiStatus: '#apiStatus',
+    apiUpdates: '#apiUpdates',
  
     // core function of jqtweet
     loadTweets: function() {
@@ -25,14 +25,14 @@ JQTWEET = {
                  // append tweets into page
                  for (var i = 0; i < data.length; i++) {
                     if (i ==0 ) {
-                      $(JQTWEET.globalStatus).html(
+                      $(JQTWEET.apiStatus).html(
 
                           JQTWEET.ify.lightColor(data[i].text).replace('TWEET_TEXT', JQTWEET.ify.clean(data[i].text) )
                           + " " + JQTWEET.ify.statusText(data[i].text) 
                           );
 
                     };
-                    $(JQTWEET.appendTo).append(
+                    $(JQTWEET.apiUpdates).append(
                         html.replace('STATUS_IMAGE', JQTWEET.ify.lightColor(data[i].text))
                             .replace('TWEET_TEXT', JQTWEET.ify.clean(data[i].text) )
                             .replace(/USER/g, data[i].user.screen_name)
@@ -183,7 +183,8 @@ JQTWEET = {
  
  
  
-$(document).ready(function () {
+window.onload = function (e) {
     // start jqtweet!
     JQTWEET.loadTweets();
-});
+};
+
