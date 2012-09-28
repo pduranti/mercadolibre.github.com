@@ -1,0 +1,38 @@
+---
+layout: forums
+title: Twitter 
+categories: Forums
+---
+
+# Follow us on twitter
+
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'list',
+  rpp: 20,
+  interval: 30000,
+  title: 'Twitter',
+  subject: 'Mercado Libre',
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#effa50',
+      color: '#183cf2'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#b740c2'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    behavior: 'all'
+  }
+}).render().setList('MercadoLibre', 'mercadolibre').start();
+</script>

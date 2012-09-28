@@ -1,9 +1,9 @@
 ---
 layout: 2columns
 title: Pausing an item
-categories: guides
+categories: Documentation
 tags: 
-- My Publications
+- Lost
 ---
 #Pausing an item
 

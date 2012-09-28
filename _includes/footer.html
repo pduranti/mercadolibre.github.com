@@ -1,0 +1,38 @@
+  <footer class="ch-g1">
+  	<div id="toTop">^ Back to Top</div>
+    <ul class="extra">
+      <li class="extra-copyright">©2012 MercadoLibre</li>
+      <li class="extra-termns"><a href="/terminos-y-condiciones">Terms &amp; Conditions</a></li>
+      <li class="extra-report-issue"><a href="https://github.com/mercadolibre/API/issues" target="_blank">Report an issue</a></li>
+      <li class="extra-twitter"><a href="https://twitter.com/melidevelopers" target="_blank">Follow us!</a></li>
+    </ul>
+  </footer>
+  <script src="http://static.mlstatic.com/org-img/ch/ui/0.11/chico-jquery.min.js"></script>
+  <script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.1.js"></script>
+  <script type="text/javascript">
+    <!--
+    var foo = $("#guides-menu").dropdown();
+    -->
+  </script>
+      <script>
+    $(function() {
+      $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+          $('#toTop').fadeIn();
+        } else {
+          $('#toTop').fadeOut();
+        }
+      });
+
+      $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+      });
+    });
+    </script>
+    <script type="text/javascript">
+      function goToByScroll(id){
+          $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+      }
+    </script>
+  <script src="/javascripts/scale.fix.js"></script>
+  <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
