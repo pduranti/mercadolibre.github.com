@@ -30,9 +30,10 @@ $ curl https://api.mercadolibre.com/users/me?access_token=...
 ## Create your own Application {#register}
 
 
-The very first thing you'll want to do is make sure you are a [registered user in MercadoLibre](http://www.mercadolibre.com).
+To create an App, you need to have a valid and active user in one of the countries of our platform.
+Go to the [App manager](http://applications.mercadolibre.com) and follow the steps, if you have a user you will need to login, if you don't have onw, it will guide you through the Registration process.
 
-Then, go to the [application manager](http://applications.mercadolibre.com) and create an application as described below. You'll get a client ID and a client secret which will be very important later on. You can read about how to use this tool on the [application manager guide](/application-manager).
+After you create the App you will get a App ID and a client secret which will be very important later on. You can read about how to use this tool on the [application manager guide](/application-manager)
 
 <style type="text/css">
 img.appID
