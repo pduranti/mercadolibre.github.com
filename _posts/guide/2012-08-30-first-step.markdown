@@ -202,7 +202,7 @@ Response response = m.get("/users/me", params);
 
 ## Next Steps {#next}
 
-Reading the [Authorization](/authentication-and-authorization) section you will see how applications manage and grant permission scopes. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth for you.
+Reading the [Authentication](/authentication-and-authorization) section you will see how applications manage and grant permission scopes. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth for you.
 
 Later, you should head over to our Documentation section and find what best suits your goal:
 <ul class="ch-list parameters">
