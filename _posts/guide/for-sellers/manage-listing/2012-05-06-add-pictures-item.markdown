@@ -20,7 +20,7 @@ Pictures are optional when listing, but they make a big difference in the public
 Users can upload pictures with at most 10 MB. Picture format can be .jpg, .jpeg, .png or .gif (without animation). 
 
 ### Zooming
-For pictures larger than than 800 pixels, a zoom widget is activated that lets buyers roll over and take a close-up look. This is highly recommended for Clothes and Real Estate properties.
+For pictures wider than 800 pixels, a zoom widget is activated that lets buyers roll over and take a close-up look. This is highly recommended for Clothes and Real Estate properties.
 
 ## Upload the Picture
 

@@ -24,7 +24,7 @@ curl https://api.mercadolibre.com/items/ITEM_ID?access_token=YOUR_ACCESS_TOKEN
 
 Possible values are:
 
-**- closed:** finalizes your publication. Once closed, it cannot be reactivated again, but it can be [relisted](/reslist-item).<br/>
+**- closed:** finalizes your publication. Once closed, it cannot be reactivated again, but it can be [relisted](/relist-item).<br/>
 **- paused:** pauses your publication. Once paused, it will not be visible by other MercadoLibre's users, but it will not be closed and it can be reactivated later on.<br/>
 **- active:** reactivates a previously paused item.<br/>
 
