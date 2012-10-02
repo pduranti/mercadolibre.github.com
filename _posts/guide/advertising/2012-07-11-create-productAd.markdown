@@ -19,20 +19,20 @@ One ways of creating a product Ad is sending the image URL in the request: The A
 
 <pre class="terminal">
 curl -i -H 'Accept:application/json' -H 'Content-Type: application/json' -X POST -d '
-{
-	"campaignID":"39003",
-	"adDailyBudget":"1",
-	"siteID":"MLA",
-	"custID":"66258610",
-	"title":"Title Test",
-	"URLDestiny":"http://www.mercadolibre.com.ar",
-	"URLVisible":"www.mercadolibre.com.ar",
-	"maxCPC":"0.15",
-	"categID":"1652",
-	"refFrom":"Reference owner1",
-	"refID":"Reference ID",
-	"uriImage": "http://static.mlstatic.com/org-img/chico/img/logo-mercadolibre.png",
-	"price":"15"
+{ 
+	"URLDestiny" : "http://lista.mercadolivre.com.br/bebes-bolsas/_CustId_102489542",
+  	"URLVisible" : "http://lista.mercadolivre.com.br",
+  	"adDailyBudget" : 100,
+  	"campaignID" : 158014,
+  	"categID" : "86698",
+  	"custID" : 102489542,
+  	"maxCPC" : 10,
+  	"price" : 15,
+  	"refFrom" : "",
+  	"refID" : "243107598",
+  	"siteID" : "MLB",
+  	"title" : "Bolsas de Bebê a partir de",
+  	"uriImage" : "http://static.mlstatic.com/org-img/chico/img/logo-mercadolibre.png"
 }' 'https://api.mercadolibre.com/mclics/productAd?access_token=$ACCESS_TOKEN'
 </pre>
 
