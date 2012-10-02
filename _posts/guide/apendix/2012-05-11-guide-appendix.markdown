@@ -1,13 +1,11 @@
 ---
-layout: 1columns
-title: Appendix - related APIs
-categories: guides
-tags: Appendix
+layout: guides
+title: API relations
 ---
 
-#Appendix – Related APIs
+##Overview {#overview}
 
-Some of the tutorials described in this site need several “id’s” from different MELI’s API’s.
+Some of the tutorials described in this site need several “id’s” from different MELI’s API.
 
 For example, when you list an item, you have to specify the following attributes:
 
@@ -25,9 +23,19 @@ For example, when you list an item, you have to specify the following attributes
 
 {% endhighlight %}
 
-As you can see in the JSON above, you need to specify the **category_id**, the **currency_id** and the **listing_type_id**. This particular three fields are mandatory and only accepts pre-defined id’s. You can see the different id’s that these fields accept by looking at the Category, Currencies and Listing Type APIs.
+As you can see in the JSON above, you need to specify the **category_id**, the **currency_id** and the **listing_type_id**. This particular three fields are mandatory and only accepts pre-defined id’s. You can see the different id’s that these fields accept by looking at the Category, Currencies and Listing Type API.
 
-##Category API
+### Table of Contents
+- [Categories API](#categories-api)
+- [Categories Dump](#categories-dump)
+- [Currencies API](#currencies-api)
+- [Listing Types API](#listing-types-api)
+
+
+
+
+
+##Categories API {#categories-api}
 
 The Sites API shows the entirely MELI category structure for a particular country, in this case Argentina.
 
@@ -35,20 +43,20 @@ The Sites API shows the entirely MELI category structure for a particular countr
 As you can see, you get information related to Argentina MELI operation, one of the JSON attributes is “categories”, in which you have the first level of categories.
 
 {% highlight javascript %}
-"categories": - [
-- {
+"categories": [
+{
 "id": "MLA5725",
 "name": "Accesorios para VehÃ­culos",
 },
-- {
+{
 "id": "MLA1071",
 "name": "Animales y Mascotas",
 },
-- {
+{
 "id": "MLA1367",
 "name": "AntigÃ¼edades",
 },
-- {
+{
 "id": "MLA1743",
 "name": "Autos, Motos y Otros",
 },
@@ -65,19 +73,19 @@ For second level categories, or information related to specific categories, you 
 "name": "Animales y Mascotas",
 "permalink": "http://home.mercadolibre.com.ar/animales-y-mascotas",
 "total_items_in_this_category": "30434",
-"path_from_root": - [
-- {
-"id": "MLA1071",
-"name": "Animales y Mascotas",
-},
+"path_from_root": [
+	{
+	"id": "MLA1071",
+	"name": "Animales y Mascotas",
+	},
 ],
-"children_categories": - [
-- {
+"children_categories": [
+{
 "id": "MLA1100",
 "name": "Aves",
 "total_items_in_this_category": "1430",
 },
-- {
+{
 "id": "MLA1117",
 "name": "Caballos",
 "total_items_in_this_category": "1092",
@@ -88,7 +96,40 @@ For second level categories, or information related to specific categories, you 
 
 As you can see, you get the “path_from_root” and "children_categories" attributes, use these attributes to browse the categories tree to find the specific category for your item.
 
-##Currency API
+##Categories Dump {#categories-dump}
+The category tree does not change very often. If you prefer you can request a dump of the whole category tree for a given country site for offline processing.
+This API returns the category tree in JSON format within a gzip-encoded response.
+
+To get the categories for Brasil, use this URL:
+
+	https://api.mercadolibre.com/sites/MLB/categories/all
+
+To get the categories for Argentina, use this URL:
+
+	https://api.mercadolibre.com/sites/MLA/categories/all
+
+###Modification Headers
+This URL contains 2 headers that can be used to check when was the dump last generated.
+
+- **X-Content-Created**: contains the date of the last generation.
+- **X-Content-MD5**: contains the MD5 checksum of last generation.
+
+<pre class='terminal'>
+~$ curl -I  https://api.mercadolibre.com/sites/MLB/categories/all
+HTTP/1.1 200 OK
+Server: nginx/1.0.4
+Date: Tue, 24 Jul 2012 15:14:58 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-MLAPI-Version: 1.9.5
+Content-Encoding: gzip
+X-Content-Created: 2012-07-24T14:00:59.716Z
+X-Content-MD5: 943541196986770119b4af1e66bda2dc
+</pre>
+
+
+
+##Currency API {#currencies-api}
 
 You can get the default currency_id for each MELI operation, using the Sites API.
 
@@ -105,11 +146,11 @@ In this case, you have to take a look at the “default_currency_id” attribute
 "mercadopago_version": "3",
 "default_currency_id": "ARS",
 "currencies": - [
-- {
+{
 "id": "USD",
 "symbol": "U$S",
 },
-- {
+{
 "id": "ARS",
 "symbol": "$",
 },
@@ -127,7 +168,11 @@ In this case, you have to take a look at the “default_currency_id” attribute
 "decimal_places": "2",
 }
 {% endhighlight %}
-##Listing Type API
+
+
+
+
+##Listing Type API {#listing-types-api}
 
 As you have seen in the previous tutorials, each time you list an item you have to specify a listing type.
 
@@ -141,27 +186,27 @@ To see the complete list of listing types by country you have to use the listing
 
 {% highlight javascript %}
 [
-- {
+{
 "site_id": "MLA",
 "id": "gold_premium",
 "name": "Oro Premium",
 },
-- {
+{
 "site_id": "MLA",
 "id": "gold",
 "name": "Oro",
 },
-- {
+{
 "site_id": "MLA",
 "id": "silver",
 "name": "Plata",
 },
-- {
+{
 "site_id": "MLA",
 "id": "bronze",
 "name": "Bronce",
 },
-- {
+{
 "site_id": "MLA",
 "id": "free",
 "name": "Gratuita",
@@ -176,7 +221,7 @@ For more information related to each listing type, let’s access to the listing
 {% highlight javascript %}	
 {
 "id": "gold",
-"configuration": - {
+"configuration": {
 "name": "Oro",
 "listing_exposure": "high",
 "requires_picture": true,

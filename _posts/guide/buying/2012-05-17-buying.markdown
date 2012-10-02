@@ -1,8 +1,6 @@
 ---
-layout: 2columns
+layout: guides
 title: Buying 
-categories: guides
-tags: Buying
 ---
 
 # Buying
@@ -73,7 +71,7 @@ You will receive the following JSON response:
 
 {% endhighlight %}
 
-**Congratulations!** you have performed your first buying operation using the MELI APIs.    
+**Congratulations!** you have performed your first buying operation using the MELI API.    
 
 You can check the status of your order anytime by calling the orders API as follows:
 

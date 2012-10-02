@@ -24,4 +24,3 @@ If you are on Ubuntu 11.10, you may encouner this error:
 ```
 
 To fix it, edit the date line in /var/lib/gems/1.8/specifications/directory_watcher-1.4.1.gemspec from "s.date = %q{2011-08-30 00:00:00.000000000Z}" to "s.date = %q{2011-08-30}".
-
