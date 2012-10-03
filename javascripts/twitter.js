@@ -2,9 +2,9 @@
 JQTWEET = {
      
     // Set twitter username, number of tweets & id/class to append tweets
-    user: 'MeliAPI',
+    user: 'MeliApi',
     numTweets: 5,
-    appendTo: '#jstwitter',
+    appendTo: '#lastTweets',
     globalStatus: '#globalStatus',
  
     // core function of jqtweet
@@ -46,8 +46,40 @@ JQTWEET = {
         });
          
     }, 
-     
+    apiStatus: function() {
+        $.ajax({
+            url: 'http://search.twitter.com/search.json',
+            type: 'GET',
+            dataType: 'jsonp',
+            data: {
+                q: 'from:MeliApi AND #red'
+            },
+            success: function(data, textStatus, xhr) {
+ 
+              var html = '<div class="tweet">STATUS_IMAGE TWEET_TEXT<div class="time">AGO</div>';
+                 
+            }   
+ 
+        });
          
+    }, 
+    feedStatus: function() {
+        $.ajax({
+            url: 'http://search.twitter.com/search.json',
+            type: 'GET',
+            dataType: 'jsonp',
+            data: {
+                q: 'from:MeliApi AND #yellow'
+            },
+            success: function(data, textStatus, xhr) {
+ 
+              var html = '<div class="tweet">STATUS_IMAGE TWEET_TEXT<div class="time">AGO</div>';
+                 
+            }   
+ 
+        });
+         
+    }, 
     /**
       * relative time calculator FROM TWITTER
       * @param {string} twitter date string returned from Twitter API
