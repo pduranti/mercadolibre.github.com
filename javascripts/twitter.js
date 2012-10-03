@@ -21,13 +21,12 @@ JQTWEET = {
             },
             success: function(data, textStatus, xhr) {
  
-                 var html = '<div class="tweet">STATUS_IMAGE TWEET_TEXT<div class="time">AGO</div>';
+                 var html = '<div class="tweet">TWEET_TEXT<div class="time">AGO</div>';
                  
                  // append tweets into page
                  for (var i = 0; i < data.length; i++) {
                     $(JQTWEET.appendTo).append(
-                        html.replace('STATUS_IMAGE', JQTWEET.ify.lightColor(data[i].text))
-                            .replace('TWEET_TEXT', JQTWEET.ify.clean(data[i].text) )
+                        html.replace('TWEET_TEXT', JQTWEET.ify.clean(data[i].text) )
                             .replace(/USER/g, data[i].user.screen_name)
                             .replace('AGO', JQTWEET.timeAgo(data[i].created_at) )
                             .replace(/ID/g, data[i].id_str)
@@ -69,7 +68,7 @@ JQTWEET = {
             type: 'GET',
             dataType: 'jsonp',
             data: {
-                q: 'from:MeliApi AND #yellow',
+                q: 'from:MeliApi AND #feedStatus',
                 rpp: 1  
             },
             success: function(data, textStatus, xhr) {
