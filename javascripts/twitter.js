@@ -1,6 +1,5 @@
 
 JQTWEET = {
-     
     // Set twitter username, number of tweets & id/class to append tweets
     user: 'MeliApi',
     numTweets: 5,
@@ -60,9 +59,7 @@ JQTWEET = {
                     JQTWEET.ify.lightColor(status[0].text).replace('TWEET_TEXT', JQTWEET.ify.clean(status[0].text) )
                           + " " + JQTWEET.ify.statusText(status[0].text));
               };
-                 
             }   
- 
         });
          
     }, 
@@ -86,12 +83,9 @@ JQTWEET = {
                  $(JQTWEET.feedStatusDiv).html(
                     JQTWEET.ify.lightColor(status[0].text).replace('TWEET_TEXT', JQTWEET.ify.clean(status[0].text) )
                           + " " + JQTWEET.ify.statusText(status[0].text));
-              };
-                 
-            }   
- 
+              };    
+            }
         });
-         
     }, 
     /**
       * relative time calculator FROM TWITTER
