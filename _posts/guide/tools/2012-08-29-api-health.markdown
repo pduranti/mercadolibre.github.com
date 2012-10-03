@@ -26,13 +26,12 @@ tags:
     </div>
 </div>
 
-
 <div class="ch-g1">
     <div id="lastTweets">
     </div>
 </div>
      
-     
+
 <style>
 #lastTweets {
     width: 600px;
