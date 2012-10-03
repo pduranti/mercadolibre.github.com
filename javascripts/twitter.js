@@ -5,7 +5,8 @@ JQTWEET = {
     user: 'MeliApi',
     numTweets: 5,
     appendTo: '#lastTweets',
-    globalStatus: '#globalStatus',
+    apiStatusDiv: '#apiStatus',
+    feedStatusDiv: '#feedStatus',
  
     // core function of jqtweet
     loadTweets: function() {
@@ -25,14 +26,6 @@ JQTWEET = {
                  
                  // append tweets into page
                  for (var i = 0; i < data.length; i++) {
-                    if (i ==0 ) {
-                      $(JQTWEET.globalStatus).html(
-
-                          JQTWEET.ify.lightColor(data[i].text).replace('TWEET_TEXT', JQTWEET.ify.clean(data[i].text) )
-                          + " " + JQTWEET.ify.statusText(data[i].text) 
-                          );
-
-                    };
                     $(JQTWEET.appendTo).append(
                         html.replace('STATUS_IMAGE', JQTWEET.ify.lightColor(data[i].text))
                             .replace('TWEET_TEXT', JQTWEET.ify.clean(data[i].text) )
@@ -52,11 +45,21 @@ JQTWEET = {
             type: 'GET',
             dataType: 'jsonp',
             data: {
-                q: 'from:MeliApi AND #red'
+                q: 'from:MeliApi AND #red',
+                rpp: 1  
             },
             success: function(data, textStatus, xhr) {
  
               var html = '<div class="tweet">STATUS_IMAGE TWEET_TEXT<div class="time">AGO</div>';
+              
+              console.log("Data: ", data);
+              var status = data.results;
+
+              if(status.length == 1){
+                 $(JQTWEET.apiStatusDiv).html(
+                    JQTWEET.ify.lightColor(status[0].text).replace('TWEET_TEXT', JQTWEET.ify.clean(status[0].text) )
+                          + " " + JQTWEET.ify.statusText(status[0].text));
+              };
                  
             }   
  
@@ -69,11 +72,21 @@ JQTWEET = {
             type: 'GET',
             dataType: 'jsonp',
             data: {
-                q: 'from:MeliApi AND #yellow'
+                q: 'from:MeliApi AND #yellow',
+                rpp: 1  
             },
             success: function(data, textStatus, xhr) {
  
               var html = '<div class="tweet">STATUS_IMAGE TWEET_TEXT<div class="time">AGO</div>';
+
+              console.log("Data: ", data);
+              var status = data.results;
+
+              if(status.length == 1){
+                 $(JQTWEET.feedStatusDiv).html(
+                    JQTWEET.ify.lightColor(status[0].text).replace('TWEET_TEXT', JQTWEET.ify.clean(status[0].text) )
+                          + " " + JQTWEET.ify.statusText(status[0].text));
+              };
                  
             }   
  
@@ -218,5 +231,7 @@ JQTWEET = {
   window.onload = function() {
     // start jqtweet!
     JQTWEET.loadTweets();
+    JQTWEET.apiStatus(); 
+    JQTWEET.feedStatus(); 
   };
 
