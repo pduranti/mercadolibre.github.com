@@ -23,16 +23,16 @@ JQTWEET = {
  
                  var html = '<div class="tweet">TWEET_TEXT<div class="time">AGO</div></div>';
                  
-                 var tweetText = data[0].text
+
+                 for (var i = 0; i < data.length; i++) {
+                 var tweetText = data[i].text
                                     .replace('#apiStatus', 'API status: ')
                                     .replace('#feedStatus', 'Feed status: ')
                                     .replace('[red]', '')
                                     .replace('[yellow]', '')
                                     .replace('[green]', '');
-
-                 for (var i = 0; i < data.length; i++) {
                     $(JQTWEET.appendTo).append(
-                        html.replace('TWEET_TEXT', JQTWEET.ify.clean(data[0].text) )
+                        html.replace('TWEET_TEXT', JQTWEET.ify.clean(tweetText) )
                             .replace(/USER/g, data[i].user.screen_name)
                             .replace('AGO', JQTWEET.timeAgo(data[i].created_at) )
                             .replace(/ID/g, data[i].id_str)

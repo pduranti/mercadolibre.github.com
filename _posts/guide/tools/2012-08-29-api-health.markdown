@@ -19,6 +19,9 @@ tags:
         </div>
     </div>
 </div>
+
+
+
 <div class="ch-g1-2">
     <div class="ch-rightcolumn">
         <div id="feedStatus" style="border: 1px solid #efefef;padding: 10px; font-size: 20px;">
@@ -27,6 +30,7 @@ tags:
 </div>
 
 <div class="ch-g1">
+    <div style="color: #DC7B1C; font-size: 14px; font-weight: bold; padding-bottom: 15px;">Tweets</div>
     <div id="lastTweets">
     </div>
 </div>
