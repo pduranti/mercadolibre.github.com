@@ -30,7 +30,7 @@ tags:
 </div>
 
 <div class="ch-g1">
-    <div style="color: #DC7B1C; font-size: 14px; font-weight: bold; padding-bottom: 15px;">Tweets</div>
+    <div style="color: #DC7B1C; font-size: 14px; font-weight: bold; padding-bottom: 15px;">Recent News</div>
     <div id="lastTweets">
     </div>
 </div>
