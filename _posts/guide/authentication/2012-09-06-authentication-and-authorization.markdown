@@ -13,7 +13,7 @@ tags:
 
 MercadoLibre platform lets you access different resources through API calls. As you already know there are some public resources that can be accessed anonymously (such as product search) and other resources that require some kind of authentication (user data, payments, modify your selling products).
 
-To handle the authentication throughout the platform We use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) protocol. This is a standard, secure yet simple protocol that covers most use cases you should encounter interacting with MercadoLibre APIs. 
+To handle the authentication within the platform we use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) protocol. This is a standard, secure yet simple protocol that covers most use cases you should encounter interacting with MercadoLibre APIs. 
 
 We will explain shortly how to use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) authentication in some simple cases and you can read further in the following sections.
 
@@ -35,9 +35,9 @@ We will explain shortly how to use [OAuth 2.0](http://tools.ietf.org/pdf/draft-i
 </dl>
 </div>
 
-##Should I read all this {#should-i}
+##Should I read all this? {#should-i}
 
-We definitely think you **should**. It is always good to know what is happenning behind when you use a sdk/framework but at the same time We **encourage** you to use our provided <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a> to connect and "talk" to the APIs.
+We definitely think you **should**. It is always good to know what is happenning behind when you use a sdk/framework, however, we **encourage** you to use our provided <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a> to connect and "talk" to the APIs.
 
 These <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a> implement the OAuth protocol and on one hand leverages you from coding everything again and on the other hand every security issue or bug discovered can be fixed on a centralized place. If you think that there should be any enhancements please feel free to contribute to these <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a>. It is a win-win situation.
 
@@ -45,11 +45,11 @@ These <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a> imple
 
 ##Basic concepts {#basic-concepts}
 
-The basic idea behind OAuth protocol is that you need a token to make a secure call to an API, and the rest of this guide will explain why is this needed and how to obtain that token whether you are working with client-side or server-side scripting. 
+The basic idea behind OAuth protocol is that you need a token to make a secure call to an API. The rest of this guide will explain why this is needed and how to obtain that token whether you are working with client-side or server-side scripting. 
 
 ##What is a token? Why do I need one? {#tokens-explained}
   
-A token is an encrypted string that represents the user credentials. If you have a valid token our servers can know which application is making the call, on behalf of which user, and with which permissions, being sure that all af this was authorized by the user. 
+A token is an encrypted string that represents the user credentials. If you have a valid token our servers can know which application is making the call, on behalf of which user, and with which permissions, making sure that all of this is authorized by the user. 
 
 <div class="ch-box">
   <div id="tokens">
