@@ -13,14 +13,14 @@ Our API is [RESTful](http://es.wikipedia.org/wiki/Representational_State_Transfe
 
 All responses are JSON encoded. (For details on API design visit [Design Considerations](/design-considerations/#json)).
 
-Some Resources are public and others have private information. To access to public information you can use just an URL:
+Some Resources are public and others have private information. To access public information you can use just an URL:
 
 <pre class="terminal">
 $ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
 </pre>
 
 
-But if you need to access to private Rersources you will need an access token:
+But if you need to access private Resources you will need an access token:
 
 <pre class="terminal">
 $ curl https://api.mercadolibre.com/users/me?access_token=...
@@ -31,9 +31,9 @@ $ curl https://api.mercadolibre.com/users/me?access_token=...
 
 
 To create an App, you need to have a valid and active user in one of the countries of our platform.
-Go to the [App manager](http://applications.mercadolibre.com) and follow the steps, if you have a user you will need to login, if you don't have onw, it will guide you through the Registration process.
+Go to the [App manager](http://applications.mercadolibre.com) and follow the steps, if you have a user you will need to log in, if you don't have one, you will be guided through the Registration process.
 
-After you create the App you will get a App ID and a client secret which will be very important later on. You can read about how to use this tool on the [application manager guide](/application-manager)
+After you create the App you will get a App ID and a client secret which will be very important later on. You can read about how to use this tool on the [application manager guide](/application-manager).
 
 <style type="text/css">
 img.appID
@@ -49,7 +49,7 @@ img.appID
 
 ## Authorizing an Application
 
-Applications can only access private user resources if the users gives explicit **authorization** to the Application.
+Applications can only access private user resources if users grant explicit **authorization** to the Application.
 
 
 
@@ -61,7 +61,7 @@ Applications can only access private user resources if the users gives explicit 
 
 ## Retrieve your User Information {#profile}
 
-Using our [SDKs](/javascript-sdk) you'll be able to retrieve your own user profile using your own application.
+Our [SDKs](/javascript-sdk) will enable you to retrieve your own user profile using your own application.
 
 <div id="code">
 	<ul>
@@ -121,7 +121,7 @@ Response response = m.get("/users/me", params);
 ## Give it a try with your App! {#try}
 
 <p>
-  Enter the application ID you just created: <input id="target" type="text" value="6092" size="6" /> &nbsp;
+  Enter the application ID you've just created: <input id="target" type="text" value="6092" size="6" /> &nbsp;
   <input class="ch-btn ch-btn-small" type="button" id="show-my-info" value="Show my information"/>
 </p>
 
