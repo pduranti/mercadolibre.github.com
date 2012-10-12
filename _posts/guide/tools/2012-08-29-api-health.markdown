@@ -13,30 +13,59 @@ tags:
 </script>
 
 
-<div class="ch-g1-2">
-    <div class="ch-leftcolumn" >
-        <div id="apiStatus" style="border: 1px solid #efefef;padding: 10px; font-size: 20px;">
+<div class="status_bar">
+    <div id="status_color_api">
+        <div id="apiStatus" class="status">
         </div>
     </div>
 </div>
 
-
-
-<div class="ch-g1-2">
-    <div class="ch-rightcolumn">
-        <div id="feedStatus" style="border: 1px solid #efefef;padding: 10px; font-size: 20px;">
+<div class="status_bar">
+    <div id="status_color_api">
+        <div id="feedStatus" class="status">
         </div>
     </div>
 </div>
 
 <div class="ch-g1">
-    <div style="color: #DC7B1C; font-size: 14px; font-weight: bold; padding-bottom: 15px;">Recent News</div>
+    <div class="SubTitles">Recent News</div>
     <div id="lastTweets">
     </div>
 </div>
      
 
 <style>
+.status {
+    border: 1px solid #efefef;
+    padding: 30px; 
+    font-size: 24px;
+}
+
+.status_bar {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.SubTitles {
+    color: #DC7B1C; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+.red {
+    background-color: #FF7773;
+}
+
+.yellow {
+    background-color: #FFDA40;
+}
+
+.green {
+    background-color: #74E868;
+}
+
 #lastTweets {
     width: 600px;
     font-family: georgia;

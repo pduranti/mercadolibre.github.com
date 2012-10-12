@@ -27,7 +27,7 @@ JQTWEET = {
                  for (var i = 0; i < data.length; i++) {
                  var tweetText = data[i].text
                                     .replace('#apiStatus', 'API status: ')
-                                    .replace('#feedStatus', 'Feed status: ')
+                                    .replace('#feedStatus', 'Notifications status: ')
                                     .replace('[red]', '')
                                     .replace('[yellow]', '')
                                     .replace('[green]', '');
@@ -214,16 +214,49 @@ JQTWEET = {
       },
       statusText: function(api, tweet) {
         var match = tweet.match(/(^|\s+)\[(red|green|yellow)\](\ |$)/);
-        var rsp = api + " is ";
-        if (match) {
-          if (match[2] == "red")
-            rsp += 'down';
-          else if (match[2] == "yellow")
-            rsp += 'having some problems';
-          else if (match[2] == "green")
-            rsp += 'up and running';
-        };
+        
+        var rsp;
+        var $status;
 
+        switch(api.toLowerCase())
+        {
+          case "feed":
+            rsp = "Notifications are ";
+            $status = $("#feedStatus");
+          break;
+          
+          case "api":
+            rsp = "API is ";
+            $status = $("#apiStatus");
+          break;
+
+          default:
+            return;
+        }
+
+        console.log(rsp);
+
+        if( tweet.indexOf("[red]") != -1 )
+        {
+          rsp += 'down';
+          $status.addClass("red");
+        }
+        else
+        {
+          if( tweet.indexOf("[yellow]") != -1 )
+          {
+            rsp += 'having some problems';
+            $status.addClass("yellow");
+          }
+          else
+          {
+            if( tweet.indexOf("[green]") != -1 )
+            {
+              rsp += 'up and running';
+              $status.addClass("green");
+            }
+          }
+        }
         return rsp;
       },
       hash: function(tweet) {
