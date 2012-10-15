@@ -33,7 +33,7 @@ Default values are offset=0 and limit=50.
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano
 </pre>
 
-In the paging section of the JSON response you can see the total amount of items that matched in the search and the offset with the default limit applied.  
+In the paging section of the JSON response, you can see the total number of items that match the search and the offset value with the default limit applied.  
 
 {% highlight javascript %}
   .....
@@ -47,13 +47,13 @@ In the paging section of the JSON response you can see the total amount of items
 
 ## Limit {#paging-limit}
 
-To reduce the page size you can change the limit parameter. For example if you are insterested in retrieve just the first 3 items:
+To reduce the page size you can change the limit parameter. For example, if you are insterested in retrieving just the first 3 items:
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano&amp;limit=3
 </pre>
 
-It retrieves a JSON data with an array of 3 items as shown:
+This action retrieves a JSON data with an array of 3 items as shown:
 
 {% highlight javascript %}
 {
@@ -78,7 +78,7 @@ It retrieves a JSON data with an array of 3 items as shown:
 
 ## Offset {#paging-offset}
 
-Using offset attribute you can move the lower limit of the result block. For example if you are insterested in retrieve the next 50 items that follows the default response:
+By using the offset attribute, you can move the lower limit of the result block. For example, if you are insterested in retrieving the 50 items that follow the default response:
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano&amp;offset=50
@@ -101,18 +101,18 @@ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano&amp;offset=50
 }
 {% endhighlight %}
 
-This response retrieves 50 items starting from fifty-first initial items.
+This response retrieves 50 items starting from the first fifty items.
 
 ## Define a range of results {#paging-range}
 
-It is possible combining both parameters. You can retrieves items from third item to sixth items in the original search result:
+It is possible to combine both parameters. You can retrieve items from the third to the sixth item in the original search result:
 
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod nano&amp;offset=3&amp;limit=3
 </pre>
 
-It retrieves a JSON data with an array of 5 items as shown:
+This action retrieves a JSON data with an array of 5 items as shown:
 
 {% highlight javascript %}
 {
@@ -138,6 +138,6 @@ It retrieves a JSON data with an array of 5 items as shown:
 
 ## Response {#search-response}
 
-Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other part of API. It is a standard format to get [API documentation](/design-considerations/#options) 
+The Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to another part of the API. It is a standard format to get [API documentation](/design-considerations/#options). 
 
-For more information about search options you can check the website [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)
+For more information about search options, you can check this website: [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)

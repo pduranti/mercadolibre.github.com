@@ -11,9 +11,9 @@ tags:
 
 ## Overview {#overview}
 
-MercadoLibre platform lets you access different resources through API calls. As you already know there are some public resources that can be accessed anonymously (such as product search) and other resources that require some kind of authentication (user data, payments, modify your selling products).
+MercadoLibre platform lets you access different resources through API calls. As you already know, there are some public resources that can be accessed anonymously (such as product search) and other resources that require some kind of authentication (user data, payments, modify your listed products).
 
-To handle the authentication within the platform we use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) protocol. This is a standard, secure yet simple protocol that covers most use cases you should encounter interacting with MercadoLibre APIs. 
+To handle the authentication within the platform we use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) protocol. This is a standard, secure yet simple protocol that covers most use cases you should encounter when interacting with MercadoLibre's APIs. 
 
 We will explain shortly how to use [OAuth 2.0](http://tools.ietf.org/pdf/draft-ietf-oauth-v2-12.pdf) authentication in some simple cases and you can read further in the following sections.
 
@@ -350,7 +350,7 @@ you will get a new access_token and also a new refresh token. Note that a refres
   <tr><td>invalid_grant</td><td>The client_id does not match the original.</td><td>Client id does not match.</td></tr>
   <tr><td>invalid_grant</td><td>The redirect_uri does not match the original.</td><td>Redirect URI does not match the original.</td></tr>
   <tr><td>invalid_scope</td><td>Invalid scope.</td><td>The requested scope is invalid, unknown, or malformed.</td></tr>
-  <tr><td>invalid_request</td><td>Wrong number of parameters with duplicate values.</td><td>The reques  is missing a required parameter, includes an unsupported parameter or parameter value, or is otherwise malformed.</td></tr>
+  <tr><td>invalid_request</td><td>Wrong number of parameters with duplicate values.</td><td>The request is missing a required parameter, includes an unsupported parameter or parameter value, or is otherwise malformed.</td></tr>
   <tr><td>unsupported_grant_type</td><td>Unsupported grant type: ${0}.</td><td>The authorization grant type is not supported by the authorization server.</td></tr>
 </tbody>
 </table>
