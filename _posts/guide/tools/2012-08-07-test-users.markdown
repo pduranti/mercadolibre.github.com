@@ -72,7 +72,7 @@ When working with test users, you need to take into account the following consid
 	<li>List under the "Others" category as much as possible. </li>
 	<li>Do not publish items with listing types "gold" or "gold_premium" that can appear in the home page.</li>
 	<li>Test users can only operate with test items. Test users can only buy and make questions on test items.</li>
-	<li>Test users showing no activity (buy, ask, pulbish, etc.) during 60 days are removed.</li>
+	<li>Test users showing no activity (buy, ask, publish, etc.) during 60 days are removed.</li>
 	<li>Test items are removed regularly.</li>
 </ul>
 
