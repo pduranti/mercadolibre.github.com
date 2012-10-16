@@ -1,12 +1,13 @@
-
 JQTWEET = {
+       
     // Set twitter username, number of tweets & id/class to append tweets
+    
     user: 'MeliApi',
     numTweets: 5,
     appendTo: '#lastTweets',
     apiStatusDiv: '#apiStatus',
     feedStatusDiv: '#feedStatus',
- 
+
     // core function of jqtweet
     loadTweets: function() {
         $.ajax({
@@ -202,12 +203,15 @@ JQTWEET = {
         var match = tweet.match(/(^|\s+)\[(red|green|yellow)\](\ |$)/);
         var rsp = "";
         if (match) {
-          if (match[2] == "red")
-            rsp = '<IMG src="/images/icn-red.png"/>';
-          else if (match[2] == "yellow")
-            rsp = '<IMG src="/images/icn-yellow.png"/>';
-          else if (match[2] == "green")
-            rsp = '<IMG src="/images/icn-green.png"/>';
+          if (match[2] == "red") {
+            rsp = '<img src="/images/icn-red.png"/>';
+          }
+          else if (match[2] == "yellow") {
+            rsp = '<img src="/images/icn-yellow.png"/>';
+          }
+          else if (match[2] == "green") {
+            rsp = '<img src="/images/icn-green.png"/>';
+          }
         };
 
         return rsp;
@@ -221,44 +225,67 @@ JQTWEET = {
         switch(api.toLowerCase())
         {
           case "feed":
-            rsp = "Notifications are ";
+            rsp = "Notifications"; //are ";
             $status = $("#feedStatus");
           break;
           
           case "api":
-            rsp = "API is ";
+            rsp = "API"; //is ";
             $status = $("#apiStatus");
           break;
 
           default:
             return;
         }
+        JQTWEET.ify.mainBoxColor(tweet);
 
-        console.log(rsp);
+        return rsp;
+      },
 
-        if( tweet.indexOf("[red]") != -1 )
+      mainBoxColor: function(tweet) {
+
+        var html = "";
+
+        if( tweet.indexOf("[red]") != -1)
         {
-          rsp += 'down';
-          $status.addClass("red");
+          $('#status_color_api').removeClass();
+          $('#general_status').empty();
+
+          $('#status_color_api').addClass('red');
+          $('#general_status').width('42%');
+          
+          html = '<p>Major service outage</p>';
+          
         }
         else
         {
-          if( tweet.indexOf("[yellow]") != -1 )
+          if( tweet.indexOf("[yellow]") != -1  && !$('#status_color_api').hasClass('red'))
           {
-            rsp += 'having some problems';
-            $status.addClass("yellow");
+            $('#status_color_api').removeClass();
+            $('#general_status').empty();
+            $('#status_color_api').addClass('yellow');
+            $('#general_status').width('42%');
+
+            html = '<p>Partial service outage</p>';
+
           }
           else
           {
-            if( tweet.indexOf("[green]") != -1 )
+            if( tweet.indexOf("[green]") != -1 && !$('#status_color_api').hasClass('yellow') && !$('#status_color_api').hasClass('green') && !$('#status_color_api').hasClass('red'))
             {
-              rsp += 'up and running';
-              $status.addClass("green");
+              $('#status_color_api').addClass('green');
+              $('#general_status').width('47%');
+            
+              html = '<p>Platform up and running</p>';
+
             }
           }
         }
-        return rsp;
+
+        $('#general_status').append(html);
+
       },
+
       hash: function(tweet) {
         return tweet.replace(/(^|\s+)#(\w+)/gi, function(m, before, hash) {
           var rsp = "";
@@ -271,9 +298,7 @@ JQTWEET = {
       clean: function(tweet) {
         return this.hash(this.at(this.list(this.link(tweet))));
       }
-    } // ify
- 
-     
+    }, // ify
 };
  
 
@@ -282,5 +307,6 @@ JQTWEET = {
     JQTWEET.loadTweets();
     JQTWEET.apiStatus(); 
     JQTWEET.feedStatus(); 
+    
   };
 
