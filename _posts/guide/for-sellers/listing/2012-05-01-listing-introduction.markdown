@@ -51,15 +51,15 @@ The Listing results show 6 attributes: the <a href="javascript:void(0)" onClick=
 
 When a user chooses an item from the result, the VIP displays the item details.
 Information displayed on the VIP:
-* a <a href="javascript:void(0)" onClick="goToByScroll('item-pictures')"> pictures</a> of the item(1)
-* an <a href="javascript:void(0)" onClick="goToByScroll('item-title')">item title</a> (2)
-* an <a href="javascript:void(0)" onClick="goToByScroll('item-price')">item price</a> (3)
-* a <a href="javascript:void(0)" onClick="goToByScroll('seller-address')">seller address</a> (4)
-* a <a href="javascript:void(0)" onClick="goToByScroll('sold-quantity')">sold quantity</a> (5)
-* a link to [ask a question](/ask-a-question) (6)
-* a <a href="javascript:void(0)" onClick="goToByScroll('seller-reputation')">seller reputation</a> (7)
-* a <a href="javascript:void(0)" onClick="goToByScroll('seller-category')">seller category</a> 
-* a <a href="javascript:void(0)" onClick="goToByScroll('detailed-decription')">detailed description</a> (8). 
+* (1) <a href="javascript:void(0)" onClick="goToByScroll('item-pictures')">pictures </a> of the item
+* (2) <a href="javascript:void(0)" onClick="goToByScroll('item-title')">item title</a>
+* (3) <a href="javascript:void(0)" onClick="goToByScroll('item-price')">item price</a> 
+* (4) <a href="javascript:void(0)" onClick="goToByScroll('seller-address')">address</a> 
+* (5) <a href="javascript:void(0)" onClick="goToByScroll('sold-quantity')">quantity sold</a> 
+* (6) link to [ask a question](/ask-a-question) 
+* (7) <a href="javascript:void(0)" onClick="goToByScroll('seller-reputation')">seller's reputation</a>
+* (-) <a href="javascript:void(0)" onClick="goToByScroll('seller-category')"> seller's category</a> 
+* (8) <a href="javascript:void(0)" onClick="goToByScroll('detailed-decription')">detailed description</a> 
 
 
 ![vip](/images/vip.png)
@@ -91,6 +91,6 @@ curl https://api.mercadolibre.com/items/MLB233759102
 }
 {% endhighlight %}
 
-Take a look at response retrieved. It has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other parto fo API. It is a standard format to get [API documentation](/design-considerations/#options).
-In this guide we will cover just those before mentioned.
+Take a look at the response retrieved. It has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to another part of the API. It is a standard format to get [API documentation](/design-considerations/#options).
+In this guide, we will cover only the above-mentioned.
 

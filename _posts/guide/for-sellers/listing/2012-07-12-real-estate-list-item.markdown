@@ -16,48 +16,48 @@ tags:
 
 ## Overview
 
-Listing in Real Estate classifieds is a special case of listing any other item.
-Make sure you go over the [First Steps](/first-step) for developing with our API, you [created your App](/application-manager).
-Then resolve the [Authentication](/authentication-and-authorization) to get an access_token and go throw the first steps of [List items](/list-your-item).
+Posting a real estate classified is a special case of listing an item.
+Make sure you go over the [First Steps](/first-step) for developing with our API and that you have [created your App](/application-manager).
+Then, go through the [Authentication](/authentication-and-authorization) section to get an access_token and through the first steps of [Listing items](/list-your-item).
 
 
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('agency')">Identify as a Real Estate Agency</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('agency')">Register as a real estate agency</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('publish')">List a real estate property</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('operation')">Operation and Property Type Selection</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('attributes')">Attributes Selection</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-loc-selection')">Location Selection</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('add-pictures-item')">Pictures Upload</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-json-full-specs')">Real Estate JSON specification</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-modify-pause-finalize')">Modify, change status and Re-List</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('operation')">Operation and property type selection</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('attributes')">Attributes selection</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-loc-selection')">Location selection</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('add-pictures-item')">Pictures upload</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-json-full-specs')">Real estate JSON specification</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('res-modify-pause-finalize')">Modify, change status and relist</a></dt>
   </dl>
 </div>
 
-## Register as a Real Estate Agency {#agency}
+## Register as a real estate agency {#agency}
 
-If you are a real estate agency, you can register your user as such to gain access to our promotional real estate packs. To accomplish this access the Help section, as shown on figure 4.
+If you are a real estate agency, you can register your user as such to gain access to our promotional real estate packs. To accomplish this, access the Help section as shown in figure 4.
 
 ![Help](/images/new-realestate-4.png){:style="width:700px;"}
 *<center>figure 4</center>*
 
-Once there, click on the "Tus datos y registraci&oacute;n" tab and then on the "Registrarme como inmobiliaria" link, as shown on figure 5.
+Once there, click on the "Tus datos y registraci&oacute;n" tab and then on the "Registrarme como inmobiliaria" link, as shown in figure 5.
 
 ![Personal info](/images/new-realestate-5.png){:style="width:700px;"}
 *<center>figure 5</center>*
 
 You will then be redirected to a form which must be filled with the proper information and you will also be able to choose your desired promotional package. After completing the form, one of our agents will get in touch with you.
 
-Keep in mind that having a promotional pack <u>is not mandatory</u> for publishing using the API.
+Keep in mind that having a promotional pack <u>is not mandatory</u> for listing through the API.
 
-If you have indeed acquired a promotional pack for your agency, you can access it's information by sending a GET request to the following URL:
+If you have indeed acquired a promotional pack for your agency, you can access its information by sending a GET request to the following URL:
 
 <pre class="terminal">
  https://api.mercadolibre.com/users/me/promotion_packs?access_token=YOUR_ACCESS_TOKEN
 </pre>
 
-*YOUR_ACCESS_TOKEN* is the key that will allow you to authenticate when using MELI's API. You will learn how to obtain the access token on the [Authenticate section](/authentication-and-authorization).
+*YOUR_ACCESS_TOKEN* is the key that will allow you to authenticate when using MELI's API. You will learn how to obtain the access token on the [Authentication section](/authentication-and-authorization).
 
 If you wish to see detailed information regarding your promotional pack, you can do so by sending a GET request to the following URL:
 
@@ -70,7 +70,7 @@ If you wish to see detailed information regarding your promotional pack, you can
 
 ## List a real estate property   {#publish}
 
-You can list a real estate property by sending a POST request to our Items API with a JSON like the the following example:
+You can list a real estate property by sending a POST request to our Items API with a JSON as in the following example:
 
 {% highlight javascript %}
 
@@ -167,7 +167,7 @@ buying_mode\*     | For real estate properties, always send a "classified" value
 listing_type_id\*   | Indicates the listing type for the listing. Possible values are "silver", "gold" or "gold_premium". If you have a promotional pack, keep in mind that you must have available items for the desired listing type.
 condition\*       | Possible values: "new", "used" or "not_specified".
 pictures\*        | You can provide either the Picture IDs of your uploaded pictures (if you have uploaded any) as well as the URLs of the pictures you wish to upload (if you have them on an accesible web URL). - Check out the example. Both options are shown. -
-location\*        | Location of the property, with the information gathered in the [Location selection section](#res-loc-selection). If you have geolocation information (lat & long) you can add it here as well. This will enable a map with a pin on your location, which will give your listings a higher quality.
+location\*        | Location of the property including the information detailed in the [Location selection section](#res-loc-selection). If you have geolocation information (lat & long) you can add it here as well. This will enable a map with a pin on your location, which will give your listings a higher quality.
 seller_contact\*    | Seller's contact information. The email sent for this field will be the email used for sending the contact forms sent by users. If this email is not sent in the "seller_contact" field, the email used will be the publishing user's registered email address.
 attributes\*      | Attributes of the property obtained the [Attributes selection section](/res-attrs-selection).
 description       | (optional) You can include a description with additional information of your property. HTML format supported. Just make sure the description sent does not violate our terms & conditions. Max width for an HTML description is 918px.

@@ -24,9 +24,9 @@ curl https://api.mercadolibre.com/categories/CATEGORY_ID/attributes
 See [category documentation](/category-introduction) for more details about categories hierarchy.
 
 
-## Attributes types
+## Attribute types
 
-If your user belongs, for example, to Argentina, and the chosen category was 1467, then the URL would be: 
+If your user belongs, for example, to Argentina, and the chosen category is 1467, then the URL would be: 
 
 <a href="https://api.mercadolibre.com/categories/MLA1467/attributes" target="_blank">https://api.mercadolibre.com/categories/MLA1467/attributes</a>
 
@@ -66,7 +66,7 @@ Each attribute has id, name, type, tags and values.
 
 <li>Attribute type "string" with "tags" not containing "fixed" means you will have to send the desired value as text.</li>
 
-<li>Attribute with "tags" containing "required" means the attribute <u>is mandatory</u> when publishing the property.</li>
+<li>Attribute with "tags" containing "required" means the attribute <u>is mandatory</u> when listing the property.</li>
 
 </ul>
-For each attribute you choose to publish, save its Attribute ID and its value id as well. You will be needing them later on, when putting together the JSON for publishing the property. Keep in mind that required attributes are mandatory and vary between categories. Not sending the correct attributes when listing is a very common mistake.
+For each attribute you choose to publish, save its attribute id and its value id as well. You will be needing them later on, when putting together the JSON for listing the property. Keep in mind that required attributes are mandatory and vary among categories. Not sending the correct attributes when listing is a very common mistake.
