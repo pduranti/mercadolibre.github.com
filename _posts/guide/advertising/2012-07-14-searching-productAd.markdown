@@ -21,26 +21,28 @@ https://api.mercadolibre.com/mclics/productAd/11130279?access_token=$ACCESS_TOKE
 You will receive the following JSON response:
 
 {% highlight javascript %}
-{
-	"adDailyBudget":"1",
-	"adID":"11130279",
-	"campaignID":"39003",
-	"categID":"1652",
-	"originalCategID":"1652",
-	"custID":"66258610",
-	"customAdBox":"",
-	"invalidLink":"false",
-	"maxCPC":"0.15",
-	"name":"Default",
-	"refFrom":"Reference owner",
-	"refID":"Reference ID",
-	"siteID":"MLA",
-	"status":"A",
-	"title":"Title Test",
-	"type":"P",
-	"URLDestiny":"http://www.mercadolibre.com.ar",
-	"URLVisible":"www.mercadolibre.com.ar",
-	"price":"15"
+{ "errorsMap" : null,
+  "productAdDto" : { "URLDestiny" : "http://www.google.com.ar",
+      "URLVisible" : "www.google.com.ar",
+      "adDailyBudget" : 1,
+      "adID" : 11130279,
+      "campaignID" : 39003,
+      "categID" : "1652",
+      "custID" : 66258610,
+      "customAdBox" : "",
+      "image" : "exampleImage.jpg",
+      "invalidLink" : false,
+      "maxCPC" : 0.14999999999999999,
+      "name" : "Default",
+      "price" : 15,
+      "refFrom" : "Reference owner",
+      "refID" : "Reference ID",
+      "siteID" : "MLA",
+      "status" : "E",
+      "title" : "Title Test",
+      "type" : "P",
+      "uriImage" : "http://img1.mlstatic.com/jm/img?v=F&f=mlinks/product_ads/MLA/66258610/exampleImage.jpg"
+    }
 }
 {% endhighlight %}
 

@@ -15,7 +15,7 @@ tags:
 ## Overview {#overview}
 
 
-Users can manage those interesting items using bookmark API, adding or removing references. They are synchronize with mobile apps. On MercadoLibre Site users have available all the time.
+Users can manage those interesting items using bookmark API, adding or removing references. They are synchronized with mobile apps. On MercadoLibre Site users have available all the time.
 
 
 
@@ -36,7 +36,7 @@ Users can manage those interesting items using bookmark API, adding or removing 
 
 ## All your bookmarks {#find-bookmarks}
 
-In order to retrieve user bookmarks, you can use following URL:
+In order to retrieve user bookmarks, you can use the following URL:
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/users/me/bookmarks?access_token=...

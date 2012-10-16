@@ -9,9 +9,9 @@ tags:
 - Searching
 ---
 
-## Overview: {#search-overview}
+## Overview {#search-overview}
 
-Each search result can be sorted using available sorts. You must check available sorts and use them to refine your search. 
+Every search result can be sorted using the available sorts. You must check the available sorts and use them to refine your search. 
 
 
 <div class="contents">
@@ -32,7 +32,7 @@ For example, if you search an item using a simple [search by query](/search-by-t
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod
 </pre>
 
-you can check which the available sorts are:
+you can check which sorts are available:
 
 {% highlight javascript %}
 {
@@ -53,7 +53,7 @@ you can check which the available sorts are:
 
 ## Request {#search-request}
 
-To search and sort the results, you can specify a sort attribute 
+To search and sort the results, you can specify a sort attribute:
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;sort=price_asc
@@ -61,11 +61,11 @@ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod&amp;sort=price_asc
 
 ## Response {#search-response}
 
-Search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other part of API. It is a standard format to get [API documentation](/design-considerations/#options).
+The search response has a lot of parameters. Use <code>OPTIONS</code> http method to get a <code>JSON</code> encoded response that will describe the API, with all the allowed methods and connections to other part of the API. It is a standard format to get [API documentation](/design-considerations/#options).
 
-If you are interested in define response block size read [search paging](/search-paging) section.
+If you are interested in defining a block size response, read the [search paging](/search-paging) section.
 
-For more information about search options you can check the website [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)
+For more information about search options, you can check this website: [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)
 
 
 
