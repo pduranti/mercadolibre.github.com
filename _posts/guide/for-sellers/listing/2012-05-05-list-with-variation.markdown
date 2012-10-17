@@ -14,15 +14,15 @@ tags:
 ---
 
 
-You already know what items and attributes are. If you don't know we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
+You already know what items and attributes are. If you don't, we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
 
-To see a list of allowed attributes in a category, you can access the Categories API with the parameter /attributes
+To see a list of allowed attributes in a category, you can access the Categories API with the parameter /attributes.
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/categories/:categID/attributes/
 </pre>
 
-Ok, now you know all types of variation that your categorie have. Let's create a JSON with our item and they variation.
+Ok, now you know all the types of variations your category has. Let's create a JSON with our item and its variations.
 
 <pre class="terminal">
 curl -X POST -H "Content-Type: application/json" -d
@@ -84,10 +84,10 @@ curl -X POST -H "Content-Type: application/json" -d
 https://api.mercadolibre.com/items?access_token=$ACCESS_TOKEN
 </pre>
 
-**Congratulations!** You have just listed your first item with variation! You can access the Item's VIP through the permalink attribute.
+**Congratulations!** You have just listed your first item with variations! You can access the item's VIP through the permalink attribute.
 
 
-In this example we've created one item with two variation, each one with the respective image.
+In this example we've created one item with two variations, each one with the respective image.
 
 If you have questions regarding how to get your access token to list items, please refer to the [getting started](/getting-started) tutorial. In addition, if you wish to validate your item before listing, check out the [item validation](/validate-item) tutorial.    
     
