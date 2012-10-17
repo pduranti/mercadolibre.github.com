@@ -16,7 +16,7 @@ tags:
 
 You can modify any item attribute by sending a PUT message to the Items API.
 
-Just, send a JSON describing the attributes you want to modify, here there is an example in which the item title is changed for a more descriptive one:
+Just send a JSON describing the attributes you want to modify. Below is an example in which the item title is changed for a more descriptive one:
 
 
 <pre class="terminal">
