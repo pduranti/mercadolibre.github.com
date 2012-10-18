@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Receiving Notifications
+title: Receiving notifications
 categories: 
 - Listing
 - Real Estate
@@ -14,16 +14,16 @@ tags:
 - Notifications
 ---
 
-Listening to Notifications gives you the ability to have a real-time feed of the changes that occur on the different resources of the MercadoLibre API.
+Listening to Notifications enables you to have a real-time feed of the changes that occur on the different resources of the MercadoLibre API.
 
-For example if you published an item and later it was paused, someone made you a question, purchase your item or even paid for it and requested a shipping; you will receive a Notification of a change on the resource.
+For example, if you listed an item and later it was paused, someone made you a question, purchased your item or even paid for it and requested shipment, you will receive a Notification of a change on the resource.
 
-Notifications are a very convenient way to stay up-to-date with everything that you care, in the most efficient way for you, without having to query our API on a constant basis. You only get notified of the resource that changed.
+Notifications are a very convenient way to stay up-to-date with everything that you care, in the most efficient and without having to query our API on a constant basis. You only get notified of the resource that changes.
 
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('how-to-subscribe')">How to Subscribe</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('how-to-subscribe')">How to subscribe</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('topics')">Available Topics</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('considerations')">Considerations</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('structure')"></a>Structure of Notifications</dt>
@@ -35,62 +35,60 @@ Notifications are a very convenient way to stay up-to-date with everything that 
 
 ## How do I subscribe to the Notifications? {#how-to-subscribe}
 
-In the Applications Page where you created your App, you can edit the details and specify which 'topics' you will listen to.
+In the Applications Page where you created your App, you can edit the details and specify which 'topics' you will listen to
 (see [Applications Page](http://applications.mercadolibre.com)).
-_If you haven't created your App yet go to [Creating your app section](http://developers.mercadolibre.com/creating-your-own-application/)_
+_If you haven't created your App yet, go to the [Creating your app section](http://developers.mercadolibre.com/creating-your-own-application/)_.
 
-  - **Notifications callback URL** Configure the public URL of your domain where you want to receive notifications for the different topics. e.g.: “http://myshoes-app.com/callbacks”.
+  - **Notifications callback URL:** Configure the public URL of your domain where you want to receive notifications for the different topics. E.g.: “http://myshoes-app.com/callbacks”.
 
-  - **Topics** Comma separated list of 'topics' you want to subscribe to.
+  - **Topics:** Comma separated list of 'topics' you want to subscribe to.
 
 ###Available Topics: {#topics}
-- **orders**  — To get notified of any change on one of your orders. e.g.: you received an order from a purchase, the buyer added shipping instructions or the buyer added a payment to an order.
+- **orders**  — To get notified of any change on one of your orders. E.g.: you received an order from a purchase, the buyer added shipping instructions or the buyer added a payment to an order.
 
 - **items**   — To get notified of any changes on an item you have published. 
-	e.g.: Due to of MercadoLibre's rules your item was set to 'under_review'.
-	The seller changed any of an item's attribute (price, title, description) and all the application's subscribed to that seller's feed get notified of the change.
-	The 60 days period of a listing finished.
+	E.g.: Due to MercadoLibre’s rules, your item is set to ‘under_review’; the seller changes an item’s attribute (price, title, description) and all the applications subscribed to that seller’s feed get notified of the change; or the 60 days' period of a listing has finished.
 
-- **questions**   — To receive a notification for every question made to you or answered.
+- **questions**   — To get notified of every question made to you or answered.
 
 > NOTE: All the applications subscribed to the question feed will receive notifications for every answer the seller sends.
 
 ![App create](/images/application-topics.png)
 
-##Considerations receiving notifications {#considerations}
+##Considerations when receiving notifications {#considerations}
 * Messages will be sent out and retried during 12 hours. After that period, if not accepted by the app, they will be discarded.
 
 * Your application must acknowledge the reception with an HTTP status code 200, otherwise the message will be considered not delivered and it will be retried.
 
-* Your application must send a response within 20 seconds, otherwise it will timeout considered not delivered and retried.
+* Your application must send a response within 20 seconds, otherwise it will timeout, be considered not delivered and retried.
 
 
-##What events trigger Notifications?
+##What events trigger notifications?
 
 ###orders
-— Stock decremented: Somebody purchased one of your items and decremented the stock. A new order has been created.
+— Stock decrement: Somebody purchases one of your items and the stock is decremented. A new order is created.
 
-— Payment: the buyer added a payment to the order.
+— Payment: The buyer adds a payment to the order.
 
-— Shipping: there is new shipping information associated to the order. Or the status of the shipping has changed to: pending, handling, active, delivered, not_delivered.
+— Shipping: There is new shipping information associated to the order or the status of the shipping is changed to: pending, handling, active, delivered, not_delivered.
 
-— Feedback: the buyer rated you as a seller or you sent feedback to the buyer. A feed is received on the order.
+— Feedback: The buyer rates you as a seller or you send feedback to the buyer. A feed is received on the order.
 
 ###items
 — Changes on any of the attributes.
 
-— Changes on the status: the listing has to be reviewed by an operator and the status changed to "under_review" or it was paused and status changed to "paused"
+— Changes on the status: The listing has to be reviewed by an operator and the status is changed to “under_review” or it is paused and the status is changed to “paused”.
 
-— 60 days passed and the listing expired: status changed to "closed"
+— 60 days passed and the listing expired: The status changes to "closed"
 
 ###questions 
-— You received a new question.
+— You receive a new question.
 
-— You answered a question.
+— You answer a question.
 
-— You deleted a question that you considered inappropriate.
+— You delete a question that you considered inappropriate.
 
-##JSON Structure of Notifications {#structure}
+##JSON structure of notifications {#structure}
 
 ##Order topic {#orders-topic}
 {% highlight javascript %}

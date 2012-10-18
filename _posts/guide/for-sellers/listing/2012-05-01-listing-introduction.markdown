@@ -35,7 +35,7 @@ Every item has an <strong>owner</strong>. The owner is the user who lists the it
 
 If you want to sell something you need to list it as an item as first thing.
 
-Each item will appear in the listings results for some search. For example, when a user searches for the query “volante gol”, as a result he will get a list of items. Your item can be in this list.
+Each item will appear in the listing results of a given search. For example, when a user searches for the query “volante gol”, as a result he will get a list of items. Your item can be in this list.
 
 When someone clicks on an item, the VIP is displayed showing all the information about the item that was provided at the time of listing.
 
