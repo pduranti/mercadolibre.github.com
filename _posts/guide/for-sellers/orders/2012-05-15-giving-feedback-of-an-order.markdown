@@ -115,7 +115,7 @@ https://api.mercadolibre.com/orders/$ORDER_ID/feedback/$EXPERIENCE
 
 
 ###IMPORTANT NOTE:
-The experience can be **sale** or **purchase**, depending on the other party's ROLE, given thar you are replying to feedback you have already received.
+The experience can be **sale** or **purchase**, depending on the other party's ROLE, given that you are replying to feedback you have already received.
 
 EXAMPLES:
 

@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Modify Items
+title: Modify items
 categories: 
 - Listing
 - Manage Listings
@@ -13,7 +13,7 @@ tags:
 - Manage Listings
 ---
 
-You can modify an item fields after it has been listed using our API.
+You can modify an item field after it has been listed using our API.
 
 <pre class="terminal">
  https://api.mercadolibre.com/items/ITEM_ID
@@ -40,11 +40,11 @@ https://api.mercadolibre.com/items/ITEM_ID?access_token=YOUR_ACCESS_TOKEN
 
 Note: the JSON sent must not contain the Item ID.
 
-If your property was successfully modified, you will receive a "200 OK" response status. Keep in mind that it can take some time to see the property's new information refreshed.
+If your property has been successfully modified, you will receive a "200 OK" response status. Keep in mind that it can take some time until you see the property’s information refreshed.
 
 ### Add new descriptions ### {#addtext}
 
-To add new description, you can do it sending a POST request to the following URL:
+To add a new description, send a POST request to the following URL:
 
 <pre class="terminal">
  https://api.mercadolibre.com/items/ITEM_ID/descriptions?access_token=YOUR_ACCESS_TOKEN
@@ -58,5 +58,5 @@ In the request body you must send:
 }
 {% endhighlight %}
 
-If the description was successfully posted, you will receive a "201 Created" status code. Keep in mind that it might take some minutes for you new description to be shown.
+If the description has been successfully posted, you will receive a "201 Created" status code. Keep in mind that it might take some minutes for your new description to be shown.
 

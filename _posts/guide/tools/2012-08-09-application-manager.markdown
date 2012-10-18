@@ -36,7 +36,7 @@ There are three groups of information in this form: Basic application Info, Auth
 
 **- Short Name: ** Name that Meli uses to generate your application's URL. 
 
-**- Description: ** This description, up to 150 characteres will be showed when application request authorization. 
+**- Description: ** This description (up to 150 characteres) will be shown when the application requests an authorization. 
 
 
 ###Authentication &amp; Security 
