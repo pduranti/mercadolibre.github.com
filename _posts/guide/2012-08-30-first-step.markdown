@@ -33,7 +33,7 @@ $ curl https://api.mercadolibre.com/users/me?access_token=...
 To create an App, you need to have a valid and active user in one of the countries of our platform.
 Go to the [App manager](http://applications.mercadolibre.com) and follow the steps, if you have a user you will need to log in, if you don't have one, you will be guided through the Registration process.
 
-After you create the App you will get a App ID and a client secret which will be very important later on. You can read about how to use this tool on the [application manager guide](/application-manager).
+After you create the App, you will get an App ID and a client secret key which will be very important later on. You can read about how to use this tool on the [application manager guide](/application-manager).
 
 <style type="text/css">
 img.appID
@@ -202,7 +202,7 @@ Response response = m.get("/users/me", params);
 
 ## Next Steps {#next}
 
-Reading the [Authentication](/authentication-and-authorization) section you will see how applications manage and grant permission scopes. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth for you.
+Reading the [Authentication](/authentication-and-authorization) section you will see how applications manage and grant permission scopes. Our [Developer Tools](/javascript-sdk) hide all the complexity of OAuth from you.
 
 Later, you should head over to our Documentation section and find what best suits your goal:
 <ul class="ch-list parameters">

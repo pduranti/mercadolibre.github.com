@@ -17,11 +17,11 @@ tags:
 
 ##Overview
 
-Managing the question's blacklist allows you to block users from asking questions on your items. Later on you can remove them from the blacklist to allow questions.
+Managing the question's blacklist allows you to block users from asking questions on your items. Later on, you can remove them from the blacklist to allow questions.
 
 This blacklist is user-based and the seller has full control over the list of users in it.
 
-## To block someone from asking questions:
+## To block someone from asking questions
 
 <pre class="terminal">
 curl -X POST -H "Content-Type: application/json" -d

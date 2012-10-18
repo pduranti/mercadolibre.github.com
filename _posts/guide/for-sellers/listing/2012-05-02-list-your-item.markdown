@@ -171,7 +171,7 @@ curl https://api.mercadolibre.com/sites/MLA/listing_types
 ]
 {% endhighlight %}
 
-You can listing a by free, bronze, silver, gold and gold premium. The fees for selling the item as well as how it is ranked in a search result will depend on the listing type you select. In order to analyze this API, we will go over a number of attributes for the “silver” ID listing type. 
+You can list an item under the  free, bronze, silver, gold and gold premium listing types. The fees for selling the item as well as how it is ranked in a search result will depend on the listing type you select. In order to analyze this API, we will go over a number of attributes for the “silver” ID listing type. 
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/listing_types/silver

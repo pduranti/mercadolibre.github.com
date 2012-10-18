@@ -16,9 +16,9 @@ tags:
 ## Overview {#overview}
 
 
-In case you need to list an item again (it could happen if you sold the specified quantity or the allowed listing time expired), you can use the relist function that Items API provides.
+In case you need to list an item again (this may happen if you have sold the specified quantity or the listing has expired), you can use the relist function that the items API provides.
 
-It’s different from creating a new listing from scratch. Relisting an Item will keep the questions, sells and visits your item had. It’s like extending the listing period with a new listing.
+It’s different from creating a new listing from scratch. By relisting an item, all the questions, sales and visits the item had will be kept. It’s like extending the listing period with a new listing.
 
 Only items with a “closed” status admit relisting. For more details about listing status see [changing listing status](/change-listing-status).
 
@@ -54,7 +54,7 @@ Once you've received the response body, check the "stop_time" element to get the
 
 ## Relist {#relist}
 
-To relist a finished listing, do the following API call:
+To relist a finished listing, make the following API call:
 
 <pre class="terminal">
 curl -X POST -H "Content-Type: application/json" -d
@@ -66,7 +66,7 @@ curl -X POST -H "Content-Type: application/json" -d
 
 https://api.mercadolibre.com/items/MLA123456789/relist?access_token=$ACCESS_TOKEN
 </pre>
-In this example, you are relisting the item: “MLA123456789” increasing the quantity to 20 units, modifying the listing type to “silver” and setting a new price to 30.
+In this example, you are relisting the item “MLA123456789”, increasing the quantity to 20 units, modifying the listing type to “silver” and setting a new price to 30.
 
 Remember to check the Listing Type API for valid listing type codes.
 
