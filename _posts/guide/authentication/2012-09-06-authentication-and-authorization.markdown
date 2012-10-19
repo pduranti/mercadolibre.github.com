@@ -39,7 +39,7 @@ We will explain shortly how to use [OAuth 2.0](http://tools.ietf.org/pdf/draft-i
 
 We definitely think you **should**. It is always good to know what is happenning behind when you use a sdk/framework, however, we **encourage** you to use our provided <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a> to connect and "talk" to the APIs.
 
-These <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a> implement the OAuth protocol and on one hand leverages you from coding everything again and on the other hand every security issue or bug discovered can be fixed on a centralized place. If you think that there should be any enhancements please feel free to contribute to these <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a>. It is a win-win situation.
+Using the <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a> has 2 advantanges, it saves you from coding the whole OAuth protocol from scratch and you benefit from using code that has been tested by the community and on the other hand every security issue or bug discovered can be fixed on a centralized place. If you think that there should be any enhancements please feel free to contribute to these <a href="javascript:void(0)" onClick="goToByScroll('sdks')">SDKs</a>. It is a win-win situation.
 
 **Note**: We covered the server-side flows in PHP, Java and .NET, and client-side flows in javascript. If you plan to develop in other programming languages or for mobile content, you will have to code the OAuth flows by yourself or contribute with an SDK to be used by all of us.
 

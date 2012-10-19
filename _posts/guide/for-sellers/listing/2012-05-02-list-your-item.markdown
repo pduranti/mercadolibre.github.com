@@ -16,7 +16,7 @@ tags:
 
 ## Overview {#overview}
 
-The first step in selling is to list an item on MercadoLibre. Sellers can list an item through MercadoLibre's site or through an application using Listing API. Both working exactly in selling.
+The first step in selling is to list an item on MercadoLibre. Sellers can list an item through MercadoLibre's site or through an application using Listing API. They both work exactly the same.
 
 There are a number of considerations regarding an item such as the title, category, price, currency or description. You already know what items and attributes are. If you don’t, we recommend that you read the [Listings Introduction tutorial](/listing-introduction).
 
@@ -171,7 +171,7 @@ curl https://api.mercadolibre.com/sites/MLA/listing_types
 ]
 {% endhighlight %}
 
-You can list an item under the  free, bronze, silver, gold and gold premium listing types. The fees for selling the item as well as how it is ranked in a search result will depend on the listing type you select. In order to analyze this API, we will go over a number of attributes for the “silver” ID listing type. 
+You can list an item under the free, bronze, silver, gold and gold premium listing types. The fees for selling the item as well as how it is ranked in a search result will depend on the listing type you select. In order to analyze this API, we will go over a number of attributes for the “silver” ID listing type. 
 
 <pre class="terminal">
 curl https://api.mercadolibre.com/sites/MLA/listing_types/silver

@@ -40,7 +40,7 @@ https://api.mercadolibre.com/items/ITEM_ID?access_token=YOUR_ACCESS_TOKEN
 
 Note: the JSON sent must not contain the Item ID.
 
-If your property has been successfully modified, you will receive a "200 OK" response status. Keep in mind that it can take some time until you see the property’s information refreshed.
+If your item has been successfully modified, you will receive a "200 OK" response status. Keep in mind that it can take some time until you see the item’s information refreshed.
 
 ### Add new descriptions ### {#addtext}
 
