@@ -15,7 +15,7 @@ tags:
 ## Overview {#overview}
 
 
-Users can manage those interesting items using bookmark API, adding or removing references. They are synchronized with mobile apps. On MercadoLibre Site users have available all the time.
+Users can manage those interesting items using bookmark API, adding or removing references. They are synchronized with mobile apps.
 
 
 

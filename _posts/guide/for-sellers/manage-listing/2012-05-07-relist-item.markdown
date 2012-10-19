@@ -39,7 +39,7 @@ To check the current status and expiration date of a listing, you must send a GE
 curl https://api.mercadolibre.com/items/ITEM_ID
 </pre>
 
-Once you've received the response body, check the "stop_time" element to get the expiration date of the property. This information is also available in the response body you receive when successfully listing the property in the first place.
+Once you've received the response body, check the "stop_time" element to get the expiration date of the item. This information is also available in the response body you receive when successfully listing the item in the first place.
 
 
 {% highlight javascript %}
@@ -70,4 +70,4 @@ In this example, you are relisting the item “MLA123456789”, increasing the q
 
 Remember to check the Listing Type API for valid listing type codes.
 
-**Important:** as stated before, relisting an item generates a NEW item, which means that the Item ID MercadoLibre assigns to that item will be a new one. You will be able to obtain this new ID from the JSON in the response body you receive when successfully relisting your properties.
+**Important:** as stated before, relisting an item generates a NEW item, which means that the Item ID MercadoLibre assigns to that item will be a new one. You will be able to obtain this new ID from the JSON in the response body you receive when relisting your items successfully.
