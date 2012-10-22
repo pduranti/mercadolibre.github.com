@@ -64,6 +64,17 @@
             {% assign current = 'current' %}
          {% endif %}
           <li class="option"><a class="{{ current }}" href="/community">Community</a></li>
+         
+      <!--  
+          {% assign current = nil %}
+         {% if page.menu[0] == 'API Version v1' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option"><a class="{{ current }}" href="/version">API Version V1</a></li>
+         
+        -->
+         
+         
           <li class="option"><form action="/search"><input id="q" type="search" name="q" placeholder="Search this site" class="head-search-input"><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form></li>
         </ul>
     </nav>
