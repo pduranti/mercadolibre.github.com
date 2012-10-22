@@ -1,6 +1,6 @@
 ---
 layout: 1columns
-title: Términos y condiciones
+title: Terms and conditions
 ---
 
 {% include toc.html %}
