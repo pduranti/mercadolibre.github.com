@@ -1,15 +1,10 @@
 ---
-layout: guides
+layout: firststep
 title: Receiving notifications
 categories: 
-- Listing
-- Real Estate
-- Manage Listings
-- Orders
-- Manage Questions
 - Notifications
-menu: 
-- Listing &amp; Selling
+menu:
+- Notifications
 tags: 
 - Notifications
 ---
