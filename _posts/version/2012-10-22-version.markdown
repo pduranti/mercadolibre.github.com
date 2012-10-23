@@ -6,7 +6,9 @@ title: API Version 1
 
 ##API V1 Introduction
 
-MercadoLibre Developers Program recomend use of [API V1]('https://api.mercadolibre.com/categories/MLA1000'). This is the most stable version, and it will not change. Any change made to this version will improve performance and bugs fixes. All changes will be notify in this page.  
+MercadoLibre Developers Program recomend use of [API V1](). This is the most stable version, and it will not change. Any change made to this version will improve performance and bugs fixes. All changes will be notify in this page.  
+
+<pre><code>https://v1.api.mercadolibre.com/</code></pre>
 
 ##Overview
 
