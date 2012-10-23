@@ -3,11 +3,9 @@ layout: guides
 title: Answer a question
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions
-- Notifications
 menu: 
 - Listing &amp; Selling
 tags: 
