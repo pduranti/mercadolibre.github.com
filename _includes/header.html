@@ -29,6 +29,8 @@
                 {% if page.menu[0] == 'Authentication' %}
                     {% assign current = 'current' %}
                 {% endif %}
+                
+                
                 <li><a class="{{ current }}" href="/authentication-and-authorization">Authentication</a></li>
                 {% assign current = nil %}
                 {% if page.menu[0] == 'Shopping' %}
@@ -56,7 +58,16 @@
                 {% if page.menu[0] == 'API Directory' %}
                     {% assign current = 'current' %}
                 {% endif %}
+                
                 <li><a class="{{ current }}" href="/API-directory">API Directory</a></li>
+               <!-- 
+                <li><a class="{{ current }}" href="/orders">API Orders</a></li>
+                {% assign current = nil %}
+                {% if page.menu[0] == 'orders' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+				  -->
+                
               </ul>
             </li>
 
