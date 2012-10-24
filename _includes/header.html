@@ -89,6 +89,12 @@
          {% endif %}
           <li class="option"><a class="{{ current }}" href="/version">API Version V1</a></li>
          
+	{% assign current = nil %}
+         {% if page.menu[0] == 'API Version v1' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option"><a class="{{ current }}" href="/api-health/">API Health</a></li>
+         
         -->
          
          
