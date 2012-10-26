@@ -32,11 +32,12 @@ You can modify an item field after it has been listed using our API.
 
 You can modify the values for pictures, title, available quantity, price, attributes, etc. 
 
-<strong>NOTE on descriptions:</strong>For our rules to protect buyers descriptions cannot be modified when the item has sales.
+<strong>NOTE on descriptions:</strong>
 
-To modify a property, send a PUT request to the following URL:
+For our rules to protect buyers descriptions cannot be modified when the item has sales.
 
 You must send a JSON formatted body with the elements you wish to modify.
+
 
 Example:
 <pre class="terminal">
