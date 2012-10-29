@@ -4,73 +4,68 @@ title: API Version 1
 ---
 
 
-##API V1 Introduction
-
-MercadoLibre Developers Program recomend use of [API V1](). This is the most stable version, and it will not change. Any change made to this version will improve performance and bugs fixes. All changes will be notify in this page.  
-
-<pre><code>https://v1.api.mercadolibre.com/</code></pre>
-
 ##Overview
 
-Mercado Libre recomienda el uso de la API V1 para desarrollo de aplicaciones. Garantiza que la misma no va a sufrir cambios de improviso, y en el caso que así sea, se comunicará desde este sitio.
+MercadoLibre’s Developers Program recommends the use of [API V1](), the most stable version of the api.developers.mercadolibre.com.
 
-La API V1 es la version estable de la api.developers.mercadolibre.com. La api.developers, puede sufrir cambios de improviso, sin necesidad de informar a la comunidad de developers, por eso recomendamos fuertemente el uso de V1.
+Unlike api.developers.mercadolibre.com, we will notify the changes we make to the API V1
+through this page:
+
+<pre><code>https://v1.api.mercadolibre.com/</code></pre>
 
 
 ##Design Considerations
 
-La API v1 mantendrá los estándares de diseño establecidos. ML asegura que bajo ningún concepto se cambiará el formato de respuesta de los diferentes recursos de la API.
+The API V1 will respect all the pre-established design standards and we promise not to change the design of its responses.
 
 
 __Key Features__
 
 <ul class="ch-list parameters">
-	<li>Todas las respuestas serán codificadas con JSON</li>
-	<li>JSONP también será soportado</li>
-	<li>Todos los requests/responses codificación UTF-8</li>
-	<li>Las fechas respetan la codificación 8601</li>
-	<li>Todos los errores tiene un formato establecido</li>
+	<li>All responses will be coded with JSON.</li>
+	<li>We will also support JSONP</li>
+	<li>All request/responses will use UTF-8.</li>
+	<li>Dates will follow ISO 8601 format.</li>
+	<li>All errors will have a pre-established format.</li>
 </ul>
 
-Por más información ver [Design Considerations](/design-considerations/).
+[More design considerations](/design-considerations/).
 
 
 ##Available Resources
 
 <ul class="ch-list parameters">
 	<li>Users and Apps</li>
-	<li>Categories and Listing</li>
+	<li>Categories and Listings</li>
 	<li>Locations and Currencies</li>
-	<li>Items and Search</li>
+	<li>Items and Searches</li>
 	<li>Order Managment</li>
 	<li>Question</li>
 </ul>
 
-Pueden encontrar [aquí](/API-directory/) todos los recursos de la API versión 1 detallados.
+[View all available resources in detail.](/API-directory/)
 
 
 ##Change Control
 
-Se detallara en esta seccion los cambios que vallan ocurriendo entre cambios de version, por ejemplo metodos nuevos, cambios de metodos.
+In this section you will find all the changes we make to this version, such as new methods or
+changes in a method. And when API V1 evolves to a V2, you will see the changes directly on
+the site.
 
-Cuando la api V1, evolucione a una V2 o VX, los cambios se iran registrando en el site.
-
-Recordamos que nos comprometemos a informar con antelacion a un cambio.
+But remember! We will always notify you beforehand if we plan on changing something.
 
 
 ##How to connect
 
-De la misma manera que usted lo hacía habitualmente:
+No changes here! You can connect just as you used to.
 
-Antes: 
+Before: 
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
 
 
-Ahora con V1: 
+Now, with V1: 
 
 <pre class="terminal">$ curl https://v1.api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
 
-
-La respuesta sigue siendo la misma.
 
