@@ -1,9 +1,9 @@
 <header class="ch-g1 main">
-    <hgroup class="ch-g1-4">
+    <hgroup class="ch-g1-6">
     <h1><a href="/">MELI</a></h1>
     <h2>Developers</h2>
-    </hgroup>
-      <nav class="ch-g3-4">
+    </hgroup> 
+      <nav class="ch-g4-7">
         <ul>
          {% assign current = nil %}
          {% if page.menu[0] == 'First Steps' %}
@@ -29,6 +29,8 @@
                 {% if page.menu[0] == 'Authentication' %}
                     {% assign current = 'current' %}
                 {% endif %}
+                
+                
                 <li><a class="{{ current }}" href="/authentication-and-authorization">Authentication</a></li>
                 {% assign current = nil %}
                 {% if page.menu[0] == 'Shopping' %}
@@ -45,12 +47,27 @@
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/listing-introduction">Listing &amp; Selling</a></li>
+                
+                {% assign current = nil %}
+                {% if page.menu[0] == 'Notifications' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/notifications">Notifications</a></li>
                 <li><a href="https://developers.mercadopago.com/" target="_blank">Payments &amp; Collections</a></li>
                 {% assign current = nil %}
                 {% if page.menu[0] == 'API Directory' %}
                     {% assign current = 'current' %}
                 {% endif %}
+                
                 <li><a class="{{ current }}" href="/API-directory">API Directory</a></li>
+               <!--
+                <li><a class="{{ current }}" href="/orders">API Orders</a></li>
+                {% assign current = nil %}
+                {% if page.menu[0] == 'orders' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+				  -->
+                
               </ul>
             </li>
 
@@ -64,6 +81,21 @@
             {% assign current = 'current' %}
          {% endif %}
           <li class="option"><a class="{{ current }}" href="/community">Community</a></li>
+         
+    
+          {% assign current = nil %}
+         {% if page.menu[0] == 'API Version v1' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option"><a class="{{ current }}" href="/version">API Version V1</a></li>
+      <!--   
+	{% assign current = nil %}
+         {% if page.menu[0] == 'API Version V1' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option"><a class="{{ current }}" href="/api-health/">API Health</a></li>
+          -->
+       
           <li class="option"><form action="/search"><input id="q" type="search" name="q" placeholder="Search this site" class="head-search-input"><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form></li>
         </ul>
     </nav>

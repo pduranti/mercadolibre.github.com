@@ -37,8 +37,8 @@ There are also events which may cause an access token to become invalid before i
 ## Steps obtaining an access token {#steps-obtaining-token}
 At a high level the OAuth 2.0 protocol involves three different steps: User Authentication (login), Application Authorization and Application Authentication.
 
-- **1. User Authentication:** ensure that the user is who he says he is. It is performed redirecting the user to MercadoLibre login URL.
-- **2. Application Authorization:** After login the user will see a page with exactly what data and capabilities is willing to grant your application permissions.
+- **1. User Authentication:** Ensure that the user is who he says he is. It is performed redirecting the user to MercadoLibre login URL.
+- **2. Application Authorization:**  After loggin in, the user will see a page including the data and capabilities to grant to your application permissions.
 In the OAuth protocol this is called "user consent".
 - **3. Application Authentication:** If the users agrees to grant your app those permissions, your application will be sent directly an access token or an authorization code (which later is used to obtain an access token).
 If the user does not grant permission, MercadoLibre OAuth API returns an error.

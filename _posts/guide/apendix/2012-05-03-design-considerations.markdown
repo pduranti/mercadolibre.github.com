@@ -31,22 +31,22 @@ There are some things you should know about our API to make your life easier.
 
 JSON is a lightweight text-based open standard designed for human-readable data interchange. You can read more [here](http://en.wikipedia.org/wiki/JSON).
 
-Our  API support JSON by default and will return JSON by default.
+Our API supports and returns JSON by default.
 
-We also return HTML responses when you surf out API through a browser.
+We also return HTML responses when you surf out the API through a browser.
 
 We use `Accept` header to decide which response we return.
 
 ## To overcome same origin policy, JSONP is also supported. {#jsonp}
-The [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) is an important security concept. To overcome it we suggest to use [JSONP](http://en.wikipedia.org/wiki/JSONP) and [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing).
+The [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) is an important security concept. To overcome it, we suggest using [JSONP](http://en.wikipedia.org/wiki/JSONP) and [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing).
 ### JSONP Usage
-API we'll respond JSONP if you provide a `callback` parameter. The value of this parameter will be used as the callback function.
+The API will respond JSONP if you provide a `callback` parameter. The value of this parameter will be used as the callback function.
 
 For example, doing:
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/currencies/ARS</pre>
 
-Will return:
+will return:
 
 {% highlight javascript %}
 {
@@ -57,12 +57,12 @@ Will return:
 }
 {% endhighlight %}
 
-For a JSONP response you add a `callback` parameter, like this:
+For a JSONP response, add a callback parameter as follows:
 
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/currencies/ARS?callback=foo</pre>
 
-Which will respond:
+which will respond:
 
 {% highlight javascript %}
 foo(
@@ -84,7 +84,7 @@ foo(
 );
 {% endhighlight %}
 
-As you can see, response is an array with 3 values:
+As you can see, the response is an array with 3 values:
 1. Http status code
 2. Http response headers
 3. Body of the response
@@ -96,7 +96,7 @@ As you can see, response is an array with 3 values:
 [Cross-origin resource sharing (CORS)](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) is a web browser technology specification which defines ways for a web server to allow its resources to be accessed by a web page from a different domain.
 This is a way to overcome the [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy).
 
-All the API return a special header:
+All the APIs return a special header:
 
 {% highlight http %}
 Access-Control-Allow-Origin: *
@@ -106,7 +106,7 @@ This allows the browser to access information provided by the API, even being in
 
 All the major browsers have support for CORS.
 
-So basically this means that you **don't have to do anything** and you get to access the API directly from your browser doing regular ajax calls, with all the standard method, and avoid doing dirty things, like JSONP.
+So basically this means that you **don't have to do anything** and you get to access the API directly from your browser doing regular ajax calls with all the standard method and avoiding things like JSONP.
 
 ## All requests/responses are UTF-8 encoded. {#utf8}
 
@@ -123,7 +123,7 @@ User: But--
 We: Thank you, come again.
 </pre>
 
-If it seems alike the dialog among Apu, Homer and the C.E.O. of Kwik-E- Mart... it is not pure coincidence.
+Any similarities with a dialog among Apu, Homer and Kwik-E- Mart's CEO… it is not pure coincidence.
 
 ## All dates are ISO 8601 encoded. {#iso8601}
 
@@ -170,14 +170,14 @@ In order to have smaller responses, with less data, you can add the `attributes`
 
 ## Filter by the IDs of resources {#filter-by-id}
 
-If you have a list of IDs of resources you want to retrieve. You can avoid making N calls to get them all and just do 1 call. This is done by adding the `ids` parameter to the query string.
+If you have a list of IDs of the resources you want to retrieve, you can avoid doing N calls to get them by just doing 1 call. This is done by adding the `ids` parameter to the query string.
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/currencies?ids=ARS,USD</pre>
 
 
 ## API will provide documentation in JSON format using OPTIONS. {#options}
 
-There is a standard format to get API documentation. Use `OPTIONS` http method to get a `JSON` encoded response that will describe the API, with all the allowed methods and connections to other part of API.
+There is a standard format to get API documentation. Use `OPTIONS` http method to get a `JSON` encoded response that will describe the API with all the allowed methods and connections to another part of the API.
 
 <pre class="terminal">$ curl -X OPTIONS https://api.mercadolibre.com/currencies</pre>
 

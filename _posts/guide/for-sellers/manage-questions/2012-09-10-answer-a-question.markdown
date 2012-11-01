@@ -1,13 +1,11 @@
 ---
 layout: guides
-title: Answer a Question
+title: Answer a question
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions
-- Notifications
 menu: 
 - Listing &amp; Selling
 tags: 
@@ -16,7 +14,7 @@ tags:
 
 We also provide a way to answer a question.
 
-First, lets check all questions on our own item. You can do a GET request with the ItemID and an access token of the seller of that item.
+First, let's check all the questions on our own item. You can do a GET request with the Item ID and an access token of the seller of that item.
 
 <pre class="terminal">
 curl 'https://api.mercadolibre.com/questions/search?item_id=ITEM_ID&amp;access_token=XXXX'
@@ -36,4 +34,4 @@ curl -i -X POST -H "Content-Type: application/json" -d
 https://api.mercadolibre.com/answers?access_token=XXXX
 </pre>
 
-We also provide an [Notifications API](/notifications). Listening to Notifications gives you the ability to have a real-time feed of the changes that occur on the different resources of the MercadoLibre API.
+We also provide a [Notifications API](/notifications). Listening to Notifications enables you to have a real-time feed of the changes that occur on the different resources of the MercadoLibre API.

@@ -16,9 +16,9 @@ tags:
 The purpose of this tutorial is to show how you can contact a seller by asking him questions.
 
 
-## Asking a question example
+## Asking a question - Example
 
-Call the API with the corresponding JSON format with and required attributes.
+Call the API with the corresponding JSON format and the required attributes.
 
 <pre class="terminal">
 curl -i -X POST -H "Content-Type: application/json" -d
@@ -30,5 +30,5 @@ curl -i -X POST -H "Content-Type: application/json" -d
 https://api.mercadolibre.com/questions/?access_token=$ACCESS_TOKEN
 </pre>
     
-**Congratulations!** you have asked your first question using the MELI API platform.
+**Congratulations!** You have asked your first question using the MELI API platform.
 

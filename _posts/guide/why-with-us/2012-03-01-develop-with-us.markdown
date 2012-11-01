@@ -16,7 +16,7 @@ We are the biggest e-commerce platform in Latin America, connecting people from 
 Our ecosystem:
 
 <ul class="ch-list parameters">
-<li><strong>Marketplace</strong> is our core product, where people can buy and sell at fixed price or list almost any product, vehicle, real estate or service.</li>
+<li><strong>Marketplace</strong> is our core product, where people can buy and sell at a fixed price or list almost any product, vehicle, real estate or service.</li>
 <li><strong>MercadoPago</strong> is a service that lets you send and receive money online for purchases on MercadoLibre or in any
 other commerce that integrates with the platform. If you're a collector or want to develop a payments related
 app, head over to <a href="https://developers.mercadopago.com/" target="_blank">MercadoPago Developers.</a></li>
@@ -61,7 +61,7 @@ stores.</li>
 <h3>Collect Payments</h3>
 <ul class="ch-list parameters">
 <li>Add payment buttons to your e-commerce store.</li>
-<li>Receive and manage payments from your store</li>
+<li>Receive and manage payments from your store.</li>
 <a href="https://developers.mercadopago.com/" target="_blank">Learn More</a>
 </ul>
 </div>

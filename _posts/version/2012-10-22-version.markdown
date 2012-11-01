@@ -1,0 +1,71 @@
+---
+layout: firststep
+title: API Version 1
+---
+
+
+##Overview
+
+MercadoLibre’s Developers Program recommends the use of [API V1](), the most stable version of the api.developers.mercadolibre.com.
+
+Unlike api.developers.mercadolibre.com, we will notify the changes we make to the API V1
+through this page:
+
+<pre><code>https://v1.api.mercadolibre.com/</code></pre>
+
+
+##Design Considerations
+
+The API V1 will respect all the pre-established design standards and we promise not to change the design of its responses.
+
+
+__Key Features__
+
+<ul class="ch-list parameters">
+	<li>All responses will be coded with JSON.</li>
+	<li>We will also support JSONP</li>
+	<li>All request/responses will use UTF-8.</li>
+	<li>Dates will follow ISO 8601 format.</li>
+	<li>All errors will have a pre-established format.</li>
+</ul>
+
+[More design considerations](/design-considerations/).
+
+
+##Available Resources
+
+<ul class="ch-list parameters">
+	<li>Users and Apps</li>
+	<li>Categories and Listings</li>
+	<li>Locations and Currencies</li>
+	<li>Items and Searches</li>
+	<li>Order Managment</li>
+	<li>Question</li>
+</ul>
+
+[View all available resources in detail.](/API-directory/)
+
+
+##Change Control
+
+In this section you will find all the changes we make to this version, such as new methods or
+changes in a method. And when API V1 evolves to a V2, you will see the changes directly on
+the site.
+
+But remember! We will always notify you beforehand if we plan on changing something.
+
+
+##How to connect
+
+No changes here! You can connect just as you used to.
+
+Before: 
+
+<pre class="terminal">$ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
+
+
+Now, with V1: 
+
+<pre class="terminal">$ curl https://v1.api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
+
+

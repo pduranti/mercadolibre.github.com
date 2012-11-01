@@ -6,14 +6,13 @@ categories:
 - Manage Listings
 - Orders
 - Manage Questions
-- Notifications
 menu: 
 - Listing &amp; Selling
 tags: 
 - Manage Listings
 ---
 
-You can verify if you listing would be OK before sending a real POST to the Items API. The Items API provide a validation service to check you listing details before publishing it. It’s very useful to practice and check attributes variations!
+You can check if your listing will look ok before sending a real POST to the Items API. The Items API provides a validation service to check you listing details before publishing. It’s very useful to practice and check attribute variations!
 
 To verify your listing POST using the validation service, execute the following API call:
 
@@ -32,6 +31,6 @@ curl -i -X POST -H "Content-Type: application/json" -d
 
 https://api.mercadolibre.com/items/validate?access_token=$ACCESS_TOKEN
 </pre>
-You will receive a “HTTP/1.1 204 No Content” message from the Items API if the listing POST example would pass the Items API validation process. To see the “HTTP/1.1 204 No Content” message on screen add the -i parameter to the curl command.
+You will receive a “HTTP/1.1 204 No Content” message from the Items API if the listing POST example would pass the Items API validation process. To see the “HTTP/1.1 204 No Content” message on screen, add the -i parameter to the curl command.
 
-**Important:** This validation process is not mandatory, but will most likely become handy when testing your APP. Keep in mind that there is no sandbox nor pre-production environment, so every property listed during your testing phase will be visible in our platform by all of our users. It is highly recommended that you finalize listed items posted while testing.
+**Important:** This validation process is not mandatory, but will most likely become handy when testing your APP. Keep in mind that there is no sandbox nor pre-production environment, so every item listed during your testing phase will be visible in our platform by all of our users. It is highly recommended that you finalize listed items posted while testing.

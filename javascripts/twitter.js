@@ -1,12 +1,13 @@
-
 JQTWEET = {
-     
+       
     // Set twitter username, number of tweets & id/class to append tweets
-    user: 'MeliAPI',
+    
+    user: 'MeliApi',
     numTweets: 5,
-    appendTo: '#jstwitter',
-    globalStatus: '#globalStatus',
- 
+    appendTo: '#lastTweets',
+    apiStatusDiv: '#apiStatus',
+    feedStatusDiv: '#feedStatus',
+
     // core function of jqtweet
     loadTweets: function() {
         $.ajax({
@@ -21,21 +22,18 @@ JQTWEET = {
             },
             success: function(data, textStatus, xhr) {
  
-                 var html = '<div class="tweet">STATUS_IMAGE TWEET_TEXT<div class="time">AGO</div>';
+                 var html = '<div class="tweet">TWEET_TEXT<div class="time">AGO</div></div>';
                  
-                 // append tweets into page
+
                  for (var i = 0; i < data.length; i++) {
-                    if (i ==0 ) {
-                      $(JQTWEET.globalStatus).html(
-
-                          JQTWEET.ify.lightColor(data[i].text).replace('TWEET_TEXT', JQTWEET.ify.clean(data[i].text) )
-                          + " " + JQTWEET.ify.statusText(data[i].text) 
-                          );
-
-                    };
+                 var tweetText = data[i].text
+                                    .replace('#apiStatus', 'API status: ')
+                                    .replace('#feedStatus', 'Notifications status: ')
+                                    .replace('[red]', '')
+                                    .replace('[yellow]', '')
+                                    .replace('[green]', '');
                     $(JQTWEET.appendTo).append(
-                        html.replace('STATUS_IMAGE', JQTWEET.ify.lightColor(data[i].text))
-                            .replace('TWEET_TEXT', JQTWEET.ify.clean(data[i].text) )
+                        html.replace('TWEET_TEXT', JQTWEET.ify.clean(tweetText) )
                             .replace(/USER/g, data[i].user.screen_name)
                             .replace('AGO', JQTWEET.timeAgo(data[i].created_at) )
                             .replace(/ID/g, data[i].id_str)
@@ -46,8 +44,70 @@ JQTWEET = {
         });
          
     }, 
-     
+    apiStatus: function() {
+        $.ajax({
+            url: 'http://search.twitter.com/search.json',
+            type: 'GET',
+            dataType: 'jsonp',
+            data: {
+                q: 'from:MeliApi AND #apiStatus',
+                rpp: 1  
+            },
+            success: function(data, textStatus, xhr) {
+ 
+              var html = '<div class="tweet">STATUS_IMAGE TWEET_TEXT<div class="time">AGO</div></div>';
+              
+              var status = data.results;
+
+              if(status.length == 1){
+              
+                var tweetText = status[0].text.replace('#apiStatus', '');
+                
+                $(JQTWEET.apiStatusDiv).html(
+                    JQTWEET.ify.lightColor(tweetText).replace('TWEET_TEXT', JQTWEET.ify.clean(tweetText) )
+                          + " " + JQTWEET.ify.statusText('API', tweetText)
+                          .replace('AGO', JQTWEET.timeAgo(status[0].created_at) )
+                    );
+              
+              }else {
+                 $(JQTWEET.apiStatusDiv).html('<div class="tweet"><IMG src="/images/icn-green.png"/> API is UP</div>');
+              }
+
+            }   
+        });
          
+    }, 
+    feedStatus: function() {
+        $.ajax({
+            url: 'http://search.twitter.com/search.json',
+            type: 'GET',
+            dataType: 'jsonp',
+            data: {
+                q: 'from:MeliApi AND #feedStatus',
+                rpp: 1  
+            },
+            success: function(data, textStatus, xhr) {
+ 
+              var html = '<div class="tweet">STATUS_IMAGE TWEET_TEXT<div class="time">AGO</div></div>';
+              var status = data.results;
+
+              if(status.length == 1){
+
+                var tweetText = status[0].text.replace('#feedStatus', '');
+                
+                $(JQTWEET.feedStatusDiv).html(
+                    JQTWEET.ify.lightColor(tweetText).
+                          replace('TWEET_TEXT', JQTWEET.ify.clean(tweetText) )
+                          + " " + JQTWEET.ify.statusText('Feed', tweetText)
+                          .replace('AGO', JQTWEET.timeAgo(status[0].created_at) )
+                  );
+
+              }else{
+                 $(JQTWEET.feedStatusDiv).html('<div class="tweet"><IMG src="/images/icn-green.png"/> Feeds are up</div>');
+              }    
+            }
+        });
+    }, 
     /**
       * relative time calculator FROM TWITTER
       * @param {string} twitter date string returned from Twitter API
@@ -140,31 +200,92 @@ JQTWEET = {
       },
  
       lightColor: function(tweet) {
-        var match = tweet.match(/(^|\s+)#(red|green|yellow)(\ |$)/);
+        var match = tweet.match(/(^|\s+)\[(red|green|yellow)\](\ |$)/);
         var rsp = "";
         if (match) {
-          if (match[2] == "red")
-            rsp = '<IMG src="/images/icn-red.png"/>';
-          else if (match[2] == "yellow")
-            rsp = '<IMG src="/images/icn-yellow.png"/>';
-          else if (match[2] == "green")
-            rsp = '<IMG src="/images/icn-green.png"/>';
-          return rsp;
+          if (match[2] == "red") {
+            rsp = '<img src="/images/icn-red.png"/>';
+          }
+          else if (match[2] == "yellow") {
+            rsp = '<img src="/images/icn-yellow.png"/>';
+          }
+          else if (match[2] == "green") {
+            rsp = '<img src="/images/icn-green.png"/>';
+          }
         };
+
+        return rsp;
       },
-      statusText: function(tweet) {
-        var match = tweet.match(/(^|\s+)#(red|green|yellow)(\ |$)/);
-        var rsp = "API is ";
-        if (match) {
-          if (match[2] == "red")
-            rsp += 'down';
-          else if (match[2] == "yellow")
-            rsp += 'having some problems';
-          else if (match[2] == "green")
-            rsp += 'up and running';
-          return rsp;
-        };
+      statusText: function(api, tweet) {
+        var match = tweet.match(/(^|\s+)\[(red|green|yellow)\](\ |$)/);
+        
+        var rsp;
+        var $status;
+
+        switch(api.toLowerCase())
+        {
+          case "feed":
+            rsp = "Notifications"; //are ";
+            $status = $("#feedStatus");
+          break;
+          
+          case "api":
+            rsp = "API"; //is ";
+            $status = $("#apiStatus");
+          break;
+
+          default:
+            return;
+        }
+        JQTWEET.ify.mainBoxColor(tweet);
+
+        return rsp;
       },
+
+      mainBoxColor: function(tweet) {
+
+        var html = "";
+
+        if( tweet.indexOf("[red]") != -1)
+        {
+          $('#status_color_api').removeClass();
+          $('#general_status').empty();
+
+          $('#status_color_api').addClass('red');
+          $('#general_status').width('42%');
+          
+          html = '<p>Major service outage</p>';
+          
+        }
+        else
+        {
+          if( tweet.indexOf("[yellow]") != -1  && !$('#status_color_api').hasClass('red'))
+          {
+            $('#status_color_api').removeClass();
+            $('#general_status').empty();
+            $('#status_color_api').addClass('yellow');
+            $('#general_status').width('42%');
+
+            html = '<p>Partial service outage</p>';
+
+          }
+          else
+          {
+            if( tweet.indexOf("[green]") != -1 && !$('#status_color_api').hasClass('yellow') && !$('#status_color_api').hasClass('green') && !$('#status_color_api').hasClass('red'))
+            {
+              $('#status_color_api').addClass('green');
+              $('#general_status').width('47%');
+            
+              html = '<p>Platform up and running</p>';
+
+            }
+          }
+        }
+
+        $('#general_status').append(html);
+
+      },
+
       hash: function(tweet) {
         return tweet.replace(/(^|\s+)#(\w+)/gi, function(m, before, hash) {
           var rsp = "";
@@ -177,14 +298,15 @@ JQTWEET = {
       clean: function(tweet) {
         return this.hash(this.at(this.list(this.link(tweet))));
       }
-    } // ify
- 
-     
+    }, // ify
 };
  
 
   window.onload = function() {
     // start jqtweet!
     JQTWEET.loadTweets();
+    JQTWEET.apiStatus(); 
+    JQTWEET.feedStatus(); 
+    
   };
 
