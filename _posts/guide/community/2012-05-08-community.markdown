@@ -22,8 +22,8 @@ tags:
 </ul>
 
 
-## 1° MercadoLivre Developer Conference
+<!-- ## 1° MercadoLivre Developer Conference
 
 <h3>31 de Outubro de 2012. Hotel Renaissance - São Paulo, Brasil <a href="http://devconf.mercadolibre.com/">Sign Up!</a></h3>
 
-
+-->
