@@ -1,11 +1,12 @@
 ---
 layout: 2columns
 title: Introduction to Product Ads
-categories: Documentation
-tags: Lost
+categories: 
+- Product Ads
+tags:
+- Product Ads
 ---
 
-# Product Ads Introduction
 As you know, MercadoClics is a platform in which users can create Ads. This documentation will show you how to manage your **product Ads** using the Product Ads API.
 ## What is a Product Ad?{#what-is-a-product-ad}
 Product Ad is a new kind of ad with the **image** and **price** of a specific product. It has the following attributes:
@@ -22,6 +23,7 @@ Product Ad is a new kind of ad with the **image** and **price** of a specific pr
 * **siteID**: Id of the site (Example: "MLB")
 * **categID**: Id from MercadoLibre's categories 
 * **Price**: Cost of the product announced in the Product Ad
+* **brand**: User's brand
 * **refID**: Product SKU (Stock-keeping unit)
 * **refFrom**
 
