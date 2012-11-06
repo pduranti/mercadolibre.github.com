@@ -3,5 +3,6 @@ layout: 1columns
 title: Terms and conditions
 ---
 
-{% include toc.html %}
+[english](../terms-and-conditions) | [spanish](../terms-and-conditions-spanish)
 
+{% include toc.html %}
