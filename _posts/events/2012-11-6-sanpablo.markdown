@@ -1,12 +1,11 @@
 ---
 layout: firststep
-title: San Pablo development conference, 2012 October
+title: San Pablo development conference October 2012
 ---
 
-
-##On construction, coming soon videos, pictures, code example, and more!
-
  
-##Documents
+##Conference documents
 
 {% include slideshare.html %}
+
+
