@@ -2,7 +2,7 @@ JQTWEET = {
        
     // Set twitter username, number of tweets & id/class to append tweets
     
-    user: 'MeliApi',
+    user: 'melidevelopers',
     numTweets: 5,
     appendTo: '#lastTweets',
     apiStatusDiv: '#apiStatus',
@@ -50,7 +50,7 @@ JQTWEET = {
             type: 'GET',
             dataType: 'jsonp',
             data: {
-                q: 'from:MeliApi AND #apiStatus',
+                q: 'from:melidevelopers AND #apiStatus',
                 rpp: 1  
             },
             success: function(data, textStatus, xhr) {
@@ -83,7 +83,7 @@ JQTWEET = {
             type: 'GET',
             dataType: 'jsonp',
             data: {
-                q: 'from:MeliApi AND #feedStatus',
+                q: 'from:melidevelopers AND #feedStatus',
                 rpp: 1  
             },
             success: function(data, textStatus, xhr) {
