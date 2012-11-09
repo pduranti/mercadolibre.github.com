@@ -252,7 +252,7 @@ JQTWEET = {
           $('#general_status').empty();
 
           $('#status_color_api').addClass('red');
-          $('#general_status').width('42%');
+          $('#general_status').width('28%');
           
           html = '<p>Major service outage</p>';
           
@@ -264,7 +264,7 @@ JQTWEET = {
             $('#status_color_api').removeClass();
             $('#general_status').empty();
             $('#status_color_api').addClass('yellow');
-            $('#general_status').width('42%');
+            $('#general_status').width('28%');
 
             html = '<p>Partial service outage</p>';
 
@@ -274,7 +274,7 @@ JQTWEET = {
             if( tweet.indexOf("[green]") != -1 && !$('#status_color_api').hasClass('yellow') && !$('#status_color_api').hasClass('green') && !$('#status_color_api').hasClass('red'))
             {
               $('#status_color_api').addClass('green');
-              $('#general_status').width('47%');
+              $('#general_status').width('31%');
             
               html = '<p>Platform up and running</p>';
 
