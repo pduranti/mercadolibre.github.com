@@ -1,15 +1,8 @@
 ---
-layout: 2columns
+layout: 1columns
 title: Platform Health
-menu: developer-tools
-categories: 
-- SDKs 
-- More Tools
-menu: 
-- Tools
-tags: 
-- More Tools
 ---
+
 <script src="/javascripts/twitter.js">
 </script>
 
