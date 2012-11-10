@@ -3,7 +3,7 @@ JQTWEET = {
     // Set twitter username, number of tweets & id/class to append tweets
     
     user: 'melidevelopers',
-    numTweets: 5,
+    numTweets: 20,
     appendTo: '#lastTweets',
     apiStatusDiv: '#apiStatus',
     feedStatusDiv: '#feedStatus',
@@ -22,23 +22,31 @@ JQTWEET = {
             },
             success: function(data, textStatus, xhr) {
  
-                 var html = '<div class="tweet">TWEET_TEXT<div class="time">AGO</div></div>';
-                 
+                
+                   var html = '<div class="tweet">TWEET_TEXT<div class="time">AGO</div></div>';
+                   
+                   var count = 0;
 
-                 for (var i = 0; i < data.length; i++) {
-                 var tweetText = data[i].text
-                                    .replace('#apiStatus', 'API status: ')
-                                    .replace('#feedStatus', 'Notifications status: ')
-                                    .replace('[red]', '')
-                                    .replace('[yellow]', '')
-                                    .replace('[green]', '');
-                    $(JQTWEET.appendTo).append(
-                        html.replace('TWEET_TEXT', JQTWEET.ify.clean(tweetText) )
-                            .replace(/USER/g, data[i].user.screen_name)
-                            .replace('AGO', JQTWEET.timeAgo(data[i].created_at) )
-                            .replace(/ID/g, data[i].id_str)
-                    );
-                 }                  
+                   for (var i = 0; i < data.length && count < 5; i++) {
+                   
+                   if(data[i].text.indexOf("#apiStatus") != -1 || data[i].text.indexOf("#feedStatus") != -1 ){
+
+                   var tweetText = data[i].text
+                                      .replace('#apiStatus', 'API status: ')
+                                      .replace('#feedStatus', 'Notifications status: ')
+                                      .replace('[red]', '')
+                                      .replace('[yellow]', '')
+                                      .replace('[green]', '');
+                      $(JQTWEET.appendTo).append(
+                          html.replace('TWEET_TEXT', JQTWEET.ify.clean(tweetText) )
+                              .replace(/USER/g, data[i].user.screen_name)
+                              .replace('AGO', JQTWEET.timeAgo(data[i].created_at) )
+                              .replace(/ID/g, data[i].id_str)
+                      );
+                      count++;
+                   }
+                   }
+                                   
             }   
  
         });
