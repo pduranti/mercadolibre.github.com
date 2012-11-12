@@ -1,9 +1,7 @@
 ---
 layout: events
-title: San Pablo development conference
+title: 1st Developers Conference
 ---
-
-
 
 
 <section class="main main-content">
@@ -36,7 +34,7 @@ title: San Pablo development conference
 
 <!--<div style="margin-bottom:5px"> <strong> <a href="http://es.slideshare.net/melidevelopers/authentication-authoritation" title="Authentication &amp; Authoritation" target="_blank">Authentication &amp; Authoritation</a> </strong> from <strong><a href="http://es.slideshare.net/melidevelopers" target="_blank">melidevelopers</a></strong> </div>  -->
 
-<h2 id="APIgenrealview">API genreal view </h2>
+<h2 id="APIgenrealview">API general overview </h2>
 
 <iframe src="http://es.slideshare.net/slideshow/embed_code/15053098" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;</iframe> 
 
