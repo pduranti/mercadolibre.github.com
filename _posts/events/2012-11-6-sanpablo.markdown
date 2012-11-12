@@ -63,7 +63,7 @@ title: 1st Developers Conference
       <li class="option"><a href="javascript:void(0)" onClick="goToByScroll('Announcinganitem')">Announcing an item</a></li>
       <li class="option"><a href="javascript:void(0)" onClick="goToByScroll('demand')">Demand</a></li>
       <li class="option"><a href="javascript:void(0)" onClick="goToByScroll('AuthorizationAndAuthentication')">Authorization and authentication</a></li>
-      <li class="option"><a href="javascript:void(0)" onClick="goToByScroll('APIgenrealview')">API genreal view</a></li>
+      <li class="option"><a href="javascript:void(0)" onClick="goToByScroll('APIgenrealview')">API general overview</a></li>
       <li class="option"><a href="javascript:void(0)" onClick="goToByScroll('ManagingSales')">Managing Sales</a></li>
 
 </ul>
