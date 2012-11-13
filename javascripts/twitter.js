@@ -58,7 +58,7 @@ JQTWEET = {
             type: 'GET',
             dataType: 'jsonp',
             data: {
-                q: 'from:melidevelopers AND #apiStatus',
+                q: "from:melidevelopers+apiStatus+green+OR+%22red%22+OR+%22yellow%22",
                 rpp: 1  
             },
             success: function(data, textStatus, xhr) {
@@ -91,7 +91,7 @@ JQTWEET = {
             type: 'GET',
             dataType: 'jsonp',
             data: {
-                q: 'from:melidevelopers AND #feedStatus',
+                q: 'from:melidevelopers+feedStatus+green+OR+%22red%22+OR+%22yellow%22',
                 rpp: 1  
             },
             success: function(data, textStatus, xhr) {
