@@ -15,7 +15,7 @@ tags:
     <dt><a href="javascript:void(0)" onClick="goToByScroll('search-by-nickname')">Searching by nickname</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('search-by-seller-id')">Searching by seller ID</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('search-response')">Response</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-warnings')">Search Restrictions</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('search-warnings')">Search Considerations</a></dt>
   </dl>
 </div>
 
@@ -48,7 +48,7 @@ If you are interested in defining a block size response, read the [search paging
 For more information about search options, you can check this website: [https://api.mercadolibre.com/sites/MLA/search/](https://api.mercadolibre.com/sites/MLA/search/)
 
 
-## Search Restrictions {#search-warnings}
+## Search Considerations {#search-warnings}
 
 When you place a request to Search API asking for published items by a specific seller (ie, filter by seller_id), the response doesn't includes results from classifieds categories (Motors, Real Estate & Services). 
 
