@@ -7,7 +7,7 @@ title: 1st Developers Conference
 <section class="main main-content">
     <h1>{{ page.title }}</h1>
 
-<p> San Pablo development conference, October 2012 </p> 
+<p> The October 31 marked a major milestone for MercadoLibre, and perhaps also for e-commerce in Latin America. After years of working announce the opening of our platform, in the context of the First Conference for Developers of MercadoLibre. The appointment was in San Pablo, in the spectacular Renaissance Hotel. The call exceeded our expectations: room full of "geeks"! </p> 
 
 <h2 id="mercadopago">Mercado Pago </h2>
 
