@@ -2,8 +2,8 @@ JQTWEET = {
        
     // Set twitter username, number of tweets & id/class to append tweets
     
-    user: 'MeliApi',
-    numTweets: 5,
+    user: 'melidevelopers',
+    numTweets: 20,
     appendTo: '#lastTweets',
     apiStatusDiv: '#apiStatus',
     feedStatusDiv: '#feedStatus',
@@ -22,23 +22,31 @@ JQTWEET = {
             },
             success: function(data, textStatus, xhr) {
  
-                 var html = '<div class="tweet">TWEET_TEXT<div class="time">AGO</div></div>';
-                 
+                
+                   var html = '<div class="tweet">TWEET_TEXT<div class="time">AGO</div></div>';
+                   
+                   var count = 0;
 
-                 for (var i = 0; i < data.length; i++) {
-                 var tweetText = data[i].text
-                                    .replace('#apiStatus', 'API status: ')
-                                    .replace('#feedStatus', 'Notifications status: ')
-                                    .replace('[red]', '')
-                                    .replace('[yellow]', '')
-                                    .replace('[green]', '');
-                    $(JQTWEET.appendTo).append(
-                        html.replace('TWEET_TEXT', JQTWEET.ify.clean(tweetText) )
-                            .replace(/USER/g, data[i].user.screen_name)
-                            .replace('AGO', JQTWEET.timeAgo(data[i].created_at) )
-                            .replace(/ID/g, data[i].id_str)
-                    );
-                 }                  
+                   for (var i = 0; i < data.length && count < 5; i++) {
+                   
+                   if(data[i].text.indexOf("#apiStatus") != -1 || data[i].text.indexOf("#feedStatus") != -1 ){
+
+                   var tweetText = data[i].text
+                                      .replace('#apiStatus', 'API status: ')
+                                      .replace('#feedStatus', 'Notifications status: ')
+                                      .replace('[red]', '')
+                                      .replace('[yellow]', '')
+                                      .replace('[green]', '');
+                      $(JQTWEET.appendTo).append(
+                          html.replace('TWEET_TEXT', JQTWEET.ify.clean(tweetText) )
+                              .replace(/USER/g, data[i].user.screen_name)
+                              .replace('AGO', JQTWEET.timeAgo(data[i].created_at) )
+                              .replace(/ID/g, data[i].id_str)
+                      );
+                      count++;
+                   }
+                   }
+                                   
             }   
  
         });
@@ -50,7 +58,7 @@ JQTWEET = {
             type: 'GET',
             dataType: 'jsonp',
             data: {
-                q: 'from:MeliApi AND #apiStatus',
+                q: "from:melidevelopers+apiStatus+green+OR+%22red%22+OR+%22yellow%22",
                 rpp: 1  
             },
             success: function(data, textStatus, xhr) {
@@ -83,7 +91,7 @@ JQTWEET = {
             type: 'GET',
             dataType: 'jsonp',
             data: {
-                q: 'from:MeliApi AND #feedStatus',
+                q: 'from:melidevelopers+feedStatus+green+OR+%22red%22+OR+%22yellow%22',
                 rpp: 1  
             },
             success: function(data, textStatus, xhr) {
@@ -252,7 +260,7 @@ JQTWEET = {
           $('#general_status').empty();
 
           $('#status_color_api').addClass('red');
-          $('#general_status').width('42%');
+          $('#general_status').width('28%');
           
           html = '<p>Major service outage</p>';
           
@@ -264,7 +272,7 @@ JQTWEET = {
             $('#status_color_api').removeClass();
             $('#general_status').empty();
             $('#status_color_api').addClass('yellow');
-            $('#general_status').width('42%');
+            $('#general_status').width('28%');
 
             html = '<p>Partial service outage</p>';
 
@@ -274,7 +282,7 @@ JQTWEET = {
             if( tweet.indexOf("[green]") != -1 && !$('#status_color_api').hasClass('yellow') && !$('#status_color_api').hasClass('green') && !$('#status_color_api').hasClass('red'))
             {
               $('#status_color_api').addClass('green');
-              $('#general_status').width('47%');
+              $('#general_status').width('31%');
             
               html = '<p>Platform up and running</p>';
 
