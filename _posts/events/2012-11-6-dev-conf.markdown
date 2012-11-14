@@ -7,7 +7,12 @@ title: 1st Developers Conference
 <section class="main main-content">
     <h1>{{ page.title }}</h1>
 
-<p> The October 31 marked a major milestone for MercadoLibre, and perhaps also for e-commerce in Latin America. After years of working announce the opening of our platform, in the context of the First Conference for Developers of MercadoLibre. The appointment was in San Pablo, in the spectacular Renaissance Hotel. The call exceeded our expectations: room full of "geeks"! </p> 
+<p> October 31 marked an important milestone for MercadoLibre, and also for e-commerce in Latin America. After years of hard work we announced the opening of our platform to the external community, in the context of our First Developer Conference.</p>
+
+<p> The event took place in São Paulo, hosted in the spectacular Renaissance Hotel, exceeding our expectations with a room full of "geeks"!</p> 
+
+<p>Below you can find the slides that our Engineers presented to the audience. Come back soon to find pictures and full videos of the presentations! </p>
+
 
 <h2 id="mercadopago">Mercado Pago </h2>
 
@@ -69,10 +74,12 @@ title: 1st Developers Conference
 </ul>
 
 <h2>Videos</h2>
-
-
+<ul>
+	<li class="option"><a href="#"> Coming soon</a></li>
+</ul>
 <h2>Photos</h2>
-
-
+<ul>
+	<li class="option"><a href="#"> Coming soon</a></li>
+</ul>
 </div>
 </nav>
