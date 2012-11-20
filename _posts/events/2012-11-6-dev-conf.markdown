@@ -67,6 +67,39 @@ title: 1st Developers Conference
 
 <iframe src="http://www.youtube.com/embed/X7fSALoCmz4" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
 
+<h2 id="rogeiro">Rogeiro Teixeira </h2>
+
+<iframe src="http://www.youtube.com/embed/RPPDic2o1o8" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
+
+
+<h2 id="pablo">Pablo Moretti </h2>
+<iframe src="http://www.youtube.com/embed/MJIbSBUHdRk" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
+
+<h2 id="wesley">Wesley Nascimento </h2>
+<iframe src="http://www.youtube.com/embed/dz3b6fQysLo" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
+
+<h2 id="stelleo">Stelleo Tolda</h2>
+<iframe src="http://www.youtube.com/embed/3oZTy_d8O8Y" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
+
+
+<h2 id="sole">Soledad Dematteo</h2>
+<iframe src="http://www.youtube.com/embed/wgE3qWn0zvk" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
+
+
+<h2 id="javier">Javier Olivan</h2>
+<iframe src="http://www.youtube.com/embed/xXVXQLZZM9E" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
+
+
+
+<h2 id="helisson">Helisson Lemos</h2>
+<iframe src="http://www.youtube.com/embed/u6IdQqayEfg" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
+
+
+<h2 id="fersca">Fernando Scasserra</h2>
+<iframe src="http://www.youtube.com/embed/4DEhPeJD29Y" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
+
+
+
 <h2 id="summary">Summary </h2>
 
 <iframe src="http://www.youtube.com/embed/i3aB6E4E3JA" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
@@ -99,6 +132,14 @@ title: 1st Developers Conference
 	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('marcos')">Marcos Galperin</a></li>
 	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('daniel')">Daniel Rabinovich</a></li>
 	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('dario')">Darío Simonassi &#38; Jonathan Leibiusky </a></li>
+	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('rogeiro')">Rogeiro Teixeira </a></li>
+	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('pablo')">Pablo Moretti </a></li>
+	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('wesley')">Wesley Nascimento </a></li>
+	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('stelleo')">Stelleo Tolda </a></li>
+	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('sole')">Soledad Dematteo</a></li>
+	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('javier')">Javier Olivan</a></li>
+	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('helisson')">Helisson Lemos</a></li>
+	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('fersca')">Fernando Scasserra</a></li>
 
 	
 		<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('summary')">Summary</a></li>
