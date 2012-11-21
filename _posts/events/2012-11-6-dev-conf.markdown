@@ -86,7 +86,7 @@ title: 1st Developers Conference
 <iframe src="http://www.youtube.com/embed/wgE3qWn0zvk" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
 
 
-<h2 id="javier">Sosial design &#38; Facebook platform by Javier Olivan</h2>
+<h2 id="javier">Social design &#38; Facebook platform by Javier Olivan</h2>
 <iframe src="http://www.youtube.com/embed/xXVXQLZZM9E" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px">&nbsp;></iframe>
 
 
@@ -137,7 +137,7 @@ title: 1st Developers Conference
 	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('wesley')">Authorization and authentication</a></li>
 	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('stelleo')">API's </a></li>
 	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('sole')">Managing Sales</a></li>
-	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('javier')">Sosial design &#38; Facebook platform</a></li>
+	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('javier')">Social design &#38; Facebook platform</a></li>
 	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('helisson')">MercadoLibre platform</a></li>
 	<li class="option"><a href="javascript:void(0)" onClick="goToByScroll('fersca')">Announcing an item</a></li>
 
