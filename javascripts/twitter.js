@@ -78,7 +78,13 @@ JQTWEET = {
                     );
               
               }else {
-                 $(JQTWEET.apiStatusDiv).html('<div class="tweet"><IMG src="/images/icn-green.png"/> API is UP</div>');
+                $(JQTWEET.apiStatusDiv).html('<div class="tweet"><IMG src="/images/icn-green.png"/> API is UP</div>');
+                if(!$('#status_color_api').is(".yellow,.red,.green"))
+                {
+                  $('#status_color_api').addClass('green');
+                  $('#general_status').width('31%');
+                  $('#general_status').append('<p>Platform up and running</p>');
+                }
               }
 
             }   
@@ -112,6 +118,12 @@ JQTWEET = {
 
               }else{
                  $(JQTWEET.feedStatusDiv).html('<div class="tweet"><IMG src="/images/icn-green.png"/> Feeds are up</div>');
+                if(!$('#status_color_api').is(".yellow,.red,.green"))
+                {
+                  $('#status_color_api').addClass('green');
+                  $('#general_status').width('31%');
+                  $('#general_status').append('<p>Platform up and running</p>');
+                }
               }    
             }
         });
