@@ -8,6 +8,7 @@ subcategory: all
 
 # Guides 
 
+<!--
 <ul id="guides-expando">
 	<li>
 		<span>Ninja 1</span>
@@ -34,7 +35,7 @@ subcategory: all
 		<a href="#">Ninja 4</a>
 	</li>
 </ul>
-
+-->
 
 <script type="text/javascript">
 	$("#guides-expando").menu();

@@ -1,6 +1,6 @@
 ---
 layout: firststep
-title: API Version 1
+title: API Versioning
 ---
 
 
@@ -8,15 +8,31 @@ title: API Version 1
 
 MercadoLibre’s Developers Program recommends the use of [API V1](), the most stable version of the api.developers.mercadolibre.com.
 
-Unlike api.developers.mercadolibre.com, we will notify the changes we make to the API V1
-through this page:
+<pre><code>https://v1.api.mercadolibre.com/</code></pre>
+
+##Trunk
+
+We will always maintain the trunk or main version of the API on this URL
+[https://api.mercadolibre.com]()
+
+If you want to use the latest features of our business and improvements to our API you should be using the trunk.
+
+We strongly recommend that you use the trunk unless you have a valid reason to stick with a frozen version with no changes.
+
+##Versions
+
+If you need to stick to a version that will never change, we provide V1 for the moment
 
 <pre><code>https://v1.api.mercadolibre.com/</code></pre>
 
+<br />
+<br />
+
+#V1
 
 ##Design Considerations
 
-The API V1 will respect all the pre-established design standards and we promise not to change the design of its responses.
+The API V1 sticks to the same design standards and we promise not to change the design of its responses.
 
 
 __Key Features__
@@ -32,7 +48,7 @@ __Key Features__
 [More design considerations](/design-considerations/).
 
 
-##Available Resources
+##Available Resources on V1
 
 <ul class="ch-list parameters">
 	<li>Users and Apps</li>
@@ -55,16 +71,16 @@ the site.
 But remember! We will always notify you beforehand if we plan on changing something.
 
 
-##How to connect
+##How are URLs formed
 
-No changes here! You can connect just as you used to.
+Always prepend 'v1' to the standard API URL 
 
-Before: 
+Trunk: 
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
 
 
-Now, with V1: 
+V1: 
 
 <pre class="terminal">$ curl https://v1.api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
 
