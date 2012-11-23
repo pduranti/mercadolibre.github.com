@@ -41,7 +41,7 @@ You must send a JSON formatted body with the elements you wish to modify.
 
 Example:
 <pre class="terminal">
-curl -X POST -H "Content-Type: application/json" -H "Accept: application/json" -d
+curl -X PUT -H "Content-Type: application/json" -H "Accept: application/json" -d
 { 
   "title": "Your new title",
   "price": 1000
