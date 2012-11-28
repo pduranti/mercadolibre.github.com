@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Listing with trackable Shipping Methods
+title: Listing with trackable shipping
 categories: 
 - Listing
 - Manage Listings
