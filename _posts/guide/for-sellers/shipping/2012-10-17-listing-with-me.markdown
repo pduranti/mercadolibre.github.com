@@ -41,6 +41,7 @@ Finally sellers can offer to their buyers the *free shipping* option using one o
 </div>
 
 
+
 ## Shipping modes {#shipping-modes}
 
 ### Non-trackable shipments
@@ -52,13 +53,15 @@ Finally sellers can offer to their buyers the *free shipping* option using one o
 
 ### Trackable shipments
 
-###ME1 mode
-    The seller has to list his items with its own dimensions and the shipping cost will be calculated using these dimensions. 
+**ME1 mode**
+
+The seller has to list his items with its own dimensions and the shipping cost will be calculated using these dimensions. 
 In this mode, the seller is responsible for completing the shipping process with the method paid by the user and provide the buyer with the tracking number. 
 Typically large sellers that list using the API use this mode. <br/>
 
-###ME2 mode
-    The seller does not include dimensions in his listings. Shipment cost will be calculated using standard dimensions by category.
+**ME2 mode**
+
+The seller does not include dimensions in his listings. Shipment cost will be calculated using standard dimensions by category.
 The shipping is paid and the label printed by ML. The seller is repsonsible for delivering the package by mail.<br/>
 
 
@@ -69,7 +72,7 @@ Shipping modes are 'me1' or 'me2'. A seller is assigned one of the two by an agr
 
 
 
-### Item Dimensions {#dimensions}
+## Item Dimensions {#dimensions}
 
 Dimensions are used to calculate shipping cost and it has a fixed format. If any measure is missing it is considered invalid format.
 Length, width and height are separated by 'x' and ',' separates the weight.
@@ -84,8 +87,8 @@ Length, width and height are separated by 'x' and ',' separates the weight.
 ![Shipping details](/images/shipment.jpeg)
 
 
-## Working with shipping mode me1
 
+## Working with shipping mode me1
 In 'me1' mode the seller provides the dimensions, the first to do is query the shipping_modes resource to obtain the shipping modes allowed for that category and the given dimensions.
 
 <pre class="terminal">
