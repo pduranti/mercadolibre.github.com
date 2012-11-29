@@ -350,7 +350,7 @@ https://api.mercadolibre.com/users/:user_id/shipping_options?category_id=:catego
 - `list cost`: The cost for this shipping option.
 - `cost`: The actual cost to be paid, for "free shipping" cost is 0. 
 - `tracks_shipments_status`: 'not_verified'.
-- `speed.shipping`: Promise if time to deliver.
-- `speed.handling`: Promise of handling time.
+- `speed.shipping`: Promise of time to deliver, expressed in hours.
+- `speed.handling`: Promise of handling time, expressed in hours.
 
 
