@@ -11,14 +11,14 @@ categories:
 menu: 
 - Listing &amp; Selling
 tags: 
-
+- Shipping
 ---
 
 ## Overview
 
-This guide explains how to deal with all the aspects of our API to successfully list and manage items with trackable shipment methods, called "MercadoEnvios".
+This guide explains how to deal with all the aspects of our API to successfully list and manage items with trackable shipment methods called *"MercadoEnvios"*.
 
-We'll begin covering the different concepts within shipping and explain in detail the API resources involved:
+The guide covers the different concepts within shipping and explains in detail the API resources involved:
 
 - -shipping modes
 - -items
@@ -26,9 +26,10 @@ We'll begin covering the different concepts within shipping and explain in detai
 - -shipping services
 
 <br/>
-The guides covers the concepts of **shipping modes**, **shipping methods**. To later explain how to **list items with shipping methods** and **dimensions**.
 
-Finally sellers can offer to their buyers the **free shipping** option using one of the available methods.
+It introduces the concepts of **shipping modes** and **shipping methods**, to later explain how to **list items with shipping methods** and **dimensions**.
+
+Finally sellers can offer to their buyers the **free shipping** option using one of the available methods to improve the shipping experience.
 
 <div class="contents">
   <h5>Table of Contents</h5>
