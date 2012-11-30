@@ -10,14 +10,16 @@ MercadoLibre’s Developers Program recommends the use of [API V1](), the most s
 
 <pre><code>https://v1.api.mercadolibre.com/</code></pre>
 
-##Trunk
+##Master
 
-We will always maintain the trunk or main version of the API on this URL
+We will always maintain the master or main version of the API on this URL
 [https://api.mercadolibre.com]()
 
-If you want to use the latest features of our business and improvements to our API you should be using the trunk.
+If you want to use the latest features of our business and improvements to our API you should be using the master.
 
-We strongly recommend that you use the trunk unless you have a valid reason to stick with a frozen version with no changes.
+We strongly recommend that you use the master unless you have a valid reason to stick with a frozen version with no changes.
+
+Warning: master version may change without previous notice.
 
 ##Versions
 
@@ -75,7 +77,7 @@ But remember! We will always notify you beforehand if we plan on changing someth
 
 Always prepend 'v1' to the standard API URL 
 
-Trunk: 
+Master: 
 
 <pre class="terminal">$ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
 
