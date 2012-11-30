@@ -45,20 +45,59 @@ Finally sellers can offer to their buyers the **free shipping** option using one
 
 
 ## Shipping modes {#shipping-modes}
+The *shipping_modes* resource returns the shipping_modes available for a user.
 
+**URL**
+
+<pre class="terminal">
+https://api.mercadolibre.com/users/:user_id/shipping_modes?category_id=MLB74723&dimensions=10x50x100,5000
+</pre>
+
+
+
+**Response**
+
+{% highlight javascript %}
+[
+  {
+    "mode": "me1",
+    "shipping_attributes":  {
+      "dimensions": "required",
+      "methods": "optional",
+      "costs": "not_allowed",
+      "accepted_methods":  [
+        182,
+        100009,
+      ],
+    },
+  },
+]
+{% endhighlight %}
+
+
+The response indicates that shipping mode that the seller can use.
+
+**Response Attributes**
+
+- `dimensions` (required) — Seller has to provide dimensions when listing the item.
+- `methods` (optional) —  If the seller does not give details for the shipping methods, the 'standard' and 'express' shipping will be offered with no free option.
+- `costs` (not allowed) — The seller is not allowed to set its own shipping costs.
+- `accepted_methods` — An array with the available shipping methods: 182 or express and 100009 standard shipping.
+
+
+There are 4 modes available depending on how the seller is marked.
+
+-**not_specified:** The listing does not have any kind of shipping option.<br/>
 
 ### Non-trackable shipments
+-**custom:** Sellers provide a list of up to 10 shipping costs for buyers to pay. This option does not offer trackable shipping to the buyers.<br/>
 
-**not_specified:** The listing does not have any kind of shipping option.<br/>
-
-**custom:** Sellers provide a list of up to 10 shipping costs for buyers to pay. This option does not offer trackable shipping to the buyers.<br/>
-
-*NOTE*: **These modes are not covered in this guide.**
+*NOTE*: **This modes is not covered in this guide.**
 
 
 ### Trackable shipments
 
-**ME1 mode**
+**me1 mode**
 
 Sellers list items with its own dimensions and the shipping cost will be calculated using these dimensions.
 
@@ -66,7 +105,7 @@ In this mode, the seller is responsible for completing the shipping process, he 
 Typically large sellers with their own contract with shipping companies use this mode.<br/>
 
 
-**ME2 mode**
+**me2 mode**
 
 Sellers do not include dimensions in their listings. Shipment costs are calculated using standard dimensions for each category.
 The shipping is paid and handled by *MercadoLibre*.
@@ -102,43 +141,6 @@ Dimensions should represent the dimension of the package that will be shipped.
 
 ## Working with shipping mode me1
 In 'me1' mode the seller provides the dimensions, the first to do is query the shipping_modes resource to obtain the shipping modes allowed for that category and the given dimensions.
-
-**URL**
-
-<pre class="terminal">
-https://api.mercadolibre.com/users/:user_id/shipping_modes?category_id=MLB74723&dimensions=10x50x100,5000
-</pre>
-
-**Response**
-
-{% highlight javascript %}
-[
-  {
-    "mode": "me1",
-    "shipping_attributes":  {
-      "dimensions": "required",
-      "methods": "optional",
-      "costs": "not_allowed",
-      "accepted_methods":  [
-        182,
-        100009,
-      ],
-    },
-  },
-]
-{% endhighlight %}
-
-
-The response indicates that mode me1 can be used
-
-**Response Attributes**
-
-- `dimensions` (required) — Seller has to provide dimensions when listing the item.
-- `methods` (optional) —  If the seller does not give details for the shipping methods, the 'standard' and 'express' shipping will be offered with no free option.
-- `costs` (not allowed) — The seller is not allowed to set its own shipping costs.
-- `accepted_methods` — An array with the available shipping methods: 182 or express and 100009 standard shipping.
-
-
 
 
 ## Shipping methods {#shipping-methods}
@@ -188,7 +190,7 @@ https://api.mercadolibre.com/sites/MLB/shipping_methods
 
 
 
-## Listing an item with mode ME1
+## Listing an item on me1 mode
 
 It's quite simple, with the POST to items add the shipping attribute with dimensions of the package.
 
@@ -233,11 +235,6 @@ Sellers have the option to list items offering one of the shipping methods for f
 
 This type of shipping has some benefits: it is a superior shopping experience for the buyer, it is highlited in the search results and buyers can filter listings that offer free shipping.
 
-**Free Shipping in search filters** <br />
-![Free Shipping in search filters](/images/frete-gratis-filter.png)
-
-**Free Shipping in VIP** <br />
-![Free Shipping in VIP](/images/frete-gratis-vip.png)
 
 
 *NOTE:* For the moment the only option for free shipping is "country"
@@ -288,10 +285,19 @@ The API has a specific resource to calculate shipping costs for a given dimensio
 
 It can be useful to check the reference prices to the most common destinations e.g.: To São Paulo or RJ.
 
+
+There are 2 resources for the shipping calculator, both of them return the same result. Choose the one most suitable for you.
+
+
 **URL**
 <pre class="terminal">
 https://api.mercadolibre.com/users/:user_id/shipping_options?category_id=:category_id&dimensions=:dim&zip_code=13565905
 </pre>
+
+<pre class="terminal">
+https://api.mercadolibre.com/items/:item_id/shipping_options?zip_code=13565905
+</pre>
+
 
 **Response**
 
