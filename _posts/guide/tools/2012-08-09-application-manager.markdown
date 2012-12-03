@@ -4,6 +4,7 @@ title: Application Manager
 categories: 
 - SDKs 
 - More Tools
+- Samples
 menu: 
 - Tools
 tags: 

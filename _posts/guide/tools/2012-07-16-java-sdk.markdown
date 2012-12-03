@@ -4,6 +4,7 @@ title: JAVA SDK
 categories: 
 - SDKs 
 - More Tools
+- Samples
 menu: 
 - Tools
 tags: 
@@ -22,3 +23,5 @@ With the source code you'll find documentation on how to use the SDK.
 ## Contribute 
     
 If you want to contribute or you find something that needs to be fixed, just fork our SDK in [GitHub](https://github.com/mercadolibre/java-sdk) and pull requests as needed.
+
+

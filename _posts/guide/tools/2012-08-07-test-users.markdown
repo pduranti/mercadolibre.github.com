@@ -4,6 +4,7 @@ title: Create Test Users
 categories: 
 - SDKs 
 - More Tools
+- Samples
 menu: 
 - Tools
 tags: 
