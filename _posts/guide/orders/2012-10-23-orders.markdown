@@ -45,7 +45,7 @@ If you have any doubt about how to create an application go [here](http://develo
 
 MercadoLibre will send us notifications throw a POST message with information inside it’s body. The most important attribute in the message is the user_id which is related to the notification and second one is the resource. The resource is the element that has been updated or it just has been created.
 
-##Order topic {#orders-topic}
+##POST order notification {#post-order}
 {% highlight javascript %}
 {
   "user_id": 1234,
@@ -73,7 +73,7 @@ curl https://api.mercadolibre.com/orders/731867397?access_token=...
 
 The response of the GET message would be like this: 
  
-##Get Order {#get-order}
+##GET order {#get-order}
 {% highlight javascript %}
 {
   "id": 731867397,
@@ -101,9 +101,8 @@ When we receive an order of a purchase we can get how many units were sold.
 
 In this particular scenario, we want to maintain our stock updated in both MercadoLibre account and in our application.  
 
-From MercadoLibre: when we obtain the order by doing a GET request, we will get to quantity of the item sold. With this info we can update our database.  
-
-From my app: when we sell items by our site, we must update the quantity of items available in MercadoLibre. Doing this is a simply step, we must update the item with the new quantity available by doing a PUT request. 
+From MercadoLibre: when we obtain the order by doing a GET request, we will get the quantity of the items sold. With this info we can update our database.  
+From our application: when we sell items from our site, we must update the quantity of items available in MercadoLibre. Doing this is really simply, we just an update of the item by doing a PUT request with the new quantity available. 
 
 <pre class="terminal">curl -X PUT 'https://api.mercadolibre.com/items/731867397?' -d {"available_quantity"=2}</pre>
 
@@ -122,7 +121,7 @@ Using again a PUT request we can modify the order by adding the tracking number 
 }
 {% endhighlight %}
 
-Soon will be more information about shipping.
+Shortly will be more information about shipping.
 
 ###Giving feedback
 
