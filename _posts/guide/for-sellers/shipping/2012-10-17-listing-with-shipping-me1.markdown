@@ -127,9 +127,9 @@ Length, Width and Height are separated by 'x' and ',' separates the weight.
 
 (Length cm)**x**(Width cm)**x**(Height cm)**,**(Weight gr)<br /><br />
 
-There are some restrictions:
--**Weight** < 30000  (30 kg)
--L + W  + H < 200
+Restrictions:
+- **Weight** < 30000  (30 kg)
+- L + W  + H < 200
 
 Dimensions should represent the size of the package that will be shipped. All values are mandatory.
 
@@ -185,7 +185,7 @@ https://api.mercadolibre.com/items?access_token=
 
 ### Local Pick Up
 
-**local_pick_up** attribute enables the option for buyers to choose to pick up the item from the store and don't incur in shipping costs.
+The **local_pick_up** attribute enables the option for buyers to choose to pick up the item from the store and don't incur in shipping costs.
 
 Set local_pick_up to *true* for sellers that offer this option to buyers.
 

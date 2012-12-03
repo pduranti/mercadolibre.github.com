@@ -27,9 +27,9 @@ tags:
 
 ## Capture shipping preferences from the order {#shipping-orders}
 
-When a buyer gives shipping preference and his shipping address, a *shipment* is created and associated to the order.
+When a buyer chooses shipping preferences and gives his shipping address, a *shipment* is created and associated to the order.
 
-A new order feed is going to be received when the shipment is created and later, if the tracking is informed, each time the package changes his status until is delivered.
+A new order feed is going to be received when the shipment is created and later, if the tracking is informed, each time the package changes its status until it's delivered.
 
 
 ### Obtain shipment details
