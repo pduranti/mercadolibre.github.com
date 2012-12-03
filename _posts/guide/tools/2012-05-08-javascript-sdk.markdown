@@ -4,6 +4,7 @@ title: Javascript SDK
 categories: 
 - SDKs 
 - More Tools
+- Samples
 menu: 
 - Tools
 tags: 
