@@ -30,7 +30,7 @@ Checkout others availables resources in [API Directory](/API-directory/) under O
 
 ###How to be aware of a purchase?
 
-First of all, we have to configure our application to be capable of getting notifications. This can be done by subscribing your application to orders notifications. Go to [applications.mercadolibre.com](applications.mercadolibre.com) then edit your application and set up the Notifications Settings. 
+First of all, we have to configure our application to be capable of getting notifications. This can be done by subscribing your application to orders notifications. Go to [http://applications.mercadolibre.com](applications.mercadolibre.com) then edit your application and set up the Notifications Settings. 
 
 ![App create](/images/notificaciones.png)
 
@@ -39,7 +39,7 @@ Also you need to specify which ‘topic’ you will listen, in this case you mus
 
 This configuration allows you to interact with MercadoLibre notifications. All the events (like payments and shipping) related with an order will be notified to your callback URL. 
 
-If you have any doubt about how to create an application go [here](http://developers.mercadolibre.com/application-manager/).   
+If you have any doubt about how to create an application go [here](/application-manager/).   
 
 ###Receiving a Notification
 
@@ -58,7 +58,7 @@ MercadoLibre will send us notifications throw a POST message with information in
 }
 {% endhighlight %}
 
-After reciving the notification we must send and acknowledgment (ACK 200)  to MercadoLibre in order to stop reciving the notification. 
+After receiving the notification we must send an acknowledgment (ACK 200)  to MercadoLibre in order to stop receiving the notification. 
 
 See more about [Notifications](http://developers.mercadolibre.com/notifications).
 
