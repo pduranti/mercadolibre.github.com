@@ -58,7 +58,7 @@ MercadoLibre will send us notifications throw a POST message with information in
 }
 {% endhighlight %}
 
-After reciving the notification we must send and acknowledgment (ACK 200)  to MercadoLibre in order to stop reciving the notification. 
+After receiving the notification we must send an acknowledgment (ACK 200)  to MercadoLibre in order to stop receiving the notification. 
 
 See more about [Notifications](http://developers.mercadolibre.com/notifications).
 
