@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Manage and track shipments
+title: Manage and track shipments with me1
 categories: 
 - Listing
 - Manage Listings
@@ -27,7 +27,7 @@ tags:
 
 ## Capture shipping preferences from the order {#shipping-orders}
 
-When a buyer chooses shipping preferences and gives his shipping address, a *shipment* is created and associated to the order.
+When a buyer chooses shipping preferences and gives his shipping address a *shipment* is created and associated to the order.
 
 A new order feed is going to be received when the shipment is created and later, if the tracking is informed, each time the package changes its status until it's delivered.
 
@@ -124,9 +124,11 @@ A new order feed is going to be received when the shipment is created and later,
 ## Shipping Services {#shipping-services}
 Obtain the list of supported shipping services.
 Later on, sellers will be able to provide automatic tracking for one of the supported shipping services.
-If the shipping service  is not in this list, automatic tracking is not supported.
+If the shipping service is not in this list, automatic tracking is not supported.
 
+<pre class="terminal">
 https://api.mercadolibre.com/sites/MLB/shipping_services
+</pre>
 
 {% highlight javascript %}
 [
@@ -178,7 +180,8 @@ https://api.mercadolibre.com/sites/MLB/shipping_services
 
 
 ## Inform the tracking number {#tracking}
-Send a PUT with the service id and tracking number.
+
+All you have to do is a PUT to the shipment with the **service_id** and **tracking_number** attributes.
 
 <pre class="terminal">
 https://api.mercadolibre.com/shipments/12345678?caller.id=
@@ -187,6 +190,6 @@ https://api.mercadolibre.com/shipments/12345678?caller.id=
 {% highlight javascript %}
 {
   "tracking_number": "TR1234567891",
-  "tracking_service_id": 182
+  "tracking_service_id": 51
 }
 {% endhighlight %}
