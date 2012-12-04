@@ -55,16 +55,16 @@ A new order feed is going to be received when the shipment is created and later,
   "receiver_id": "8408542",
   "sender_address":  {
     "id": "53742741",
-    "address_line": "ftesta 13",
+    "address_line": "Rua X",
     "comment": null,
-    "zip_code": "null",
+    "zip_code": "01154020",
     "city":  {
       "id": "null",
-      "name": "rwqf",
+      "name": "Sao Paulo",
     },
     "state":  {
-      "id": "BR-AC",
-      "name": "Acre",
+      "id": "BR-SP",
+      "name": "Sao Paulo",
     },
     "country":  {
       "id": "BR",
