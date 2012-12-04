@@ -1,6 +1,12 @@
 ---
 layout: firststep
 title: Orders API
+categories: 
+- Orders
+menu:
+- Orders
+tags: 
+- Orders
 ---
 
 ##Introduction
