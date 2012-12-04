@@ -24,7 +24,7 @@ Other URIs:
 <pre><code>https://api.mercadolibre.com/feedback</code></pre>
 
 
-Checkout others availables resources in [API Directory](/API-directory/) under Order Management.
+Checkout others available resources in [API Directory](/API-directory/) under Order Management.
 
 ##Scenario 1: Building a Sales Management System
 
@@ -58,7 +58,7 @@ MercadoLibre will send us notifications throw a POST message with information in
 }
 {% endhighlight %}
 
-After reciving the notification we must send and acknowledgment (ACK 200)  to MercadoLibre in order to stop reciving the notification. 
+After reciving the notification we must send and acknowledgment (ACK 200) to MercadoLibre in order to stop reciving the notification. 
 
 See more about [Notifications](http://developers.mercadolibre.com/notifications).
 
@@ -102,7 +102,7 @@ When we receive an order of a purchase we can get how many units were sold.
 In this particular scenario, we want to maintain our stock updated in both MercadoLibre account and in our application.  
 
 From MercadoLibre: when we obtain the order by doing a GET request, we will get the quantity of the items sold. With this info we can update our database.  
-From our application: when we sell items from our site, we must update the quantity of items available in MercadoLibre. Doing this is really simply, we just an update of the item by doing a PUT request with the new quantity available. 
+From our application: when we sell items from our site, we must update the quantity of items available in MercadoLibre. Doing this is really simply, we just do an update of the item by a PUT request with the new quantity available. 
 
 <pre class="terminal">curl -X PUT 'https://api.mercadolibre.com/items/731867397?' -d {"available_quantity"=2}</pre>
 
