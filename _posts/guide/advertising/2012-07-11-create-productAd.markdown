@@ -10,9 +10,14 @@ tags:
 There are two different ways to create a Product Ad.
 
 **Note**: This attributes are optional:
-* camapaignID
-* adDailyBudget
-* maxCPC
+
+<ul class="ch-list parameters">
+  <li>camapaignID. If it is not given it will create the ProductAd in a default Campaign.</li>
+  <li>adDailyBudget</li>
+  <li>maxCPC</li>
+  <li>categID. If you don't know the best categID for your PAD you just have to ignore this field and we will set the best category for the PAD depending on the title.</li>
+</ul>
+
 **Contact us to set your default Properties for this fields**
 
 ## Sending the URL of the image
