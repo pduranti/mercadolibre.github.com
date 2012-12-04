@@ -121,11 +121,17 @@ https://api.mercadolibre.com/users/:user_id/shipping_modes?category_id=MLB74723&
 
 ## Item Dimensions {#dimensions}
 
-Dimensions are used to calculate shipping cost and it's of a fixed format. If any measure is missing it is considered invalid.
+Dimensions are used to calculate shipping the cost. If any measure is missing it is considered invalid.
 
-Length, width and height are separated by 'x' and ',' separates the weight.
+Length, Width and Height are separated by 'x' and ',' separates the weight.
 
-Dimensions should represent the size of the package that will be shipped.
+(Length cm)**x**(Width cm)**x**(Height cm)**,**(Weight gr)<br /><br />
+
+Restrictions:
+- **Weight** < 30000  (30 kg)
+- L + W  + H < 200
+
+Dimensions should represent the size of the package that will be shipped. All values are mandatory.
 
 Examples:
 
@@ -133,11 +139,6 @@ Examples:
 
 **20x44x,3000** is an invalid dimension string
 
-
-**W < 30000 gr**
-
-
-(Length cm)**x**(Width cm)**x**(Height cm)**,**(Weight gr)<br /><br />
 
 ![Package dimensions](/images/shipping-box.jpg)
 
@@ -184,7 +185,7 @@ https://api.mercadolibre.com/items?access_token=
 
 ### Local Pick Up
 
-**local_pick_up** attribute enables the option for buyers to choose to pick up the item from the store and don't incur in shipping costs.
+The **local_pick_up** attribute enables the option for buyers to choose to pick up the item from the store and don't incur in shipping costs.
 
 Set local_pick_up to *true* for sellers that offer this option to buyers.
 
