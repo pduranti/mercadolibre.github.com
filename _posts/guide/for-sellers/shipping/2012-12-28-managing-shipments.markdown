@@ -133,7 +133,7 @@ https://api.mercadolibre.com/sites/MLB/shipping_services
 {% highlight javascript %}
 [
   {
-    "id": 51,
+    "id": 1,
     "name": "PAC",
     "status": "active",
     "shipping_company":  {
@@ -154,7 +154,7 @@ https://api.mercadolibre.com/sites/MLB/shipping_services
     ]
   },
    {
-    "id": 52,
+    "id": 2,
     "name": "Sedex",
     "status": "active",
     "shipping_company":  {
@@ -184,12 +184,12 @@ https://api.mercadolibre.com/sites/MLB/shipping_services
 All you have to do is a PUT to the shipment with the **service_id** and **tracking_number** attributes.
 
 <pre class="terminal">
-https://api.mercadolibre.com/shipments/12345678?caller.id=
+https://api.mercadolibre.com/shipments/:shipment_id?caller.id=
 </pre>
 
 {% highlight javascript %}
 {
   "tracking_number": "TR1234567891",
-  "tracking_service_id": 51
+  "service_id": 1
 }
 {% endhighlight %}

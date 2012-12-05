@@ -146,7 +146,7 @@ Examples:
 
 ## Listing an item on me1 mode
 
-It's quite simple, with the POST to items include the and dimensions of the package.
+It's quite simple to list an item with me1. The POST to items must include the dimensions of the package.
 
 **URL to POST**
 <pre class="terminal">
@@ -188,6 +188,27 @@ https://api.mercadolibre.com/items?access_token=
 The **local_pick_up** attribute enables the option for buyers to choose to pick up the item from the store and don't incur in shipping costs.
 
 Set local_pick_up to *true* for sellers that offer this option to buyers.
+
+
+## Adding dimensions to existing listings
+
+Just do a PUT to items including the dimensions string.
+
+**URL to POST**
+<pre class="terminal">
+https://api.mercadolibre.com/items?access_token=
+</pre>
+
+
+**JSON for the body**
+{% highlight javascript %}
+{
+   "shipping":{
+      "dimensions":"10x10x20,700"
+   }
+}
+{% endhighlight %}
+
 
 
 ## Free shipping {#free-shipping}
