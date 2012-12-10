@@ -1,8 +1,11 @@
 ---
-layout: firststep
+layout: guides
 title: Orders API
 categories: 
+- Listing
+- Manage Listings
 - Orders
+- Manage Questions
 menu:
 - Orders
 tags: 
