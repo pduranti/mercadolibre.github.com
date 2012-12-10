@@ -11,8 +11,38 @@ tags:
 
 ##Introduction
 
+An Order is a request for a purchase of a certain Item or a group of Items, placed by a certain Customer. It is defined mainly by its quantity and price parameters, but could also include some other information in order to complete the description of what the customer is buying, often a certain variation on the item (eg: size and color of a pair of shoes).
+
+This is what an Order looks like:
+
+{% highlight javascript %}
+{
+  "id": 731867397,
+  "status": "paid",
+  "status_detail": null,
+  "date_created": "2011-10-19T18:40:34.425Z",
+  "date_closed": "2011-10-19T18:40:34.425Z",
+  "order_items": [...],
+  "total_amount": 20,
+  "currency_id": ARS,
+  "buyer": {...},
+  "seller": {...},
+  "payments":{...},
+  "feedback":{...},
+  "shipping":{...},
+  "tags": [
+  ],
+}
+{% endhighlight %}
+
+
 Using Orders API you can build your own Sales Management System. 
-There are two general scenarios where you can use Orders API. The first one is when we have several stores and we want to manage these stores using only one channel or app. In this page we will see how the user is notified when he sell something and three most common operations: check and update stock, track an order and give feedback. The second way is using Orders API as a backend directly.  
+
+There are two general scenarios where you can use Orders API:
+
+- The first one is when we have several stores and we want to manage these stores using only one channel or app. In this page we will see how the user is notified when he sell something and three most common operations: check and update stock, track an order and give feedback. 
+
+- The second way is using Orders API as a backend directly.  
 
 
 ##Resources 
