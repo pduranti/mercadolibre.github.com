@@ -14,7 +14,7 @@ new TWTR.Widget({
   rpp: 20,
   interval: 30000,
   title: 'Twitter',
-  subject: 'Mercado Libre',
+  subject: 'MercadoLibre',
   width: 250,
   height: 300,
   theme: {

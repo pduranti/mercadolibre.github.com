@@ -6,7 +6,6 @@ categories:
 - Manage Listings
 - Orders
 - Manage Questions
-- Notifications
 menu: 
 - Listing &amp; Selling
 tags: 
@@ -14,14 +13,14 @@ tags:
 ---
 
 
-An item description is a large HTML which contains detailed information about the item you are selling. Ex: specifications, descriptions, images, all you think useful to buyers. The description will appears in the item’s VIP.
+An item description is a large HTML which contains detailed information about the item you are selling. E.g.: specifications, descriptions, images, everything you find useful for buyers. The description will appear on the item’s VIP.
 
 
-See [List an item](/list-your-item) for adding description and pictures at the time of listing.
+See [List an item](/list-your-item) for adding a description and pictures at the moment of listing.
 
-##Why add description after listing?
+##Why add a description after listing?
 
-You can’t modify the Item description if that listing already has bids. But, you can add information to existing descriptions. That prevents fraud mechanisms.
+You can’t modify the item description if that listing already has bids. But, you can add information to existing descriptions. This prevents fraud mechanisms.
 
 You can add a description to your item with the following POST, specifying the item “id” and the description HTML.
 

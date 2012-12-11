@@ -1,0 +1,89 @@
+---
+layout: firststep
+title: API Versioning
+---
+
+
+##Overview
+
+MercadoLibre’s Developers Program recommends the use of [API V1](), the most stable version of the api.developers.mercadolibre.com.
+
+<pre><code>https://v1.api.mercadolibre.com/</code></pre>
+
+##Master
+
+We will always maintain the master or main version of the API on this URL
+[https://api.mercadolibre.com]()
+
+If you want to use the latest features of our business and improvements to our API you should be using the master.
+
+We strongly recommend that you use the master unless you have a valid reason to stick with a frozen version with no changes.
+
+Warning: master version may change without previous notice.
+
+##Versions
+
+If you need to stick to a version that will never change, we provide V1 for the moment
+
+<pre><code>https://v1.api.mercadolibre.com/</code></pre>
+
+<br />
+<br />
+
+#V1
+
+##Design Considerations
+
+The API V1 sticks to the same design standards and we promise not to change the design of its responses.
+
+
+__Key Features__
+
+<ul class="ch-list parameters">
+	<li>All responses will be coded with JSON.</li>
+	<li>We will also support JSONP</li>
+	<li>All request/responses will use UTF-8.</li>
+	<li>Dates will follow ISO 8601 format.</li>
+	<li>All errors will have a pre-established format.</li>
+</ul>
+
+[More design considerations](/design-considerations/).
+
+
+##Available Resources on V1
+
+<ul class="ch-list parameters">
+	<li>Users and Apps</li>
+	<li>Categories and Listings</li>
+	<li>Locations and Currencies</li>
+	<li>Items and Searches</li>
+	<li>Order Managment</li>
+	<li>Question</li>
+</ul>
+
+[View all available resources in detail.](/API-directory/)
+
+
+##Change Control
+
+In this section you will find all the changes we make to this version, such as new methods or
+changes in a method. And when API V1 evolves to a V2, you will see the changes directly on
+the site.
+
+But remember! We will always notify you beforehand if we plan on changing something.
+
+
+##How are URLs formed
+
+Always prepend 'v1' to the standard API URL 
+
+Master: 
+
+<pre class="terminal">$ curl https://api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
+
+
+V1: 
+
+<pre class="terminal">$ curl https://v1.api.mercadolibre.com/sites/MLA/search?q=ipod</pre>
+
+

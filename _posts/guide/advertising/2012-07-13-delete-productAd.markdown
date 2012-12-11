@@ -1,11 +1,12 @@
 ---
 layout: 2columns
 title: Delete a Product Ad 
-categories: Documentation
-tags: Lost
+categories: 
+- Product Ads
+tags:
+- Product Ads
 ---
 
-# Delete a Product Ad
 To delete a product ad you only need to change the **status** to E.
 
 <pre class="terminal">

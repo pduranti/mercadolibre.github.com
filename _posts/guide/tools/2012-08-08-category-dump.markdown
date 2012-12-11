@@ -4,6 +4,7 @@ title: Category Dump
 categories: 
 - SDKs 
 - More Tools
+- Samples
 menu: 
 - Tools
 tags: 
@@ -11,7 +12,7 @@ tags:
 ---
 
 
-The category tree does not change very often. If you prefer you can request a dump of the whole category tree for a given country site for offline processing.
+The category tree does not change very often. If you prefer, you can request a dump of the whole category tree for a given country site for offline processing.
 This API returns the category tree in JSON format within a gzip-encoded response.
 
 To get the categories for Brasil, use this URL:
@@ -29,10 +30,10 @@ To get the categories for Argentina, use this URL:
 
 # Modification Headers
 
-This URL contains 2 headers that can be used to check when was the dump last generated.
+This URL contains 2 headers that can be used to check when the last dump was generated.
 
 - **X-Content-Created**: contains the date of the last generation.
-- **X-Content-MD5**: contains the MD5 checksum of last generation.
+- **X-Content-MD5**: contains the MD5 checksum of the last generation.
 
 <pre class='terminal'>
 ~$ curl -I  https://api.mercadolibre.com/sites/MLB/categories/all

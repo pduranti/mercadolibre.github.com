@@ -4,6 +4,7 @@ title: .NET SDK
 categories: 
 - SDKs 
 - More Tools
+- Samples
 menu: 
 - Tools
 tags: 

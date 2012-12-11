@@ -1,16 +1,37 @@
+<style>
+
+.titlelink:hover {
+  text-decoration: none;
+  color:#999;
+}
+.titlelink:active {
+  text-decoration: none;
+  color:#999;
+}
+.titlelink:link {
+  text-decoration: none;
+  color:#999;
+}
+.titlelink:visited {
+  text-decoration: none;
+  color:#999;
+}
+
+
+</style>
+
 <header class="ch-g1 main">
-    <hgroup class="ch-g1-4">
+    <hgroup class="ch-g1-6">
     <h1><a href="/">MELI</a></h1>
-    <h2>Developers</h2>
-    </hgroup>
-      <nav class="ch-g3-4">
+    <h2><span><a href="/" class="titlelink">Developers</a></span></h2>
+    </hgroup> 
+      <nav class="ch-g4-7">
         <ul>
          {% assign current = nil %}
          {% if page.menu[0] == 'First Steps' %}
             {% assign current = 'current' %}
          {% endif %}
-          <li class="option"><a class="{{ current }}" href="/first-step">Getting Started</a></li>
-
+         
 
           <li id="guides-menu" class="option ch-dropdown-skin">
             {% assign current = nil %}
@@ -20,15 +41,28 @@
 
             <span class="{{ current }}">Documentation</span>
               <ul class="ch-hide">
+                
+                
+                {% assign current = nil %}
+                {% if page.menu[0] == 'Getting Started' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                
+                 <li><a class="{{ current }}" href="/first-step">Getting Started</a></li>
+
+                
                 {% assign current = nil %}
                 {% if page.menu[0] == 'Design Considerations' %}
                     {% assign current = 'current' %}
                 {% endif %}
+                
                 <li><a class="{{ current }}" href="/design-considerations">Design Considerations</a></li>
                 {% assign current = nil %}
                 {% if page.menu[0] == 'Authentication' %}
                     {% assign current = 'current' %}
                 {% endif %}
+                
+                
                 <li><a class="{{ current }}" href="/authentication-and-authorization">Authentication</a></li>
                 {% assign current = nil %}
                 {% if page.menu[0] == 'Shopping' %}
@@ -45,12 +79,21 @@
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/listing-introduction">Listing &amp; Selling</a></li>
+                
+                {% assign current = nil %}
+                {% if page.menu[0] == 'Notifications' %}
+                    {% assign current = 'current' %}
+                {% endif %}
+                <li><a class="{{ current }}" href="/notifications">Notifications</a></li>
+                
                 <li><a href="https://developers.mercadopago.com/" target="_blank">Payments &amp; Collections</a></li>
+                
                 {% assign current = nil %}
                 {% if page.menu[0] == 'API Directory' %}
                     {% assign current = 'current' %}
                 {% endif %}
                 <li><a class="{{ current }}" href="/API-directory">API Directory</a></li>
+               
               </ul>
             </li>
 
@@ -64,6 +107,21 @@
             {% assign current = 'current' %}
          {% endif %}
           <li class="option"><a class="{{ current }}" href="/community">Community</a></li>
+         
+    
+          {% assign current = nil %}
+         {% if page.menu[0] == 'API Version v1' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option"><a class="{{ current }}" href="/version">API Versioning</a></li>
+       
+	{% assign current = nil %}
+         {% if page.menu[0] == 'API Version V1' %}
+            {% assign current = 'current' %}
+         {% endif %}
+          <li class="option"><a class="{{ current }}" href="/api-health/">API Health</a></li>
+          
+       
           <li class="option"><form action="/search"><input id="q" type="search" name="q" placeholder="Search this site" class="head-search-input"><noscript><input id="search" type="submit" value="Go" class="ch-btn-skin ch-btn-small"/></noscript></form></li>
         </ul>
     </nav>

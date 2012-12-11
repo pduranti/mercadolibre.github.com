@@ -6,7 +6,6 @@ categories:
 - Manage Listings
 - Orders
 - Manage Questions
-- Notifications
 menu: 
 - Listing &amp; Selling
 tags: 
@@ -15,16 +14,16 @@ tags:
 
 ## Overview 
 
-Pictures are optional when listing, but they make a big difference in the publication quality and results (visits and contacts). This tutorial is going to show you how to add and upload pictures. 
+Pictures are optional when listing, but they make a big difference in terms of the quality and results of your listing (visits and contacts). This tutorial is going to show you how to add and upload pictures. 
 
-Users can upload pictures with at most 10 MB. Picture format can be .jpg, .jpeg, .png or .gif (without animation). 
+Users can upload pictures up to 10 MB. Picture format can be .jpg, .jpeg, .png or .gif (without animation). 
 
 ### Zooming
 For pictures wider than 800 pixels, a zoom widget is activated that lets buyers roll over and take a close-up look. This is highly recommended for Clothes and Real Estate properties.
 
-## Upload the Picture
+## Upload the picture
 
-The following POST will upload your picture to the MELI Storage
+The following POST will upload your picture to the MELI Storage.
 
 <pre class="terminal">
 curl -F file=@/home/user/picture.jpg
@@ -32,7 +31,7 @@ curl -F file=@/home/user/picture.jpg
 https://api.mercadolibre.com/pictures?access_token=$ACCESS_TOKEN
 </pre>
 
-It will return a JSON describing the picture details, remember to save the picture “id”. The other fields represents different picture sizes.
+It will return a JSON describing the picture details. Remember to save the picture “id”. The other fields represent different picture sizes.
 
 {% highlight javascript %}
 {
@@ -42,11 +41,11 @@ It will return a JSON describing the picture details, remember to save the pictu
 }
 {% endhighlight %}
 
-## Link the Picture to the Item
+## Link the picture to the Item
 
 Using this picture “id” retrieved you can link the previous uploaded picture to your item.
 
-(You have to provide the item “Id” and the Picture “Id”)
+(You have to provide the item “Id” and the Picture “id”)
 
 <pre class="terminal">
 curl -X POST -H "Content-Type: application/json" -H "Accept: application/json" -d
@@ -57,4 +56,4 @@ https://api.mercadolibre.com/items/MLA421101451/pictures?access_token=$ACCESS_TO
 
 That’s all!. Go to your item’s VIP (using the permalink field) and check the new picture.
 
-Note: There is currently a maximum amount of fifteen pictures per property.
+Note: There is currently a maximum number of fifteen pictures per property.

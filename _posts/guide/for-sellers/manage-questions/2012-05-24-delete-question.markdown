@@ -3,20 +3,18 @@ layout: guides
 title: Delete a question
 categories: 
 - Listing
-- Real Estate
 - Manage Listings
 - Orders
 - Manage Questions
-- Notifications
 menu: 
 - Listing &amp; Selling
 tags: 
 - Manage Questions
 ---
 
-Sometimes you want to delete the question someone made you.
+Sometimes you may want to delete a question someone has made you.
 
-Just do a DELETE request with the questionId and an access token of the seller of that item.
+Just do a DELETE request with the question ID and an access token of the seller of that item.
 
 <pre class="terminal">
 curl -X DELETE 'https://api.mercadolibre.com/questions/${question_id}?access_token=$ACCESS_TOKEN'
