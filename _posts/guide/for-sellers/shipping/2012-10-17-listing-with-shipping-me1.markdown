@@ -43,8 +43,8 @@ It introduces the concepts of **shipping modes** and **shipping methods**, to la
 </div>
 
 
-## Verify if the user are ready to list with me1 {#user-me1-mode}
-You can verify if the user is already able to list with ME1 functionality just making a GET at users API.
+## Verify if the user is ready to list with me1 {#user-me1-mode}
+You can verify if the user is already allowed to list with ME1 shipping mode just making a GET at users API.
 Let's see how it works.
 
 **URL to GET**
@@ -52,7 +52,7 @@ Let's see how it works.
 https://api.mercadolibre.com/users/me?access_token=
 </pre>
 
-This will returns a lot of information about the authenticated user, and we can see around the JSON the following attributes
+This will returns a lot of information about the authenticated user, and we can see in the JSON the following attributes
 
 **Response**
 
@@ -65,7 +65,7 @@ This will returns a lot of information about the authenticated user, and we can 
 {% endhighlight %}
 
 
-if the user have the me1 markup, so he can list with this functionality.
+if the user has the me1 markup, so he can list with this shipping mode.
 
 
 ## Verify the shipping mode {#shipping-modes}
