@@ -1,0 +1,165 @@
+---
+layout: guides
+title: Orders
+categories: 
+- Listing
+- Manage Listings
+- Orders
+- Manage Questions
+menu:
+- Orders
+tags: 
+- Orders
+---
+
+<div class="contents">
+  <h5>Table of Contents</h5>
+  <dl>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('intro')">Introduction</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('fields')">Fields</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('status')">Order Status</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('resource')">Resources</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('getorder')">Get an Order</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('searchorder')">Searching Orders</a></dt>
+  </dl>
+</div>
+
+
+##Introduction {#intro}
+
+An Order is a request for a purchase of a certain Item or a group of Items, placed by a certain Customer. It is defined mainly by its quantity and price parameters, but could also include some other information in order to complete the description of what the customer is buying, often a certain variation on the item (eg: size and color of a pair of shoes).
+
+This is how an Order looks like:
+
+{% highlight javascript %}
+{
+"id":208446080,
+"status":"confirmed",
+"status_detail":null,
+"date_created":"2012-12-11T19:32:57.000-04:00",
+"date_closed":"2012-12-11T19:32:57.000-04:00",
+"order_items":[
+{
+"item":{
+"id":"MLU406027250",
+"title":"Item De Prueba",
+"variation_id":null,
+"variation_attributes":[
+]
+},
+"quantity":1,
+"unit_price":1,
+"currency_id":"UYU"
+}
+],
+"total_amount":1,
+"currency_id":"UYU",
+"buyer":{
+"id":130298679,
+"nickname":"TT360423",
+"email":"test_user_6945@testuser.com",
+"phone":{
+"area_code":"01",
+"number":"1111-1111",
+"extension":null
+},
+"first_name":"Test",
+"last_name":"Test",
+"billing_info":{
+"doc_type":null,
+"doc_number":null
+}
+},
+"seller":{
+"id":130299969,
+"nickname":"TT279486",
+"email":"test_user_1635@testuser.com",
+"phone":{
+"area_code":"01",
+"number":"1111-1111",
+"extension":null
+},
+"first_name":"Test",
+"last_name":"Test"
+},
+"payments":[
+],
+"feedback":{
+"purchase":{
+"date_created":"2012-12-12T12:31:49.000-04:00",
+"fulfilled":true,
+"rating":"positive"
+},
+"sale":{
+"date_created":"2012-12-12T12:33:50.000-04:00",
+"fulfilled":true,
+"rating":"positive"
+}
+},
+"shipping":{
+"status":"to_be_agreed"
+},
+"tags":[
+"paid",
+"not_delivered"
+]
+}
+{% endhighlight %}
+
+##Fields {#fields}
+
+- `id` - The order identifier.
+- `status` - The actual order status. See status.
+- `status_detail` - Status detail, in case the order was cancelled. 
+- `date_created` - Date when the order was created.
+- `date_closed` - Date when the order was confirmed.
+- `order_items` - An array of items included in the order.
+- `total_amount` - Total order amount (items cost per quantity) without shipping cost. 
+- `currency_id` - Order currency ID. 
+- `buyer` - Buyer information.
+- `seller` - Seller information.
+- `payments` - Payments related to the order.
+- `feedback` - Feedback given by the buyer and/or seller. 
+- `shipping` - Shipping information.
+
+
+##Status {#status}
+
+The are a few possible status for an order:
+
++ confirmed: Initial state of an order, the buyer confirmed the purchase, but is not paid yet
++ payment_required: The order needs a payment to become confirmed and show users information.
++ payment_in_process: There is a payment related with the order, but it has not accredited yet.
++ paid: The order has a related payment and it has been accredited.
++ cancelled: The order has not completed by some reason.
+
+##Resources {#resources}
+
+Each order is associated with several resources:
+
+* Items
+* Payments
+* Feedback
+* Shipping
+
+Checkout others available resources in [API Directory](/API-directory/) under Order Management.
+
+##Get an Order {#getorder} 
+
+To get an order you will need an access token and the order id, then execute the following GET request:
+
+<pre class="terminal">
+https://api.mercadolibre.com/orders/order_id?access_token={...}
+</pre>
+
+##Searching Orders {#searchorder} 
+
+Another thing that we can do using orders api is searching for orders. Both as buyer or seller you can obtain all the orders that the user is involved. 
+
+<pre class="terminal">
+https://api.mercadolibre.com/orders/search?seller=seller_id&#038;access_token={...}
+</pre>
+
+<pre class="terminal">
+https://api.mercadolibre.com/orders/search?buyer=buyer_id&#038;access_token={...}
+</pre>
