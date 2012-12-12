@@ -219,7 +219,7 @@ Set local_pick_up to *true* for sellers that offer this option to buyers.
 
 Just do a PUT to items including the dimensions string.
 
-**URL to POST**
+**URL to PUT**
 <pre class="terminal">
 https://api.mercadolibre.com/items?access_token=
 </pre>
