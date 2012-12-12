@@ -18,7 +18,7 @@ tags:
     <dt><a href="javascript:void(0)" onClick="goToByScroll('intro')">Introduction</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('fields')">Fields</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('status')">Order Status</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('resource')">Resources</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('resources')">Resources</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('getorder')">Get an Order</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('searchorder')">Searching Orders</a></dt>
   </dl>
@@ -33,76 +33,74 @@ This is how an Order looks like:
 
 {% highlight javascript %}
 {
-"id":208446080,
-"status":"confirmed",
-"status_detail":null,
-"date_created":"2012-12-11T19:32:57.000-04:00",
-"date_closed":"2012-12-11T19:32:57.000-04:00",
-"order_items":[
-{
-"item":{
-"id":"MLU406027250",
-"title":"Item De Prueba",
-"variation_id":null,
-"variation_attributes":[
-]
-},
-"quantity":1,
-"unit_price":1,
-"currency_id":"UYU"
-}
-],
-"total_amount":1,
-"currency_id":"UYU",
-"buyer":{
-"id":130298679,
-"nickname":"TT360423",
-"email":"test_user_6945@testuser.com",
-"phone":{
-"area_code":"01",
-"number":"1111-1111",
-"extension":null
-},
-"first_name":"Test",
-"last_name":"Test",
-"billing_info":{
-"doc_type":null,
-"doc_number":null
-}
-},
-"seller":{
-"id":130299969,
-"nickname":"TT279486",
-"email":"test_user_1635@testuser.com",
-"phone":{
-"area_code":"01",
-"number":"1111-1111",
-"extension":null
-},
-"first_name":"Test",
-"last_name":"Test"
-},
-"payments":[
-],
-"feedback":{
-"purchase":{
-"date_created":"2012-12-12T12:31:49.000-04:00",
-"fulfilled":true,
-"rating":"positive"
-},
-"sale":{
-"date_created":"2012-12-12T12:33:50.000-04:00",
-"fulfilled":true,
-"rating":"positive"
-}
-},
-"shipping":{
-"status":"to_be_agreed"
-},
-"tags":[
-"paid",
-"not_delivered"
-]
+  "id":208446080,
+  "status":"confirmed",
+  "status_detail":null,
+  "date_created":"2012-12-11T19:32:57.000-04:00",
+  "date_closed":"2012-12-11T19:32:57.000-04:00",
+  "order_items":[
+      {
+        "item":{
+                "id":"MLU406027250",
+                "title":"Item De Prueba",
+                "variation_id":null,
+                "variation_attributes":[]
+        },
+        "quantity":1,
+        "unit_price":1,
+        "currency_id":"UYU"
+      }
+  ],
+  "total_amount":1,
+  "currency_id":"UYU",
+  "buyer":{
+           "id":130298679,
+           "nickname":"TT360423",
+           "email":"test_user_6945@testuser.com",
+           "phone":{
+                   "area_code":"01",
+                   "number":"1111-1111",
+                   "extension":null
+            },
+           "first_name":"Test",
+           "last_name":"Test",
+           "billing_info":{
+                           "doc_type":null,
+                           "doc_number":null
+            }
+  },
+  "seller":{
+            "id":130299969,
+            "nickname":"TT279486",
+            "email":"test_user_1635@testuser.com",
+            "phone":{
+                      "area_code":"01",
+                      "number":"1111-1111",
+                      "extension":null
+            },
+            "first_name":"Test",
+            "last_name":"Test"
+  },
+  "payments":[],
+  "feedback":{
+            "purchase":{
+                        "date_created":"2012-12-12T12:31:49.000-04:00",
+                        "fulfilled":true,
+                        "rating":"positive"
+            },
+            "sale":{
+                    "date_created":"2012-12-12T12:33:50.000-04:00",
+                    "fulfilled":true,
+                    "rating":"positive"
+            }
+  },
+  "shipping":{
+              "status":"to_be_agreed"
+  },
+  "tags":[
+          "paid",
+          "not_delivered"
+  ]
 }
 {% endhighlight %}
 
@@ -137,10 +135,10 @@ The are a few possible status for an order:
 
 Each order is associated with several resources:
 
-* Items
-* Payments
-* Feedback
-* Shipping
+* Items.
+* Payments.
+* Feedback.
+* Shipping - Not available yet. 
 
 Checkout others available resources in [API Directory](/API-directory/) under Order Management.
 
