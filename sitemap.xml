@@ -1,20 +1,309 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">    
-  <url>
-    <loc>http://developers.mercadolibre.com/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  {% for post in site.posts limit:20 %}
-  <url>
-    <loc>http://developers.mercadolibre.com{{ post.url }}/</loc>
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  {% endfor %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://developers.mercadolibre.com/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/first-step/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/design-considerations/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/authentication-and-authorization/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/bookmarks/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/search-visual-introduction/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/listing-introduction/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/notifications/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/API-directory/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/javascript-sdk/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/community/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/version/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/api-health/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/develop-with-us/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/application-manager/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/dev-conf/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/terms-and-conditions/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/java-sdk/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/net-sdk/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/php-sdk/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/ask-a-question/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/search-by-text-query/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/search-by-category/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/search-filtering/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/search-paging/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/search-using-sorting/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/search-by-seller/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/registration-to-list/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/list-your-item/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/category-introduction/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/add-attributes-item/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/list-with-variation/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/real-estate-list-item/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/add-description-item/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/add-pictures-item/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/relist-item/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/validate-item/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/modify-listing/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/search-my-own-items/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/orders/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/giving-feedback-of-an-order/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/delete-question/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/block-user-questions/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/answer-a-question/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/test-users/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/category-dump/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/developer-console/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/gwt-sample/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/forums-en/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/forums-es/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/forums-pt/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/terms-and-conditions-spanish/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/guide-appendix/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/choose-category-for-an-item/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/getting-started/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/res-attrs-selection/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/guides/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/info-user/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/private-user/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://developers.mercadolibre.com/update-user/</loc>
+  <lastmod>2012-12-14T16:16:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
 </urlset>
