@@ -217,11 +217,15 @@ Set local_pick_up to *true* for sellers that offer this option to buyers.
 
 ## Adding dimensions to existing listings
 
-Just do a PUT to items including the dimensions string.
+After an item is listed, if it doesn't have dimensions, you can inform them later.
+
+Altering the dimensions of an item doesn't affect its relevance in search results and there is no restricion to alter dimensions if the item has sales.
+
+Just do a PUT to the item including its dimensions.
 
 **URL to PUT**
 <pre class="terminal">
-https://api.mercadolibre.com/items?access_token=
+https://api.mercadolibre.com/items/:item_id?access_token=
 </pre>
 
 

@@ -34,13 +34,133 @@ A new order feed is going to be received when the shipment is created and later,
 
 ### Obtain shipment details
 
+There are different ways of obtaining shipping details for an Order.
+
+Do a GET to orders when you receive the notification and you will have some shipping details embedded in the order.
+
 <pre class="terminal">
-  https://api.mercadolibre.com/orders/700472002/shipments?access_token=
+  https://api.mercadolibre.com/orders/:order_id?access_token=
 </pre>
 
 {% highlight javascript %}
 {
-  "id": 7601620,
+  "id": 123456789,
+  "status": "paid",
+  "status_detail": null,
+  "date_created": "2012-12-18T09:35:07.000-04:00",
+  "date_closed": "2012-12-18T09:35:07.000-04:00",
+  "order_items":  [
+     {
+      "item":  {
+        "id": "MLB446311775",
+        "title": "Capa Couro Flip Original Samsung Galaxy S3 Siii  Branca",
+        "variation_id": null,
+        "variation_attributes": [
+        ],
+      },
+      "quantity": 1,
+      "unit_price": 99.98,
+      "currency_id": "BRL",
+    },
+  ],
+  "total_amount": 99.98,
+  "currency_id": "BRL",
+  "buyer":  {
+    "id": "123456565",
+    "nickname": "BUYER NICKNAME",
+    "email": "email@buyer.com",
+    "phone":  {
+      "area_code": "11",
+      "number": "55565656",
+      "extension": null,
+    },
+    "first_name": "Name",
+    "last_name": "Last Name",
+    "billing_info": - {
+      "doc_type": "CPF",
+      "doc_number": "123456789",
+    },
+  },
+  "seller":  {
+    "id": "123456",
+    "nickname": "SELLER NICKNAME",
+    "email": "email@seller.com",
+    "phone": - {
+      "area_code": null,
+      "number": "011 4444 1234",
+      "extension": null,
+    },
+    "first_name": "Name.",
+    "last_name": "Last Name LTDA.",
+  },
+  "payments":  [
+    - {
+      "id": "459656119",
+      "transaction_amount": 99.98,
+      "currency_id": "BRL",
+      "status": "approved",
+      "date_created": null,
+      "date_last_modified": null,
+    },
+  ],
+  "feedback":  {
+    "purchase": null,
+    "sale": null,
+  },
+  "shipping":  {
+    "id": 20176304039,
+    "status": "pending",
+    "date_created": "2012-12-18T09:37:35.000-04:00",
+    "receiver_address":  {
+      "id": 123456789,
+      "address_line": "Rua Júlio Sérgio de Castro 262 0  ",
+      "zip_code": "223232",
+      "city": - {
+        "id": "BR-SP-44",
+        "name": "São Paulo",
+      },
+      "state":  {
+        "id": "BR-SP",
+        "name": "São Paulo",
+      },
+      "country": - {
+        "id": "BR",
+        "name": "Brasil",
+      },
+      "latitude": null,
+      "longitude": null,
+      "comment": null,
+    },
+    "currency_id": "BRL",
+    "cost": 5.9,
+  },
+  "tags":  [
+    "paid",
+    "not_delivered",
+  ],
+}
+{% endhighlight %}
+
+
+
+To obtain the complete details of a shipment: status detail, date created, shipping options such as shipping speed, Express or Standard and such do a GET to any of these resources:
+
+
+<pre class="terminal">
+  https://api.mercadolibre.com/orders/:order_id/shipments?access_token=
+</pre>
+
+
+Or, if you already know the shipment_id
+
+<pre class="terminal">
+  https://api.mercadolibre.com/shipments/:shipment_id?access_token=
+</pre>
+
+
+{% highlight javascript %}
+{
+  "id": 12345678,
   "status": "active",
   "status_history":  {
     "date_shipped": null,
@@ -184,7 +304,7 @@ https://api.mercadolibre.com/sites/MLB/shipping_services
 All you have to do is a PUT to the shipment with the **service_id** and **tracking_number** attributes.
 
 <pre class="terminal">
-https://api.mercadolibre.com/shipments/:shipment_id?caller.id=
+https://api.mercadolibre.com/shipments/:shipment_id?access_token=
 </pre>
 
 {% highlight javascript %}
