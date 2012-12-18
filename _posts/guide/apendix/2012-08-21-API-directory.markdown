@@ -67,7 +67,7 @@ Explore our API Resources.
     <li><a href="https://api.mercadolibre.com/collections" target="_blank">/collections?access_token={...}</a></li>
     <li><a href="https://api.mercadolibre.com/payment_methods/MLAMC" target="_blank">/payment_methods/{payment_method_id}</a></li>
     <li><a href="https://api.mercadolibre.com/sites/MLA/payment_methods" target="_blank">/sites/{site_id}/payment_methods</a></li>
-    <li><a href="https://api.mercadolibre.com/feedback" target="_blank">/feedback?access_token={...}</a></li>
+    <li><a href="https://api.mercadolibre.com/orders/{order_id}/feedback" target="_blank">/orders/{order_id}/feedback?access_token={...}</a></li>
   </ul>
 
 <strong>Questions</strong>
