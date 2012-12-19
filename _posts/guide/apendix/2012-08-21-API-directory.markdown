@@ -30,7 +30,7 @@ Explore our API Resources.
     <li><a href="https://api.mercadolibre.com/sites/{site_id}" target="_blank">/sites/{site_id}</a></li>
     <li><a href="https://api.mercadolibre.com/site_domains/www.mercadolibre.com.ar" target="_blank">/site_domains/{site_domain_url}</a></li>
     <li><a href="https://api.mercadolibre.com/sites/{site_id}/listing_types" target="_blank">/sites/{site_id}/listing_types</a></li>
-    <li><a href="https://api.mercadolibre.com/sites/{site_id}/listing_exposures" target="_blank">sites/{site_id}/listing_exposures</a></li>
+    <li><a href="https://api.mercadolibre.com/sites/{site_id}/listing_exposures" target="_blank">/sites/{site_id}/listing_exposures</a></li>
     <li><a href="https://api.mercadolibre.com/sites/{site_id}/listing_prices?price=1" target="_blank">/sites/{site_id}/listing_prices?price=1</a></li>
     <li><a href="https://api.mercadolibre.com/sites/{site_id}/categories" target="_blank">/sites/{site_id}/categories</a></li>
     <li><a href="https://api.mercadolibre.com/categories/{category_id}" target="_blank">/categories/{category_id}</a></li>
