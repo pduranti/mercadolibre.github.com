@@ -16,10 +16,10 @@ tags:
   <h5>Table of Contents</h5>
   <dl>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('intro')">Introduction</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('getorder')">Get an Order</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('fields')">Fields</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('status')">Order Status</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('resources')">Resources</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('getorder')">Get an Order</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('searchorder')">Searching Orders</a></dt>
   </dl>
 </div>
@@ -28,6 +28,14 @@ tags:
 ##Introduction {#intro}
 
 An Order is a request for a purchase of a certain Item or a group of Items, placed by a certain Customer. It is defined mainly by its quantity and price parameters, but could also include some other information in order to complete the description of what the customer is buying, often a certain variation on the item (eg: size and color of a pair of shoes).
+
+##Get an Order {#getorder} 
+
+To get an order you will need an **access token** and the **order id**, then execute the following GET request:
+
+<pre class="terminal">
+https://api.mercadolibre.com/orders/order_id?access_token={...}
+</pre>
 
 This is how an Order looks like:
 
@@ -142,17 +150,11 @@ Each order is associated with several resources:
 
 Checkout others available resources in [API Directory](/API-directory/) under Order Management.
 
-##Get an Order {#getorder} 
-
-To get an order you will need an access token and the order id, then execute the following GET request:
-
-<pre class="terminal">
-https://api.mercadolibre.com/orders/order_id?access_token={...}
-</pre>
-
 ##Searching Orders {#searchorder} 
 
-Another thing that we can do using orders api is searching for orders. Both as buyer or seller you can obtain all the orders that the user is involved. 
+###Recent Orders
+
+Another thing that we can do using orders api is searching for orders. Both as buyer or seller you can obtain all the orders that the user is involved. The response will include orders with less than 21 days and any order not qualified by both parties. 
 
 <pre class="terminal">
 https://api.mercadolibre.com/orders/search?seller=seller_id&#038;access_token={...}
@@ -161,3 +163,13 @@ https://api.mercadolibre.com/orders/search?seller=seller_id&#038;access_token={.
 <pre class="terminal">
 https://api.mercadolibre.com/orders/search?buyer=buyer_id&#038;access_token={...}
 </pre>
+
+###Archived Orders
+
+If you are looking for an old order, more than 21 days or qualified by both parties, you can use archived resource: 
+
+<pre class="terminal">
+https://api.mercadolibre.com/orders/search/archived?seller=seller_id&#038;access_token={...}
+</pre>
+
+The same request works with buyers. 
