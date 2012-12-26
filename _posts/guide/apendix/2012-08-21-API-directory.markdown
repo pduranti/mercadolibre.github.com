@@ -119,22 +119,22 @@ th p{
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/sites/{site_id}/listing_types" target="_blank">/sites/{site_id}/listing_types</a>
 </td>
-      <td>Not available yet.</td>
+      <td>Retrieves information about the listing types.</td>
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/sites/{site_id}/listing_exposures" target="_blank">/sites/{site_id}/listing_exposures</a>
 </td>
-      <td>Not available yet.</td>
+      <td>No description available.</td>
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/sites/{site_id}/listing_prices?price=1" target="_blank">/sites/{site_id}/listing_prices?price=1</a>
 </td>
-      <td>Not available yet.</td>
+      <td>No description available.</td>
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/sites/{site_id}/categories" target="_blank">/sites/{site_id}/categories</a>
 </td>
-      <td>Not available yet.</td>
+      <td>Retrieves the categories availables from the site.</td>
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/categories/{category_id}" target="_blank">/categories/{category_id}</a>
