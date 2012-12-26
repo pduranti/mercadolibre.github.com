@@ -21,13 +21,11 @@ tr {
 
 td {
   padding: 8px 0;
-
 }
 
 th {
   padding: 8px 0;
   text-align: left;
-
   border-bottom:  1px dotted #CCC;
   border-top:  1px dotted #CCC;
 }
@@ -236,22 +234,22 @@ th p{
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/sites/MLA/searchUrl?q=ipod" target="_blank">/sites/{site_id}/searchUrl?q=ipod </a>
 </td>
-      <td>Not available yet.</td>
+      <td>Search for any item in MercadoLibre. It will return an array of items that match the search criteria. </td>
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/sites/MLA/hot_items/search?limit=5&amp;category=MLA1743" target="_blank">/sites/{site_id}/hot_items/search?limit=5&amp;category={category_id} </a>
 </td>
-      <td>Not available yet.</td>
+      <td>Retrieve an array of the hot items from the category specified by parameter.</td>
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/sites/MLA/featured_items/HP" target="_blank">/sites/{site_id}/featured_items/{pool_id} </a>
 </td>
-      <td>Not available yet.</td>
+      <td>Retrieve an array of the feature items.</td>
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/sites/MLA/trends/search?category=MLA1042" target="_blank">/sites/{site_id}/trends/search?category={category_id} </a>
 </td>
-      <td>Not available yet.</td>
+      <td>Retrieve an array of the trends items from the category specified by parameter.</td>
     </tr>
 </tbody>
 </table>
@@ -281,7 +279,7 @@ th p{
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/orders/search" target="_blank">/orders/search?access_token={...}</a>
 </td>
-      <td>Not available yet.</td>
+      <td>Search the orders from a seller or buyer and not archived.</td>
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/payments" target="_blank">/payments?access_token={...}</a>
@@ -291,7 +289,7 @@ th p{
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/collections" target="_blank">/collections?access_token={...}</a>
 </td>
-      <td>Not available yet.</td>
+      <td>No description available.</td>
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/payment_methods/MLAMC" target="_blank">/payment_methods/{payment_method_id}</a>
@@ -306,7 +304,7 @@ th p{
      <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/orders/{order_id}/feedback" target="_blank">/orders/{order_id}/feedback?access_token={...}</a>
 </td>
-      <td>Not available yet.</td>
+      <td>Get the feedback received from a buyer or seller in an order.</td>
     </tr>
 </tbody>
 </table>
@@ -334,11 +332,11 @@ th p{
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/questions/search" target="_blank">/questions/search</a></td>
-      <td>Not available yet.</td>
+      <td>Search any question made to user products.</td>
     </tr>
     <tr>
       <td class="left_column"><a href="https://api.mercadolibre.com/users/{seller_id}/questions_blacklist" target="_blank">/users/{seller_id}/questions_blacklist?access_token={...}</a></td>
-      <td>Not available yet.</td>
+      <td>Search questions from users in the blacklist.</td>
     </tr>
 </tbody>
 </table>
