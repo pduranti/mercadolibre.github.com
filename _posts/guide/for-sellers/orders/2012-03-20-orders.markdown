@@ -164,6 +164,8 @@ https://api.mercadolibre.com/orders/search?seller=seller_id&#038;access_token={.
 https://api.mercadolibre.com/orders/search?buyer=buyer_id&#038;access_token={...}
 </pre>
 
+<br />
+
 ###Archived Orders
 
 If you are looking for an old order, more than 21 days or qualified by both parties, you can use archived resource: 
