@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Manage and track shipments with me1
+title: Capture shipping and manage shipments
 categories: 
 - Listing
 - Manage Listings
@@ -14,16 +14,6 @@ tags:
 - Shipping
 ---
 
-## Overview
-
-<div class="contents">
-  <h5>Table of Contents</h5>
-  <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('shipping-orders')">Capture shipping preferences from the order</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('shipping-services')">Supported Shipping Services</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('tracking')">Inform the tracking number</a></dt>
-  </dl>
-</div>
 
 ## Capture shipping preferences from the order {#shipping-orders}
 
@@ -238,78 +228,4 @@ Or, if you already know the shipment_id
     },
   "comments": "other info shipping",
   }
-{% endhighlight %}
-
-
-## Shipping Services {#shipping-services}
-Obtain the list of supported shipping services.
-Later on, sellers will be able to provide automatic tracking for one of the supported shipping services.
-If the shipping service is not in this list, automatic tracking is not supported.
-
-<pre class="terminal">
-https://api.mercadolibre.com/sites/MLB/shipping_services
-</pre>
-
-{% highlight javascript %}
-[
-  {
-    "id": 1,
-    "name": "PAC",
-    "status": "active",
-    "shipping_company":  {
-      "id": 100008,
-      "name": "Correios",
-      "site_id": "MLB"
-    },
-    "site_id": "MLB",
-    "currency_id": "BRL",
-    "tracks_shipments": true,
-    "max_size": 5000,
-    "min_size": 1,
-    "max_weight": 30000,
-    "min_weight": 1,
-    "free_options":  [
-      "country",
-      "no"
-    ]
-  },
-   {
-    "id": 2,
-    "name": "Sedex",
-    "status": "active",
-    "shipping_company":  {
-      "id": 100008,
-      "name": "Correios",
-      "site_id": "MLB"
-    },
-    "site_id": "MLB",
-    "currency_id": "BRL",
-    "tracks_shipments": true,
-    "max_size": 5000,
-    "min_size": 1,
-    "max_weight": 30000,
-    "min_weight": 1,
-    "free_options":  [
-      "country",
-      "no"
-    ]
-   }
-]
-{% endhighlight %}
-
-
-
-## Inform the tracking number {#tracking}
-
-All you have to do is a PUT to the shipment with the **service_id** and **tracking_number** attributes.
-
-<pre class="terminal">
-https://api.mercadolibre.com/shipments/:shipment_id?access_token=
-</pre>
-
-{% highlight javascript %}
-{
-  "tracking_number": "TR1234567891",
-  "service_id": 1
-}
 {% endhighlight %}
