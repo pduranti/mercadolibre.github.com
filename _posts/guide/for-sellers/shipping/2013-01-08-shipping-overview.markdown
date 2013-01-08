@@ -22,11 +22,13 @@ Listings in MercadoLibre can have 4 different shipping modes
 	<br>
 It means the seller did not specify any shipping price for his items and the buyer has to get in contact with the seller to agree on a shipping option and price for the purchase.</li>
 
-<li><strong>custom</strong>
+<li>
+  <strong>custom</strong>
 	<br>
-Sellers can include a table of up to 10 shipping costs on an item.<br> 
-Each shipping cost has a label that describes the shipping option. e.g.: "2 days by Air" - 40 BRL, "To Buenos Aires" - 50 ARS.<br>
-There is no tracking and there is no enforcement for the buyer to pay for the cost associated to his address<br>
+  	Sellers can include a table of up to 10 shipping costs on an item.<br> 
+  	Each shipping cost has a label that describes the shipping option. e.g.: "2 days by Air" - 40 BRL, "To Buenos Aires" - 50 ARS.<br>
+  	There is no tracking and there is no enforcement for the buyer to pay for the cost associated to his address<br>
+</li>
 
 <li><strong>me1 and me shipping modes</strong> (MercadoEnvios)
 	<br>
