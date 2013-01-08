@@ -25,7 +25,7 @@ It means the seller did not specify any shipping price for his items and the buy
 <li><strong>custom</strong>
 	<br>
 Sellers can include a table of up to 10 shipping costs on an item.<br> 
-Each shipping cost has a label that describes the shipping option. e.g.: **"2 days by Air" - 40 BRL**, **"To Buenos Aires" - 50 ARS**.<br>
+Each shipping cost has a label that describes the shipping option. e.g.: "2 days by Air" - 40 BRL, "To Buenos Aires" - 50 ARS.<br>
 There is no tracking and there is no enforcement for the buyer to pay for the cost associated to his address<br>
 
 <li><strong>me1 and me shipping modes</strong> (MercadoEnvios)
