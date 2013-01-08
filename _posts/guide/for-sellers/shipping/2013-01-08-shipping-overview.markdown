@@ -24,11 +24,9 @@ It means the seller did not specify any shipping price for his items and the buy
 
 <li><strong>custom</strong>
 	<br>
-Sellers can include a table of up to 10 shipping costs for an item.<br> 
-Each shipping cost has a label that indicates what type of shipping is. e.g.: “Air 2 days - 20 BRL”, “To Buenos Aires - 50 ARS”.<br>
-Details:
- * Sellers can specify their own costs
- * There is no tracking and there is no enforcement to the buyer to pay for a specific fair according to his shipping address.</li>
+Sellers can include a table of up to 10 shipping costs on an item.<br> 
+Each shipping cost has a label that describes the shipping option. e.g.: **"2 days by Air" - 40 BRL**, **"To Buenos Aires" - 50 ARS**.<br>
+There is no tracking and there is no enforcement for the buyer to pay for the cost associated to his address<br>
 
 <li><strong>me1 and me shipping modes</strong> (MercadoEnvios)
 	<br>
@@ -116,5 +114,5 @@ By default all users are allowed to list with not specified shipment and custom 
 ## Continue Learning
 <ul class="ch-list">
 	<li>How to list with <a href="/listing-with-me1">shipping mode me1</a> or <a href="/listing-with-me2">shipping mode me2</a></li>
-	<li>Capture shipping information from the order and manage shipments</li>
+	<li><a href="/capture-and-manage-shipments">Capture shipping information and manage shipments</a></li>
 </ul>
