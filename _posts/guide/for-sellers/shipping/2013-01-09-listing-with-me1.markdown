@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: Listing with me1 mode
+title: Listing with shipping me1
 categories: 
 - Listing
 - Manage Listings
@@ -22,10 +22,11 @@ Selected sellers are marked for shipping mode me1 internally after an agreement 
 
 The guide covers in detail the API resources involved:
 
-- **shipping modes**
-- **items**
-- **shipping methods**
-
+<ul class="ch-list">
+<li> **shipping modes**</li>
+<li> **items**</li>
+<li> **shipping methods**</li>
+</ul>
 <br/>
 
 It introduces the concepts of **shipping modes** and **shipping methods**, to later explain how to **list items with shipping methods** and **dimensions** or list with the **free shipping** option.
@@ -33,45 +34,22 @@ It introduces the concepts of **shipping modes** and **shipping methods**, to la
 <div class="contents">
   <h5>Table of Contents</h5>
   <dl>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('user-me1-mode')">Verify the user with me1 mode</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('shipping-modes')">Verify the shipping mode</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('dimensions')">Dimensions</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('shipping-methods')">Shipping methods</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('free-shipping')">Free Shipping</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('cost-calculator')">Cost Calculator</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('shipping-services')">Supported Shipping Services</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('tracking')">Inform the tracking number</a></dt>
   </dl>
 </div>
 
 
-## Verify if the user is ready to list with me1 {#user-me1-mode}
-You can verify if the user is already allowed to list with ME1 shipping mode just making a GET at users API.
-Let's see how it works.
-
-**URL to GET**
-<pre class="terminal">
-https://api.mercadolibre.com/users/me?access_token=
-</pre>
-
-This will returns a lot of information about the authenticated user, and we can see in the JSON the following attributes
-
-**Response**
-
-{% highlight javascript %}
-"shipping_modes":[
-    "custom",
-    "not_specified",
-    "me1"
-],
-{% endhighlight %}
-
-
-if the user has the me1 markup, so he can list with this shipping mode.
-
 
 ## Verify the shipping mode {#shipping-modes}
-Use the *shipping_modes* resource to verify how a seller should list an Item on a given category and dimensions.
+Use the **shipping_modes** resource to verify if a seller can list an Item on a given category with certain dimensions.
 
-The response indicates the available shipping modes and the shipping methods that can be used.
+The response indicates if shipping modes me1 is available and the shipping methods that can be used.
 
 <br />
 
@@ -217,11 +195,11 @@ Set local_pick_up to *true* for sellers that offer this option to buyers.
 
 ## Adding dimensions to existing listings
 
-After an item is listed, if it doesn't have dimensions, you can inform them later.
+After being marked with me1 mode, you can add dimensions and shipping to your existing listings.
 
 Altering the dimensions of an item doesn't affect its relevance in search results and there is no restricion to alter dimensions if the item has sales.
 
-Just do a PUT to the item including its dimensions.
+Just do a PUT to items as in the example.
 
 **URL to PUT**
 <pre class="terminal">
@@ -233,7 +211,8 @@ https://api.mercadolibre.com/items/:item_id?access_token=
 {% highlight javascript %}
 {
    "shipping":{
-      "dimensions":"10x10x20,700"
+      "dimensions":"10x10x20,700",
+      "mode": "me1"
    }
 }
 {% endhighlight %}
@@ -407,3 +386,77 @@ https://api.mercadolibre.com/items/:item_id/shipping_options?zip_code=13565905
 - `speed.shipping`: Promise of time to deliver, expressed in hours.
 - `speed.handling`: Promise of handling time, expressed in hours.
 
+
+
+## Shipping Services {#shipping-services}
+Obtain the list of supported shipping services.
+Later on, sellers will be able to provide automatic tracking for one of the supported shipping services.
+If the shipping service is not in this list, automatic tracking is not supported.
+
+<pre class="terminal">
+https://api.mercadolibre.com/sites/MLB/shipping_services
+</pre>
+
+{% highlight javascript %}
+[
+  {
+    "id": 1,
+    "name": "PAC",
+    "status": "active",
+    "shipping_company":  {
+      "id": 100008,
+      "name": "Correios",
+      "site_id": "MLB"
+    },
+    "site_id": "MLB",
+    "currency_id": "BRL",
+    "tracks_shipments": true,
+    "max_size": 5000,
+    "min_size": 1,
+    "max_weight": 30000,
+    "min_weight": 1,
+    "free_options":  [
+      "country",
+      "no"
+    ]
+  },
+   {
+    "id": 2,
+    "name": "Sedex",
+    "status": "active",
+    "shipping_company":  {
+      "id": 100008,
+      "name": "Correios",
+      "site_id": "MLB"
+    },
+    "site_id": "MLB",
+    "currency_id": "BRL",
+    "tracks_shipments": true,
+    "max_size": 5000,
+    "min_size": 1,
+    "max_weight": 30000,
+    "min_weight": 1,
+    "free_options":  [
+      "country",
+      "no"
+    ]
+   }
+]
+{% endhighlight %}
+
+
+
+## Inform the tracking number {#tracking}
+
+All you have to do is a PUT to the shipment with the **service_id** and **tracking_number** attributes.
+
+<pre class="terminal">
+https://api.mercadolibre.com/shipments/:shipment_id?access_token=
+</pre>
+
+{% highlight javascript %}
+{
+  "tracking_number": "TR1234567891",
+  "service_id": 1
+}
+{% endhighlight %}
