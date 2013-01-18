@@ -17,6 +17,7 @@ tags:
 ## Overview
 
 This guide explains how to deal with all the resources of our API to successfully list and manage items with shipping mode **me1**.
+It also explains how to post tracking numbers to provide the buyers with the tracking information.
 
 Selected sellers are marked for shipping mode me1 internally after an agreement between the seller and ML.
 
@@ -40,7 +41,7 @@ It introduces the concepts of **shipping modes** and **shipping methods**, to la
     <dt><a href="javascript:void(0)" onClick="goToByScroll('free-shipping')">Free Shipping</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('cost-calculator')">Cost Calculator</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('shipping-services')">Supported Shipping Services</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('tracking')">Inform the tracking number</a></dt>
+    <dt><a href="javascript:void(0)" onClick="goToByScroll('tracking')">POST the tracking number</a></dt>
   </dl>
 </div>
 
@@ -149,7 +150,8 @@ Examples:
 
 ## Listing an item on me1 mode
 
-It's quite simple to list an item with me1. The POST to items must include the dimensions of the package.
+It's quite simple to list an item with me1. Post the free shipping options and dimensions of the package whenever they are available.
+If sellers do not provide package dimensions on their listing, the category standard dimensions will be used.
 
 **URL to POST**
 <pre class="terminal">
@@ -446,7 +448,8 @@ https://api.mercadolibre.com/sites/MLB/shipping_services
 
 
 
-## Inform the tracking number {#tracking}
+## Post the tracking number {#tracking}
+It is an essential part of this mode that sellers provide tracking numbers allowing the buyers to be aware of the status of their packages and when is estimated to be delivered.
 
 All you have to do is a PUT to the shipment with the **service_id** and **tracking_number** attributes.
 
@@ -460,3 +463,5 @@ https://api.mercadolibre.com/shipments/:shipment_id?access_token=
   "service_id": 1
 }
 {% endhighlight %}
+
+

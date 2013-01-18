@@ -30,15 +30,23 @@ It means the seller did not specify any shipping price for his items and the buy
   	There is no tracking and there is no enforcement for the buyer to pay for the cost associated to his address<br>
 </li>
 
-<li><strong>me1 and me shipping modes</strong> (MercadoEnvios)
+<li><strong>me1</strong> (MercadoEnvios mode 1)
 	<br>
-This method offers the full features of trackable shipping and a complete set of price rules based on origin, destination and package size.</li>
+	This method offers a shipping calculator to collect the shipping cost for every order allowing the seller to choose the shipping service of his choice.
+</li>
+<li><strong>me2</strong> (MercadoEnvios mode 2)
+	<br>
+	This method provides the seller a pre-paid label and tracking code with the shipping company chosen by ML.
+</li>
 </ol>
 
 <br>
 
 <i class="ch-icon-comment-alt">
-IMPORTANT: MercadoEnvios is currently available only for selected sellers that have to reach an agreement with ML to be placed in either ME1 or ME2 modes.
+IMPORTANT:
+MercadoEnvios mode 2 is available for sellers of Brasil who want to opt-in to participate in the program and it will soon be available in Argentina.
+<br>
+MercadoEnvios 1 is only available for selected sellers in Brasil who need to reach an agreement with MercadoLibre.
 </i>
 
 <br>
@@ -61,7 +69,7 @@ IMPORTANT: MercadoEnvios is currently available only for selected sellers that h
 	</tr>
 	<tr>
 		<td>The seller can provide its own dimensions for the package.
-In case they are not specified, we will use the standard dimensions by category to calculate shipping price.</td>
+<strong>In case they are not specified, the standard dimensions by category will be used.</strong></td>
 		<td>Sellers don’t have to provide dimensions. ML has standard dimensions by categories.</td>
 	</tr>
 	<tr>
@@ -81,7 +89,7 @@ In case they are not specified, we will use the standard dimensions by category 
 		<td>Supports free shipping. ML charges the seller through MP for the cost of the shipment label.</td>
 	</tr>
 	<tr>
-		<td>Supports tracking that should be informed by the seller.</td>
+		<td><strong>Sellers are responsible for posting the tracking codes to provide buyers with tracking information</strong>.</td>
 		<td>Supports automatic tracking.</td>
 	</tr>
 	</tbody>
