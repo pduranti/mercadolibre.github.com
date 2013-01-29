@@ -6,6 +6,7 @@ categories:
 - Manage Listings
 - Orders
 - Manage Questions
+- Shipping
 menu: 
 - Listing &amp; Selling
 tags:

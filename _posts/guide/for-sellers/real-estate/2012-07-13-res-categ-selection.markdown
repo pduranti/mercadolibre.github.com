@@ -7,7 +7,6 @@ categories:
 - Manage Listings
 - Orders
 - Manage Questions
-- Notifications
 menu: 
 - Listing &amp; Selling
 tags: 

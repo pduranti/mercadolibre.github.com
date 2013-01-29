@@ -6,7 +6,6 @@ categories:
 - Manage Listings
 - Orders
 - Manage Questions
-- Notifications
 - Shipping
 menu: 
 - Listing &amp; Selling
@@ -24,9 +23,9 @@ Selected sellers are marked for shipping mode me1 internally after an agreement 
 The guide covers in detail the API resources involved:
 
 <ul class="ch-list">
-<li> **shipping modes**</li>
-<li> **items**</li>
-<li> **shipping methods**</li>
+<li> shipping modes</li>
+<li> items</li>
+<li> shipping methods</li>
 </ul>
 <br/>
 
@@ -265,46 +264,6 @@ To list offering Standard shipping for free with the country option, add the shi
    }
 }
 {% endhighlight %}
-
-
-## Shipping methods {#shipping-methods}
-
-To see more details of the available shipping methods there is a special resource by site.
-
-**URL**
-<pre class="terminal">
-https://api.mercadolibre.com/sites/MLB/shipping_methods
-</pre>
-
-**JSON Response**
-{% highlight javascript %}
-[
-   {
-    "id": 100009,
-    "name": "Standard",
-    "site_id": "MLB",
-    "free_options":  [
-      "country"
-    ]
-   },
-   {
-    "id": 182,
-    "name": "Express",
-    "site_id": "MLB",
-    "free_options":  [
-      "country"
-    ]
-   }
-]
-{% endhighlight %}
-
-
-**Response Attributes**
-
-- `id` — Shipping method ID is used when listing an item with shipping.
-- `name` —  Name of the shipping method
-- `site_id` — The site id, the shipping method belongs to
-- `free_options` — This shipping method can be offered for free with one of this values.
 
 
 ## Shipping Cost Calculator {#cost-calculator}

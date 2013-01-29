@@ -6,7 +6,6 @@ categories:
 - Manage Listings
 - Orders
 - Manage Questions
-- Notifications
 - Shipping
 menu: 
 - Listing &amp; Selling
@@ -119,6 +118,91 @@ This will returns a lot of information about the authenticated user, one of thos
 {% endhighlight %}
 
 By default all users are allowed to list with not specified shipment and custom shipping. If a user is marked with either me1 or me2 you can see it in as an option in shipping modes.
+
+## Available shipping methods by Country {#shipping-methods}
+
+Each site has a set of shipping methods available. They have different shipping times and costs.
+Sellers can offer free shipping in one or both of these methods.
+
+To see the available methods by site there is a special resource.
+
+**URL for Brazil**
+<pre class="terminal">
+https://api.mercadolibre.com/sites/MLB/shipping_methods
+</pre>
+
+**JSON Response**
+{% highlight javascript %}
+[
+   {
+    "id": 100009,
+    "name": "Standard",
+    "site_id": "MLB",
+    "free_options":  [
+      "country"
+    ]
+   },
+   {
+    "id": 182,
+    "name": "Express",
+    "site_id": "MLB",
+    "free_options":  [
+      "country"
+    ]
+   }
+]
+{% endhighlight %}
+
+
+**URL for Argentina**
+<pre class="terminal">
+https://api.mercadolibre.com/sites/MLA/shipping_methods
+</pre>
+
+**JSON Response**
+{% highlight javascript %}
+[
+   {
+    "id": 73330,
+    "name": "Express",
+    "status": "active",
+    "shipping_company":  {
+      "id": 17500240,
+      "name": "OCA",
+      "site_id": "MLA",
+    },
+    "site_id": "MLA",
+    "currency_id": "ARS",
+    "free_options":  [
+      "country",
+    ],
+  },
+   {
+    "id": 73328,
+    "name": "Estándar",
+    "status": "active",
+    "shipping_company":  {
+      "id": 17500240,
+      "name": "OCA",
+      "site_id": "MLA",
+    },
+    "site_id": "MLA",
+    "currency_id": "ARS",
+    "free_options":  [
+      "country",
+    ],
+  },
+]
+{% endhighlight %}
+
+
+**Response Attributes**
+
+- `id` — Shipping method ID is used when listing an item with shipping.
+- `name` —  Name of the shipping method
+- `site_id` — The site id, the shipping method belongs to
+- `free_options` — This shipping method can be offered for free with one of this values.
+
 
 
 ## Continue Learning
