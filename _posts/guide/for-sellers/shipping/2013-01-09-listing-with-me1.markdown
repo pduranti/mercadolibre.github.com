@@ -36,7 +36,6 @@ It introduces the concepts of **shipping modes** and **shipping methods**, to la
   <dl>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('shipping-modes')">Verify the shipping mode</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('dimensions')">Dimensions</a></dt>
-    <dt><a href="javascript:void(0)" onClick="goToByScroll('shipping-methods')">Shipping methods</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('free-shipping')">Free Shipping</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('cost-calculator')">Cost Calculator</a></dt>
     <dt><a href="javascript:void(0)" onClick="goToByScroll('shipping-services')">Supported Shipping Services</a></dt>
